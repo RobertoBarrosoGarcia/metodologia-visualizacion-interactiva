@@ -1,0 +1,1686 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20213.21.1217.2247                               -->
+<workbook original-version='18.1' source-build='2021.3.6 (20213.21.1217.2247)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='Contaminacion_16424567297020' path='/workbooks' revision='1.1' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <style>
+    <_.fcp.MarkAnimation.true...style-rule element='animation'>
+      <format attr='animation-on' value='ao-off' />
+    </_.fcp.MarkAnimation.true...style-rule>
+  </style>
+  <datasources>
+    <datasource caption='co2_UE (co2_UE)' inline='true' name='federated.137l2q404598f610elxhp0i7aobi' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='co2_UE' name='excel-direct.07zwq1c1aau8c51dcm3jg1xrmivs'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/Roberto Barroso/Documents/Universidad/Trabajo fin de Master/Scripts_ETL/Datos/UE/co2_UE.xlsx' interpretationMode='0' password='' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.07zwq1c1aau8c51dcm3jg1xrmivs' name='co2_UE' table='[co2_UE$]' type='table'>
+          <columns gridOrigin='A1:F1991:no:A1:F1991:0' header='yes' outcome='6'>
+            <column datatype='string' name='ISO_CODE' ordinal='0' />
+            <column datatype='string' name='COUNTRY' ordinal='1' />
+            <column datatype='date' date-parse-format='yyyy' name='YEAR' ordinal='2' />
+            <column datatype='real' name='CO2_EMISSIONS_TONNES' ordinal='3' />
+            <column datatype='real' name='CO2_EMISSIONS_TONNES_PER_CAPITA' ordinal='4' />
+            <column datatype='integer' name='POPULATION' ordinal='5' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.07zwq1c1aau8c51dcm3jg1xrmivs' name='co2_UE' table='[co2_UE$]' type='table'>
+          <columns gridOrigin='A1:F1991:no:A1:F1991:0' header='yes' outcome='6'>
+            <column datatype='string' name='ISO_CODE' ordinal='0' />
+            <column datatype='string' name='COUNTRY' ordinal='1' />
+            <column datatype='date' date-parse-format='yyyy' name='YEAR' ordinal='2' />
+            <column datatype='real' name='CO2_EMISSIONS_TONNES' ordinal='3' />
+            <column datatype='real' name='CO2_EMISSIONS_TONNES_PER_CAPITA' ordinal='4' />
+            <column datatype='integer' name='POPULATION' ordinal='5' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[co2_UE]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>2</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:F1991:no:A1:F1991:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ISO_CODE</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[ISO_CODE]</local-name>
+            <parent-name>[co2_UE]</parent-name>
+            <remote-alias>ISO_CODE</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[co2!UE_1FF3604DA9FE46DEAC9B0C32069D6259]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COUNTRY</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[COUNTRY]</local-name>
+            <parent-name>[co2_UE]</parent-name>
+            <remote-alias>COUNTRY</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[co2!UE_1FF3604DA9FE46DEAC9B0C32069D6259]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YEAR</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[YEAR]</local-name>
+            <parent-name>[co2_UE]</parent-name>
+            <remote-alias>YEAR</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[co2!UE_1FF3604DA9FE46DEAC9B0C32069D6259]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CO2_EMISSIONS_TONNES</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[CO2_EMISSIONS_TONNES]</local-name>
+            <parent-name>[co2_UE]</parent-name>
+            <remote-alias>CO2_EMISSIONS_TONNES</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[co2!UE_1FF3604DA9FE46DEAC9B0C32069D6259]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CO2_EMISSIONS_TONNES_PER_CAPITA</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[CO2_EMISSIONS_TONNES_PER_CAPITA]</local-name>
+            <parent-name>[co2_UE]</parent-name>
+            <remote-alias>CO2_EMISSIONS_TONNES_PER_CAPITA</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[co2!UE_1FF3604DA9FE46DEAC9B0C32069D6259]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>POPULATION</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[POPULATION]</local-name>
+            <parent-name>[co2_UE]</parent-name>
+            <remote-alias>POPULATION</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[co2!UE_1FF3604DA9FE46DEAC9B0C32069D6259]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Co2 Emissions Tonnes' datatype='real' name='[CO2_EMISSIONS_TONNES]' role='measure' type='quantitative' />
+      <column caption='Co2 Emissions Tonnes Per Capita' datatype='real' name='[CO2_EMISSIONS_TONNES_PER_CAPITA]' role='measure' type='quantitative' />
+      <column caption='Country' datatype='string' name='[COUNTRY]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Iso Code' datatype='string' name='[ISO_CODE]' role='dimension' type='nominal' />
+      <column caption='Population' datatype='integer' name='[POPULATION]' role='measure' type='quantitative' />
+      <column caption='Year' datatype='date' name='[YEAR]' role='dimension' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='co2_UE' datatype='table' name='[__tableau_internal_object_id__].[co2!UE_1FF3604DA9FE46DEAC9B0C32069D6259]' role='measure' type='quantitative' />
+      <column-instance column='[CO2_EMISSIONS_TONNES_PER_CAPITA]' derivation='Avg' name='[avg:CO2_EMISSIONS_TONNES_PER_CAPITA:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[CO2_EMISSIONS_TONNES_PER_CAPITA]' derivation='Avg' name='[diff:avg:CO2_EMISSIONS_TONNES_PER_CAPITA:qk:1]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Relative' ordering-field='[federated.137l2q404598f610elxhp0i7aobi].[none:COUNTRY:nk]' ordering-type='Field' type='Difference'>
+          <address>
+            <value>-1</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance column='[CO2_EMISSIONS_TONNES_PER_CAPITA]' derivation='Avg' name='[diff:avg:CO2_EMISSIONS_TONNES_PER_CAPITA:qk:2]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Relative' ordering-field='' ordering-type='Field' type='Difference'>
+          <address>
+            <value>-1</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance column='[CO2_EMISSIONS_TONNES_PER_CAPITA]' derivation='Avg' name='[diff:avg:CO2_EMISSIONS_TONNES_PER_CAPITA:qk:3]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Relative' ordering-field='[federated.137l2q404598f610elxhp0i7aobi].[tyr:YEAR:ok]' ordering-type='Field' type='Difference'>
+          <address>
+            <value>-1</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance column='[CO2_EMISSIONS_TONNES_PER_CAPITA]' derivation='Avg' name='[diff:avg:CO2_EMISSIONS_TONNES_PER_CAPITA:qk:4]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Fixed' ordering-field='[federated.137l2q404598f610elxhp0i7aobi].[tyr:YEAR:ok]' ordering-type='Field' type='Difference'>
+          <address>
+            <value>#1993-01-01 00:00:00#</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance column='[CO2_EMISSIONS_TONNES_PER_CAPITA]' derivation='Avg' name='[diff:avg:CO2_EMISSIONS_TONNES_PER_CAPITA:qk]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Relative' ordering-type='Columns' type='Difference'>
+          <address>
+            <value>-1</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance column='[CO2_EMISSIONS_TONNES_PER_CAPITA]' derivation='Sum' name='[diff:sum:CO2_EMISSIONS_TONNES_PER_CAPITA:qk:10]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Relative' ordering-type='Field' type='Difference'>
+          <order field='[federated.137l2q404598f610elxhp0i7aobi].[tyr:YEAR:qk]' />
+          <order field='[federated.137l2q404598f610elxhp0i7aobi].[COUNTRY]' />
+          <address>
+            <value>-1</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance column='[CO2_EMISSIONS_TONNES_PER_CAPITA]' derivation='Sum' name='[diff:sum:CO2_EMISSIONS_TONNES_PER_CAPITA:qk:11]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Relative' ordering-field='[federated.137l2q404598f610elxhp0i7aobi].[tyr:YEAR:qk]' ordering-type='Field' type='Difference'>
+          <address>
+            <value>-2</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance column='[CO2_EMISSIONS_TONNES_PER_CAPITA]' derivation='Sum' name='[diff:sum:CO2_EMISSIONS_TONNES_PER_CAPITA:qk:12]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Fixed' ordering-type='Field' type='Difference'>
+          <order field='[federated.137l2q404598f610elxhp0i7aobi].[tyr:YEAR:qk]' />
+          <sort direction='ASC' using='[federated.137l2q404598f610elxhp0i7aobi].[var:CO2_EMISSIONS_TONNES_PER_CAPITA:qk]' />
+          <address>
+            <value>#1993-01-01 00:00:00#</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance column='[CO2_EMISSIONS_TONNES_PER_CAPITA]' derivation='Sum' name='[diff:sum:CO2_EMISSIONS_TONNES_PER_CAPITA:qk:13]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Relative' ordering-field='[federated.137l2q404598f610elxhp0i7aobi].[tyr:YEAR:ok]' ordering-type='Field' type='Difference'>
+          <address>
+            <value>-1</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance column='[CO2_EMISSIONS_TONNES_PER_CAPITA]' derivation='Sum' name='[diff:sum:CO2_EMISSIONS_TONNES_PER_CAPITA:qk:14]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Fixed' ordering-field='[federated.137l2q404598f610elxhp0i7aobi].[tyr:YEAR:ok]' ordering-type='Field' type='Difference'>
+          <address>
+            <value>#1993-01-01 00:00:00#</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance column='[CO2_EMISSIONS_TONNES_PER_CAPITA]' derivation='Sum' name='[diff:sum:CO2_EMISSIONS_TONNES_PER_CAPITA:qk:15]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Fixed' ordering-type='Field' type='Difference'>
+          <order field='[federated.137l2q404598f610elxhp0i7aobi].[tyr:YEAR:ok]' />
+          <sort direction='ASC' using='[federated.137l2q404598f610elxhp0i7aobi].[sum:CO2_EMISSIONS_TONNES:qk]' />
+          <address>
+            <value>#1993-01-01 00:00:00#</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance column='[CO2_EMISSIONS_TONNES_PER_CAPITA]' derivation='Sum' name='[diff:sum:CO2_EMISSIONS_TONNES_PER_CAPITA:qk:16]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Fixed' ordering-type='Field' type='Difference'>
+          <order field='[federated.137l2q404598f610elxhp0i7aobi].[tyr:YEAR:ok]' />
+          <sort direction='ASC' using='[federated.137l2q404598f610elxhp0i7aobi].[sum:CO2_EMISSIONS_TONNES_PER_CAPITA:qk]' />
+          <address>
+            <value>#1993-01-01 00:00:00#</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance column='[CO2_EMISSIONS_TONNES_PER_CAPITA]' derivation='Sum' name='[diff:sum:CO2_EMISSIONS_TONNES_PER_CAPITA:qk:1]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Relative' ordering-type='Field' type='Difference'>
+          <order field='[federated.137l2q404598f610elxhp0i7aobi].[COUNTRY]' />
+          <order field='[federated.137l2q404598f610elxhp0i7aobi].[tyr:YEAR:qk]' />
+          <address>
+            <value>-1</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance column='[CO2_EMISSIONS_TONNES_PER_CAPITA]' derivation='Sum' name='[diff:sum:CO2_EMISSIONS_TONNES_PER_CAPITA:qk:2]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Relative' ordering-field='[federated.137l2q404598f610elxhp0i7aobi].[tyr:YEAR:qk]' ordering-type='Field' type='Difference'>
+          <address>
+            <value>-1</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance column='[CO2_EMISSIONS_TONNES_PER_CAPITA]' derivation='Sum' name='[diff:sum:CO2_EMISSIONS_TONNES_PER_CAPITA:qk:3]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Relative' ordering-type='CellInPane' type='Difference'>
+          <address>
+            <value>-1</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance column='[CO2_EMISSIONS_TONNES_PER_CAPITA]' derivation='Sum' name='[diff:sum:CO2_EMISSIONS_TONNES_PER_CAPITA:qk:4]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Relative' ordering-field='' ordering-type='Field' type='Difference'>
+          <address>
+            <value>-1</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance column='[CO2_EMISSIONS_TONNES_PER_CAPITA]' derivation='Sum' name='[diff:sum:CO2_EMISSIONS_TONNES_PER_CAPITA:qk:5]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Relative' ordering-type='Rows' type='Difference'>
+          <address>
+            <value>-1</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance column='[CO2_EMISSIONS_TONNES_PER_CAPITA]' derivation='Sum' name='[diff:sum:CO2_EMISSIONS_TONNES_PER_CAPITA:qk:6]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Fixed' ordering-field='[federated.137l2q404598f610elxhp0i7aobi].[tyr:YEAR:qk]' ordering-type='Field' type='Difference'>
+          <address>
+            <value>#1993-01-01 00:00:00#</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance column='[CO2_EMISSIONS_TONNES_PER_CAPITA]' derivation='Sum' name='[diff:sum:CO2_EMISSIONS_TONNES_PER_CAPITA:qk:7]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Fixed' ordering-type='Field' type='Difference'>
+          <order field='[federated.137l2q404598f610elxhp0i7aobi].[tyr:YEAR:qk]' />
+          <sort direction='ASC' using='[federated.137l2q404598f610elxhp0i7aobi].[sum:CO2_EMISSIONS_TONNES:qk]' />
+          <address>
+            <value>#1993-01-01 00:00:00#</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance column='[CO2_EMISSIONS_TONNES_PER_CAPITA]' derivation='Sum' name='[diff:sum:CO2_EMISSIONS_TONNES_PER_CAPITA:qk:8]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Fixed' ordering-type='Field' type='Difference'>
+          <order field='[federated.137l2q404598f610elxhp0i7aobi].[tyr:YEAR:qk]' />
+          <sort direction='ASC' using='[federated.137l2q404598f610elxhp0i7aobi].[sum:CO2_EMISSIONS_TONNES_PER_CAPITA:qk]' />
+          <address>
+            <value>#1993-01-01 00:00:00#</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance column='[CO2_EMISSIONS_TONNES_PER_CAPITA]' derivation='Sum' name='[diff:sum:CO2_EMISSIONS_TONNES_PER_CAPITA:qk:9]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Fixed' ordering-type='Field' type='Difference'>
+          <order field='[federated.137l2q404598f610elxhp0i7aobi].[tyr:YEAR:qk]' />
+          <sort direction='DESC' using='[federated.137l2q404598f610elxhp0i7aobi].[sum:CO2_EMISSIONS_TONNES_PER_CAPITA:qk]' />
+          <address>
+            <value>#1993-01-01 00:00:00#</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance column='[CO2_EMISSIONS_TONNES_PER_CAPITA]' derivation='Sum' name='[diff:sum:CO2_EMISSIONS_TONNES_PER_CAPITA:qk]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Relative' ordering-field='[federated.137l2q404598f610elxhp0i7aobi].[COUNTRY]' ordering-type='Field' type='Difference'>
+          <address>
+            <value>-1</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance column='[CO2_EMISSIONS_TONNES_PER_CAPITA]' derivation='Var' name='[diff:var:CO2_EMISSIONS_TONNES_PER_CAPITA:qk]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Relative' ordering-field='[federated.137l2q404598f610elxhp0i7aobi].[COUNTRY]' ordering-type='Field' type='Difference'>
+          <address>
+            <value>-1</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance column='[COUNTRY]' derivation='None' name='[none:COUNTRY:nk]' pivot='key' type='nominal' />
+      <column-instance column='[CO2_EMISSIONS_TONNES_PER_CAPITA]' derivation='Sum' name='[pcdf:sum:CO2_EMISSIONS_TONNES_PER_CAPITA:qk]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Fixed' ordering-type='Field' type='PctDiff'>
+          <order field='[federated.137l2q404598f610elxhp0i7aobi].[tyr:YEAR:qk]' />
+          <sort direction='ASC' using='[federated.137l2q404598f610elxhp0i7aobi].[var:CO2_EMISSIONS_TONNES_PER_CAPITA:qk]' />
+          <address>
+            <value>#1993-01-01 00:00:00#</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance column='[CO2_EMISSIONS_TONNES_PER_CAPITA]' derivation='Stdev' name='[std:CO2_EMISSIONS_TONNES_PER_CAPITA:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[CO2_EMISSIONS_TONNES]' derivation='Sum' name='[sum:CO2_EMISSIONS_TONNES:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[CO2_EMISSIONS_TONNES_PER_CAPITA]' derivation='Sum' name='[sum:CO2_EMISSIONS_TONNES_PER_CAPITA:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[YEAR]' derivation='Year-Trunc' name='[tyr:YEAR:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[YEAR]' derivation='Year-Trunc' name='[tyr:YEAR:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[CO2_EMISSIONS_TONNES_PER_CAPITA]' derivation='Var' name='[var:CO2_EMISSIONS_TONNES_PER_CAPITA:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[CO2_EMISSIONS_TONNES_PER_CAPITA]' derivation='VarP' name='[vrp:CO2_EMISSIONS_TONNES_PER_CAPITA:qk]' pivot='key' type='quantitative' />
+      <group caption='Acción (Country)' hidden='true' name='[Action (Country)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[COUNTRY]' />
+        </groupfilter>
+      </group>
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='es_ES' class='hyper' dbname='C:/Users/Roberto Barroso/Documents/Mi Repositorio de Tableau/Fuentes de datos/co2_UE (co2_UE).hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='01/17/2022 09:58:40 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='co2_UE (co2_UE)' increment-value='%null%' refresh-type='create' rows-inserted='1990' timestamp-start='2022-01-17 21:58:39.625' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>ISO_CODE</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ISO_CODE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ISO_CODE</remote-alias>
+              <ordinal>0</ordinal>
+              <family>co2_UE</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LES_RES_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[co2!UE_1FF3604DA9FE46DEAC9B0C32069D6259]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>COUNTRY</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[COUNTRY]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>COUNTRY</remote-alias>
+              <ordinal>1</ordinal>
+              <family>co2_UE</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LES_RES_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[co2!UE_1FF3604DA9FE46DEAC9B0C32069D6259]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>YEAR</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[YEAR]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>YEAR</remote-alias>
+              <ordinal>2</ordinal>
+              <family>co2_UE</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>74</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[co2!UE_1FF3604DA9FE46DEAC9B0C32069D6259]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CO2_EMISSIONS_TONNES</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[CO2_EMISSIONS_TONNES]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CO2_EMISSIONS_TONNES</remote-alias>
+              <ordinal>3</ordinal>
+              <family>co2_UE</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1783</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[co2!UE_1FF3604DA9FE46DEAC9B0C32069D6259]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CO2_EMISSIONS_TONNES_PER_CAPITA</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[CO2_EMISSIONS_TONNES_PER_CAPITA]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CO2_EMISSIONS_TONNES_PER_CAPITA</remote-alias>
+              <ordinal>4</ordinal>
+              <family>co2_UE</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1440</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[co2!UE_1FF3604DA9FE46DEAC9B0C32069D6259]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>POPULATION</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[POPULATION]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>POPULATION</remote-alias>
+              <ordinal>5</ordinal>
+              <family>co2_UE</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1990</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[co2!UE_1FF3604DA9FE46DEAC9B0C32069D6259]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.137l2q404598f610elxhp0i7aobi].[avg:CO2_EMISSIONS_TONNES_PER_CAPITA:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.137l2q404598f610elxhp0i7aobi].[diff:avg:CO2_EMISSIONS_TONNES_PER_CAPITA:qk:1]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.137l2q404598f610elxhp0i7aobi].[diff:avg:CO2_EMISSIONS_TONNES_PER_CAPITA:qk:2]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.137l2q404598f610elxhp0i7aobi].[diff:avg:CO2_EMISSIONS_TONNES_PER_CAPITA:qk:3]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.137l2q404598f610elxhp0i7aobi].[diff:avg:CO2_EMISSIONS_TONNES_PER_CAPITA:qk:4]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.137l2q404598f610elxhp0i7aobi].[diff:avg:CO2_EMISSIONS_TONNES_PER_CAPITA:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.137l2q404598f610elxhp0i7aobi].[diff:sum:CO2_EMISSIONS_TONNES_PER_CAPITA:qk:1]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.137l2q404598f610elxhp0i7aobi].[diff:sum:CO2_EMISSIONS_TONNES_PER_CAPITA:qk:10]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.137l2q404598f610elxhp0i7aobi].[diff:sum:CO2_EMISSIONS_TONNES_PER_CAPITA:qk:11]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.137l2q404598f610elxhp0i7aobi].[diff:sum:CO2_EMISSIONS_TONNES_PER_CAPITA:qk:12]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.137l2q404598f610elxhp0i7aobi].[diff:sum:CO2_EMISSIONS_TONNES_PER_CAPITA:qk:13]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.137l2q404598f610elxhp0i7aobi].[diff:sum:CO2_EMISSIONS_TONNES_PER_CAPITA:qk:14]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.137l2q404598f610elxhp0i7aobi].[diff:sum:CO2_EMISSIONS_TONNES_PER_CAPITA:qk:15]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.137l2q404598f610elxhp0i7aobi].[diff:sum:CO2_EMISSIONS_TONNES_PER_CAPITA:qk:16]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.137l2q404598f610elxhp0i7aobi].[diff:sum:CO2_EMISSIONS_TONNES_PER_CAPITA:qk:2]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.137l2q404598f610elxhp0i7aobi].[diff:sum:CO2_EMISSIONS_TONNES_PER_CAPITA:qk:3]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.137l2q404598f610elxhp0i7aobi].[diff:sum:CO2_EMISSIONS_TONNES_PER_CAPITA:qk:4]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.137l2q404598f610elxhp0i7aobi].[diff:sum:CO2_EMISSIONS_TONNES_PER_CAPITA:qk:5]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.137l2q404598f610elxhp0i7aobi].[diff:sum:CO2_EMISSIONS_TONNES_PER_CAPITA:qk:6]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.137l2q404598f610elxhp0i7aobi].[diff:sum:CO2_EMISSIONS_TONNES_PER_CAPITA:qk:7]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.137l2q404598f610elxhp0i7aobi].[diff:sum:CO2_EMISSIONS_TONNES_PER_CAPITA:qk:8]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.137l2q404598f610elxhp0i7aobi].[diff:sum:CO2_EMISSIONS_TONNES_PER_CAPITA:qk:9]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.137l2q404598f610elxhp0i7aobi].[diff:sum:CO2_EMISSIONS_TONNES_PER_CAPITA:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.137l2q404598f610elxhp0i7aobi].[diff:var:CO2_EMISSIONS_TONNES_PER_CAPITA:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.137l2q404598f610elxhp0i7aobi].[pcdf:sum:CO2_EMISSIONS_TONNES_PER_CAPITA:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.137l2q404598f610elxhp0i7aobi].[std:CO2_EMISSIONS_TONNES_PER_CAPITA:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.137l2q404598f610elxhp0i7aobi].[sum:CO2_EMISSIONS_TONNES_PER_CAPITA:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.137l2q404598f610elxhp0i7aobi].[var:CO2_EMISSIONS_TONNES_PER_CAPITA:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.137l2q404598f610elxhp0i7aobi].[vrp:CO2_EMISSIONS_TONNES_PER_CAPITA:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.137l2q404598f610elxhp0i7aobi].[sum:CO2_EMISSIONS_TONNES:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;España&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='co2_UE' id='co2!UE_1FF3604DA9FE46DEAC9B0C32069D6259'>
+            <properties context=''>
+              <relation connection='excel-direct.07zwq1c1aau8c51dcm3jg1xrmivs' name='co2_UE' table='[co2_UE$]' type='table'>
+                <columns gridOrigin='A1:F1991:no:A1:F1991:0' header='yes' outcome='6'>
+                  <column datatype='string' name='ISO_CODE' ordinal='0' />
+                  <column datatype='string' name='COUNTRY' ordinal='1' />
+                  <column datatype='date' date-parse-format='yyyy' name='YEAR' ordinal='2' />
+                  <column datatype='real' name='CO2_EMISSIONS_TONNES' ordinal='3' />
+                  <column datatype='real' name='CO2_EMISSIONS_TONNES_PER_CAPITA' ordinal='4' />
+                  <column datatype='integer' name='POPULATION' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <actions>
+    <action caption='Filtrar1' name='[Action1_1C0D274623A84BC89A9B13FCF2644207]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Emisiones de CO2 en toneladas' type='sheet' />
+      <link caption='Filtrar1' delimiter=',' escape='\' expression='tsl:Emisiones%20de%20CO2%20en%20toneladas?%5Bfederated.137l2q404598f610elxhp0i7aobi%5D.%5BCOUNTRY%5D~s0=&lt;[federated.137l2q404598f610elxhp0i7aobi].[COUNTRY]~na&gt;' include-null='true' multi-select='true' url-escape='true' />
+      <command command='tsc:tsl-filter'>
+        <param name='exclude' value='Emisiones de CO2 Total,Emisiones de CO2 en 1993,Emisiones de CO2 per cápita' />
+        <param name='target' value='Emisiones de CO2 en toneladas' />
+      </command>
+    </action>
+    <action caption='Resaltar1' name='[Action2_FBA73F0376A34B0F90B3942D262BBA84]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Emisiones de CO2 en toneladas' type='sheet' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Country' />
+        <param name='target' value='Emisiones de CO2 en toneladas' />
+      </command>
+    </action>
+    <datasources>
+      <datasource caption='co2_UE (co2_UE)' name='federated.137l2q404598f610elxhp0i7aobi' />
+    </datasources>
+    <datasource-dependencies datasource='federated.137l2q404598f610elxhp0i7aobi'>
+      <column caption='Country' datatype='string' name='[COUNTRY]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+    </datasource-dependencies>
+  </actions>
+  <worksheets>
+    <worksheet name='Emisiones de CO2 Total'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontname='Times New Roman'>Total en 2019</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='co2_UE (co2_UE)' name='federated.137l2q404598f610elxhp0i7aobi' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.137l2q404598f610elxhp0i7aobi'>
+            <column caption='Co2 Emissions Tonnes' datatype='real' name='[CO2_EMISSIONS_TONNES]' role='measure' type='quantitative' />
+            <column caption='Co2 Emissions Tonnes Per Capita' datatype='real' name='[CO2_EMISSIONS_TONNES_PER_CAPITA]' role='measure' type='quantitative' />
+            <column caption='Country' datatype='string' name='[COUNTRY]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Year' datatype='date' name='[YEAR]' role='dimension' type='quantitative' />
+            <column-instance column='[COUNTRY]' derivation='None' name='[none:COUNTRY:nk]' pivot='key' type='nominal' />
+            <column-instance column='[CO2_EMISSIONS_TONNES]' derivation='Sum' name='[sum:CO2_EMISSIONS_TONNES:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[CO2_EMISSIONS_TONNES_PER_CAPITA]' derivation='Sum' name='[sum:CO2_EMISSIONS_TONNES_PER_CAPITA:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[YEAR]' derivation='Year' name='[yr:YEAR:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.137l2q404598f610elxhp0i7aobi].[none:COUNTRY:nk]'>
+            <groupfilter function='level-members' level='[none:COUNTRY:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <computed-sort column='[federated.137l2q404598f610elxhp0i7aobi].[none:COUNTRY:nk]' direction='DESC' using='[federated.137l2q404598f610elxhp0i7aobi].[sum:CO2_EMISSIONS_TONNES_PER_CAPITA:qk]' />
+          <filter class='categorical' column='[federated.137l2q404598f610elxhp0i7aobi].[yr:YEAR:ok]'>
+            <groupfilter function='member' level='[yr:YEAR:ok]' member='2019' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.137l2q404598f610elxhp0i7aobi].[yr:YEAR:ok]</column>
+            <column>[federated.137l2q404598f610elxhp0i7aobi].[none:COUNTRY:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.137l2q404598f610elxhp0i7aobi].[sum:CO2_EMISSIONS_TONNES:qk]' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' field='[federated.137l2q404598f610elxhp0i7aobi].[none:COUNTRY:nk]' value='center' />
+            <format attr='font-family' field='[federated.137l2q404598f610elxhp0i7aobi].[none:COUNTRY:nk]' value='Tableau Book' />
+            <format attr='font-size' field='[federated.137l2q404598f610elxhp0i7aobi].[none:COUNTRY:nk]' value='9' />
+            <format attr='display' field='[federated.137l2q404598f610elxhp0i7aobi].[none:COUNTRY:nk]' value='true' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.137l2q404598f610elxhp0i7aobi].[sum:CO2_EMISSIONS_TONNES:qk]' palette='brown_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-color' id='refline0' value='#000000' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='div-level' scope='rows' value='10' />
+            <format attr='div-level' scope='cols' value='10' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.137l2q404598f610elxhp0i7aobi].[sum:CO2_EMISSIONS_TONNES:qk]' />
+              <text column='[federated.137l2q404598f610elxhp0i7aobi].[sum:CO2_EMISSIONS_TONNES:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-size' value='12' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='1' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.137l2q404598f610elxhp0i7aobi].[none:COUNTRY:nk]</rows>
+        <cols>[federated.137l2q404598f610elxhp0i7aobi].[sum:CO2_EMISSIONS_TONNES:qk]</cols>
+      </table>
+      <simple-id uuid='{2CA8BBC0-4E01-4B5D-8207-034A3C4573C4}' />
+    </worksheet>
+    <worksheet name='Emisiones de CO2 en 1993'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontname='Times New Roman'>&lt;</run>
+            <run fontalignment='1' fontname='Times New Roman'>Sheet Name</run>
+            <run fontalignment='1' fontname='Times New Roman'>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='co2_UE (co2_UE)' name='federated.137l2q404598f610elxhp0i7aobi' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.137l2q404598f610elxhp0i7aobi'>
+            <column caption='Co2 Emissions Tonnes Per Capita' datatype='real' name='[CO2_EMISSIONS_TONNES_PER_CAPITA]' role='measure' type='quantitative' />
+            <column caption='Country' datatype='string' name='[COUNTRY]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Year' datatype='date' name='[YEAR]' role='dimension' type='quantitative' />
+            <column-instance column='[CO2_EMISSIONS_TONNES_PER_CAPITA]' derivation='Avg' name='[avg:CO2_EMISSIONS_TONNES_PER_CAPITA:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[COUNTRY]' derivation='None' name='[none:COUNTRY:nk]' pivot='key' type='nominal' />
+            <column-instance column='[YEAR]' derivation='None' name='[none:YEAR:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[YEAR]' derivation='Year-Trunc' name='[tyr:YEAR:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[YEAR]' derivation='Year-Trunc' name='[tyr:YEAR:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.137l2q404598f610elxhp0i7aobi].[none:YEAR:qk]' included-values='in-range'>
+            <min>#1993-01-01#</min>
+            <max>#2019-01-01#</max>
+          </filter>
+          <slices>
+            <column>[federated.137l2q404598f610elxhp0i7aobi].[none:YEAR:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.137l2q404598f610elxhp0i7aobi].[avg:CO2_EMISSIONS_TONNES_PER_CAPITA:qk]' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.137l2q404598f610elxhp0i7aobi].[avg:CO2_EMISSIONS_TONNES_PER_CAPITA:qk]' value='n#,##0.00&quot; t&quot;;-#,##0.00&quot; t&quot;' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='background' value='false' />
+            <format attr='enabled' id='barrier_line-land-polygon' value='false' />
+            <format attr='enabled' id='barrier_line-land-line' value='false' />
+            <format attr='enabled' id='national_park' value='false' />
+            <format attr='enabled' id='pitch' value='false' />
+            <format attr='enabled' id='industrial' value='false' />
+            <format attr='enabled' id='built-up-area' value='false' />
+            <format attr='enabled' id='water' value='false' />
+            <format attr='enabled' id='waterway-river-canal' value='false' />
+            <format attr='enabled' id='aeroway-polygon' value='false' />
+            <format attr='enabled' id='aeroway-runway' value='false' />
+            <format attr='enabled' id='aeroway-taxiway' value='false' />
+            <format attr='enabled' id='admin-0-boundaries-bg' value='false' />
+            <format attr='enabled' id='admin-0-boundaries' value='false' />
+            <format attr='enabled' id='admin-0-boundaries-dispute' value='false' />
+            <format attr='enabled' id='admin-0-label-5th-tier' value='false' />
+            <format attr='enabled' id='admin-0-label-4th-tier' value='false' />
+            <format attr='enabled' id='admin-0-label-3rd-tier' value='false' />
+            <format attr='enabled' id='admin-0-label-2nd-tier' value='false' />
+            <format attr='enabled' id='admin-0-label-1st-tier' value='false' />
+            <format attr='enabled' id='admin-0-boundaries-bg-sub' value='false' />
+            <format attr='enabled' id='admin-1-boundaries-supress-bg' value='false' />
+            <format attr='enabled' id='admin-1-boundaries-sm-parents-bg' value='false' />
+            <format attr='enabled' id='admin-1-boundaries-md-parents-bg' value='false' />
+            <format attr='enabled' id='admin-1-boundaries-lg-parents-bg' value='false' />
+            <format attr='enabled' id='admin-0-boundaries-dispute-sub' value='false' />
+            <format attr='enabled' id='admin-0-boundaries-sub' value='false' />
+            <format attr='enabled' id='admin-1-boundaries-supress' value='false' />
+            <format attr='enabled' id='admin-1-boundaries-sm-parents' value='false' />
+            <format attr='enabled' id='admin-1-boundaries-md-parents' value='false' />
+            <format attr='enabled' id='admin-1-boundaries-lg-parents' value='false' />
+            <format attr='enabled' id='admin1-water-lines-usa-tableau' value='false' />
+            <format attr='enabled' id='9-dash-line-casing' value='false' />
+            <format attr='enabled' id='9-dash-line' value='false' />
+            <format attr='enabled' id='admin-1-label-9th-tier' value='false' />
+            <format attr='enabled' id='admin-1-label-8th-tier' value='false' />
+            <format attr='enabled' id='admin-1-label-7th-tier' value='false' />
+            <format attr='enabled' id='admin-1-label-6th-tier' value='false' />
+            <format attr='enabled' id='admin-1-label-5th-tier' value='false' />
+            <format attr='enabled' id='admin-1-label-4th-tier' value='false' />
+            <format attr='enabled' id='admin-1-label-3rd-tier' value='false' />
+            <format attr='enabled' id='admin-1-label-2nd-tier' value='false' />
+            <format attr='enabled' id='admin-1-label-1st-tier' value='false' />
+            <format attr='enabled' id='us-admin-1-label-abbr-3rd-tier' value='false' />
+            <format attr='enabled' id='us-admin-1-label-abbr-2nd-tier' value='false' />
+            <format attr='enabled' id='us-admin-1-label-abbr-1st-tier' value='false' />
+            <format attr='enabled' id='parks' value='false' />
+            <format attr='enabled' id='landcover_wood' value='false' />
+            <format attr='enabled' id='landcover_scrub' value='false' />
+            <format attr='enabled' id='landcover_grass' value='false' />
+            <format attr='enabled' id='landcover_crop' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+            <format attr='wrap' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.137l2q404598f610elxhp0i7aobi].[avg:CO2_EMISSIONS_TONNES_PER_CAPITA:qk]' />
+              <lod column='[federated.137l2q404598f610elxhp0i7aobi].[tyr:YEAR:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-size' value='12' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.137l2q404598f610elxhp0i7aobi].[none:COUNTRY:nk]</rows>
+        <cols>[federated.137l2q404598f610elxhp0i7aobi].[avg:CO2_EMISSIONS_TONNES_PER_CAPITA:qk]</cols>
+        <pages>
+          <column>[federated.137l2q404598f610elxhp0i7aobi].[tyr:YEAR:ok]</column>
+        </pages>
+      </table>
+      <simple-id uuid='{D4E85100-6559-4AA4-9D80-C48F56A65823}' />
+    </worksheet>
+    <worksheet name='Emisiones de CO2 per cápita'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontname='Times New Roman'>Per Cápita en 2019</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='co2_UE (co2_UE)' name='federated.137l2q404598f610elxhp0i7aobi' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.137l2q404598f610elxhp0i7aobi'>
+            <column caption='Co2 Emissions Tonnes Per Capita' datatype='real' name='[CO2_EMISSIONS_TONNES_PER_CAPITA]' role='measure' type='quantitative' />
+            <column caption='Country' datatype='string' name='[COUNTRY]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Year' datatype='date' name='[YEAR]' role='dimension' type='quantitative' />
+            <column-instance column='[COUNTRY]' derivation='None' name='[none:COUNTRY:nk]' pivot='key' type='nominal' />
+            <column-instance column='[CO2_EMISSIONS_TONNES_PER_CAPITA]' derivation='Sum' name='[sum:CO2_EMISSIONS_TONNES_PER_CAPITA:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[YEAR]' derivation='Year' name='[yr:YEAR:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.137l2q404598f610elxhp0i7aobi].[none:COUNTRY:nk]' direction='DESC' using='[federated.137l2q404598f610elxhp0i7aobi].[sum:CO2_EMISSIONS_TONNES_PER_CAPITA:qk]' />
+          <filter class='categorical' column='[federated.137l2q404598f610elxhp0i7aobi].[yr:YEAR:ok]'>
+            <groupfilter function='member' level='[yr:YEAR:ok]' member='2019' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.137l2q404598f610elxhp0i7aobi].[yr:YEAR:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.137l2q404598f610elxhp0i7aobi].[sum:CO2_EMISSIONS_TONNES_PER_CAPITA:qk]' scope='cols' value='false' />
+            <encoding attr='space' class='0' field='[federated.137l2q404598f610elxhp0i7aobi].[sum:CO2_EMISSIONS_TONNES_PER_CAPITA:qk]' field-type='quantitative' reverse='true' scope='cols' type='space' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.137l2q404598f610elxhp0i7aobi].[none:COUNTRY:nk]' value='false' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.137l2q404598f610elxhp0i7aobi].[sum:CO2_EMISSIONS_TONNES_PER_CAPITA:qk]' palette='brown_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-color' id='refline0' value='#000000' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='div-level' scope='rows' value='10' />
+            <format attr='div-level' scope='cols' value='10' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.137l2q404598f610elxhp0i7aobi].[sum:CO2_EMISSIONS_TONNES_PER_CAPITA:qk]' />
+              <text column='[federated.137l2q404598f610elxhp0i7aobi].[sum:CO2_EMISSIONS_TONNES_PER_CAPITA:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-size' value='12' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='1' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.137l2q404598f610elxhp0i7aobi].[none:COUNTRY:nk]</rows>
+        <cols>[federated.137l2q404598f610elxhp0i7aobi].[sum:CO2_EMISSIONS_TONNES_PER_CAPITA:qk]</cols>
+      </table>
+      <simple-id uuid='{7264FAE5-2ADF-443E-B96E-D9D98739EA55}' />
+    </worksheet>
+    <worksheet name='Varianza de emisiones de CO2 per cápita'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>&lt;</run>
+            <run>Sheet Name</run>
+            <run>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='co2_UE (co2_UE)' name='federated.137l2q404598f610elxhp0i7aobi' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.137l2q404598f610elxhp0i7aobi'>
+            <column caption='Co2 Emissions Tonnes Per Capita' datatype='real' name='[CO2_EMISSIONS_TONNES_PER_CAPITA]' role='measure' type='quantitative' />
+            <column caption='Country' datatype='string' name='[COUNTRY]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Year' datatype='date' name='[YEAR]' role='dimension' type='quantitative' />
+            <column-instance column='[CO2_EMISSIONS_TONNES_PER_CAPITA]' derivation='Sum' name='[diff:sum:CO2_EMISSIONS_TONNES_PER_CAPITA:qk:12]' pivot='key' type='quantitative'>
+              <table-calc diff-options='Fixed' ordering-type='Field' type='Difference'>
+                <order field='[federated.137l2q404598f610elxhp0i7aobi].[tyr:YEAR:qk]' />
+                <sort direction='ASC' using='[federated.137l2q404598f610elxhp0i7aobi].[var:CO2_EMISSIONS_TONNES_PER_CAPITA:qk]' />
+                <address>
+                  <value>#1993-01-01 00:00:00#</value>
+                </address>
+              </table-calc>
+            </column-instance>
+            <column-instance column='[CO2_EMISSIONS_TONNES_PER_CAPITA]' derivation='Sum' name='[diff:sum:CO2_EMISSIONS_TONNES_PER_CAPITA:qk:16]' pivot='key' type='quantitative'>
+              <table-calc diff-options='Fixed' ordering-type='Field' type='Difference'>
+                <order field='[federated.137l2q404598f610elxhp0i7aobi].[tyr:YEAR:ok]' />
+                <sort direction='ASC' using='[federated.137l2q404598f610elxhp0i7aobi].[sum:CO2_EMISSIONS_TONNES_PER_CAPITA:qk]' />
+                <address>
+                  <value>#1993-01-01 00:00:00#</value>
+                </address>
+              </table-calc>
+            </column-instance>
+            <column-instance column='[COUNTRY]' derivation='None' name='[none:COUNTRY:nk]' pivot='key' type='nominal' />
+            <column-instance column='[YEAR]' derivation='None' name='[none:YEAR:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[CO2_EMISSIONS_TONNES_PER_CAPITA]' derivation='Sum' name='[sum:CO2_EMISSIONS_TONNES_PER_CAPITA:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[YEAR]' derivation='Year-Trunc' name='[tyr:YEAR:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[YEAR]' derivation='Year-Trunc' name='[tyr:YEAR:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[CO2_EMISSIONS_TONNES_PER_CAPITA]' derivation='Var' name='[var:CO2_EMISSIONS_TONNES_PER_CAPITA:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.137l2q404598f610elxhp0i7aobi].[Action (Country)]'>
+            <groupfilter function='level-members' level='[COUNTRY]' user:ui-action-filter='[Action1_1C0D274623A84BC89A9B13FCF2644207]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.137l2q404598f610elxhp0i7aobi].[none:YEAR:qk]' included-values='in-range'>
+            <min>#1993-01-01#</min>
+            <max>#2019-01-01#</max>
+          </filter>
+          <slices>
+            <column>[federated.137l2q404598f610elxhp0i7aobi].[none:YEAR:qk]</column>
+            <column>[federated.137l2q404598f610elxhp0i7aobi].[Action (Country)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.137l2q404598f610elxhp0i7aobi].[diff:sum:CO2_EMISSIONS_TONNES_PER_CAPITA:qk:12]' palette='orange_blue_diverging_10_0' reverse='true' type='interpolated' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.137l2q404598f610elxhp0i7aobi].[diff:sum:CO2_EMISSIONS_TONNES_PER_CAPITA:qk:12]' value='Diferencia en emisiones de CO2 desde 1993 hasta 2019'>
+              <formatted-text>
+                <run fontname='Times New Roman' fontsize='12'>Diferencia en emisiones de CO2 desde 1993 hasta 2019</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='background' value='false' />
+            <format attr='enabled' id='barrier_line-land-polygon' value='false' />
+            <format attr='enabled' id='barrier_line-land-line' value='false' />
+            <format attr='enabled' id='national_park' value='false' />
+            <format attr='enabled' id='pitch' value='false' />
+            <format attr='enabled' id='industrial' value='false' />
+            <format attr='enabled' id='built-up-area' value='false' />
+            <format attr='enabled' id='water' value='false' />
+            <format attr='enabled' id='waterway-river-canal' value='false' />
+            <format attr='enabled' id='aeroway-polygon' value='false' />
+            <format attr='enabled' id='aeroway-runway' value='false' />
+            <format attr='enabled' id='aeroway-taxiway' value='false' />
+            <format attr='enabled' id='admin-0-boundaries-bg' value='false' />
+            <format attr='enabled' id='admin-0-boundaries' value='false' />
+            <format attr='enabled' id='admin-0-boundaries-dispute' value='false' />
+            <format attr='enabled' id='admin-0-label-5th-tier' value='false' />
+            <format attr='enabled' id='admin-0-label-4th-tier' value='false' />
+            <format attr='enabled' id='admin-0-label-3rd-tier' value='false' />
+            <format attr='enabled' id='admin-0-label-2nd-tier' value='false' />
+            <format attr='enabled' id='admin-0-label-1st-tier' value='false' />
+            <format attr='enabled' id='admin-0-boundaries-bg-sub' value='false' />
+            <format attr='enabled' id='admin-1-boundaries-supress-bg' value='false' />
+            <format attr='enabled' id='admin-1-boundaries-sm-parents-bg' value='false' />
+            <format attr='enabled' id='admin-1-boundaries-md-parents-bg' value='false' />
+            <format attr='enabled' id='admin-1-boundaries-lg-parents-bg' value='false' />
+            <format attr='enabled' id='admin-0-boundaries-dispute-sub' value='false' />
+            <format attr='enabled' id='admin-0-boundaries-sub' value='false' />
+            <format attr='enabled' id='admin-1-boundaries-supress' value='false' />
+            <format attr='enabled' id='admin-1-boundaries-sm-parents' value='false' />
+            <format attr='enabled' id='admin-1-boundaries-md-parents' value='false' />
+            <format attr='enabled' id='admin-1-boundaries-lg-parents' value='false' />
+            <format attr='enabled' id='admin1-water-lines-usa-tableau' value='false' />
+            <format attr='enabled' id='9-dash-line-casing' value='false' />
+            <format attr='enabled' id='9-dash-line' value='false' />
+            <format attr='enabled' id='admin-1-label-9th-tier' value='false' />
+            <format attr='enabled' id='admin-1-label-8th-tier' value='false' />
+            <format attr='enabled' id='admin-1-label-7th-tier' value='false' />
+            <format attr='enabled' id='admin-1-label-6th-tier' value='false' />
+            <format attr='enabled' id='admin-1-label-5th-tier' value='false' />
+            <format attr='enabled' id='admin-1-label-4th-tier' value='false' />
+            <format attr='enabled' id='admin-1-label-3rd-tier' value='false' />
+            <format attr='enabled' id='admin-1-label-2nd-tier' value='false' />
+            <format attr='enabled' id='admin-1-label-1st-tier' value='false' />
+            <format attr='enabled' id='us-admin-1-label-abbr-3rd-tier' value='false' />
+            <format attr='enabled' id='us-admin-1-label-abbr-2nd-tier' value='false' />
+            <format attr='enabled' id='us-admin-1-label-abbr-1st-tier' value='false' />
+            <format attr='enabled' id='parks' value='false' />
+            <format attr='enabled' id='landcover_wood' value='false' />
+            <format attr='enabled' id='landcover_scrub' value='false' />
+            <format attr='enabled' id='landcover_grass' value='false' />
+            <format attr='enabled' id='landcover_crop' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+            <format attr='wrap' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.137l2q404598f610elxhp0i7aobi].[diff:sum:CO2_EMISSIONS_TONNES_PER_CAPITA:qk:12]' />
+              <text column='[federated.137l2q404598f610elxhp0i7aobi].[none:COUNTRY:nk]' />
+              <text column='[federated.137l2q404598f610elxhp0i7aobi].[diff:sum:CO2_EMISSIONS_TONNES_PER_CAPITA:qk:16]' />
+              <lod column='[federated.137l2q404598f610elxhp0i7aobi].[none:COUNTRY:nk]' />
+              <lod column='[federated.137l2q404598f610elxhp0i7aobi].[tyr:YEAR:qk]' />
+              <geometry column='[federated.137l2q404598f610elxhp0i7aobi].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-size' value='12' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-mode' value='highlight' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.137l2q404598f610elxhp0i7aobi].[Latitude (generated)]</rows>
+        <cols>[federated.137l2q404598f610elxhp0i7aobi].[Longitude (generated)]</cols>
+        <pages>
+          <column>[federated.137l2q404598f610elxhp0i7aobi].[tyr:YEAR:ok]</column>
+        </pages>
+      </table>
+      <simple-id uuid='{02D48D74-1514-44E9-B877-4D25833C46AA}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Emisiones de CO2 en toneladas'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontname='Times New Roman' fontsize='28' italic='true'>&lt;Sheet Name&gt;</run>
+            <run fontalignment='1'>Æ&#10;</run>
+            <run bold='true' fontalignment='1' fontcolor='#555555' fontname='Times New Roman' italic='true'>1993 - 2019</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98690' id='89' param='horz' type-v2='layout-flow' w='99304' x='348' y='655'>
+            <zone h='98690' id='87' type-v2='layout-basic' w='99304' x='348' y='655'>
+              <zone h='86698' id='24' param='horz' type-v2='layout-flow' w='99304' x='348' y='12647'>
+                <zone h='86698' id='22' type-v2='layout-basic' w='99304' x='348' y='12647'>
+                  <zone h='86698' id='14' param='vert' type-v2='layout-flow' w='43632' x='348' y='12647'>
+                    <zone h='86698' id='12' param='horz' type-v2='layout-flow' w='43632' x='348' y='12647'>
+                      <zone h='86698' id='5' type-v2='layout-basic' w='43632' x='348' y='12647'>
+                        <zone h='86698' id='9' name='Emisiones de CO2 per cápita' w='18995' x='348' y='12647'>
+                          <zone-style>
+                            <format attr='border-color' value='#000000' />
+                            <format attr='border-style' value='none' />
+                            <format attr='border-width' value='0' />
+                            <format attr='margin' value='4' />
+                          </zone-style>
+                        </zone>
+                        <zone h='86698' id='10' name='Emisiones de CO2 Total' w='24637' x='19343' y='12647'>
+                          <zone-style>
+                            <format attr='border-color' value='#000000' />
+                            <format attr='border-style' value='none' />
+                            <format attr='border-width' value='0' />
+                            <format attr='margin' value='4' />
+                          </zone-style>
+                        </zone>
+                      </zone>
+                    </zone>
+                  </zone>
+                  <zone h='86698' id='3' name='Varianza de emisiones de CO2 per cápita' show-title='false' w='32914' x='43980' y='12647'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='86698' id='86' name='Emisiones de CO2 en 1993' w='22758' x='76894' y='12647'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+              <zone h='11992' id='15' type-v2='title' w='99304' x='348' y='655'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='6556' id='8' name='Varianza de emisiones de CO2 per cápita' pane-specification-id='0' param='[federated.137l2q404598f610elxhp0i7aobi].[diff:sum:CO2_EMISSIONS_TONNES_PER_CAPITA:qk:12]' type-v2='color' w='28250' x='44750' y='18556' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontname='Times New Roman' fontsize='28' italic='true'>&lt;Sheet Name&gt;</run>
+                <run fontalignment='1'>Æ&#10;</run>
+                <run bold='true' fontalignment='1' fontcolor='#555555' fontname='Times New Roman' italic='true'>1993 - 2019</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='1300' minheight='1300' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='121' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98690' id='120' param='vert' type-v2='layout-flow' w='99304' x='348' y='655'>
+                <zone h='11992' id='15' type-v2='title' w='99304' x='348' y='655'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='86698' id='9' is-fixed='true' name='Emisiones de CO2 per cápita' w='18995' x='348' y='12647'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='86698' id='10' is-fixed='true' name='Emisiones de CO2 Total' w='24637' x='19343' y='12647'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='86698' id='3' is-fixed='true' name='Varianza de emisiones de CO2 per cápita' show-title='false' w='32914' x='43980' y='12647'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6556' id='8' name='Varianza de emisiones de CO2 per cápita' pane-specification-id='0' param='[federated.137l2q404598f610elxhp0i7aobi].[diff:sum:CO2_EMISSIONS_TONNES_PER_CAPITA:qk:12]' type-v2='color' w='28250' x='44750' y='18556'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='86698' id='86' is-fixed='true' name='Emisiones de CO2 en 1993' w='22758' x='76894' y='12647'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{ABF6EE8B-F444-4B83-AAFA-FDD4F2C72E69}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='dashboard' maximized='true' name='Emisiones de CO2 en toneladas'>
+      <viewpoints>
+        <viewpoint name='Emisiones de CO2 Total'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Emisiones de CO2 en 1993'>
+          <current-page>
+            <multibucket>
+              <bucket>#1993-01-01 00:00:00#</bucket>
+            </multibucket>
+          </current-page>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Emisiones de CO2 per cápita'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Varianza de emisiones de CO2 per cápita'>
+          <current-page>
+            <multibucket>
+              <bucket>#2019-01-01 00:00:00#</bucket>
+            </multibucket>
+          </current-page>
+          <zoom type='entire-view' />
+          <default-map-tool-selection tool='1' />
+        </viewpoint>
+      </viewpoints>
+      <active id='3' />
+      <simple-id uuid='{ECB02F02-6DE2-457C-BA0E-36175E0A96FA}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Emisiones de CO2 Total'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='172'>
+            <card pane-specification-id='0' param='[federated.137l2q404598f610elxhp0i7aobi].[sum:CO2_EMISSIONS_TONNES:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.137l2q404598f610elxhp0i7aobi].[none:COUNTRY:nk]</field>
+            <field>[federated.137l2q404598f610elxhp0i7aobi].[none:YEAR:qk]</field>
+            <field>[federated.137l2q404598f610elxhp0i7aobi].[yr:YEAR:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{91ECFE06-17D6-44C6-A722-732A35E95443}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Emisiones de CO2 en 1993'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='172'>
+            <card type='currpage' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <current-page>
+          <multibucket>
+            <bucket>#1993-01-01 00:00:00#</bucket>
+          </multibucket>
+        </current-page>
+        <highlight>
+          <color-one-way>
+            <field>[federated.137l2q404598f610elxhp0i7aobi].[diff:sum:CO2_EMISSIONS_TONNES_PER_CAPITA:qk:12]</field>
+            <field>[federated.137l2q404598f610elxhp0i7aobi].[none:COUNTRY:nk]</field>
+            <field>[federated.137l2q404598f610elxhp0i7aobi].[none:YEAR:qk]</field>
+            <field>[federated.137l2q404598f610elxhp0i7aobi].[tyr:YEAR:qk]</field>
+            <field>[federated.137l2q404598f610elxhp0i7aobi].[yr:YEAR:ok]</field>
+          </color-one-way>
+        </highlight>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{865AFB96-1439-4B76-9ECE-4AAEDF186ADC}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Emisiones de CO2 per cápita'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='172'>
+            <card pane-specification-id='0' param='[federated.137l2q404598f610elxhp0i7aobi].[sum:CO2_EMISSIONS_TONNES_PER_CAPITA:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.137l2q404598f610elxhp0i7aobi].[none:COUNTRY:nk]</field>
+            <field>[federated.137l2q404598f610elxhp0i7aobi].[none:YEAR:qk]</field>
+            <field>[federated.137l2q404598f610elxhp0i7aobi].[sum:CO2_EMISSIONS_TONNES_PER_CAPITA:qk]</field>
+            <field>[federated.137l2q404598f610elxhp0i7aobi].[yr:YEAR:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{12F03D4D-6A41-47A6-A3A3-BBE704D5D34D}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Varianza de emisiones de CO2 per cápita'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='172'>
+            <card pane-specification-id='0' param='[federated.137l2q404598f610elxhp0i7aobi].[diff:sum:CO2_EMISSIONS_TONNES_PER_CAPITA:qk:12]' type='color' />
+            <card type='currpage' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <current-page>
+          <multibucket>
+            <bucket>#2019-01-01 00:00:00#</bucket>
+          </multibucket>
+        </current-page>
+        <highlight>
+          <color-one-way>
+            <field>[federated.137l2q404598f610elxhp0i7aobi].[diff:sum:CO2_EMISSIONS_TONNES_PER_CAPITA:qk:12]</field>
+            <field>[federated.137l2q404598f610elxhp0i7aobi].[none:COUNTRY:nk]</field>
+            <field>[federated.137l2q404598f610elxhp0i7aobi].[none:YEAR:qk]</field>
+            <field>[federated.137l2q404598f610elxhp0i7aobi].[tyr:YEAR:qk]</field>
+            <field>[federated.137l2q404598f610elxhp0i7aobi].[yr:YEAR:ok]</field>
+          </color-one-way>
+        </highlight>
+        <default-map-tool-selection tool='1' />
+      </viewpoint>
+      <simple-id uuid='{489B4F4F-C6F0-4535-9747-205555C11840}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Emisiones de CO2 en toneladas' width='192'>
+      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
+      SUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>

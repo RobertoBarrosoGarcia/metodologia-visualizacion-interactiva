@@ -1,0 +1,1612 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20213.21.1217.2247                               -->
+<workbook original-version='18.1' source-build='2021.3.6 (20213.21.1217.2247)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='Impuestos_16424533065680' path='/workbooks' revision='1.8' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <style>
+    <_.fcp.MarkAnimation.true...style-rule element='animation'>
+      <format attr='animation-on' value='ao-off' />
+    </_.fcp.MarkAnimation.true...style-rule>
+  </style>
+  <datasources>
+    <datasource caption='tax_revenues_UE (tax_revenues_UE)' inline='true' name='federated.17zzhfw0ozyxga1819lze0ybfzoy' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='tax_revenues_UE' name='excel-direct.160zhpn10ocrus1ckpntw1v039hg'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/Roberto Barroso/Documents/Universidad/Trabajo fin de Master/Scripts_ETL/Datos/UE/tax_revenues_UE.xlsx' interpretationMode='0' password='' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.160zhpn10ocrus1ckpntw1v039hg' name='tax_revenues_UE' table='[tax_revenues_UE$]' type='table'>
+          <columns gridOrigin='A1:D925:no:A1:D925:0' header='yes' outcome='6'>
+            <column datatype='string' name='COUNTRY' ordinal='0' />
+            <column datatype='string' name='ISO_CODE' ordinal='1' />
+            <column datatype='date' date-parse-format='yyyy' name='YEAR' ordinal='2' />
+            <column datatype='real' name='TAXES_REVENUE_BY_GDP' ordinal='3' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.160zhpn10ocrus1ckpntw1v039hg' name='tax_revenues_UE' table='[tax_revenues_UE$]' type='table'>
+          <columns gridOrigin='A1:D925:no:A1:D925:0' header='yes' outcome='6'>
+            <column datatype='string' name='COUNTRY' ordinal='0' />
+            <column datatype='string' name='ISO_CODE' ordinal='1' />
+            <column datatype='date' date-parse-format='yyyy' name='YEAR' ordinal='2' />
+            <column datatype='real' name='TAXES_REVENUE_BY_GDP' ordinal='3' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[tax_revenues_UE]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>1</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:D925:no:A1:D925:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COUNTRY</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[COUNTRY]</local-name>
+            <parent-name>[tax_revenues_UE]</parent-name>
+            <remote-alias>COUNTRY</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tax!revenues!UE_402C49A0610B4CA8BEF998E037E7BFEE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ISO_CODE</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[ISO_CODE]</local-name>
+            <parent-name>[tax_revenues_UE]</parent-name>
+            <remote-alias>ISO_CODE</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tax!revenues!UE_402C49A0610B4CA8BEF998E037E7BFEE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YEAR</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[YEAR]</local-name>
+            <parent-name>[tax_revenues_UE]</parent-name>
+            <remote-alias>YEAR</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tax!revenues!UE_402C49A0610B4CA8BEF998E037E7BFEE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TAXES_REVENUE_BY_GDP</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[TAXES_REVENUE_BY_GDP]</local-name>
+            <parent-name>[tax_revenues_UE]</parent-name>
+            <remote-alias>TAXES_REVENUE_BY_GDP</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tax!revenues!UE_402C49A0610B4CA8BEF998E037E7BFEE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Country' datatype='string' name='[COUNTRY]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Iso Code' datatype='string' name='[ISO_CODE]' role='dimension' type='nominal' />
+      <column caption='Taxes Revenue By Gdp' datatype='real' name='[TAXES_REVENUE_BY_GDP]' role='measure' type='quantitative' />
+      <column caption='Year' datatype='date' name='[YEAR]' role='dimension' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='tax_revenues_UE' datatype='table' name='[__tableau_internal_object_id__].[tax!revenues!UE_402C49A0610B4CA8BEF998E037E7BFEE]' role='measure' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='es_ES' class='hyper' dbname='C:/Users/Roberto Barroso/Documents/Mi Repositorio de Tableau/Fuentes de datos/tax_revenues_UE (tax_revenues_UE).hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='01/17/2022 08:59:56 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='tax_revenues_UE (tax_revenues_UE)' increment-value='%null%' refresh-type='create' rows-inserted='924' timestamp-start='2022-01-17 20:59:55.276' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>COUNTRY</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[COUNTRY]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>COUNTRY</remote-alias>
+              <ordinal>0</ordinal>
+              <family>tax_revenues_UE</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LES_RES_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ISO_CODE</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ISO_CODE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ISO_CODE</remote-alias>
+              <ordinal>1</ordinal>
+              <family>tax_revenues_UE</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LES_RES_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>YEAR</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[YEAR]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>YEAR</remote-alias>
+              <ordinal>2</ordinal>
+              <family>tax_revenues_UE</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>40</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TAXES_REVENUE_BY_GDP</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[TAXES_REVENUE_BY_GDP]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TAXES_REVENUE_BY_GDP</remote-alias>
+              <ordinal>3</ordinal>
+              <family>tax_revenues_UE</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>924</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;España&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='tax_revenues_UE' id='tax!revenues!UE_402C49A0610B4CA8BEF998E037E7BFEE'>
+            <properties context=''>
+              <relation connection='excel-direct.160zhpn10ocrus1ckpntw1v039hg' name='tax_revenues_UE' table='[tax_revenues_UE$]' type='table'>
+                <columns gridOrigin='A1:D925:no:A1:D925:0' header='yes' outcome='6'>
+                  <column datatype='string' name='COUNTRY' ordinal='0' />
+                  <column datatype='string' name='ISO_CODE' ordinal='1' />
+                  <column datatype='date' date-parse-format='yyyy' name='YEAR' ordinal='2' />
+                  <column datatype='real' name='TAXES_REVENUE_BY_GDP' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='taxes_UE (taxes_UE)' inline='true' name='federated.1afnww90vm7vpm1b44meg08ndke0' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='taxes_UE' name='excel-direct.0g2hfcc0hye1r81fcx7wa11iiql5'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/Roberto Barroso/Documents/Universidad/Trabajo fin de Master/Scripts_ETL/Datos/UE/taxes_UE.xlsx' interpretationMode='0' password='' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.0g2hfcc0hye1r81fcx7wa11iiql5' name='taxes_UE' table='[taxes_UE$]' type='table'>
+          <columns gridOrigin='A1:E28:no:A1:E28:0' header='yes' outcome='6'>
+            <column datatype='string' name='COUNTRY' ordinal='0' />
+            <column datatype='string' name='ISO_CODE' ordinal='1' />
+            <column datatype='date' date-parse-format='yyyy' name='YEAR' ordinal='2' />
+            <column datatype='real' name='TAXES_INCOME' ordinal='3' />
+            <column datatype='real' name='TAXES_ON_GOODS_SERVICES' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.0g2hfcc0hye1r81fcx7wa11iiql5' name='taxes_UE' table='[taxes_UE$]' type='table'>
+          <columns gridOrigin='A1:E28:no:A1:E28:0' header='yes' outcome='6'>
+            <column datatype='string' name='COUNTRY' ordinal='0' />
+            <column datatype='string' name='ISO_CODE' ordinal='1' />
+            <column datatype='date' date-parse-format='yyyy' name='YEAR' ordinal='2' />
+            <column datatype='real' name='TAXES_INCOME' ordinal='3' />
+            <column datatype='real' name='TAXES_ON_GOODS_SERVICES' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[taxes_UE]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>1</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:E28:no:A1:E28:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COUNTRY</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[COUNTRY]</local-name>
+            <parent-name>[taxes_UE]</parent-name>
+            <remote-alias>COUNTRY</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[taxes!UE_99C68EC7C5314D06A340ED7DADAACE5D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ISO_CODE</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[ISO_CODE]</local-name>
+            <parent-name>[taxes_UE]</parent-name>
+            <remote-alias>ISO_CODE</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[taxes!UE_99C68EC7C5314D06A340ED7DADAACE5D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YEAR</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[YEAR]</local-name>
+            <parent-name>[taxes_UE]</parent-name>
+            <remote-alias>YEAR</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[taxes!UE_99C68EC7C5314D06A340ED7DADAACE5D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TAXES_INCOME</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[TAXES_INCOME]</local-name>
+            <parent-name>[taxes_UE]</parent-name>
+            <remote-alias>TAXES_INCOME</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[taxes!UE_99C68EC7C5314D06A340ED7DADAACE5D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TAXES_ON_GOODS_SERVICES</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[TAXES_ON_GOODS_SERVICES]</local-name>
+            <parent-name>[taxes_UE]</parent-name>
+            <remote-alias>TAXES_ON_GOODS_SERVICES</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[taxes!UE_99C68EC7C5314D06A340ED7DADAACE5D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[:Measure Names]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;[federated.1afnww90vm7vpm1b44meg08ndke0].[avg:TAXES_INCOME:qk]&quot;' value='Impuestos sobre la renta' />
+          <alias key='&quot;[federated.1afnww90vm7vpm1b44meg08ndke0].[avg:TAXES_ON_GOODS_SERVICES:qk]&quot;' value='Impuestos en bienes y servicios' />
+          <alias key='&quot;[federated.1afnww90vm7vpm1b44meg08ndke0].[sum:TAXES_ON_GOODS_SERVICES:qk]&quot;' value='Impuestos sobre bienes y servicios' />
+        </aliases>
+      </column>
+      <column caption='Country' datatype='string' name='[COUNTRY]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Iso Code' datatype='string' name='[ISO_CODE]' role='dimension' type='nominal' />
+      <column caption='Taxes Income' datatype='real' name='[TAXES_INCOME]' role='measure' type='quantitative' />
+      <column caption='Taxes On Goods Services' datatype='real' name='[TAXES_ON_GOODS_SERVICES]' role='measure' type='quantitative' />
+      <column caption='Year' datatype='date' name='[YEAR]' role='dimension' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='taxes_UE' datatype='table' name='[__tableau_internal_object_id__].[taxes!UE_99C68EC7C5314D06A340ED7DADAACE5D]' role='measure' type='quantitative' />
+      <column-instance column='[TAXES_INCOME]' derivation='Avg' name='[avg:TAXES_INCOME:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[TAXES_ON_GOODS_SERVICES]' derivation='Avg' name='[avg:TAXES_ON_GOODS_SERVICES:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[TAXES_ON_GOODS_SERVICES]' derivation='Sum' name='[sum:TAXES_ON_GOODS_SERVICES:qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='es_ES' class='hyper' dbname='C:/Users/Roberto Barroso/Documents/Mi Repositorio de Tableau/Fuentes de datos/taxes_UE (taxes_UE).hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='01/17/2022 09:01:18 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='taxes_UE (taxes_UE)' increment-value='%null%' refresh-type='create' rows-inserted='27' timestamp-start='2022-01-17 21:01:17.758' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>COUNTRY</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[COUNTRY]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>COUNTRY</remote-alias>
+              <ordinal>0</ordinal>
+              <family>taxes_UE</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LES_RES_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[taxes!UE_99C68EC7C5314D06A340ED7DADAACE5D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ISO_CODE</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ISO_CODE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ISO_CODE</remote-alias>
+              <ordinal>1</ordinal>
+              <family>taxes_UE</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LES_RES_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[taxes!UE_99C68EC7C5314D06A340ED7DADAACE5D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>YEAR</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[YEAR]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>YEAR</remote-alias>
+              <ordinal>2</ordinal>
+              <family>taxes_UE</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[taxes!UE_99C68EC7C5314D06A340ED7DADAACE5D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TAXES_INCOME</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[TAXES_INCOME]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TAXES_INCOME</remote-alias>
+              <ordinal>3</ordinal>
+              <family>taxes_UE</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[taxes!UE_99C68EC7C5314D06A340ED7DADAACE5D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TAXES_ON_GOODS_SERVICES</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[TAXES_ON_GOODS_SERVICES]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TAXES_ON_GOODS_SERVICES</remote-alias>
+              <ordinal>4</ordinal>
+              <family>taxes_UE</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[taxes!UE_99C68EC7C5314D06A340ED7DADAACE5D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.1afnww90vm7vpm1b44meg08ndke0].[avg:TAXES_INCOME:qk]&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;[federated.1afnww90vm7vpm1b44meg08ndke0].[avg:TAXES_ON_GOODS_SERVICES:qk]&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;[federated.1afnww90vm7vpm1b44meg08ndke0].[sum:TAXES_ON_GOODS_SERVICES:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;España&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='taxes_UE' id='taxes!UE_99C68EC7C5314D06A340ED7DADAACE5D'>
+            <properties context=''>
+              <relation connection='excel-direct.0g2hfcc0hye1r81fcx7wa11iiql5' name='taxes_UE' table='[taxes_UE$]' type='table'>
+                <columns gridOrigin='A1:E28:no:A1:E28:0' header='yes' outcome='6'>
+                  <column datatype='string' name='COUNTRY' ordinal='0' />
+                  <column datatype='string' name='ISO_CODE' ordinal='1' />
+                  <column datatype='date' date-parse-format='yyyy' name='YEAR' ordinal='2' />
+                  <column datatype='real' name='TAXES_INCOME' ordinal='3' />
+                  <column datatype='real' name='TAXES_ON_GOODS_SERVICES' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Resaltar1' name='[Action1_09B75440E94A4659AA8DF20ED87D69F3]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Impuestos en 2013 en la Unión Europea' type='sheet' worksheet='Impuestos' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Country' />
+        <param name='target' value='Impuestos en 2013 en la Unión Europea' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Impuestos'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='taxes_UE (taxes_UE)' name='federated.1afnww90vm7vpm1b44meg08ndke0' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1afnww90vm7vpm1b44meg08ndke0'>
+            <column caption='Country' datatype='string' name='[COUNTRY]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Taxes Income' datatype='real' name='[TAXES_INCOME]' role='measure' type='quantitative' />
+            <column caption='Taxes On Goods Services' datatype='real' name='[TAXES_ON_GOODS_SERVICES]' role='measure' type='quantitative' />
+            <column-instance column='[TAXES_INCOME]' derivation='Avg' name='[avg:TAXES_INCOME:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[TAXES_ON_GOODS_SERVICES]' derivation='Avg' name='[avg:TAXES_ON_GOODS_SERVICES:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[COUNTRY]' derivation='None' name='[none:COUNTRY:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1afnww90vm7vpm1b44meg08ndke0].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1afnww90vm7vpm1b44meg08ndke0].[avg:TAXES_ON_GOODS_SERVICES:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1afnww90vm7vpm1b44meg08ndke0].[avg:TAXES_INCOME:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.1afnww90vm7vpm1b44meg08ndke0].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.1afnww90vm7vpm1b44meg08ndke0].[avg:TAXES_ON_GOODS_SERVICES:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1afnww90vm7vpm1b44meg08ndke0].[avg:TAXES_INCOME:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.1afnww90vm7vpm1b44meg08ndke0].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.1afnww90vm7vpm1b44meg08ndke0].[Multiple Values]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.1afnww90vm7vpm1b44meg08ndke0].[:Measure Names]' value='false' />
+            <format attr='font-size' field='[federated.1afnww90vm7vpm1b44meg08ndke0].[none:COUNTRY:nk]' value='12' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='background-color' value='#ffffff' />
+            <format attr='border-style' value='dotted' />
+            <format attr='font-size' value='12' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1afnww90vm7vpm1b44meg08ndke0].[:Measure Names]' />
+              <text column='[federated.1afnww90vm7vpm1b44meg08ndke0].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-size' value='12' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-cull' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1afnww90vm7vpm1b44meg08ndke0].[Multiple Values]</rows>
+        <cols>([federated.1afnww90vm7vpm1b44meg08ndke0].[:Measure Names] / [federated.1afnww90vm7vpm1b44meg08ndke0].[none:COUNTRY:nk])</cols>
+      </table>
+      <simple-id uuid='{7604F907-A4E3-42E2-91B8-264AB71F3192}' />
+    </worksheet>
+    <worksheet name='Ingresos fiscales'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='tax_revenues_UE (tax_revenues_UE)' name='federated.17zzhfw0ozyxga1819lze0ybfzoy' />
+          </datasources>
+          <datasource-dependencies datasource='federated.17zzhfw0ozyxga1819lze0ybfzoy'>
+            <column caption='Taxes Revenue By Gdp' datatype='real' name='[TAXES_REVENUE_BY_GDP]' role='measure' type='quantitative' />
+            <column caption='Year' datatype='date' name='[YEAR]' role='dimension' type='quantitative' />
+            <column-instance column='[TAXES_REVENUE_BY_GDP]' derivation='Avg' name='[avg:TAXES_REVENUE_BY_GDP:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[YEAR]' derivation='Year-Trunc' name='[tyr:YEAR:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' domain-expand='false' field='[federated.17zzhfw0ozyxga1819lze0ybfzoy].[avg:TAXES_REVENUE_BY_GDP:qk]' field-type='quantitative' scope='rows' type='space' />
+            <format attr='display' class='0' field='[federated.17zzhfw0ozyxga1819lze0ybfzoy].[avg:TAXES_REVENUE_BY_GDP:qk]' scope='rows' value='false' />
+            <format attr='title' class='0' field='[federated.17zzhfw0ozyxga1819lze0ybfzoy].[tyr:YEAR:qk]' scope='cols' value='' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.17zzhfw0ozyxga1819lze0ybfzoy].[avg:TAXES_REVENUE_BY_GDP:qk]' value='n#,##0.00;-#,##0.00' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+            <format attr='line-visibility' id='refline0' value='on' />
+            <format attr='line-pattern-only' id='refline0' value='dashed' />
+            <format attr='stroke-size' id='refline0' value='1' />
+            <format attr='stroke-color' id='refline0' value='#4e79a7' />
+            <format attr='font-family' id='refline0' value='Times New Roman' />
+            <format attr='color' id='refline0' value='#4e79a7' />
+            <format attr='font-size' id='refline0' value='12' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.17zzhfw0ozyxga1819lze0ybfzoy].[avg:TAXES_REVENUE_BY_GDP:qk]' />
+            </encodings>
+            <trendline degree='6' enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='polynomial' />
+            <reference-line axis-column='[federated.17zzhfw0ozyxga1819lze0ybfzoy].[tyr:YEAR:qk]' enable-instant-analytics='true' formula='constant' id='refline0' label='1993 - Unión Europea' label-type='custom' scope='per-table' value='#1993-01-01 00:00:00#' value-column='[federated.17zzhfw0ozyxga1819lze0ybfzoy].[tyr:YEAR:qk]' z-order='1' />
+            <customized-label>
+              <formatted-text>
+                <run>&lt;</run>
+                <run>[federated.17zzhfw0ozyxga1819lze0ybfzoy].[avg:TAXES_REVENUE_BY_GDP:qk]</run>
+                <run>&gt;%</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='color' value='#4e79a7' />
+                <format attr='font-size' value='12' />
+                <format attr='font-weight' value='normal' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='1' />
+                <format attr='stroke-color' value='#f28e2b' />
+                <format attr='line-visibility' value='on' />
+                <format attr='line-pattern-only' value='dashed' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.17zzhfw0ozyxga1819lze0ybfzoy].[avg:TAXES_REVENUE_BY_GDP:qk]</rows>
+        <cols>[federated.17zzhfw0ozyxga1819lze0ybfzoy].[tyr:YEAR:qk]</cols>
+      </table>
+      <simple-id uuid='{88A1FC62-6779-49E6-9613-523E89722758}' />
+    </worksheet>
+    <worksheet name='Ingresos fiscales en España (% del PIB)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontname='Times New Roman' fontsize='24' italic='true'>&lt;</run>
+            <run bold='true' fontalignment='1' fontname='Times New Roman' fontsize='24' italic='true'>Sheet Name</run>
+            <run bold='true' fontalignment='1' fontname='Times New Roman' fontsize='24' italic='true'>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='tax_revenues_UE (tax_revenues_UE)' name='federated.17zzhfw0ozyxga1819lze0ybfzoy' />
+          </datasources>
+          <datasource-dependencies datasource='federated.17zzhfw0ozyxga1819lze0ybfzoy'>
+            <column caption='Country' datatype='string' name='[COUNTRY]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Taxes Revenue By Gdp' datatype='real' name='[TAXES_REVENUE_BY_GDP]' role='measure' type='quantitative' />
+            <column caption='Year' datatype='date' name='[YEAR]' role='dimension' type='quantitative' />
+            <column-instance column='[TAXES_REVENUE_BY_GDP]' derivation='Avg' name='[avg:TAXES_REVENUE_BY_GDP:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[COUNTRY]' derivation='None' name='[none:COUNTRY:nk]' pivot='key' type='nominal' />
+            <column-instance column='[YEAR]' derivation='Year-Trunc' name='[tyr:YEAR:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.17zzhfw0ozyxga1819lze0ybfzoy].[none:COUNTRY:nk]'>
+            <groupfilter function='member' level='[none:COUNTRY:nk]' member='&quot;Spain&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.17zzhfw0ozyxga1819lze0ybfzoy].[none:COUNTRY:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' domain-expand='false' field='[federated.17zzhfw0ozyxga1819lze0ybfzoy].[avg:TAXES_REVENUE_BY_GDP:qk]' field-type='quantitative' max='37.985084281924202' min='10.0' range-type='fixed' scope='rows' type='space' />
+            <format attr='display' class='0' field='[federated.17zzhfw0ozyxga1819lze0ybfzoy].[avg:TAXES_REVENUE_BY_GDP:qk]' scope='rows' value='false' />
+            <format attr='title' class='0' field='[federated.17zzhfw0ozyxga1819lze0ybfzoy].[tyr:YEAR:qk]' scope='cols' value='' />
+            <encoding attr='space' class='0' field='[federated.17zzhfw0ozyxga1819lze0ybfzoy].[tyr:YEAR:qk]' field-type='quantitative' major-origin='#1979-01-01 00:00:00#' major-spacing='1.0' major-units='years' max='#2020-01-01 00:00:00#' min='#1979-01-01 00:00:00#' range-type='fixed' scope='cols' type='space' />
+            <format attr='tick-color' field='[federated.17zzhfw0ozyxga1819lze0ybfzoy].[tyr:YEAR:qk]' value='#000000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.17zzhfw0ozyxga1819lze0ybfzoy].[avg:TAXES_REVENUE_BY_GDP:qk]' value='n#,##0.00;-#,##0.00' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-family' field='[federated.17zzhfw0ozyxga1819lze0ybfzoy].[tyr:YEAR:qk]' value='Times New Roman' />
+            <format attr='font-size' field='[federated.17zzhfw0ozyxga1819lze0ybfzoy].[tyr:YEAR:qk]' value='10' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+            <format attr='line-visibility' id='refline0' value='on' />
+            <format attr='line-pattern-only' id='refline0' value='dashed' />
+            <format attr='stroke-size' id='refline0' value='1' />
+            <format attr='stroke-color' id='refline0' value='#4e79a7' />
+            <format attr='font-family' id='refline0' value='Times New Roman' />
+            <format attr='color' id='refline0' value='#4e79a7' />
+            <format attr='font-size' id='refline0' value='12' />
+            <format attr='font-weight' id='refline0' value='bold' />
+            <format attr='vertical-align' id='refline0' value='top' />
+            <format attr='fill-above' id='refline1' value='#00000000' />
+            <format attr='fill-below' id='refline1' value='#00000000' />
+            <format attr='line-visibility' id='refline1' value='on' />
+            <format attr='line-pattern-only' id='refline1' value='dashed' />
+            <format attr='stroke-size' id='refline1' value='1' />
+            <format attr='stroke-color' id='refline1' value='#606b76' />
+            <format attr='font-family' id='refline1' value='Times New Roman' />
+            <format attr='font-size' id='refline1' value='12' />
+            <format attr='color' id='refline1' value='#606b76' />
+            <format attr='font-weight' id='refline1' value='bold' />
+            <format attr='vertical-align' id='refline1' value='top' />
+            <format attr='text-align' id='refline1' value='left' />
+            <format attr='wrap' id='refline1' value='auto' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+            <format attr='stroke-color' scope='cols' value='#e6e6e6' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.17zzhfw0ozyxga1819lze0ybfzoy].[avg:TAXES_REVENUE_BY_GDP:qk]' />
+            </encodings>
+            <trendline degree='6' enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='polynomial' />
+            <reference-line axis-column='[federated.17zzhfw0ozyxga1819lze0ybfzoy].[tyr:YEAR:qk]' enable-instant-analytics='true' formula='constant' id='refline0' label='Creación de la Unión Europea' label-type='custom' scope='per-table' value='#1993-01-01 00:00:00#' value-column='[federated.17zzhfw0ozyxga1819lze0ybfzoy].[tyr:YEAR:qk]' z-order='1' />
+            <reference-line axis-column='[federated.17zzhfw0ozyxga1819lze0ybfzoy].[tyr:YEAR:qk]' enable-instant-analytics='true' formula='constant' id='refline1' label='Inclusión de España en la UE' label-type='custom' scope='per-table' value='#1985-01-01 00:00:00#' value-column='[federated.17zzhfw0ozyxga1819lze0ybfzoy].[tyr:YEAR:qk]' z-order='2' />
+            <customized-label>
+              <formatted-text>
+                <run>&lt;</run>
+                <run>[federated.17zzhfw0ozyxga1819lze0ybfzoy].[avg:TAXES_REVENUE_BY_GDP:qk]</run>
+                <run>&gt;%</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='color' value='#4e79a7' />
+                <format attr='font-size' value='12' />
+                <format attr='font-weight' value='normal' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='1' />
+                <format attr='stroke-color' value='#f28e2b' />
+                <format attr='line-visibility' value='on' />
+                <format attr='line-pattern-only' value='dashed' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.17zzhfw0ozyxga1819lze0ybfzoy].[avg:TAXES_REVENUE_BY_GDP:qk]</rows>
+        <cols>[federated.17zzhfw0ozyxga1819lze0ybfzoy].[tyr:YEAR:qk]</cols>
+      </table>
+      <simple-id uuid='{AC8612A3-97D2-4542-B523-5E1C4E985CBD}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Impuestos en 2013 en la Unión Europea'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontname='Times New Roman' fontsize='28' italic='true'>&lt;</run>
+            <run bold='true' fontalignment='1' fontname='Times New Roman' fontsize='28' italic='true'>Sheet Name</run>
+            <run bold='true' fontalignment='1' fontname='Times New Roman' fontsize='28' italic='true'>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98690' id='10' param='vert' type-v2='layout-flow' w='99304' x='348' y='655'>
+            <zone h='4996' id='11' type-v2='title' w='99304' x='348' y='655'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='93694' id='7' param='horz' type-v2='layout-flow' w='99304' x='348' y='5651'>
+              <zone h='93694' id='5' type-v2='layout-basic' w='99304' x='348' y='5651'>
+                <zone h='93694' id='3' name='Impuestos' show-title='false' w='99304' x='348' y='5651'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='6470' id='8' name='Impuestos' pane-specification-id='0' param='[federated.1afnww90vm7vpm1b44meg08ndke0].[:Measure Names]' show-title='false' type-v2='color' w='17806' x='41097' y='19902' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontname='Times New Roman' fontsize='28' italic='true'>&lt;</run>
+                <run bold='true' fontalignment='1' fontname='Times New Roman' fontsize='28' italic='true'>Sheet Name</run>
+                <run bold='true' fontalignment='1' fontname='Times New Roman' fontsize='28' italic='true'>&gt;</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='108' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98690' id='107' param='vert' type-v2='layout-flow' w='99304' x='348' y='655'>
+                <zone h='4996' id='11' type-v2='title' w='99304' x='348' y='655'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='93694' id='3' is-fixed='true' name='Impuestos' show-title='false' w='99304' x='348' y='5651'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6470' id='8' name='Impuestos' pane-specification-id='0' param='[federated.1afnww90vm7vpm1b44meg08ndke0].[:Measure Names]' show-title='false' type-v2='color' w='17806' x='41097' y='19902'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{7A345041-E60D-4346-92DA-51FAF59430FD}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Ingresos fiscales en la Unión Europea (% del PIB)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontname='Times New Roman' fontsize='28' italic='true'>&lt;</run>
+            <run bold='true' fontalignment='1' fontname='Times New Roman' fontsize='28' italic='true'>Sheet Name</run>
+            <run bold='true' fontalignment='1' fontname='Times New Roman' fontsize='28' italic='true'>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98690' id='7' param='vert' type-v2='layout-flow' w='99304' x='348' y='655'>
+            <zone h='4996' id='8' type-v2='title' w='99304' x='348' y='655'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='93694' id='5' type-v2='layout-basic' w='99304' x='348' y='5651'>
+              <zone h='93694' id='3' name='Ingresos fiscales' show-title='false' w='99304' x='348' y='5651'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontname='Times New Roman' fontsize='28' italic='true'>&lt;</run>
+                <run bold='true' fontalignment='1' fontname='Times New Roman' fontsize='28' italic='true'>Sheet Name</run>
+                <run bold='true' fontalignment='1' fontname='Times New Roman' fontsize='28' italic='true'>&gt;</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='77' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98690' id='76' param='vert' type-v2='layout-flow' w='99304' x='348' y='655'>
+                <zone h='4996' id='8' type-v2='title' w='99304' x='348' y='655'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='93694' id='3' is-fixed='true' name='Ingresos fiscales' show-title='false' w='99304' x='348' y='5651'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{D88E776B-3F13-4548-9437-6AC5E7763E5A}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='ingresos_esp'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98690' id='3' name='Ingresos fiscales en España (% del PIB)' w='99304' x='348' y='655'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='44' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98690' id='43' param='vert' type-v2='layout-flow' w='99304' x='348' y='655'>
+                <zone fixed-size='280' h='98690' id='3' is-fixed='true' name='Ingresos fiscales en España (% del PIB)' w='99304' x='348' y='655'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{94708414-4B73-43A5-8F68-741D7F7248F3}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='63'>
+    <window class='dashboard' name='Impuestos en 2013 en la Unión Europea'>
+      <viewpoints>
+        <viewpoint name='Impuestos'>
+          <zoom type='entire-view' />
+          <highlight>
+            <color-one-way>
+              <field>[federated.1afnww90vm7vpm1b44meg08ndke0].[:Measure Names]</field>
+            </color-one-way>
+          </highlight>
+        </viewpoint>
+      </viewpoints>
+      <active id='3' />
+      <simple-id uuid='{A1ABFA64-4B2E-4D2F-94B3-C599D16CDDE6}' />
+    </window>
+    <window class='dashboard' name='Ingresos fiscales en la Unión Europea (% del PIB)'>
+      <viewpoints>
+        <viewpoint name='Ingresos fiscales'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='3' />
+      <simple-id uuid='{B319F094-680E-467D-9B48-84EF7736A023}' />
+    </window>
+    <window class='dashboard' maximized='true' name='ingresos_esp'>
+      <viewpoints>
+        <viewpoint name='Ingresos fiscales en España (% del PIB)'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='3' />
+      <simple-id uuid='{6B5DACED-1CD3-4971-8AEF-90019CE0DF36}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Impuestos'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='172'>
+            <card pane-specification-id='0' param='[federated.1afnww90vm7vpm1b44meg08ndke0].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1afnww90vm7vpm1b44meg08ndke0].[:Measure Names]</field>
+            <field>[federated.1afnww90vm7vpm1b44meg08ndke0].[none:COUNTRY:nk]</field>
+            <field>[federated.1afnww90vm7vpm1b44meg08ndke0].[tyr:YEAR:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{82538D03-E672-4366-B1EF-73DF34E65307}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Ingresos fiscales'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.17zzhfw0ozyxga1819lze0ybfzoy].[tyr:YEAR:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{21ADC97B-70A4-4407-886D-D192ED6407CD}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Ingresos fiscales en España (% del PIB)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.17zzhfw0ozyxga1819lze0ybfzoy].[none:COUNTRY:nk]</field>
+            <field>[federated.17zzhfw0ozyxga1819lze0ybfzoy].[tyr:YEAR:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{12425C21-038E-4631-938D-77A5DC2BD4DA}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Impuestos en 2013 en la Unión Europea' width='192'>
+      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
+      RU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Ingresos fiscales en la Unión Europea (% del PIB)' width='192'>
+      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
+      RU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='ingresos_esp' width='192'>
+      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
+      YII=
+    </thumbnail>
+  </thumbnails>
+</workbook>

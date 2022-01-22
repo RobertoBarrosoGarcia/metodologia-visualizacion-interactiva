@@ -1,0 +1,1308 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20213.21.1217.2247                               -->
+<workbook original-version='18.1' source-build='2021.3.6 (20213.21.1217.2247)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='Desigualdad_16424542052800' path='/workbooks' revision='1.3' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='gini_index_UE (gini_index_UE)' inline='true' name='federated.19lp80502dkt0c193cjlm07hd74w' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='gini_index_UE' name='excel-direct.1tvwi1d1yqv05s16g1ljl0ez4olg'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/Roberto Barroso/Documents/Universidad/Trabajo fin de Master/Scripts_ETL/Datos/UE/gini_index_UE.xlsx' interpretationMode='0' password='' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.1tvwi1d1yqv05s16g1ljl0ez4olg' name='gini_index_UE' table='[gini_index_UE$]' type='table'>
+          <columns gridOrigin='A1:D812:no:A1:D812:0' header='yes' outcome='6'>
+            <column datatype='string' name='COUNTRY' ordinal='0' />
+            <column datatype='string' name='ISO_CODE' ordinal='1' />
+            <column datatype='date' date-parse-format='yyyy' name='YEAR' ordinal='2' />
+            <column datatype='real' name='GINI_INDEX' ordinal='3' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.1tvwi1d1yqv05s16g1ljl0ez4olg' name='gini_index_UE' table='[gini_index_UE$]' type='table'>
+          <columns gridOrigin='A1:D812:no:A1:D812:0' header='yes' outcome='6'>
+            <column datatype='string' name='COUNTRY' ordinal='0' />
+            <column datatype='string' name='ISO_CODE' ordinal='1' />
+            <column datatype='date' date-parse-format='yyyy' name='YEAR' ordinal='2' />
+            <column datatype='real' name='GINI_INDEX' ordinal='3' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[gini_index_UE]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>2</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:D812:no:A1:D812:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COUNTRY</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[COUNTRY]</local-name>
+            <parent-name>[gini_index_UE]</parent-name>
+            <remote-alias>COUNTRY</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[gini!index!UE_35D098C5E3A24A0CB7BD267AC1FB0C9B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ISO_CODE</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[ISO_CODE]</local-name>
+            <parent-name>[gini_index_UE]</parent-name>
+            <remote-alias>ISO_CODE</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[gini!index!UE_35D098C5E3A24A0CB7BD267AC1FB0C9B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YEAR</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[YEAR]</local-name>
+            <parent-name>[gini_index_UE]</parent-name>
+            <remote-alias>YEAR</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[gini!index!UE_35D098C5E3A24A0CB7BD267AC1FB0C9B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GINI_INDEX</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[GINI_INDEX]</local-name>
+            <parent-name>[gini_index_UE]</parent-name>
+            <remote-alias>GINI_INDEX</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[gini!index!UE_35D098C5E3A24A0CB7BD267AC1FB0C9B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Country' datatype='string' name='[COUNTRY]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Gini Index' datatype='real' name='[GINI_INDEX]' role='measure' type='quantitative' />
+      <column caption='Iso Code' datatype='string' name='[ISO_CODE]' role='dimension' type='nominal' />
+      <column caption='Year' datatype='date' name='[YEAR]' role='dimension' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='gini_index_UE' datatype='table' name='[__tableau_internal_object_id__].[gini!index!UE_35D098C5E3A24A0CB7BD267AC1FB0C9B]' role='measure' type='quantitative' />
+      <column-instance column='[YEAR]' derivation='Year-Trunc' name='[tyr:YEAR:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[YEAR]' derivation='Year' name='[yr:YEAR:ok]' pivot='key' type='ordinal' />
+      <group caption='Acción (Country)' hidden='true' name='[Action (Country)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[COUNTRY]' />
+        </groupfilter>
+      </group>
+      <group caption='Acción (AÑO(Year)) 1' hidden='true' name='[Action (YEAR(Year)) 1]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[tyr:YEAR:ok]' />
+        </groupfilter>
+      </group>
+      <group caption='Acción (AÑO(Year))' hidden='true' name='[Action (YEAR(Year))]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[yr:YEAR:ok]' />
+        </groupfilter>
+      </group>
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='es_ES' class='hyper' dbname='C:/Users/Roberto Barroso/Documents/Mi Repositorio de Tableau/Fuentes de datos/gini_index_UE (gini_index_UE).hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='01/17/2022 09:16:19 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='gini_index_UE (gini_index_UE)' increment-value='%null%' refresh-type='create' rows-inserted='811' timestamp-start='2022-01-17 21:16:19.539' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>COUNTRY</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[COUNTRY]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>COUNTRY</remote-alias>
+              <ordinal>0</ordinal>
+              <family>gini_index_UE</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LES_RES_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[gini!index!UE_35D098C5E3A24A0CB7BD267AC1FB0C9B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ISO_CODE</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ISO_CODE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ISO_CODE</remote-alias>
+              <ordinal>1</ordinal>
+              <family>gini_index_UE</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LES_RES_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[gini!index!UE_35D098C5E3A24A0CB7BD267AC1FB0C9B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>YEAR</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[YEAR]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>YEAR</remote-alias>
+              <ordinal>2</ordinal>
+              <family>gini_index_UE</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>39</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[gini!index!UE_35D098C5E3A24A0CB7BD267AC1FB0C9B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>GINI_INDEX</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[GINI_INDEX]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>GINI_INDEX</remote-alias>
+              <ordinal>3</ordinal>
+              <family>gini_index_UE</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>555</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[gini!index!UE_35D098C5E3A24A0CB7BD267AC1FB0C9B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;España&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='gini_index_UE' id='gini!index!UE_35D098C5E3A24A0CB7BD267AC1FB0C9B'>
+            <properties context=''>
+              <relation connection='excel-direct.1tvwi1d1yqv05s16g1ljl0ez4olg' name='gini_index_UE' table='[gini_index_UE$]' type='table'>
+                <columns gridOrigin='A1:D812:no:A1:D812:0' header='yes' outcome='6'>
+                  <column datatype='string' name='COUNTRY' ordinal='0' />
+                  <column datatype='string' name='ISO_CODE' ordinal='1' />
+                  <column datatype='date' date-parse-format='yyyy' name='YEAR' ordinal='2' />
+                  <column datatype='real' name='GINI_INDEX' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <actions>
+    <action caption='Resaltar1' name='[Action1_496536A2655C42EC8B383C6083008D2C]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Índice de desigualdad en la Unión Europea' type='sheet' worksheet='Por país' />
+      <command command='tsc:brush'>
+        <param name='exclude' value='Histórico entre 1980 y 2019,Por país' />
+        <param name='special-fields' value='all' />
+        <param name='target' value='Índice de desigualdad en la Unión Europea' />
+      </command>
+    </action>
+    <action caption='Resaltar2' name='[Action2_F0F5FBD9E6B04AD5B4EEADBD1221C489]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Índice de desigualdad en la Unión Europea' type='sheet' worksheet='Por pais' />
+      <command command='tsc:brush'>
+        <param name='exclude' value='Histórico entre 1980 y 2019,Por pais' />
+        <param name='special-fields' value='all' />
+        <param name='target' value='Índice de desigualdad en la Unión Europea' />
+      </command>
+    </action>
+    <action caption='Filtrar1' name='[Action3_88D8D0773D124A7B9068A10C28A13226]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Índice de desigualdad en la Unión Europea' type='sheet' worksheet='Histórico entre 1980 y 2019' />
+      <command command='tsc:tsl-filter'>
+        <param name='exclude' value='Histórico entre 1980 y 2019' />
+        <param name='special-fields' value='all' />
+        <param name='target' value='Índice de desigualdad en la Unión Europea' />
+      </command>
+    </action>
+    <action caption='Filtrar2' name='[Action4_13F6D336D7CD4A94B613E2FADC645092]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Índice de desigualdad en la Unión Europea' type='sheet' worksheet='Por pais' />
+      <link caption='Filtrar2' delimiter=',' escape='\' expression='tsl:%C3%8Dndice%20de%20desigualdad%20en%20la%20Uni%C3%B3n%20Europea?%5Bfederated.19lp80502dkt0c193cjlm07hd74w%5D.%5BCOUNTRY%5D~s0=&lt;[federated.19lp80502dkt0c193cjlm07hd74w].[COUNTRY]~na&gt;' include-null='true' multi-select='true' url-escape='true' />
+      <command command='tsc:tsl-filter'>
+        <param name='exclude' value='Histórico entre 1980 y 2019,Por pais' />
+        <param name='target' value='Índice de desigualdad en la Unión Europea' />
+      </command>
+    </action>
+    <datasources>
+      <datasource caption='gini_index_UE (gini_index_UE)' name='federated.19lp80502dkt0c193cjlm07hd74w' />
+    </datasources>
+    <datasource-dependencies datasource='federated.19lp80502dkt0c193cjlm07hd74w'>
+      <column caption='Country' datatype='string' name='[COUNTRY]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+    </datasource-dependencies>
+  </actions>
+  <worksheets>
+    <worksheet name='Histórico entre 1980 y 2019'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#666666' fontname='Times New Roman' fontsize='18'>&lt;</run>
+            <run bold='true' fontalignment='1' fontcolor='#666666' fontname='Times New Roman' fontsize='18'>Sheet Name</run>
+            <run bold='true' fontalignment='1' fontcolor='#666666' fontname='Times New Roman' fontsize='18'>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='gini_index_UE (gini_index_UE)' name='federated.19lp80502dkt0c193cjlm07hd74w' />
+          </datasources>
+          <datasource-dependencies datasource='federated.19lp80502dkt0c193cjlm07hd74w'>
+            <column caption='Gini Index' datatype='real' name='[GINI_INDEX]' role='measure' type='quantitative' />
+            <column caption='Year' datatype='date' name='[YEAR]' role='dimension' type='quantitative' />
+            <column-instance column='[GINI_INDEX]' derivation='Avg' name='[avg:GINI_INDEX:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[YEAR]' derivation='Year-Trunc' name='[tyr:YEAR:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' domain-expand='false' field='[federated.19lp80502dkt0c193cjlm07hd74w].[avg:GINI_INDEX:qk]' field-type='quantitative' scope='rows' type='space' />
+            <format attr='title' class='0' field='[federated.19lp80502dkt0c193cjlm07hd74w].[tyr:YEAR:qk]' scope='cols' value='' />
+            <format attr='title' class='0' field='[federated.19lp80502dkt0c193cjlm07hd74w].[avg:GINI_INDEX:qk]' scope='rows' value='Índice GINI' />
+            <encoding attr='space' class='0' field='[federated.19lp80502dkt0c193cjlm07hd74w].[tyr:YEAR:qk]' field-type='quantitative' major-origin='#1980-01-01 00:00:00#' major-spacing='1.0' major-units='years' scope='cols' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.19lp80502dkt0c193cjlm07hd74w].[avg:GINI_INDEX:qk]' max='100.0' min='0.0' type='interpolated' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#e9f3f2' />
+            <format attr='line-visibility' id='refline0' value='on' />
+            <format attr='line-pattern-only' id='refline0' value='dashed' />
+            <format attr='stroke-size' id='refline0' value='1' />
+            <format attr='stroke-color' id='refline0' value='#4e79a7' />
+            <format attr='font-family' id='refline0' value='Times New Roman' />
+            <format attr='color' id='refline0' value='#4e79a7' />
+            <format attr='font-size' id='refline0' value='12' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.19lp80502dkt0c193cjlm07hd74w].[avg:GINI_INDEX:qk]' />
+              <text column='[federated.19lp80502dkt0c193cjlm07hd74w].[avg:GINI_INDEX:qk]' />
+            </encodings>
+            <reference-line axis-column='[federated.19lp80502dkt0c193cjlm07hd74w].[tyr:YEAR:qk]' enable-instant-analytics='true' formula='constant' id='refline0' label='1993 - Unión Europea' label-type='custom' scope='per-table' value='#1993-01-01 00:00:00#' value-column='[federated.19lp80502dkt0c193cjlm07hd74w].[tyr:YEAR:qk]' z-order='1' />
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='color' value='#4e79a7' />
+                <format attr='font-weight' value='bold' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-mode' value='line-ends' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.19lp80502dkt0c193cjlm07hd74w].[avg:GINI_INDEX:qk]</rows>
+        <cols>[federated.19lp80502dkt0c193cjlm07hd74w].[tyr:YEAR:qk]</cols>
+      </table>
+      <simple-id uuid='{9B62AC8F-EE95-44DA-AA6E-BC904839197D}' />
+    </worksheet>
+    <worksheet name='Por pais'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#666666' fontname='Times New Roman'>&lt;</run>
+            <run fontalignment='1' fontcolor='#666666' fontname='Times New Roman'>Sheet Name</run>
+            <run fontalignment='1' fontcolor='#666666' fontname='Times New Roman'>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='gini_index_UE (gini_index_UE)' name='federated.19lp80502dkt0c193cjlm07hd74w' />
+          </datasources>
+          <datasource-dependencies datasource='federated.19lp80502dkt0c193cjlm07hd74w'>
+            <column caption='Country' datatype='string' name='[COUNTRY]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Gini Index' datatype='real' name='[GINI_INDEX]' role='measure' type='quantitative' />
+            <column caption='Year' datatype='date' name='[YEAR]' role='dimension' type='quantitative' />
+            <column-instance column='[GINI_INDEX]' derivation='Avg' name='[avg:GINI_INDEX:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[COUNTRY]' derivation='None' name='[none:COUNTRY:nk]' pivot='key' type='nominal' />
+            <column-instance column='[YEAR]' derivation='Year-Trunc' name='[tyr:YEAR:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.19lp80502dkt0c193cjlm07hd74w].[Action (YEAR(Year)) 1]'>
+            <groupfilter function='level-members' level='[tyr:YEAR:ok]' user:ui-action-filter='[Action3_88D8D0773D124A7B9068A10C28A13226]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <computed-sort column='[federated.19lp80502dkt0c193cjlm07hd74w].[none:COUNTRY:nk]' direction='DESC' using='[federated.19lp80502dkt0c193cjlm07hd74w].[avg:GINI_INDEX:qk]' />
+          <slices>
+            <column>[federated.19lp80502dkt0c193cjlm07hd74w].[Action (YEAR(Year)) 1]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.19lp80502dkt0c193cjlm07hd74w].[avg:GINI_INDEX:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.19lp80502dkt0c193cjlm07hd74w].[avg:GINI_INDEX:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='color' value='#4e79a7' />
+                <format attr='font-size' value='12' />
+                <format attr='font-weight' value='normal' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.19lp80502dkt0c193cjlm07hd74w].[avg:GINI_INDEX:qk]</rows>
+        <cols>[federated.19lp80502dkt0c193cjlm07hd74w].[none:COUNTRY:nk]</cols>
+      </table>
+      <simple-id uuid='{7E39A875-6E71-489A-9A73-847706D13CF0}' />
+    </worksheet>
+    <worksheet name='Por país'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#666666' fontname='Times New Roman'>&lt;</run>
+            <run fontcolor='#666666' fontname='Times New Roman'>Sheet Name</run>
+            <run fontcolor='#666666' fontname='Times New Roman'>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='gini_index_UE (gini_index_UE)' name='federated.19lp80502dkt0c193cjlm07hd74w' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.19lp80502dkt0c193cjlm07hd74w'>
+            <column caption='Country' datatype='string' name='[COUNTRY]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Gini Index' datatype='real' name='[GINI_INDEX]' role='measure' type='quantitative' />
+            <column caption='Year' datatype='date' name='[YEAR]' role='dimension' type='quantitative' />
+            <column-instance column='[GINI_INDEX]' derivation='Avg' name='[avg:GINI_INDEX:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[COUNTRY]' derivation='None' name='[none:COUNTRY:nk]' pivot='key' type='nominal' />
+            <column-instance column='[YEAR]' derivation='Year-Trunc' name='[tyr:YEAR:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.19lp80502dkt0c193cjlm07hd74w].[Action (Country)]'>
+            <groupfilter function='level-members' level='[COUNTRY]' user:ui-action-filter='[Action4_13F6D336D7CD4A94B613E2FADC645092]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.19lp80502dkt0c193cjlm07hd74w].[Action (YEAR(Year)) 1]'>
+            <groupfilter function='level-members' level='[tyr:YEAR:ok]' user:ui-action-filter='[Action3_88D8D0773D124A7B9068A10C28A13226]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.19lp80502dkt0c193cjlm07hd74w].[Action (YEAR(Year)) 1]</column>
+            <column>[federated.19lp80502dkt0c193cjlm07hd74w].[Action (Country)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='legend'>
+            <format attr='font-size' value='12' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.19lp80502dkt0c193cjlm07hd74w].[avg:GINI_INDEX:qk]' value='Índice GINI' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='background' value='false' />
+            <format attr='enabled' id='barrier_line-land-polygon' value='false' />
+            <format attr='enabled' id='barrier_line-land-line' value='false' />
+            <format attr='enabled' id='national_park' value='false' />
+            <format attr='enabled' id='pitch' value='false' />
+            <format attr='enabled' id='industrial' value='false' />
+            <format attr='enabled' id='built-up-area' value='false' />
+            <format attr='enabled' id='water' value='false' />
+            <format attr='enabled' id='waterway-river-canal' value='false' />
+            <format attr='enabled' id='aeroway-polygon' value='false' />
+            <format attr='enabled' id='aeroway-runway' value='false' />
+            <format attr='enabled' id='aeroway-taxiway' value='false' />
+            <format attr='enabled' id='parks' value='false' />
+            <format attr='enabled' id='landcover_wood' value='false' />
+            <format attr='enabled' id='landcover_scrub' value='false' />
+            <format attr='enabled' id='landcover_grass' value='false' />
+            <format attr='enabled' id='landcover_crop' value='false' />
+            <format attr='enabled' id='admin-0-boundaries-bg' value='false' />
+            <format attr='enabled' id='admin-0-boundaries' value='false' />
+            <format attr='enabled' id='admin-0-boundaries-dispute' value='false' />
+            <format attr='enabled' id='admin-0-label-5th-tier' value='false' />
+            <format attr='enabled' id='admin-0-label-4th-tier' value='false' />
+            <format attr='enabled' id='admin-0-label-3rd-tier' value='false' />
+            <format attr='enabled' id='admin-0-label-2nd-tier' value='false' />
+            <format attr='enabled' id='admin-0-label-1st-tier' value='false' />
+            <format attr='enabled' id='admin-0-boundaries-bg-sub' value='false' />
+            <format attr='enabled' id='admin-1-boundaries-supress-bg' value='false' />
+            <format attr='enabled' id='admin-1-boundaries-sm-parents-bg' value='false' />
+            <format attr='enabled' id='admin-1-boundaries-md-parents-bg' value='false' />
+            <format attr='enabled' id='admin-1-boundaries-lg-parents-bg' value='false' />
+            <format attr='enabled' id='admin-0-boundaries-dispute-sub' value='false' />
+            <format attr='enabled' id='admin-0-boundaries-sub' value='false' />
+            <format attr='enabled' id='admin-1-boundaries-supress' value='false' />
+            <format attr='enabled' id='admin-1-boundaries-sm-parents' value='false' />
+            <format attr='enabled' id='admin-1-boundaries-md-parents' value='false' />
+            <format attr='enabled' id='admin-1-boundaries-lg-parents' value='false' />
+            <format attr='enabled' id='admin1-water-lines-usa-tableau' value='false' />
+            <format attr='enabled' id='9-dash-line-casing' value='false' />
+            <format attr='enabled' id='9-dash-line' value='false' />
+            <format attr='enabled' id='admin-1-label-9th-tier' value='false' />
+            <format attr='enabled' id='admin-1-label-8th-tier' value='false' />
+            <format attr='enabled' id='admin-1-label-7th-tier' value='false' />
+            <format attr='enabled' id='admin-1-label-6th-tier' value='false' />
+            <format attr='enabled' id='admin-1-label-5th-tier' value='false' />
+            <format attr='enabled' id='admin-1-label-4th-tier' value='false' />
+            <format attr='enabled' id='admin-1-label-3rd-tier' value='false' />
+            <format attr='enabled' id='admin-1-label-2nd-tier' value='false' />
+            <format attr='enabled' id='admin-1-label-1st-tier' value='false' />
+            <format attr='enabled' id='us-admin-1-label-abbr-3rd-tier' value='false' />
+            <format attr='enabled' id='us-admin-1-label-abbr-2nd-tier' value='false' />
+            <format attr='enabled' id='us-admin-1-label-abbr-1st-tier' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.19lp80502dkt0c193cjlm07hd74w].[avg:GINI_INDEX:qk]' />
+              <text column='[federated.19lp80502dkt0c193cjlm07hd74w].[none:COUNTRY:nk]' />
+              <text column='[federated.19lp80502dkt0c193cjlm07hd74w].[avg:GINI_INDEX:qk]' />
+              <lod column='[federated.19lp80502dkt0c193cjlm07hd74w].[none:COUNTRY:nk]' />
+              <geometry column='[federated.19lp80502dkt0c193cjlm07hd74w].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='color' value='#000000' />
+                <format attr='font-weight' value='normal' />
+                <format attr='font-size' value='12' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-mode' value='highlight' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.19lp80502dkt0c193cjlm07hd74w].[Latitude (generated)]</rows>
+        <cols>[federated.19lp80502dkt0c193cjlm07hd74w].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{7596CB33-29FC-4D45-8F2A-6FBF28443CC2}' />
+    </worksheet>
+    <worksheet name='Índice de desigualdad en España'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontname='Times New Roman' fontsize='24' italic='true'>&lt;</run>
+            <run bold='true' fontalignment='1' fontname='Times New Roman' fontsize='24' italic='true'>Sheet Name</run>
+            <run bold='true' fontalignment='1' fontname='Times New Roman' fontsize='24' italic='true'>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='gini_index_UE (gini_index_UE)' name='federated.19lp80502dkt0c193cjlm07hd74w' />
+          </datasources>
+          <datasource-dependencies datasource='federated.19lp80502dkt0c193cjlm07hd74w'>
+            <column caption='Country' datatype='string' name='[COUNTRY]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Gini Index' datatype='real' name='[GINI_INDEX]' role='measure' type='quantitative' />
+            <column caption='Year' datatype='date' name='[YEAR]' role='dimension' type='quantitative' />
+            <column-instance column='[GINI_INDEX]' derivation='Avg' name='[avg:GINI_INDEX:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[COUNTRY]' derivation='None' name='[none:COUNTRY:nk]' pivot='key' type='nominal' />
+            <column-instance column='[YEAR]' derivation='Year-Trunc' name='[tyr:YEAR:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.19lp80502dkt0c193cjlm07hd74w].[none:COUNTRY:nk]'>
+            <groupfilter function='member' level='[none:COUNTRY:nk]' member='&quot;Spain&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.19lp80502dkt0c193cjlm07hd74w].[none:COUNTRY:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.19lp80502dkt0c193cjlm07hd74w].[avg:GINI_INDEX:qk]' field-type='quantitative' max='38.542847580786031' min='25.0' range-type='fixed' scope='rows' type='space' />
+            <format attr='display' class='0' field='[federated.19lp80502dkt0c193cjlm07hd74w].[avg:GINI_INDEX:qk]' scope='rows' value='false' />
+            <format attr='title' class='0' field='[federated.19lp80502dkt0c193cjlm07hd74w].[tyr:YEAR:qk]' scope='cols' value='' />
+            <encoding attr='space' class='0' field='[federated.19lp80502dkt0c193cjlm07hd74w].[tyr:YEAR:qk]' field-type='quantitative' major-origin='#1984-01-01 00:00:00#' major-spacing='1.0' major-units='years' max='#2020-01-01 00:00:00#' min='#1984-01-01 00:00:00#' range-type='fixed' scope='cols' type='space' />
+            <format attr='tick-color' field='[federated.19lp80502dkt0c193cjlm07hd74w].[tyr:YEAR:qk]' value='#000000' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-family' field='[federated.19lp80502dkt0c193cjlm07hd74w].[tyr:YEAR:qk]' value='Times New Roman' />
+            <format attr='font-size' field='[federated.19lp80502dkt0c193cjlm07hd74w].[tyr:YEAR:qk]' value='10' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+            <format attr='stroke-color' scope='cols' value='#e6e6e6' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.19lp80502dkt0c193cjlm07hd74w].[avg:GINI_INDEX:qk]' />
+            </encodings>
+            <trendline degree='6' enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='polynomial' />
+            <customized-label>
+              <formatted-text>
+                <run>&lt;</run>
+                <run>[federated.19lp80502dkt0c193cjlm07hd74w].[avg:GINI_INDEX:qk]</run>
+                <run>&gt;pts</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='color' value='#4e79a7' />
+                <format attr='font-family' value='Tableau Light' />
+                <format attr='font-size' value='12' />
+                <format attr='font-weight' value='normal' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-color' value='#f28e2b67' />
+                <format attr='stroke-size' value='2' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.19lp80502dkt0c193cjlm07hd74w].[avg:GINI_INDEX:qk]</rows>
+        <cols>[federated.19lp80502dkt0c193cjlm07hd74w].[tyr:YEAR:qk]</cols>
+      </table>
+      <simple-id uuid='{2E2D3761-9944-4B75-B99D-2F9B3FEE48D9}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='desigualdad_esp'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98690' id='3' name='Índice de desigualdad en España' w='99304' x='348' y='655'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='42' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98690' id='41' param='vert' type-v2='layout-flow' w='99304' x='348' y='655'>
+                <zone fixed-size='280' h='98690' id='3' is-fixed='true' name='Índice de desigualdad en España' w='99304' x='348' y='655'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{83FF39D4-AE4D-40B4-9A12-0D14B046BAD9}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Índice de desigualdad en la Unión Europea'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontname='Times New Roman' fontsize='28' italic='true'>&lt;</run>
+            <run bold='true' fontalignment='1' fontname='Times New Roman' fontsize='28' italic='true'>Sheet Name</run>
+            <run bold='true' fontalignment='1' fontname='Times New Roman' fontsize='28' italic='true'>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98690' id='36' param='horz' type-v2='layout-flow' w='99304' x='348' y='655'>
+            <zone h='98690' id='34' type-v2='layout-basic' w='99304' x='348' y='655'>
+              <zone h='98690' id='15' param='vert' type-v2='layout-flow' w='99304' x='348' y='655'>
+                <zone h='4996' id='16' type-v2='title' w='99304' x='348' y='655'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='93694' id='7' param='horz' type-v2='layout-flow' w='99304' x='348' y='5651'>
+                  <zone h='93694' id='5' type-v2='layout-basic' w='99304' x='348' y='5651'>
+                    <zone h='93694' id='3' name='Por país' show-title='false' w='49652' x='348' y='5651'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='46852' id='10' name='Por pais' show-title='false' w='49652' x='50000' y='52493'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='46842' id='11' name='Histórico entre 1980 y 2019' w='49652' x='50000' y='5651'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='7617' id='37' name='Por país' pane-specification-id='0' param='[federated.19lp80502dkt0c193cjlm07hd74w].[avg:GINI_INDEX:qk]' type-v2='color' w='11363' x='5964' y='19656' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontname='Times New Roman' fontsize='28' italic='true'>&lt;</run>
+                <run bold='true' fontalignment='1' fontname='Times New Roman' fontsize='28' italic='true'>Sheet Name</run>
+                <run bold='true' fontalignment='1' fontname='Times New Roman' fontsize='28' italic='true'>&gt;</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='1000' minheight='1000' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='83' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98690' id='82' param='vert' type-v2='layout-flow' w='99304' x='348' y='655'>
+                <zone h='4996' id='16' type-v2='title' w='99304' x='348' y='655'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='93694' id='3' is-fixed='true' name='Por país' show-title='false' w='49652' x='348' y='5651'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7617' id='37' name='Por país' pane-specification-id='0' param='[federated.19lp80502dkt0c193cjlm07hd74w].[avg:GINI_INDEX:qk]' type-v2='color' w='11363' x='5964' y='19656'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='46842' id='11' is-fixed='true' name='Histórico entre 1980 y 2019' w='49652' x='50000' y='5651'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='46852' id='10' is-fixed='true' name='Por pais' show-title='false' w='49652' x='50000' y='52493'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{C770EC7B-EBB1-4606-ADBC-0CF29B6CC9EE}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='dashboard' name='Índice de desigualdad en la Unión Europea'>
+      <viewpoints>
+        <viewpoint name='Histórico entre 1980 y 2019'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Por pais'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Por país'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='11' />
+      <simple-id uuid='{23757E6C-25AD-457E-BAD3-CBA57CE0ABD0}' />
+    </window>
+    <window class='dashboard' maximized='true' name='desigualdad_esp'>
+      <viewpoints>
+        <viewpoint name='Índice de desigualdad en España'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='3' />
+      <simple-id uuid='{5F22EA42-0FC9-4A39-8367-E4ED6E44728E}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Histórico entre 1980 y 2019'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='173'>
+            <card pane-specification-id='0' param='[federated.19lp80502dkt0c193cjlm07hd74w].[avg:GINI_INDEX:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.19lp80502dkt0c193cjlm07hd74w].[avg:GINI_INDEX:qk]</field>
+            <field>[federated.19lp80502dkt0c193cjlm07hd74w].[tyr:YEAR:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{14F64DEA-FA00-42B8-958A-9F304E5666D8}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Por pais'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.19lp80502dkt0c193cjlm07hd74w].[none:COUNTRY:nk]</field>
+            <field>[federated.19lp80502dkt0c193cjlm07hd74w].[yr:YEAR:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{4549A494-866E-42EC-811E-2FE85147C2A5}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Por país'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='173'>
+            <card pane-specification-id='0' param='[federated.19lp80502dkt0c193cjlm07hd74w].[avg:GINI_INDEX:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.19lp80502dkt0c193cjlm07hd74w].[avg:GINI_INDEX:qk]</field>
+            <field>[federated.19lp80502dkt0c193cjlm07hd74w].[none:COUNTRY:nk]</field>
+            <field>[federated.19lp80502dkt0c193cjlm07hd74w].[tyr:YEAR:qk]</field>
+            <field>[federated.19lp80502dkt0c193cjlm07hd74w].[yr:YEAR:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{55545B09-E063-4552-9147-EE6019FE2762}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Índice de desigualdad en España'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.19lp80502dkt0c193cjlm07hd74w].[none:COUNTRY:nk]</field>
+            <field>[federated.19lp80502dkt0c193cjlm07hd74w].[tyr:YEAR:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{D7BFCC69-6071-444E-8B31-D25EDB65B938}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='desigualdad_esp' width='192'>
+      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
+      AABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Índice de desigualdad en la Unión Europea' width='192'>
+      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
+      /6O+Me2KTxKUAAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>

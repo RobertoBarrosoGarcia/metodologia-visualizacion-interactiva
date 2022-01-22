@@ -1,0 +1,1654 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20213.21.1217.2247                               -->
+<workbook original-version='18.1' source-build='2021.3.6 (20213.21.1217.2247)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location id='Paz_Seguridad' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <style>
+    <_.fcp.MarkAnimation.true...style-rule element='animation'>
+      <format attr='animation-on' value='ao-off' />
+    </_.fcp.MarkAnimation.true...style-rule>
+  </style>
+  <datasources>
+    <datasource caption='military_expenditure_UE (military_expenditure_UE)' inline='true' name='federated.01grthw0zzce531cig6xu0ofl9qr' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='military_expenditure_UE' name='excel-direct.175s5rv1q11b5e1dhwb8x1fy10b9'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/Roberto Barroso/Documents/Universidad/Trabajo fin de Master/Scripts_ETL/Datos/UE/military_expenditure_UE.xlsx' interpretationMode='0' password='' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.175s5rv1q11b5e1dhwb8x1fy10b9' name='military_expenditure_UE' table='[military_expenditure_UE$]' type='table'>
+          <columns gridOrigin='A1:E908:no:A1:E908:0' header='yes' outcome='6'>
+            <column datatype='string' name='COUNTRY' ordinal='0' />
+            <column datatype='string' name='ISO_CODE' ordinal='1' />
+            <column datatype='date' date-parse-format='yyyy' name='YEAR' ordinal='2' />
+            <column datatype='real' name='MILITARY_EXPENDITURE_GDP_PERCENTAGE' ordinal='3' />
+            <column datatype='real' name='MILITARY_EXPENDITURE_BILLION_DOLLARS' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.175s5rv1q11b5e1dhwb8x1fy10b9' name='military_expenditure_UE' table='[military_expenditure_UE$]' type='table'>
+          <columns gridOrigin='A1:E908:no:A1:E908:0' header='yes' outcome='6'>
+            <column datatype='string' name='COUNTRY' ordinal='0' />
+            <column datatype='string' name='ISO_CODE' ordinal='1' />
+            <column datatype='date' date-parse-format='yyyy' name='YEAR' ordinal='2' />
+            <column datatype='real' name='MILITARY_EXPENDITURE_GDP_PERCENTAGE' ordinal='3' />
+            <column datatype='real' name='MILITARY_EXPENDITURE_BILLION_DOLLARS' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[military_expenditure_UE]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>1</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:E908:no:A1:E908:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COUNTRY</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[COUNTRY]</local-name>
+            <parent-name>[military_expenditure_UE]</parent-name>
+            <remote-alias>COUNTRY</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[military!expenditure!UE_C68B8061C41348709F82B1DFAD661A6E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ISO_CODE</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[ISO_CODE]</local-name>
+            <parent-name>[military_expenditure_UE]</parent-name>
+            <remote-alias>ISO_CODE</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[military!expenditure!UE_C68B8061C41348709F82B1DFAD661A6E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YEAR</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[YEAR]</local-name>
+            <parent-name>[military_expenditure_UE]</parent-name>
+            <remote-alias>YEAR</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[military!expenditure!UE_C68B8061C41348709F82B1DFAD661A6E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MILITARY_EXPENDITURE_GDP_PERCENTAGE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[MILITARY_EXPENDITURE_GDP_PERCENTAGE]</local-name>
+            <parent-name>[military_expenditure_UE]</parent-name>
+            <remote-alias>MILITARY_EXPENDITURE_GDP_PERCENTAGE</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[military!expenditure!UE_C68B8061C41348709F82B1DFAD661A6E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MILITARY_EXPENDITURE_BILLION_DOLLARS</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[MILITARY_EXPENDITURE_BILLION_DOLLARS]</local-name>
+            <parent-name>[military_expenditure_UE]</parent-name>
+            <remote-alias>MILITARY_EXPENDITURE_BILLION_DOLLARS</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[military!expenditure!UE_C68B8061C41348709F82B1DFAD661A6E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Country' datatype='string' name='[COUNTRY]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Iso Code' datatype='string' name='[ISO_CODE]' role='dimension' type='nominal' />
+      <column caption='Military Expenditure Billion Dollars' datatype='real' name='[MILITARY_EXPENDITURE_BILLION_DOLLARS]' role='measure' type='quantitative' />
+      <column caption='Military Expenditure Gdp Percentage' datatype='real' name='[MILITARY_EXPENDITURE_GDP_PERCENTAGE]' role='measure' type='quantitative' />
+      <column caption='Year' datatype='date' name='[YEAR]' role='dimension' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='military_expenditure_UE' datatype='table' name='[__tableau_internal_object_id__].[military!expenditure!UE_C68B8061C41348709F82B1DFAD661A6E]' role='measure' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='es_ES' class='hyper' dbname='C:/Users/Roberto Barroso/Documents/Mi Repositorio de Tableau/Fuentes de datos/military_expenditure_UE (military_expenditure_UE).hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='01/17/2022 10:24:23 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='military_expenditure_UE (military_expenditure_UE)' increment-value='%null%' refresh-type='create' rows-inserted='907' timestamp-start='2022-01-17 22:24:22.432' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>COUNTRY</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[COUNTRY]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>COUNTRY</remote-alias>
+              <ordinal>0</ordinal>
+              <family>military_expenditure_UE</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LES_RES_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ISO_CODE</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ISO_CODE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ISO_CODE</remote-alias>
+              <ordinal>1</ordinal>
+              <family>military_expenditure_UE</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LES_RES_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>YEAR</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[YEAR]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>YEAR</remote-alias>
+              <ordinal>2</ordinal>
+              <family>military_expenditure_UE</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>48</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>MILITARY_EXPENDITURE_GDP_PERCENTAGE</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[MILITARY_EXPENDITURE_GDP_PERCENTAGE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>MILITARY_EXPENDITURE_GDP_PERCENTAGE</remote-alias>
+              <ordinal>3</ordinal>
+              <family>military_expenditure_UE</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>907</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>MILITARY_EXPENDITURE_BILLION_DOLLARS</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[MILITARY_EXPENDITURE_BILLION_DOLLARS]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>MILITARY_EXPENDITURE_BILLION_DOLLARS</remote-alias>
+              <ordinal>4</ordinal>
+              <family>military_expenditure_UE</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>905</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1fvcto61o62vui16dwz2710n86m7].[sum:CONFLICT_TERRORISM_DEATHS:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0eytycf0xwtjxu1h4em9e0akzstf].[sum:TERRORISM_PERCENTAGE:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;España&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <datasource-dependencies datasource='federated.1fvcto61o62vui16dwz2710n86m7'>
+        <column caption='Conflict Terrorism Deaths' datatype='real' name='[CONFLICT_TERRORISM_DEATHS]' role='measure' type='quantitative' />
+        <column-instance column='[CONFLICT_TERRORISM_DEATHS]' derivation='Sum' name='[sum:CONFLICT_TERRORISM_DEATHS:qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='military_expenditure_UE' id='military!expenditure!UE_C68B8061C41348709F82B1DFAD661A6E'>
+            <properties context=''>
+              <relation connection='excel-direct.175s5rv1q11b5e1dhwb8x1fy10b9' name='military_expenditure_UE' table='[military_expenditure_UE$]' type='table'>
+                <columns gridOrigin='A1:E908:no:A1:E908:0' header='yes' outcome='6'>
+                  <column datatype='string' name='COUNTRY' ordinal='0' />
+                  <column datatype='string' name='ISO_CODE' ordinal='1' />
+                  <column datatype='date' date-parse-format='yyyy' name='YEAR' ordinal='2' />
+                  <column datatype='real' name='MILITARY_EXPENDITURE_GDP_PERCENTAGE' ordinal='3' />
+                  <column datatype='real' name='MILITARY_EXPENDITURE_BILLION_DOLLARS' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='df_deaths_UE (df_deaths_UE)' inline='true' name='federated.1fvcto61o62vui16dwz2710n86m7' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='df_deaths_UE' name='excel-direct.0x4mw9h0nl0hf31e37p9l09p8glo'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/Roberto Barroso/Documents/Universidad/Trabajo fin de Master/Scripts_ETL/Datos/UE/df_deaths_UE.xlsx' interpretationMode='0' password='' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.0x4mw9h0nl0hf31e37p9l09p8glo' name='df_deaths_UE' table='[df_deaths_UE$]' type='table'>
+          <columns gridOrigin='A1:D730:no:A1:D730:0' header='yes' outcome='6'>
+            <column datatype='string' name='COUNTRY' ordinal='0' />
+            <column datatype='string' name='ISO_CODE' ordinal='1' />
+            <column datatype='date' date-parse-format='yyyy' name='YEAR' ordinal='2' />
+            <column datatype='real' name='CONFLICT_TERRORISM_DEATHS' ordinal='3' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.0x4mw9h0nl0hf31e37p9l09p8glo' name='df_deaths_UE' table='[df_deaths_UE$]' type='table'>
+          <columns gridOrigin='A1:D730:no:A1:D730:0' header='yes' outcome='6'>
+            <column datatype='string' name='COUNTRY' ordinal='0' />
+            <column datatype='string' name='ISO_CODE' ordinal='1' />
+            <column datatype='date' date-parse-format='yyyy' name='YEAR' ordinal='2' />
+            <column datatype='real' name='CONFLICT_TERRORISM_DEATHS' ordinal='3' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[df_deaths_UE]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>2</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:D730:no:A1:D730:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COUNTRY</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[COUNTRY]</local-name>
+            <parent-name>[df_deaths_UE]</parent-name>
+            <remote-alias>COUNTRY</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df!deaths!UE_98D8AFA4F3FB45FEB9B95104BA4E8112]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ISO_CODE</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[ISO_CODE]</local-name>
+            <parent-name>[df_deaths_UE]</parent-name>
+            <remote-alias>ISO_CODE</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df!deaths!UE_98D8AFA4F3FB45FEB9B95104BA4E8112]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YEAR</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[YEAR]</local-name>
+            <parent-name>[df_deaths_UE]</parent-name>
+            <remote-alias>YEAR</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df!deaths!UE_98D8AFA4F3FB45FEB9B95104BA4E8112]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CONFLICT_TERRORISM_DEATHS</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[CONFLICT_TERRORISM_DEATHS]</local-name>
+            <parent-name>[df_deaths_UE]</parent-name>
+            <remote-alias>CONFLICT_TERRORISM_DEATHS</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df!deaths!UE_98D8AFA4F3FB45FEB9B95104BA4E8112]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Conflict Terrorism Deaths' datatype='real' name='[CONFLICT_TERRORISM_DEATHS]' role='measure' type='quantitative' />
+      <column caption='Country' datatype='string' name='[COUNTRY]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Iso Code' datatype='string' name='[ISO_CODE]' role='dimension' type='nominal' />
+      <column caption='Year' datatype='date' name='[YEAR]' role='dimension' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='df_deaths_UE' datatype='table' name='[__tableau_internal_object_id__].[df!deaths!UE_98D8AFA4F3FB45FEB9B95104BA4E8112]' role='measure' type='quantitative' />
+      <column-instance column='[COUNTRY]' derivation='None' name='[none:COUNTRY:nk]' pivot='key' type='nominal' />
+      <column-instance column='[YEAR]' derivation='Year-Trunc' name='[tyr:YEAR:qk]' pivot='key' type='quantitative' />
+      <group hidden='true' name='[Exclusiones (AÑO(Year),Country)]' name-style='unqualified' user:auto-column='exclude'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[tyr:YEAR:qk]' />
+          <groupfilter function='level-members' level='[none:COUNTRY:nk]' />
+        </groupfilter>
+      </group>
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='es_ES' class='hyper' dbname='C:/Users/Roberto Barroso/Documents/Mi Repositorio de Tableau/Fuentes de datos/df_deaths_UE (df_deaths_UE).hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='01/17/2022 10:24:14 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='df_deaths_UE (df_deaths_UE)' increment-value='%null%' refresh-type='create' rows-inserted='729' timestamp-start='2022-01-17 22:24:13.323' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>COUNTRY</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[COUNTRY]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>COUNTRY</remote-alias>
+              <ordinal>0</ordinal>
+              <family>df_deaths_UE</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LES_RES_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df!deaths!UE_98D8AFA4F3FB45FEB9B95104BA4E8112]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ISO_CODE</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ISO_CODE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ISO_CODE</remote-alias>
+              <ordinal>1</ordinal>
+              <family>df_deaths_UE</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LES_RES_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df!deaths!UE_98D8AFA4F3FB45FEB9B95104BA4E8112]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>YEAR</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[YEAR]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>YEAR</remote-alias>
+              <ordinal>2</ordinal>
+              <family>df_deaths_UE</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df!deaths!UE_98D8AFA4F3FB45FEB9B95104BA4E8112]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CONFLICT_TERRORISM_DEATHS</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[CONFLICT_TERRORISM_DEATHS]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CONFLICT_TERRORISM_DEATHS</remote-alias>
+              <ordinal>3</ordinal>
+              <family>df_deaths_UE</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>34</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df!deaths!UE_98D8AFA4F3FB45FEB9B95104BA4E8112]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:COUNTRY:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Netherlands&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Belgium&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;France&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Romania&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Lithuania&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Croatia&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Luxembourg&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Slovenia&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Malta&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Denmark&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Spain&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Estonia&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;España&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='df_deaths_UE' id='df!deaths!UE_98D8AFA4F3FB45FEB9B95104BA4E8112'>
+            <properties context=''>
+              <relation connection='excel-direct.0x4mw9h0nl0hf31e37p9l09p8glo' name='df_deaths_UE' table='[df_deaths_UE$]' type='table'>
+                <columns gridOrigin='A1:D730:no:A1:D730:0' header='yes' outcome='6'>
+                  <column datatype='string' name='COUNTRY' ordinal='0' />
+                  <column datatype='string' name='ISO_CODE' ordinal='1' />
+                  <column datatype='date' date-parse-format='yyyy' name='YEAR' ordinal='2' />
+                  <column datatype='real' name='CONFLICT_TERRORISM_DEATHS' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Resaltar1' name='[Action1_9008530ACC3D466A874220DB56DC01B3]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Muertes por terrorismo en la Unión Europea' type='sheet' worksheet='Muertes por país' />
+      <command command='tsc:brush'>
+        <param name='exclude' value='Muertes por país' />
+        <param name='special-fields' value='all' />
+        <param name='target' value='Muertes por terrorismo en la Unión Europea' />
+      </command>
+    </action>
+    <action caption='Resaltar2' name='[Action2_DC704E5BE1C245828F3EC3AA1886DCF3]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Muertes por terrorismo en la Unión Europea' type='sheet' worksheet='Muertes al año' />
+      <command command='tsc:brush'>
+        <param name='exclude' value='Muertes al año' />
+        <param name='special-fields' value='all' />
+        <param name='target' value='Muertes por terrorismo en la Unión Europea' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Military Expenditure GDP Percentage'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='military_expenditure_UE (military_expenditure_UE)' name='federated.01grthw0zzce531cig6xu0ofl9qr' />
+            <datasource caption='df_deaths_UE (df_deaths_UE)' name='federated.1fvcto61o62vui16dwz2710n86m7' />
+          </datasources>
+          <datasource-dependencies datasource='federated.01grthw0zzce531cig6xu0ofl9qr'>
+            <column caption='Country' datatype='string' name='[COUNTRY]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Military Expenditure Gdp Percentage' datatype='real' name='[MILITARY_EXPENDITURE_GDP_PERCENTAGE]' role='measure' type='quantitative' />
+            <column-instance column='[MILITARY_EXPENDITURE_GDP_PERCENTAGE]' derivation='Avg' name='[avg:MILITARY_EXPENDITURE_GDP_PERCENTAGE:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[COUNTRY]' derivation='None' name='[none:COUNTRY:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.1fvcto61o62vui16dwz2710n86m7'>
+            <column caption='Year' datatype='date' name='[YEAR]' role='dimension' type='quantitative' />
+            <column-instance column='[YEAR]' derivation='None' name='[none:YEAR:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1fvcto61o62vui16dwz2710n86m7].[none:YEAR:qk]' included-values='in-range'>
+            <min>#1993-01-01#</min>
+            <max>#2016-01-01#</max>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.01grthw0zzce531cig6xu0ofl9qr].[none:COUNTRY:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.01grthw0zzce531cig6xu0ofl9qr].[avg:MILITARY_EXPENDITURE_GDP_PERCENTAGE:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1fvcto61o62vui16dwz2710n86m7].[none:YEAR:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.01grthw0zzce531cig6xu0ofl9qr].[avg:MILITARY_EXPENDITURE_GDP_PERCENTAGE:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.01grthw0zzce531cig6xu0ofl9qr].[avg:MILITARY_EXPENDITURE_GDP_PERCENTAGE:qk]' value='n#,##0.00&quot;%&quot;;-#,##0.00&quot;%&quot;' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-orientation' field='[federated.01grthw0zzce531cig6xu0ofl9qr].[none:COUNTRY:nk]' value='0' />
+            <format attr='font-size' field='[federated.01grthw0zzce531cig6xu0ofl9qr].[none:COUNTRY:nk]' value='8' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.01grthw0zzce531cig6xu0ofl9qr].[avg:MILITARY_EXPENDITURE_GDP_PERCENTAGE:qk]' palette='blue_teal_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.01grthw0zzce531cig6xu0ofl9qr].[avg:MILITARY_EXPENDITURE_GDP_PERCENTAGE:qk]' />
+              <text column='[federated.01grthw0zzce531cig6xu0ofl9qr].[avg:MILITARY_EXPENDITURE_GDP_PERCENTAGE:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.01grthw0zzce531cig6xu0ofl9qr].[avg:MILITARY_EXPENDITURE_GDP_PERCENTAGE:qk]</rows>
+        <cols>[federated.01grthw0zzce531cig6xu0ofl9qr].[none:COUNTRY:nk]</cols>
+      </table>
+      <simple-id uuid='{A8AFEAD7-5A4F-41F8-8166-23D3334EF448}' />
+    </worksheet>
+    <worksheet name='Muertes al año'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='df_deaths_UE (df_deaths_UE)' name='federated.1fvcto61o62vui16dwz2710n86m7' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1fvcto61o62vui16dwz2710n86m7'>
+            <column caption='Conflict Terrorism Deaths' datatype='real' name='[CONFLICT_TERRORISM_DEATHS]' role='measure' type='quantitative' />
+            <column caption='Country' datatype='string' name='[COUNTRY]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Year' datatype='date' name='[YEAR]' role='dimension' type='quantitative' />
+            <column-instance column='[COUNTRY]' derivation='None' name='[none:COUNTRY:nk]' pivot='key' type='nominal' />
+            <column-instance column='[YEAR]' derivation='None' name='[none:YEAR:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[CONFLICT_TERRORISM_DEATHS]' derivation='Sum' name='[sum:CONFLICT_TERRORISM_DEATHS:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[YEAR]' derivation='Year-Trunc' name='[tyr:YEAR:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1fvcto61o62vui16dwz2710n86m7].[Exclusiones (AÑO(Year),Country)]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='crossjoin'>
+                <groupfilter function='level-members' level='[tyr:YEAR:qk]' />
+                <groupfilter function='level-members' level='[none:COUNTRY:nk]' />
+              </groupfilter>
+              <groupfilter function='reorder-dimensionality'>
+                <groupfilter function='union'>
+                  <groupfilter function='crossjoin'>
+                    <groupfilter function='member' level='[none:COUNTRY:nk]' member='&quot;Belgium&quot;' />
+                    <groupfilter function='union'>
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#1993-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#1994-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#1995-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#1996-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#1997-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#1998-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#1999-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2000-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2001-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2002-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2003-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2004-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2005-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2006-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2007-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2008-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2009-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2010-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2011-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2012-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2013-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2014-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2015-01-01 00:00:00#' />
+                    </groupfilter>
+                  </groupfilter>
+                  <groupfilter function='crossjoin'>
+                    <groupfilter function='member' level='[none:COUNTRY:nk]' member='&quot;Croatia&quot;' />
+                    <groupfilter function='union'>
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2000-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2001-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2002-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2003-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2006-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2007-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2008-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2009-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2010-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2011-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2012-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2013-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2014-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2015-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2016-01-01 00:00:00#' />
+                    </groupfilter>
+                  </groupfilter>
+                  <groupfilter function='crossjoin'>
+                    <groupfilter function='member' level='[none:COUNTRY:nk]' member='&quot;Denmark&quot;' />
+                    <groupfilter function='union'>
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#1993-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#1994-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#1995-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#1996-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#1997-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#1998-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#1999-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2000-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2001-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2002-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2003-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2004-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2005-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2006-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2007-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2009-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2010-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2011-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2012-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2013-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2014-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2015-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2016-01-01 00:00:00#' />
+                    </groupfilter>
+                  </groupfilter>
+                  <groupfilter function='crossjoin'>
+                    <groupfilter function='member' level='[none:COUNTRY:nk]' member='&quot;Estonia&quot;' />
+                    <groupfilter function='union'>
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#1993-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#1994-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#1995-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#1996-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#1997-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#1998-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#1999-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2000-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2001-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2002-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2003-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2004-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2005-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2006-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2007-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2008-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2010-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2011-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2012-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2013-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2014-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2015-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2016-01-01 00:00:00#' />
+                    </groupfilter>
+                  </groupfilter>
+                  <groupfilter function='crossjoin'>
+                    <groupfilter function='member' level='[none:COUNTRY:nk]' member='&quot;France&quot;' />
+                    <groupfilter function='union'>
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#1993-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#1994-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#1995-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#1996-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#1997-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#1998-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#1999-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2000-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2001-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2002-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2003-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2004-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2005-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2006-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2007-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2008-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2009-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2010-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2011-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2012-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2013-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2014-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2016-01-01 00:00:00#' />
+                    </groupfilter>
+                  </groupfilter>
+                  <groupfilter function='crossjoin'>
+                    <groupfilter function='member' level='[none:COUNTRY:nk]' member='&quot;Lithuania&quot;' />
+                    <groupfilter function='union'>
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#1994-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#1995-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#1996-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#1997-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#1998-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#1999-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2000-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2001-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2002-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2003-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2004-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2005-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2006-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2007-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2008-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2009-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2010-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2011-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2012-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2013-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2014-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2015-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2016-01-01 00:00:00#' />
+                    </groupfilter>
+                  </groupfilter>
+                  <groupfilter function='crossjoin'>
+                    <groupfilter function='union'>
+                      <groupfilter function='member' level='[none:COUNTRY:nk]' member='&quot;Luxembourg&quot;' />
+                      <groupfilter function='member' level='[none:COUNTRY:nk]' member='&quot;Malta&quot;' />
+                      <groupfilter function='member' level='[none:COUNTRY:nk]' member='&quot;Slovenia&quot;' />
+                    </groupfilter>
+                    <groupfilter function='union'>
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#1993-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#1994-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#1995-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#1996-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#1997-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#1998-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#1999-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2000-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2001-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2002-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2003-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2004-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2005-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2006-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2007-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2008-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2009-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2010-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2011-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2012-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2013-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2014-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2015-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2016-01-01 00:00:00#' />
+                    </groupfilter>
+                  </groupfilter>
+                  <groupfilter function='crossjoin'>
+                    <groupfilter function='member' level='[none:COUNTRY:nk]' member='&quot;Netherlands&quot;' />
+                    <groupfilter function='union'>
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#1993-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#1994-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#1995-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#1996-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#1997-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#1998-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#1999-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2000-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2001-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2002-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2003-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2004-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2005-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2006-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2007-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2008-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2009-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2010-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2011-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2012-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2013-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2015-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2016-01-01 00:00:00#' />
+                    </groupfilter>
+                  </groupfilter>
+                  <groupfilter function='crossjoin'>
+                    <groupfilter function='member' level='[none:COUNTRY:nk]' member='&quot;Romania&quot;' />
+                    <groupfilter function='union'>
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#1999-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2000-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2001-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2002-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2003-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2004-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2005-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2006-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2007-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2008-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2009-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2010-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2011-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2012-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2013-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2014-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2015-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2016-01-01 00:00:00#' />
+                    </groupfilter>
+                  </groupfilter>
+                  <groupfilter function='crossjoin'>
+                    <groupfilter function='member' level='[none:COUNTRY:nk]' member='&quot;Spain&quot;' />
+                    <groupfilter function='union'>
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#1993-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#1994-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#1995-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#1996-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#1997-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#1998-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#1999-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2000-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2001-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2002-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2003-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2005-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2006-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2007-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2008-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2009-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2010-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2011-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2012-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2013-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2014-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2015-01-01 00:00:00#' />
+                      <groupfilter function='member' level='[tyr:YEAR:qk]' member='#2016-01-01 00:00:00#' />
+                    </groupfilter>
+                  </groupfilter>
+                </groupfilter>
+                <order>
+                  <hierarchy name='[tyr:YEAR:qk]' />
+                  <hierarchy name='[none:COUNTRY:nk]' />
+                </order>
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1fvcto61o62vui16dwz2710n86m7].[none:COUNTRY:nk]'>
+            <groupfilter expression='SUM([CONFLICT_TERRORISM_DEATHS]) &gt; 0.' function='filter' user:ui-filter-by-field='true' user:ui-marker='filter-by'>
+              <groupfilter function='level-members' level='[none:COUNTRY:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.1fvcto61o62vui16dwz2710n86m7].[none:YEAR:qk]' included-values='in-range'>
+            <min>#1990-01-01#</min>
+            <max>#2016-01-01#</max>
+          </filter>
+          <slices>
+            <column>[federated.1fvcto61o62vui16dwz2710n86m7].[none:COUNTRY:nk]</column>
+            <column>[federated.1fvcto61o62vui16dwz2710n86m7].[none:YEAR:qk]</column>
+            <column>[federated.1fvcto61o62vui16dwz2710n86m7].[Exclusiones (AÑO(Year),Country)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.1fvcto61o62vui16dwz2710n86m7].[sum:CONFLICT_TERRORISM_DEATHS:qk]' scope='rows' value='false' />
+            <format attr='title' class='0' field='[federated.1fvcto61o62vui16dwz2710n86m7].[tyr:YEAR:qk]' scope='cols' value='' />
+            <encoding attr='space' class='0' field='[federated.1fvcto61o62vui16dwz2710n86m7].[tyr:YEAR:qk]' field-type='quantitative' major-origin='#2005-07-03 00:00:00#' major-spacing='1.0' major-units='years' minor-origin='#2005-07-03 00:00:00#' minor-show='false' minor-spacing='1.0' minor-units='quarters' scope='cols' type='space' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' field='[federated.1fvcto61o62vui16dwz2710n86m7].[tyr:YEAR:qk]' value='8' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#e9f3f2' />
+            <format attr='stroke-size' id='refline0' value='1' />
+            <format attr='line-visibility' id='refline0' value='on' />
+            <format attr='line-pattern-only' id='refline0' value='dashed' />
+            <format attr='stroke-color' id='refline0' value='#4e79a7' />
+            <format attr='vertical-align' id='refline0' value='top' />
+            <format attr='font-size' id='refline0' value='12' />
+            <format attr='font-weight' id='refline0' value='bold' />
+            <format attr='color' id='refline0' value='#4e79a7' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+            <encodings>
+              <color column='[federated.1fvcto61o62vui16dwz2710n86m7].[none:COUNTRY:nk]' />
+              <text column='[federated.1fvcto61o62vui16dwz2710n86m7].[sum:CONFLICT_TERRORISM_DEATHS:qk]' />
+            </encodings>
+            <reference-line axis-column='[federated.1fvcto61o62vui16dwz2710n86m7].[tyr:YEAR:qk]' enable-instant-analytics='true' formula='constant' id='refline0' label='1993 - Unión Europea' label-type='custom' scope='per-table' value='#1993-01-01 00:00:00#' value-column='[federated.1fvcto61o62vui16dwz2710n86m7].[tyr:YEAR:qk]' z-order='1' />
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-size' value='8' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-markers-mode' value='all' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1fvcto61o62vui16dwz2710n86m7].[sum:CONFLICT_TERRORISM_DEATHS:qk]</rows>
+        <cols>[federated.1fvcto61o62vui16dwz2710n86m7].[tyr:YEAR:qk]</cols>
+      </table>
+      <simple-id uuid='{E26673BA-E131-493B-B825-D7AE4585CA30}' />
+    </worksheet>
+    <worksheet name='Muertes por país'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='df_deaths_UE (df_deaths_UE)' name='federated.1fvcto61o62vui16dwz2710n86m7' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1fvcto61o62vui16dwz2710n86m7'>
+            <column caption='Conflict Terrorism Deaths' datatype='real' name='[CONFLICT_TERRORISM_DEATHS]' role='measure' type='quantitative' />
+            <column caption='Country' datatype='string' name='[COUNTRY]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Year' datatype='date' name='[YEAR]' role='dimension' type='quantitative' />
+            <column-instance column='[COUNTRY]' derivation='None' name='[none:COUNTRY:nk]' pivot='key' type='nominal' />
+            <column-instance column='[YEAR]' derivation='None' name='[none:YEAR:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[CONFLICT_TERRORISM_DEATHS]' derivation='Sum' name='[sum:CONFLICT_TERRORISM_DEATHS:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1fvcto61o62vui16dwz2710n86m7].[none:COUNTRY:nk]'>
+            <groupfilter expression='SUM([CONFLICT_TERRORISM_DEATHS]) &gt; 0.' function='filter' user:ui-filter-by-field='true' user:ui-marker='filter-by'>
+              <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-marker='enumerate'>
+                <groupfilter function='level-members' level='[none:COUNTRY:nk]' />
+                <groupfilter function='union'>
+                  <groupfilter function='member' level='[none:COUNTRY:nk]' member='&quot;Austria&quot;' />
+                  <groupfilter function='member' level='[none:COUNTRY:nk]' member='&quot;Bulgaria&quot;' />
+                  <groupfilter function='member' level='[none:COUNTRY:nk]' member='&quot;Cyprus&quot;' />
+                  <groupfilter function='member' level='[none:COUNTRY:nk]' member='&quot;Czechia&quot;' />
+                  <groupfilter function='member' level='[none:COUNTRY:nk]' member='&quot;Estonia&quot;' />
+                  <groupfilter function='member' level='[none:COUNTRY:nk]' member='&quot;Finland&quot;' />
+                  <groupfilter function='member' level='[none:COUNTRY:nk]' member='&quot;Germany&quot;' />
+                  <groupfilter function='member' level='[none:COUNTRY:nk]' member='&quot;Greece&quot;' />
+                  <groupfilter function='member' level='[none:COUNTRY:nk]' member='&quot;Hungary&quot;' />
+                  <groupfilter function='member' level='[none:COUNTRY:nk]' member='&quot;Ireland&quot;' />
+                  <groupfilter function='member' level='[none:COUNTRY:nk]' member='&quot;Italy&quot;' />
+                  <groupfilter function='member' level='[none:COUNTRY:nk]' member='&quot;Latvia&quot;' />
+                  <groupfilter function='member' level='[none:COUNTRY:nk]' member='&quot;Lithuania&quot;' />
+                  <groupfilter function='member' level='[none:COUNTRY:nk]' member='&quot;Luxembourg&quot;' />
+                  <groupfilter function='member' level='[none:COUNTRY:nk]' member='&quot;Malta&quot;' />
+                  <groupfilter function='member' level='[none:COUNTRY:nk]' member='&quot;Poland&quot;' />
+                  <groupfilter function='member' level='[none:COUNTRY:nk]' member='&quot;Portugal&quot;' />
+                  <groupfilter function='member' level='[none:COUNTRY:nk]' member='&quot;Slovakia&quot;' />
+                  <groupfilter function='member' level='[none:COUNTRY:nk]' member='&quot;Slovenia&quot;' />
+                  <groupfilter function='member' level='[none:COUNTRY:nk]' member='&quot;Sweden&quot;' />
+                </groupfilter>
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.1fvcto61o62vui16dwz2710n86m7].[none:COUNTRY:nk]' direction='DESC' using='[federated.1fvcto61o62vui16dwz2710n86m7].[sum:CONFLICT_TERRORISM_DEATHS:qk]' />
+          <filter class='quantitative' column='[federated.1fvcto61o62vui16dwz2710n86m7].[none:YEAR:qk]' included-values='in-range'>
+            <min>#1990-01-01#</min>
+            <max>#2016-01-01#</max>
+          </filter>
+          <slices>
+            <column>[federated.1fvcto61o62vui16dwz2710n86m7].[none:COUNTRY:nk]</column>
+            <column>[federated.1fvcto61o62vui16dwz2710n86m7].[none:YEAR:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.1fvcto61o62vui16dwz2710n86m7].[sum:CONFLICT_TERRORISM_DEATHS:qk]' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.1fvcto61o62vui16dwz2710n86m7].[none:COUNTRY:nk]' />
+              <text column='[federated.1fvcto61o62vui16dwz2710n86m7].[sum:CONFLICT_TERRORISM_DEATHS:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1fvcto61o62vui16dwz2710n86m7].[none:COUNTRY:nk]</rows>
+        <cols>[federated.1fvcto61o62vui16dwz2710n86m7].[sum:CONFLICT_TERRORISM_DEATHS:qk]</cols>
+      </table>
+      <simple-id uuid='{B1699C75-75C2-4959-B1E5-101C29FF9B3B}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Gasto militar en la Unión Europea (% del PIB)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>&lt;Sheet Name&gt;&#10;</run>
+            <run bold='false' fontcolor='#555555' fontsize='18'>1993 - 2017</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style>
+        <style-rule element='dash-title'>
+          <format attr='font-family' value='Times New Roman' />
+          <format attr='font-size' value='28' />
+          <format attr='font-style' value='italic' />
+          <format attr='font-weight' value='bold' />
+          <format attr='text-align' value='center' />
+        </style-rule>
+      </style>
+      <size maxheight='900' maxwidth='1600' minheight='900' minwidth='1600' preset-index='8' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98222' id='9' param='vert' type-v2='layout-flow' w='99000' x='500' y='889'>
+            <zone h='10778' id='10' type-v2='title' w='99000' x='500' y='889'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='87444' id='7' param='horz' type-v2='layout-flow' w='99000' x='500' y='11667'>
+              <zone h='87444' id='5' type-v2='layout-basic' w='99000' x='500' y='11667'>
+                <zone h='87444' id='3' name='Military Expenditure GDP Percentage' show-title='false' w='99000' x='500' y='11667'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run>&lt;Sheet Name&gt;&#10;</run>
+                <run bold='false' fontcolor='#555555' fontsize='18'>1993 - 2017</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='124' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98222' id='123' param='vert' type-v2='layout-flow' w='99000' x='500' y='889'>
+                <zone h='10778' id='10' type-v2='title' w='99000' x='500' y='889'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='87444' id='3' is-fixed='true' name='Military Expenditure GDP Percentage' show-title='false' w='99000' x='500' y='11667'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{BF080658-8DD6-4AC1-8DFF-59F0D48D3E18}' />
+    </dashboard>
+    <dashboard name='Muertes por terrorismo en la Unión Europea'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>&lt;Sheet Name&gt;&#10;</run>
+            <run bold='false' fontcolor='#555555' fontsize='18'>1993 - 2017</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style>
+        <style-rule element='dash-title'>
+          <format attr='font-family' value='Times New Roman' />
+          <format attr='font-size' value='28' />
+          <format attr='font-style' value='italic' />
+          <format attr='font-weight' value='bold' />
+          <format attr='text-align' value='center' />
+        </style-rule>
+      </style>
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98690' id='38' param='vert' type-v2='layout-flow' w='99304' x='348' y='655'>
+            <zone h='7944' id='39' type-v2='title' w='99304' x='348' y='655'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone fixed-size='24' h='2621' id='8' is-fixed='true' name='Muertes al año' pane-specification-id='0' param='[federated.1fvcto61o62vui16dwz2710n86m7].[none:COUNTRY:nk]' show-title='false' type-v2='color' w='99304' x='348' y='8599'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='88125' id='17' param='horz' type-v2='layout-flow' w='99304' x='348' y='11220'>
+              <zone h='88125' id='15' type-v2='layout-basic' w='99304' x='348' y='11220'>
+                <zone h='88125' id='7' param='horz' type-v2='layout-flow' w='99304' x='348' y='11220'>
+                  <zone h='88125' id='5' type-v2='layout-basic' w='99304' x='348' y='11220'>
+                    <zone h='88125' id='3' name='Muertes al año' show-title='false' w='77360' x='348' y='11220'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='88125' id='18' name='Muertes por país' show-title='false' w='21944' x='77708' y='11220'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run>&lt;Sheet Name&gt;&#10;</run>
+                <run bold='false' fontcolor='#555555' fontsize='18'>1993 - 2017</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='750' minheight='750' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='156' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98690' id='155' param='vert' type-v2='layout-flow' w='99304' x='348' y='655'>
+                <zone h='7944' id='39' type-v2='title' w='99304' x='348' y='655'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='88125' id='3' is-fixed='true' name='Muertes al año' show-title='false' w='77360' x='348' y='11220'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='24' h='2621' id='8' name='Muertes al año' pane-specification-id='0' param='[federated.1fvcto61o62vui16dwz2710n86m7].[none:COUNTRY:nk]' show-title='false' type-v2='color' w='99304' x='348' y='8599'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='88125' id='18' is-fixed='true' name='Muertes por país' show-title='false' w='21944' x='77708' y='11220'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{556029C2-7AD4-47D0-A1CA-A54B41B480B5}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='63'>
+    <window class='dashboard' name='Muertes por terrorismo en la Unión Europea'>
+      <viewpoints>
+        <viewpoint name='Muertes al año'>
+          <zoom type='entire-view' />
+          <highlight>
+            <color-one-way>
+              <field>[federated.1fvcto61o62vui16dwz2710n86m7].[none:COUNTRY:nk]</field>
+            </color-one-way>
+          </highlight>
+        </viewpoint>
+        <viewpoint name='Muertes por país'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{6983B4AA-D472-47BE-B1AD-5B54CD5D2A33}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Gasto militar en la Unión Europea (% del PIB)'>
+      <viewpoints>
+        <viewpoint name='Military Expenditure GDP Percentage'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='10' />
+      <simple-id uuid='{92840325-7063-46A4-9A55-95A15423DE31}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Military Expenditure GDP Percentage'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='172'>
+            <card pane-specification-id='1' param='[federated.01grthw0zzce531cig6xu0ofl9qr].[avg:MILITARY_EXPENDITURE_GDP_PERCENTAGE:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.01grthw0zzce531cig6xu0ofl9qr].[avg:MILITARY_EXPENDITURE_GDP_PERCENTAGE:qk]</field>
+            <field>[federated.01grthw0zzce531cig6xu0ofl9qr].[none:COUNTRY:nk]</field>
+            <field>[federated.01grthw0zzce531cig6xu0ofl9qr].[tyr:YEAR:qk]</field>
+            <field>[federated.1fvcto61o62vui16dwz2710n86m7].[none:YEAR:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{2877B84E-BA5B-4C09-82C9-D417467A745F}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Muertes al año'>
+      <cards>
+        <edge name='left'>
+          <strip size='200'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='216'>
+            <card pane-specification-id='0' param='[federated.1fvcto61o62vui16dwz2710n86m7].[none:COUNTRY:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1fvcto61o62vui16dwz2710n86m7].[none:COUNTRY:nk]</field>
+            <field>[federated.1fvcto61o62vui16dwz2710n86m7].[none:YEAR:qk]</field>
+            <field>[federated.1fvcto61o62vui16dwz2710n86m7].[tyr:YEAR:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{7C86BCDA-9774-4E5E-854B-A88E36B1F3AB}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Muertes por país'>
+      <cards>
+        <edge name='left'>
+          <strip size='200'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='216'>
+            <card pane-specification-id='0' param='[federated.1fvcto61o62vui16dwz2710n86m7].[none:COUNTRY:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1fvcto61o62vui16dwz2710n86m7].[none:COUNTRY:nk]</field>
+            <field>[federated.1fvcto61o62vui16dwz2710n86m7].[none:YEAR:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{96C17B2D-C984-4CA6-A68F-3AE7C748CB3F}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Gasto militar en la Unión Europea (% del PIB)' width='192'>
+      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
+      Cr/KzcvodsZUqzX31TJSaz7te83u4LW27qD6pZgN/MbGLP/jsbExhoaGKCwsZHZ2lnPnzrFr
+      1y4uXbqExWJhbGyM3Nxc7HZ7wOVr7oRsAol7YtbtodNmv6O+LpeLwcFB8vPz/fsLdXV15Ofn
+      09DQgFar5fz588TFxbFv3767mqd8DyDWnLGxMVJSUggJCcFgMNDR0YHJZKKxsZHy8nJUKhUO
+      h8N/GPduyBpArDmTk5OoVCrm5uaIjY3F4/FgNBoZHBykv7+fvLw8SkpKqK+v998H4k5JAMSa
+      c/NmzfVTLHJzcwOeP3z48F2PJQEQa85bl7rpnw7uatzH8zJINt35WkACINac/mknXRPB7UDP
+      uu/u8KnsBIt1paamhqamJmBxZ7qxsRG3282pU6eYnZ3l5MmTTExM+O8iKgEQ68r27dsZGRkB
+      Fk/HsNvt/rv/dHd34/F4OHnypP+sVwmAWDd8Ph8fffQRhw4dAvBfGeN6sU9BQQHz8/OEh4cz
+      OzsLyD6AWEd8Ph9Go9F/P2i9Xg9AV1cXsFhLXVZWRlhYGMPDw4AEQKwjarWaioqKgOeuHzq9
+      uc7h+kUHJABiXXnidEPQbb+/b6fsAwhlkwAIRZN6gCBJPUAQfW+oB/B6V2oZ3d37SOoBgiT1
+      AEH0vaEeQK1eqWV0d+8j2QQSiiYBEIomARCKJgEQiiYBEIomARCKJgEQiiYBEIomARCKJgEQ
+      iiYBEIomARCKJgEQiiYBEIomARCKJgUxQZKCmCD6SkGMFMTcTApifjUpiBFilUgAhKJJAISi
+      SQCEokkAhKJJAISiSQCEokkAhKJJAISiSQCEokkAhKJJAISiSQCEokkAhKJJAISiSUFMkKQg
+      Joi+UhAjBTE3k4KYX00KYoRYJRIAoWgSAKFoEgChaBIAoWgSAKFoEgChaP8fG4j9MyOv94IA
+      AAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Muertes por terrorismo en la Unión Europea' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAASVElEQVR4nO3da2xb533H8e85PKRIUTeSknWhKMmSLFuWLTtO0sRO0rTIBWnaoh3WXbB1
+      GNY37V7v1QZs7/ZuwF4Me7kNG1akG9AUw7AWSZwizd2Jk8m2bMu6S5QoSuJVvB4dkmcvHCiP
+      YmxLnMCy9fw/gOGbSB7y4e+c3zl6+MhwXddFCE2ZB70BQhwkCYDQmgRAaE0CILRmHfQGCPFV
+      WVueJ5nKATBy4hShFv/t/3BdFmdvkClUwPBwanISv9cDyBFAHCJ9sUFe/se/5Sc/+QlvTy3s
+      /fvqzUv86E9+xJ/9xV8T6h3Ye/ODBEAcJnWbpuZ2AFKpFABOJcc//fNPqTp1vvaN5xnpi+C6
+      7t4vCYA4NNbnpxl/7GksIJPJ4LouP3/pJfoHh6i58MQTTwDw1n+9xAvPP8Pf/MPLEgBxeFyb
+      WeH8Y+cI+G4fAa5fep3W0cdYm72K1dzJY2fHALCMBulcmae//oQEQBwSbp1MuUG0M0Szv4m1
+      heu8fT3JMw9FuTQ1x8jpR+hu8wMub7/9NpHBk5zs80sAxOFQ2Fqm5cggZiBIOOgnlcrwg9/9
+      HRauXWa7uMv5CxcwDahXsrzz4TSPP/k0H73xSwmAePC5rsubr11kcGwMjADdvd38+V/+FZEW
+      L6+98iouJo8+eg6A+Ow1NnJVdrbj5IpVDJkMJx50q/PXeeOtS3QOHOP5bz7Jwuwtxo4fY+rS
+      u/z39Vs0XIiNTvDMU49TK6d5+T9e4cIzL9DGjgRA6E0qkNCaBEBoTQIgtCYBEFqTAAitSQCE
+      1iQAQmsSAKE1CYDQmgRAaE0CILQmARBakwAIre1bFiW5usBvZrJkSw4G8Mffeoh6vc6VK1c4
+      cuQIoyMjbKdS7O7uEo1GASgWi/j9fizr07tqNBr87NWP2KnUsEyDP3rhIQw7zwfXlznS3cvY
+      cAyA9fV1otEo9XqdDxe2cDAxcXl0KIxpmkxNTRGLxeju7r5jw2u1GrZtU6vVaGtrwzAMarUa
+      Hy5uU8PEQ4NHj3ZiujWmrlyld2iMvq7QvvtwHIf8W3+PWSvT8LbS8dSfkk6nWVxcZHR0lK6u
+      rs/1Iu7u7rL0yt/R6bNpNHUQfurHZDbXWFjdYOjYSXoibfu+3rZtnNlXMWjgmAHaxp8lmUyS
+      SCToaG9n+NgxHNvGdV38fv8dt200GgQCASqVCo35V29vgydI6OSzbMQXSWxlGR47Sag1QL1a
+      pGoECDZ5KJVL/NvH/wpAqCnCc6e/z/ZGnEwmw+nTp/H5fJ/r+eaLeX4+9TMAjjT38J1z32Nl
+      4RapfIWJ05P4veYdX//+5hsAtHvCPD701N7Y5/N5DMMgGAySzWbp7Oz8Xx83ld3m0sabWE0W
+      YW8Xjw5cuON+2oI+NrM23Z3t5DLrLF35FwCC4XHGznyf9fV1jnR2sOv6CPq9agBcPpi6zrsL
+      sLxdxjTg4VCB1v4hpqev0fD4+eDyhyzP3iTa3Y/T1MJuKctINMLRU4/Q3dVFIpEgkUhQq9X4
+      5a9vUbCO0GSZ/OHzZ2iUsmTLNaxsmiuXE1Tw4zVqlHIpkmsJkp2TVFwTC5e21RQfv/Mr2jt6
+      qNTg+vXrdHd3k8vlGB4eZm5ujpaWFhKJBMPDw+zu7nLjxg3Onj3LSsHFdsFnuDziuizdusHR
+      Uw8TdHZ4/Y036e3sIJPbYWRkhNWVJcZmXsayMzjNPaTHvssbb73Hcy+8yNLCPPF4nHq9vvfG
+      6+joIJlM4vP5GBsbY2lpia6uLmZnZ2m59O/k3TJDgwPw1I/JZHNMnHmY2RtXSS7tUqUZb71A
+      qWbR0+ZnNPUxJnXKVphL7wfYzlZYW1km1tvL+x9c5uTEONl0ms7OTgqFAuFwmHQ6TTQaJRAI
+      MDU1RXt7O+OpjzAAvF3As6S2U4CHwuYqV6Zz9PqqzJRCjLTalKoVLi7+CoDB1mOciz3D6xdf
+      p+/oMXy3buHx3F4upFKpUK/XsW2bnp6evdCVSiXOnz/PrmPv3c94+BTfOfc9kskk3uZ25m5e
+      xfC1YDkFCjUvhp3DocJ080cAdLv91C4FCVgu0WiUjY0NZmZmmJycZHZ2lt7eXpqamgBoaWlh
+      YWGB7u5u0uk0/pYmPtx+j+J2iYmeMzw6cIFkMvnJ/SSYvTHNmXNnmL6xQm9/P8XUTUrzL90O
+      QP+L4B3hrfc+5JvfeIqVtU12Mhv7K5DZqO1LXKGQI5vL0doapOp42IzPEe7qwWo4BLsG6O8M
+      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
+      H0vaRjONAAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>

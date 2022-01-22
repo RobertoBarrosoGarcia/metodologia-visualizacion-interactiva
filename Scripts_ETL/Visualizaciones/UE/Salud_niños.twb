@@ -1,0 +1,1516 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20213.21.1217.2247                               -->
+<workbook original-version='18.1' source-build='2021.3.6 (20213.21.1217.2247)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='Salud_nios' path='/workbooks' revision='1.3' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <style>
+    <_.fcp.MarkAnimation.true...style-rule element='animation'>
+      <format attr='animation-on' value='ao-off' />
+    </_.fcp.MarkAnimation.true...style-rule>
+  </style>
+  <datasources>
+    <datasource caption='df_stunted_wasted_population (stunted_wasted_population)' inline='true' name='federated.0lvdiw50s7xn3p17b7k11182ei5x' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='stunted_wasted_population' name='excel-direct.1pj3s7k0dfn8xg1h8wjd50wqeae9'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/Roberto Barroso/Documents/Universidad/Trabajo fin de Master/Scripts_ETL/Datos/UE/stunted_wasted_population.xlsx' interpretationMode='0' password='' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.1pj3s7k0dfn8xg1h8wjd50wqeae9' name='df_stunted_wasted_population' table='[df_stunted_wasted_population$]' type='table'>
+          <columns gridOrigin='A1:I163:no:A1:I163:0' header='yes' outcome='6'>
+            <column datatype='string' name='COUNTRY' ordinal='0' />
+            <column datatype='string' name='ISO_CODE' ordinal='1' />
+            <column datatype='date' date-parse-format='yyyy' name='YEAR' ordinal='2' />
+            <column datatype='real' name='CHILDREN_STUNTED' ordinal='3' />
+            <column datatype='real' name='CHILDREN_WASTED' ordinal='4' />
+            <column datatype='integer' name='POPULATION' ordinal='5' />
+            <column datatype='real' name='STUNTED_PERCENTAGE' ordinal='6' />
+            <column datatype='real' name='WASTED_PERCENTAGE' ordinal='7' />
+            <column datatype='real' name='SUM_SW' ordinal='8' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.1pj3s7k0dfn8xg1h8wjd50wqeae9' name='df_stunted_wasted_population' table='[df_stunted_wasted_population$]' type='table'>
+          <columns gridOrigin='A1:I163:no:A1:I163:0' header='yes' outcome='6'>
+            <column datatype='string' name='COUNTRY' ordinal='0' />
+            <column datatype='string' name='ISO_CODE' ordinal='1' />
+            <column datatype='date' date-parse-format='yyyy' name='YEAR' ordinal='2' />
+            <column datatype='real' name='CHILDREN_STUNTED' ordinal='3' />
+            <column datatype='real' name='CHILDREN_WASTED' ordinal='4' />
+            <column datatype='integer' name='POPULATION' ordinal='5' />
+            <column datatype='real' name='STUNTED_PERCENTAGE' ordinal='6' />
+            <column datatype='real' name='WASTED_PERCENTAGE' ordinal='7' />
+            <column datatype='real' name='SUM_SW' ordinal='8' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[df_stunted_wasted_population]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>2</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:I163:no:A1:I163:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COUNTRY</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[COUNTRY]</local-name>
+            <parent-name>[df_stunted_wasted_population]</parent-name>
+            <remote-alias>COUNTRY</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df!stunted!wasted!population_08BD525CFE3148409312A6AB765EF706]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ISO_CODE</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[ISO_CODE]</local-name>
+            <parent-name>[df_stunted_wasted_population]</parent-name>
+            <remote-alias>ISO_CODE</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df!stunted!wasted!population_08BD525CFE3148409312A6AB765EF706]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YEAR</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[YEAR]</local-name>
+            <parent-name>[df_stunted_wasted_population]</parent-name>
+            <remote-alias>YEAR</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df!stunted!wasted!population_08BD525CFE3148409312A6AB765EF706]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CHILDREN_STUNTED</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[CHILDREN_STUNTED]</local-name>
+            <parent-name>[df_stunted_wasted_population]</parent-name>
+            <remote-alias>CHILDREN_STUNTED</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df!stunted!wasted!population_08BD525CFE3148409312A6AB765EF706]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CHILDREN_WASTED</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[CHILDREN_WASTED]</local-name>
+            <parent-name>[df_stunted_wasted_population]</parent-name>
+            <remote-alias>CHILDREN_WASTED</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df!stunted!wasted!population_08BD525CFE3148409312A6AB765EF706]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>POPULATION</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[POPULATION]</local-name>
+            <parent-name>[df_stunted_wasted_population]</parent-name>
+            <remote-alias>POPULATION</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df!stunted!wasted!population_08BD525CFE3148409312A6AB765EF706]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>STUNTED_PERCENTAGE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[STUNTED_PERCENTAGE]</local-name>
+            <parent-name>[df_stunted_wasted_population]</parent-name>
+            <remote-alias>STUNTED_PERCENTAGE</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df!stunted!wasted!population_08BD525CFE3148409312A6AB765EF706]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WASTED_PERCENTAGE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[WASTED_PERCENTAGE]</local-name>
+            <parent-name>[df_stunted_wasted_population]</parent-name>
+            <remote-alias>WASTED_PERCENTAGE</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df!stunted!wasted!population_08BD525CFE3148409312A6AB765EF706]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SUM_SW</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[SUM_SW]</local-name>
+            <parent-name>[df_stunted_wasted_population]</parent-name>
+            <remote-alias>SUM_SW</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df!stunted!wasted!population_08BD525CFE3148409312A6AB765EF706]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[:Measure Names]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;[federated.0lvdiw50s7xn3p17b7k11182ei5x].[avg:CHILDREN_STUNTED:qk]&quot;' value='Retraso del crecimiento' />
+          <alias key='&quot;[federated.0lvdiw50s7xn3p17b7k11182ei5x].[avg:CHILDREN_WASTED:qk]&quot;' value='Debilidad' />
+        </aliases>
+      </column>
+      <column caption='Retraso del crecimiento' datatype='real' name='[CHILDREN_STUNTED]' role='measure' type='quantitative' />
+      <column caption='Debilidad' datatype='real' name='[CHILDREN_WASTED]' role='measure' type='quantitative' />
+      <column caption='Country' datatype='string' name='[COUNTRY]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Iso Code' datatype='string' name='[ISO_CODE]' role='dimension' type='nominal' />
+      <column caption='Población' datatype='integer' name='[POPULATION]' role='measure' type='quantitative' />
+      <column caption='Retraso del creciemiento per cápita' datatype='real' name='[STUNTED_PERCENTAGE]' role='measure' type='quantitative' />
+      <column caption='Sum Sw' datatype='real' name='[SUM_SW]' role='measure' type='quantitative' />
+      <column caption='Debilidad per cápita' datatype='real' name='[WASTED_PERCENTAGE]' role='measure' type='quantitative' />
+      <column caption='Year' datatype='date' name='[YEAR]' role='dimension' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='df_stunted_wasted_population' datatype='table' name='[__tableau_internal_object_id__].[df!stunted!wasted!population_08BD525CFE3148409312A6AB765EF706]' role='measure' type='quantitative' />
+      <column-instance column='[CHILDREN_STUNTED]' derivation='Avg' name='[avg:CHILDREN_STUNTED:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[CHILDREN_WASTED]' derivation='Avg' name='[avg:CHILDREN_WASTED:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[STUNTED_PERCENTAGE]' derivation='Avg' name='[avg:STUNTED_PERCENTAGE:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[WASTED_PERCENTAGE]' derivation='Avg' name='[avg:WASTED_PERCENTAGE:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[CHILDREN_STUNTED]' derivation='Sum' name='[sum:CHILDREN_STUNTED:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[CHILDREN_WASTED]' derivation='Sum' name='[sum:CHILDREN_WASTED:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[STUNTED_PERCENTAGE]' derivation='Sum' name='[sum:STUNTED_PERCENTAGE:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[WASTED_PERCENTAGE]' derivation='Sum' name='[sum:WASTED_PERCENTAGE:qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='es_ES' class='hyper' dbname='C:/Users/Roberto Barroso/Documents/Mi Repositorio de Tableau/Fuentes de datos/df_stunted_wasted_population (stunted_wasted_population).hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='01/17/2022 10:15:09 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='df_stunted_wasted_population (stunted_wasted_population)' increment-value='%null%' refresh-type='create' rows-inserted='162' timestamp-start='2022-01-17 22:15:08.726' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>COUNTRY</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[COUNTRY]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>COUNTRY</remote-alias>
+              <ordinal>0</ordinal>
+              <family>df_stunted_wasted_population</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LES_RES_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df!stunted!wasted!population_08BD525CFE3148409312A6AB765EF706]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ISO_CODE</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ISO_CODE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ISO_CODE</remote-alias>
+              <ordinal>1</ordinal>
+              <family>df_stunted_wasted_population</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LES_RES_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df!stunted!wasted!population_08BD525CFE3148409312A6AB765EF706]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>YEAR</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[YEAR]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>YEAR</remote-alias>
+              <ordinal>2</ordinal>
+              <family>df_stunted_wasted_population</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df!stunted!wasted!population_08BD525CFE3148409312A6AB765EF706]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CHILDREN_STUNTED</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[CHILDREN_STUNTED]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CHILDREN_STUNTED</remote-alias>
+              <ordinal>3</ordinal>
+              <family>df_stunted_wasted_population</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>162</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df!stunted!wasted!population_08BD525CFE3148409312A6AB765EF706]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CHILDREN_WASTED</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[CHILDREN_WASTED]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CHILDREN_WASTED</remote-alias>
+              <ordinal>4</ordinal>
+              <family>df_stunted_wasted_population</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>162</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df!stunted!wasted!population_08BD525CFE3148409312A6AB765EF706]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>POPULATION</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[POPULATION]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>POPULATION</remote-alias>
+              <ordinal>5</ordinal>
+              <family>df_stunted_wasted_population</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>162</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df!stunted!wasted!population_08BD525CFE3148409312A6AB765EF706]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>STUNTED_PERCENTAGE</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[STUNTED_PERCENTAGE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>STUNTED_PERCENTAGE</remote-alias>
+              <ordinal>6</ordinal>
+              <family>df_stunted_wasted_population</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>162</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df!stunted!wasted!population_08BD525CFE3148409312A6AB765EF706]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>WASTED_PERCENTAGE</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[WASTED_PERCENTAGE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>WASTED_PERCENTAGE</remote-alias>
+              <ordinal>7</ordinal>
+              <family>df_stunted_wasted_population</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>162</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df!stunted!wasted!population_08BD525CFE3148409312A6AB765EF706]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SUM_SW</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[SUM_SW]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SUM_SW</remote-alias>
+              <ordinal>8</ordinal>
+              <family>df_stunted_wasted_population</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>162</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df!stunted!wasted!population_08BD525CFE3148409312A6AB765EF706]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' palette='color_blind_10_0' type='palette'>
+            <map to='#1170aa'>
+              <bucket>&quot;[federated.0lvdiw50s7xn3p17b7k11182ei5x].[avg:CHILDREN_STUNTED:qk]&quot;</bucket>
+            </map>
+            <map to='#1170aa'>
+              <bucket>&quot;[federated.0lvdiw50s7xn3p17b7k11182ei5x].[sum:CHILDREN_STUNTED:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0lvdiw50s7xn3p17b7k11182ei5x].[avg:STUNTED_PERCENTAGE:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0lvdiw50s7xn3p17b7k11182ei5x].[sum:STUNTED_PERCENTAGE:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0lvdiw50s7xn3p17b7k11182ei5x].[avg:WASTED_PERCENTAGE:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0lvdiw50s7xn3p17b7k11182ei5x].[sum:WASTED_PERCENTAGE:qk]&quot;</bucket>
+            </map>
+            <map to='#fc7d0b'>
+              <bucket>&quot;[federated.0lvdiw50s7xn3p17b7k11182ei5x].[avg:CHILDREN_WASTED:qk]&quot;</bucket>
+            </map>
+            <map to='#fc7d0b'>
+              <bucket>&quot;[federated.0lvdiw50s7xn3p17b7k11182ei5x].[sum:CHILDREN_WASTED:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;España&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='df_stunted_wasted_population' id='df!stunted!wasted!population_08BD525CFE3148409312A6AB765EF706'>
+            <properties context=''>
+              <relation connection='excel-direct.1pj3s7k0dfn8xg1h8wjd50wqeae9' name='df_stunted_wasted_population' table='[df_stunted_wasted_population$]' type='table'>
+                <columns gridOrigin='A1:I163:no:A1:I163:0' header='yes' outcome='6'>
+                  <column datatype='string' name='COUNTRY' ordinal='0' />
+                  <column datatype='string' name='ISO_CODE' ordinal='1' />
+                  <column datatype='date' date-parse-format='yyyy' name='YEAR' ordinal='2' />
+                  <column datatype='real' name='CHILDREN_STUNTED' ordinal='3' />
+                  <column datatype='real' name='CHILDREN_WASTED' ordinal='4' />
+                  <column datatype='integer' name='POPULATION' ordinal='5' />
+                  <column datatype='real' name='STUNTED_PERCENTAGE' ordinal='6' />
+                  <column datatype='real' name='WASTED_PERCENTAGE' ordinal='7' />
+                  <column datatype='real' name='SUM_SW' ordinal='8' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Número total anual en la UE'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontname='Times New Roman' fontsize='18'>&lt;</run>
+            <run fontname='Times New Roman' fontsize='18'>Sheet Name</run>
+            <run fontname='Times New Roman' fontsize='18'>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='df_stunted_wasted_population (stunted_wasted_population)' name='federated.0lvdiw50s7xn3p17b7k11182ei5x' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0lvdiw50s7xn3p17b7k11182ei5x'>
+            <column caption='Retraso del crecimiento' datatype='real' name='[CHILDREN_STUNTED]' role='measure' type='quantitative' />
+            <column caption='Debilidad' datatype='real' name='[CHILDREN_WASTED]' role='measure' type='quantitative' />
+            <column caption='Year' datatype='date' name='[YEAR]' role='dimension' type='quantitative' />
+            <column-instance column='[CHILDREN_STUNTED]' derivation='Avg' name='[avg:CHILDREN_STUNTED:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[CHILDREN_WASTED]' derivation='Avg' name='[avg:CHILDREN_WASTED:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[YEAR]' derivation='None' name='[none:YEAR:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[CHILDREN_STUNTED]' derivation='Sum' name='[sum:CHILDREN_STUNTED:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[CHILDREN_WASTED]' derivation='Sum' name='[sum:CHILDREN_WASTED:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[YEAR]' derivation='Year-Trunc' name='[tyr:YEAR:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.0lvdiw50s7xn3p17b7k11182ei5x].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.0lvdiw50s7xn3p17b7k11182ei5x].[sum:CHILDREN_STUNTED:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0lvdiw50s7xn3p17b7k11182ei5x].[sum:CHILDREN_WASTED:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='quantitative' column='[federated.0lvdiw50s7xn3p17b7k11182ei5x].[none:YEAR:qk]' included-values='in-range'>
+            <min>#1993-01-01#</min>
+            <max>#2016-01-01#</max>
+          </filter>
+          <slices>
+            <column>[federated.0lvdiw50s7xn3p17b7k11182ei5x].[none:YEAR:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0lvdiw50s7xn3p17b7k11182ei5x].[tyr:YEAR:qk]' scope='cols' value='' />
+            <format attr='display' class='0' field='[federated.0lvdiw50s7xn3p17b7k11182ei5x].[avg:CHILDREN_STUNTED:qk]' scope='rows' value='false' />
+            <format attr='display' class='0' field='[federated.0lvdiw50s7xn3p17b7k11182ei5x].[avg:CHILDREN_WASTED:qk]' scope='rows' value='false' />
+            <encoding attr='space' class='0' field='[federated.0lvdiw50s7xn3p17b7k11182ei5x].[avg:CHILDREN_WASTED:qk]' field-type='quantitative' fold='true' max='37000.0' min='0.0' range-type='fixed' scope='rows' type='space' />
+            <encoding attr='space' class='0' field='[federated.0lvdiw50s7xn3p17b7k11182ei5x].[avg:CHILDREN_STUNTED:qk]' field-type='quantitative' max='37000.0' min='0.0' range-type='fixed' scope='rows' type='space' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='font-family' value='Times New Roman' />
+            <format attr='font-size' value='14' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0lvdiw50s7xn3p17b7k11182ei5x].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0lvdiw50s7xn3p17b7k11182ei5x].[avg:CHILDREN_STUNTED:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0lvdiw50s7xn3p17b7k11182ei5x].[:Measure Names]' />
+              <text column='[federated.0lvdiw50s7xn3p17b7k11182ei5x].[avg:CHILDREN_STUNTED:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run>&lt;</run>
+                <run>[federated.0lvdiw50s7xn3p17b7k11182ei5x].[avg:CHILDREN_STUNTED:qk]</run>
+                <run>&gt; niños</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='vertical-align' value='top' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='color' value='#4e79a7' />
+                <format attr='font-size' value='12' />
+                <format attr='font-weight' value='normal' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0lvdiw50s7xn3p17b7k11182ei5x].[avg:CHILDREN_WASTED:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0lvdiw50s7xn3p17b7k11182ei5x].[:Measure Names]' />
+              <text column='[federated.0lvdiw50s7xn3p17b7k11182ei5x].[avg:CHILDREN_WASTED:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run>&lt;</run>
+                <run>[federated.0lvdiw50s7xn3p17b7k11182ei5x].[avg:CHILDREN_WASTED:qk]</run>
+                <run>&gt; niños</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='vertical-align' value='bottom' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='color' value='#f28e2b' />
+                <format attr='font-size' value='12' />
+                <format attr='font-weight' value='normal' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0lvdiw50s7xn3p17b7k11182ei5x].[avg:CHILDREN_STUNTED:qk] + [federated.0lvdiw50s7xn3p17b7k11182ei5x].[avg:CHILDREN_WASTED:qk])</rows>
+        <cols>[federated.0lvdiw50s7xn3p17b7k11182ei5x].[tyr:YEAR:qk]</cols>
+      </table>
+      <simple-id uuid='{D9033254-457F-4E1C-9E4B-C4734AE49AA1}' />
+    </worksheet>
+    <worksheet name='Porcentaje de la población'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontname='Times New Roman' fontsize='18'>&lt;</run>
+            <run fontname='Times New Roman' fontsize='18'>Sheet Name</run>
+            <run fontname='Times New Roman' fontsize='18'>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='df_stunted_wasted_population (stunted_wasted_population)' name='federated.0lvdiw50s7xn3p17b7k11182ei5x' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0lvdiw50s7xn3p17b7k11182ei5x'>
+            <column caption='Country' datatype='string' name='[COUNTRY]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Retraso del creciemiento per cápita' datatype='real' name='[STUNTED_PERCENTAGE]' role='measure' type='quantitative' />
+            <column caption='Sum Sw' datatype='real' name='[SUM_SW]' role='measure' type='quantitative' />
+            <column caption='Debilidad per cápita' datatype='real' name='[WASTED_PERCENTAGE]' role='measure' type='quantitative' />
+            <column caption='Year' datatype='date' name='[YEAR]' role='dimension' type='quantitative' />
+            <column-instance column='[STUNTED_PERCENTAGE]' derivation='Avg' name='[avg:STUNTED_PERCENTAGE:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[SUM_SW]' derivation='Avg' name='[avg:SUM_SW:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[WASTED_PERCENTAGE]' derivation='Avg' name='[avg:WASTED_PERCENTAGE:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[COUNTRY]' derivation='None' name='[none:COUNTRY:nk]' pivot='key' type='nominal' />
+            <column-instance column='[YEAR]' derivation='None' name='[none:YEAR:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0lvdiw50s7xn3p17b7k11182ei5x].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0lvdiw50s7xn3p17b7k11182ei5x].[avg:WASTED_PERCENTAGE:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0lvdiw50s7xn3p17b7k11182ei5x].[avg:STUNTED_PERCENTAGE:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.0lvdiw50s7xn3p17b7k11182ei5x].[none:COUNTRY:nk]' direction='DESC' using='[federated.0lvdiw50s7xn3p17b7k11182ei5x].[avg:SUM_SW:qk]' />
+          <filter class='quantitative' column='[federated.0lvdiw50s7xn3p17b7k11182ei5x].[none:YEAR:qk]' included-values='in-range'>
+            <min>#1993-01-01#</min>
+            <max>#2016-01-01#</max>
+          </filter>
+          <slices>
+            <column>[federated.0lvdiw50s7xn3p17b7k11182ei5x].[:Measure Names]</column>
+            <column>[federated.0lvdiw50s7xn3p17b7k11182ei5x].[none:YEAR:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.0lvdiw50s7xn3p17b7k11182ei5x].[Multiple Values]' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.0lvdiw50s7xn3p17b7k11182ei5x].[none:COUNTRY:nk]' value='39' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' field='[federated.0lvdiw50s7xn3p17b7k11182ei5x].[none:COUNTRY:nk]' value='center' />
+            <format attr='font-family' field='[federated.0lvdiw50s7xn3p17b7k11182ei5x].[none:COUNTRY:nk]' value='Tableau Book' />
+            <format attr='font-size' field='[federated.0lvdiw50s7xn3p17b7k11182ei5x].[none:COUNTRY:nk]' value='12' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0lvdiw50s7xn3p17b7k11182ei5x].[:Measure Names]' />
+              <text column='[federated.0lvdiw50s7xn3p17b7k11182ei5x].[Multiple Values]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run>&lt;</run>
+                <run>[federated.0lvdiw50s7xn3p17b7k11182ei5x].[Multiple Values]</run>
+                <run>&gt; %</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='color' value='#ffffff' />
+                <format attr='font-size' value='12' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0lvdiw50s7xn3p17b7k11182ei5x].[none:COUNTRY:nk]</rows>
+        <cols>[federated.0lvdiw50s7xn3p17b7k11182ei5x].[Multiple Values]</cols>
+      </table>
+      <simple-id uuid='{5D407CF2-F3AB-4C13-BAE0-CC365A4528BA}' />
+    </worksheet>
+    <worksheet name='Retraso del crecimiento en niños vs Debilidad, en España'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontname='Times New Roman' fontsize='24' italic='true'>&lt;</run>
+            <run bold='true' fontalignment='1' fontname='Times New Roman' fontsize='24' italic='true'>Sheet Name</run>
+            <run bold='true' fontalignment='1' fontname='Times New Roman' fontsize='24' italic='true'>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='df_stunted_wasted_population (stunted_wasted_population)' name='federated.0lvdiw50s7xn3p17b7k11182ei5x' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0lvdiw50s7xn3p17b7k11182ei5x'>
+            <column caption='Retraso del crecimiento' datatype='real' name='[CHILDREN_STUNTED]' role='measure' type='quantitative' />
+            <column caption='Debilidad' datatype='real' name='[CHILDREN_WASTED]' role='measure' type='quantitative' />
+            <column caption='Country' datatype='string' name='[COUNTRY]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Year' datatype='date' name='[YEAR]' role='dimension' type='quantitative' />
+            <column-instance column='[CHILDREN_STUNTED]' derivation='Avg' name='[avg:CHILDREN_STUNTED:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[CHILDREN_WASTED]' derivation='Avg' name='[avg:CHILDREN_WASTED:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[COUNTRY]' derivation='None' name='[none:COUNTRY:nk]' pivot='key' type='nominal' />
+            <column-instance column='[CHILDREN_STUNTED]' derivation='Sum' name='[sum:CHILDREN_STUNTED:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[CHILDREN_WASTED]' derivation='Sum' name='[sum:CHILDREN_WASTED:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[YEAR]' derivation='Year-Trunc' name='[tyr:YEAR:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.0lvdiw50s7xn3p17b7k11182ei5x].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.0lvdiw50s7xn3p17b7k11182ei5x].[sum:CHILDREN_STUNTED:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0lvdiw50s7xn3p17b7k11182ei5x].[sum:CHILDREN_WASTED:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.0lvdiw50s7xn3p17b7k11182ei5x].[none:COUNTRY:nk]'>
+            <groupfilter function='member' level='[none:COUNTRY:nk]' member='&quot;Spain&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0lvdiw50s7xn3p17b7k11182ei5x].[none:COUNTRY:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0lvdiw50s7xn3p17b7k11182ei5x].[tyr:YEAR:qk]' scope='cols' value='' />
+            <encoding attr='space' class='0' field='[federated.0lvdiw50s7xn3p17b7k11182ei5x].[tyr:YEAR:qk]' field-type='quantitative' major-origin='#1989-01-01 00:00:00#' major-spacing='1.0' major-units='years' max='#2017-01-01 00:00:00#' min='#1989-01-01 00:00:00#' range-type='fixed' scope='cols' type='space' />
+            <format attr='display' class='0' field='[federated.0lvdiw50s7xn3p17b7k11182ei5x].[avg:CHILDREN_STUNTED:qk]' scope='rows' value='false' />
+            <encoding attr='space' class='0' field='[federated.0lvdiw50s7xn3p17b7k11182ei5x].[avg:CHILDREN_WASTED:qk]' field-type='quantitative' fold='true' scope='rows' synchronized='true' type='space' />
+            <format attr='display' class='0' field='[federated.0lvdiw50s7xn3p17b7k11182ei5x].[avg:CHILDREN_WASTED:qk]' scope='rows' value='false' />
+            <format attr='tick-color' value='#00000000' />
+            <format attr='tick-color' field='[federated.0lvdiw50s7xn3p17b7k11182ei5x].[tyr:YEAR:qk]' value='#000000' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-family' field='[federated.0lvdiw50s7xn3p17b7k11182ei5x].[tyr:YEAR:qk]' value='Times New Roman' />
+            <format attr='font-size' field='[federated.0lvdiw50s7xn3p17b7k11182ei5x].[tyr:YEAR:qk]' value='12' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+            <format attr='stroke-size' id='refline0' value='1' />
+            <format attr='line-visibility' id='refline0' value='on' />
+            <format attr='line-pattern-only' id='refline0' value='dashed' />
+            <format attr='stroke-color' id='refline0' value='#4e79a7' />
+            <format attr='font-family' id='refline0' value='Times New Roman' />
+            <format attr='font-size' id='refline0' value='12' />
+            <format attr='font-weight' id='refline0' value='bold' />
+            <format attr='color' id='refline0' value='#4e79a7' />
+            <format attr='vertical-align' id='refline0' value='auto' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+            <format attr='stroke-color' scope='cols' value='#e6e6e6' />
+            <format attr='stroke-size' scope='cols' value='2' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='font-family' value='Times New Roman' />
+            <format attr='font-size' value='14' />
+            <format attr='background-color' value='#ffffff' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0lvdiw50s7xn3p17b7k11182ei5x].[:Measure Names]' />
+            </encodings>
+            <reference-line axis-column='[federated.0lvdiw50s7xn3p17b7k11182ei5x].[tyr:YEAR:qk]' enable-instant-analytics='true' formula='constant' id='refline0' label='Creación de la Unión Europea' label-type='custom' scope='per-table' value='#1993-01-01 00:00:00#' value-column='[federated.0lvdiw50s7xn3p17b7k11182ei5x].[tyr:YEAR:qk]' z-order='1' />
+            <style>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0lvdiw50s7xn3p17b7k11182ei5x].[avg:CHILDREN_STUNTED:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0lvdiw50s7xn3p17b7k11182ei5x].[:Measure Names]' />
+              <text column='[federated.0lvdiw50s7xn3p17b7k11182ei5x].[avg:CHILDREN_STUNTED:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run>&lt;</run>
+                <run>[federated.0lvdiw50s7xn3p17b7k11182ei5x].[avg:CHILDREN_STUNTED:qk]</run>
+                <run>&gt; niños</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='color' value='#4e79a7' />
+                <format attr='font-size' value='12' />
+                <format attr='font-weight' value='normal' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0lvdiw50s7xn3p17b7k11182ei5x].[avg:CHILDREN_WASTED:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0lvdiw50s7xn3p17b7k11182ei5x].[:Measure Names]' />
+              <text column='[federated.0lvdiw50s7xn3p17b7k11182ei5x].[avg:CHILDREN_WASTED:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run>&lt;</run>
+                <run>[federated.0lvdiw50s7xn3p17b7k11182ei5x].[avg:CHILDREN_WASTED:qk]</run>
+                <run>&gt; niños</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='color' value='#f28e2b' />
+                <format attr='font-size' value='12' />
+                <format attr='font-weight' value='normal' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0lvdiw50s7xn3p17b7k11182ei5x].[avg:CHILDREN_STUNTED:qk] + [federated.0lvdiw50s7xn3p17b7k11182ei5x].[avg:CHILDREN_WASTED:qk])</rows>
+        <cols>[federated.0lvdiw50s7xn3p17b7k11182ei5x].[tyr:YEAR:qk]</cols>
+      </table>
+      <simple-id uuid='{F605FD0F-A97D-4149-9147-958887AA25F3}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Retraso del crecimiento vs Debilidad en niños'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontname='Times New Roman' fontsize='28' italic='true'>&lt;Sheet Name&gt;</run>
+            <run fontalignment='1'>Æ&#10;</run>
+            <run fontalignment='1' fontcolor='#555555' fontname='Times New Roman'>1993 - 2017</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98690' id='26' param='horz' type-v2='layout-flow' w='99304' x='348' y='655'>
+            <zone h='98690' id='23' param='vert' type-v2='layout-flow' w='99304' x='348' y='655'>
+              <zone h='7944' id='24' type-v2='title' w='99304' x='348' y='655'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='90746' id='7' param='horz' type-v2='layout-flow' w='99304' x='348' y='8599'>
+                <zone h='90746' id='5' type-v2='layout-basic' w='99304' x='348' y='8599'>
+                  <zone h='90746' id='3' name='Porcentaje de la población' w='63445' x='36207' y='8599'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='90746' id='9' name='Número total anual en la UE' w='35859' x='348' y='8599'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='6889' id='27' name='Número total anual en la UE' pane-specification-id='1' param='[federated.0lvdiw50s7xn3p17b7k11182ei5x].[:Measure Names]' show-title='false' type-v2='color' w='16750' x='67188' y='56556' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontname='Times New Roman' fontsize='28' italic='true'>&lt;Sheet Name&gt;</run>
+                <run fontalignment='1'>Æ&#10;</run>
+                <run fontalignment='1' fontcolor='#555555' fontname='Times New Roman'>1993 - 2017</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='750' minheight='750' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='134' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98690' id='133' param='vert' type-v2='layout-flow' w='99304' x='348' y='655'>
+                <zone h='7944' id='24' type-v2='title' w='99304' x='348' y='655'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='90746' id='9' is-fixed='true' name='Número total anual en la UE' w='35859' x='348' y='8599'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6889' id='27' name='Número total anual en la UE' pane-specification-id='1' param='[federated.0lvdiw50s7xn3p17b7k11182ei5x].[:Measure Names]' show-title='false' type-v2='color' w='16750' x='67188' y='56556'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='90746' id='3' is-fixed='true' name='Porcentaje de la población' w='63445' x='36207' y='8599'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{B3D98E6F-D751-4183-A80F-69CBD56618C9}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='retraso_esp'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98690' id='7' param='horz' type-v2='layout-flow' w='99304' x='348' y='655'>
+            <zone h='98690' id='5' type-v2='layout-basic' w='99304' x='348' y='655'>
+              <zone h='98690' id='3' name='Retraso del crecimiento en niños vs Debilidad, en España' w='99304' x='348' y='655'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='6222' id='8' name='Retraso del crecimiento en niños vs Debilidad, en España' pane-specification-id='1' param='[federated.0lvdiw50s7xn3p17b7k11182ei5x].[:Measure Names]' show-title='false' type-v2='color' w='16125' x='67563' y='49333' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='60' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98690' id='59' param='vert' type-v2='layout-flow' w='99304' x='348' y='655'>
+                <zone fixed-size='280' h='98690' id='3' is-fixed='true' name='Retraso del crecimiento en niños vs Debilidad, en España' w='99304' x='348' y='655'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6222' id='8' name='Retraso del crecimiento en niños vs Debilidad, en España' pane-specification-id='1' param='[federated.0lvdiw50s7xn3p17b7k11182ei5x].[:Measure Names]' show-title='false' type-v2='color' w='16125' x='67563' y='49333'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{C06863C0-656A-4748-9CAA-FBFA20003F7E}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='dashboard' name='Retraso del crecimiento vs Debilidad en niños'>
+      <viewpoints>
+        <viewpoint name='Número total anual en la UE'>
+          <zoom type='entire-view' />
+          <highlight field='[federated.0lvdiw50s7xn3p17b7k11182ei5x].[:Measure Names]'>
+            <bucket-selection />
+          </highlight>
+        </viewpoint>
+        <viewpoint name='Porcentaje de la población'>
+          <zoom type='entire-view' />
+          <highlight field='[federated.0lvdiw50s7xn3p17b7k11182ei5x].[:Measure Names]'>
+            <bucket-selection />
+          </highlight>
+        </viewpoint>
+      </viewpoints>
+      <active id='3' />
+      <simple-id uuid='{65EC522F-F3DB-46AC-8865-2DFF6DCE3BBE}' />
+    </window>
+    <window class='dashboard' maximized='true' name='retraso_esp'>
+      <viewpoints>
+        <viewpoint name='Retraso del crecimiento en niños vs Debilidad, en España'>
+          <zoom type='entire-view' />
+          <highlight field='[federated.0lvdiw50s7xn3p17b7k11182ei5x].[:Measure Names]'>
+            <bucket-selection />
+          </highlight>
+        </viewpoint>
+      </viewpoints>
+      <active id='3' />
+      <simple-id uuid='{E448513E-34AC-4734-9C70-A1C29D9F3400}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Número total anual en la UE'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='172'>
+            <card pane-specification-id='1' param='[federated.0lvdiw50s7xn3p17b7k11182ei5x].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0lvdiw50s7xn3p17b7k11182ei5x].[none:YEAR:qk]</field>
+            <field>[federated.0lvdiw50s7xn3p17b7k11182ei5x].[tyr:YEAR:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{86222FA3-C20E-40D5-9CAB-531F942B8CF2}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Porcentaje de la población'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='172'>
+            <card pane-specification-id='0' param='[federated.0lvdiw50s7xn3p17b7k11182ei5x].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0lvdiw50s7xn3p17b7k11182ei5x].[:Measure Names]</field>
+            <field>[federated.0lvdiw50s7xn3p17b7k11182ei5x].[none:COUNTRY:nk]</field>
+            <field>[federated.0lvdiw50s7xn3p17b7k11182ei5x].[none:YEAR:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{77A3ACB5-6C9A-4DC0-AAAA-1DE02CA65D09}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Retraso del crecimiento en niños vs Debilidad, en España'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='172'>
+            <card pane-specification-id='1' param='[federated.0lvdiw50s7xn3p17b7k11182ei5x].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0lvdiw50s7xn3p17b7k11182ei5x].[none:COUNTRY:nk]</field>
+            <field>[federated.0lvdiw50s7xn3p17b7k11182ei5x].[none:YEAR:qk]</field>
+            <field>[federated.0lvdiw50s7xn3p17b7k11182ei5x].[tyr:YEAR:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{41624C5D-F9A7-482D-8406-3AF668E18325}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Retraso del crecimiento vs Debilidad en niños' width='192'>
+      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
+      Hr34J1LW/wfdxoZ4Er74zwAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='retraso_esp' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAAc60lEQVR4nO2deXQdV53nP7fqbXqLZD097Zas3buxHbzFNk5DmmwQIBloSEIWQqCBAbrn
+      0DQJcDrdpIdhGOgzzXRCpxMIEJaEBGig52QmMCGJncS7EzuxLduyZcnWvr/9VdWdP0pKosS7
+      StYr637O8fFTvfe+79byrfrdX/3uLSGllCgUsxRtphugUMwkygCKWY0ygGJWowygmNUoAyhm
+      NZ6ZboBCcTZymQR79+7HlBIQFJdW0DivGiHElLXVFUCR93h9QVp3PM0XvvQ1Bob6+cInbuL7
+      v3jqtJ+3jAxDw2PnpK0MoHAFrQdbaVq2lve+ZxOlER+thw6//p6UEsuykFIyNtjNfV+/h+ND
+      aXu5lMjxf/ZnrTd9XoVACheQjfeybc9Bll65nIf++TskQ7V85daPIKXktZ3Pc6Q/y68e+i63
+      feV/8Mcff5vdJ3JcNXiCr/3Pe0gG59L12na+/r8exTi+jT/u7sAfP8qzhzI8+M3PqyuAIv9p
+      fXkbPSmdQjnID3+zhX/+/gMsrCvn2L4X+Lt/epSWqjC5YDWLmueRScb58+s/wuqVS4gPDhAp
+      inLzJz9HUe4E99z3L3zkpo/Re6KdyzdsJDXUowygyHckmzdvprx+MXfe+lG8mX627WkF4BeP
+      /oiK2lp6Riwe/Lf7CWW62XGgi40b1jDW3cYr7YNc+/4P8P73XcMzv/0llYvXEE53smX3MTZs
+      WENF8zuVART5jZEe47kt21m5ei2lcxtZVF/OM888Y8f7oyOMjY7h1Uy273yFvTu3opfUomfG
+      2PXSZgprl3LZghoAurq6MdNjPPnLJ8gEoniMOI8/9kv0e++9996ZXUWF4tRIM8e2FzcTLq1l
+      bkUJc+c1Mm9uBVgGRbFKNqxfh5lJ4g2Xsmn9KnxeL9GSctauXc3I4AAr12ygqbYSgLm1tQRC
+      RWxcv5bqmnouX7WExNgoQlWDKmYzKgRSzGqUARSzmtcN8OabBU7gtN6EZr7r5fM2dMs+uZjr
+      POkKkM1mHf3hRCLhmB5APB7Pa71kMsneIz2O6eVyOUf3CZD3+ySdTmOapmN6pmmSTqdP+74K
+      gRwmVOCd6SYozgNlAMWsRhnAYRKp3Ew3QXEeKAM4jAqB3IUygGJWowzgMCoEcheTxgMMx9P0
+      dA7j9+rUlhexr62XaFEBjVVRLEuy/3g/hmFSGPKTMywS6RxN1VG6BsZIpnM010QJBXyTfmBg
+      NEmkwM++o71UloSpLIlc1BW82KgQyF1MMsCccICiSIitr3Wi6xrzKuYQmxMEQNMEi+tKeeVI
+      D9HCAvxeD5mcwaHOAdJZg6bqKMe6hllUV8retl4M06IqGsCUOsl0Dq9HI5HKMZJI03ZyiPLi
+      MDnDZDSZoaWmBL9Xjc1RXHzeFgId6x5G0zTKi0MMjCb50+5jr79nWhZjqSyFQT9dA2McaO9n
+      aUMZlpR0DYwRDNhnv0zOZEFtjO7BJF2DcfpHkiyojTEcT3Hw+ADLmyro7BtlKJ7GtCSaA4Ob
+      8wUVArmLSQboGUqQy5lIKUmmc+QMC69Ho384ydBYigPH+1lYG0NK2Lb/JMGAj8GxFDnDxDAl
+      hmkBoGv2AS2EQACaEPZrIYgEfew53I2uaxSF/KTSOXqHnL07OZOoEMhdvF4OLaUknU7j9Tqz
+      A6WUpFIpgsGgI3pg38YPhUJ5q5dKpegaTtNQWeyIXi6XQ0qJz+c7+4fPkWQymdf7ZOIY1HXd
+      ET3TNDEMA7/ff8r3JwXemqbh8TgTi5uWRdqQFDqkB862b7r00hnTMc2JmQ6c0pNS5v021HUd
+      Xdcd1bQs67R605YGff5QH+u+8yeO9jtbLJXvqBDIXUybAS6bF+Ub71vEZ3+2jd++3Ol42axC
+      4QTTZoCQT+f6pZU88el38czBHr742A6Gk86W9uYjKgvkLqb9TnDI7+G7H17JdUuruemhLbzU
+      1n9JXw1UCOQuLkophBCCqxZX8fBta/n+c4f4xn/sI5VzbtCDQnGhXNRaoMqiAn5w21oaYmFu
+      eXgL+7tGLubPXxRUCOQuLnoxnCYEt6yt5zsfXsk9v9nDA8+2Yl1CIZEKgdzFjFWD1pWEefxT
+      G8nkLG5/5EVODidnqimKWcyMlkN7dY2/unIBn/+z+dz1k608sfO46zvIKgRyF3kxHmBVXQmP
+      f2ojO48P8MXHdjCUcG+6VIVA7iIvDAB2uvS/fnA51y6t5qaHN/Nca4/rrwaK/CdvDAB2uvTq
+      xVX89M71PPJiG//w+72uS5eqEMhd5JUBJoiG/Dx061oayyL8xYPPuypdqkIgdzGpRM6yLAzD
+      cER44jlMU9H76GU1rK2Lcs+/v8LGxhg3rax0rH3g7PpO6JkOapqmPTYj39fZST3TNNE0587L
+      pmmesY3TVg5tWZYjek3lRTz6ifX8y58O8vkn9vKtG1dSE3Wm/lyVQ08dVQ59EfB5NP76yoV8
+      YVM9n/nZdh7f0Z63N89UCOQuXGGACRZXFvHYXRt4uXOIz/98O0OzoLpUMb24ygBgp0v/8YPL
+      +dCKGm55eAv/70B3XqVLVRbIXbjOABNcubCSH91xOY/taOfe371CMutcR2wqqBDIXbjWAACx
+      sJ8Hbl5Nc1khf/HgZvZ0DM50kxQuw/WzUU1Ul25sLuVvf7WHdzWXcdfGJrz6zHhbhUDuwtVX
+      gDczryTMj++4nJxp8fEfbOH44MzMNaRCIHdxyRgA7HTpF9+zgK9es4S/fnwnv9zZjmXlTwdZ
+      kX9cUgaYYOncYn7yicvZdXyIz/58GwOJzEX7bRUCuYtL0gAAQZ+Hb35oOR9bVcdtP3jhoqVL
+      VQjkLi5ZA0ywqaWcR+5Yx+M727nnN3vyJl2qyA8ueQMAxMIBHrhpNStro3zs3zaz+/jgtF0N
+      VAjkLt6WBnXDg5QvlP+0spZV80q4+9d7WNsQ4+OXVTr+UOZgwOuY5sRDnvNV7826TmpdzHV+
+      Wzm0ZVmO/rBTehOaU9WrKS7gR7ev5YHnDnPXz3bxrRtXUh8LO9Y+J9c53/UmNJ3Wc1JzoqL2
+      dHpvK4d2alpqy7IQQjimBzimp+vwxfcsYE1NIV96cg83r6njxhW1aNrUHtShaRqpjOHo1N5S
+      Ssf0Jsqh83GfTKBpmqNtnDj4T6c3K/oAp2NxZYSffXI9e08M8+mfbqV3ND1lTZUFchez2gBg
+      p0v/4fp3cMuaej796Fb+sL8rr6pLFdPLrDfABJtayvnh7et4clcHd/96D/HMhWVzVBbIXSgD
+      vIk5QR/337SK1fUl3PLwC+zpGDrvq4EKgdyF66tBnUYIwQ0rarmstoS7f72bFbVRvvDu+fg9
+      znX0FPmDugKchnklIX58x+UUBrx8/AcvcKRv7Jy+p0Igd6EMcAY8usan39XM165dwn95fCc/
+      eantrNWlKgRyF8oA58CyucU89qmNHOmL85mfbaN3bOrpUkV+oAxwjgS8Ove+fxk3r6nnjkde
+      5A/7T11dqkIgd6EMcJ68q7mMR+9cz+9f6eTuX+9h9C0HvAqB3IUywAVQHPTxTx+5jNV1JXz8
+      h1vY0T6gbp65FJUGvUCEENywspZ1jaX8zRO7WF5TzJ1r5qoQyGXk9eS4byUf9UpDXh7++Gp+
+      sOUIt/14O19/70I1Oe4UUJPjnoF81fMAn/mzBaytj3Lf7/by/stS3LK2Hs8Ud6SaHNcZXD85
+      rltoKQ3xt3++gBPDKf7y0W30jKZmukmKs6AM4DAlkQBfvXYJt61r4BM/eon/2HvC+RFYloHZ
+      vRdr+Lj9+uQerNGT9ntSYpzYidGxDWukE5mJY3TuROZSWINtyJO7kOnJDxyRUiLNLNIyMXv3
+      YyVnzwx7ygDTxMbmMn5653qe3t/FPb/Zw2jauc6xTA2jFddh9ryK2bENUTwP88ROwO6ce6ov
+      Q/gLwTIwjj2HXrkMhI413IGoWokIFNl9tJFOjBO7wMxgDR1HJvuRqSFkvBtpZjFO7kamR7AS
+      /fZr89KbUEAZwGHenAWaE/Tx3Q9fxtr6GB99cDPbjzmTLhXBEsze/YhQKSJcjtm5AxCva0sp
+      sYaOIebUIsd6MDu2Yg22IbwFyPYtWEPtAJgnd6OXNGJ2vYIcO4nVfwgt1mJ/p/1F9Nh8jI5t
+      mCd2ILxBwLmhj/mCMoDDvPVGmCYEH1hew8O3reVfnzvEt//vfjLG1B78Z3W9jNB96KUtyNET
+      6OWLQVqQHkGmR7EGDqOVNAICUViNVtKITPQhglFk0VysRB8AIlAEuu8NYaHbyzQdNM94qCTQ
+      K5YiE/1Yg0en1O58RMjx04aUkmw2i9/vd0TYsiySySThsDMDzgHGxsaIRCJ5q5dIJOgeTtNY
+      XXLK901L8vCWwzy1r4tvfmg58ysKz6iXzWaRUr5tn8jUMFa8G4SGVtKENdSOFoy+cTCbOYQ/
+      AkIgjQzWSCdatB6ZGiI51Eu4agESIJsAXxByadtAQoA3+Ppya+gYWmE1GBmsZD9acT1CTB43
+      7fQ2TKVSeL1ex7JAhmGQy+UoKCg45fvqRpjDnOlGmK4JPrWxmStayrn713u4ftlcbl5bd97p
+      UlEwB71gzhu60frJH/C+sbOFx49e0mj/URAFyw9CIAD84ycnX3Dy98eX69EG+2+PHz1wZrO6
+      FWUAhzmXWqCW8kIevXM93316P3c88hLfvnEFFUWnPkNNCSmRlgHZOAx3IAcO43vhfqzGTVBQ
+      DJrHDnc8AdA8CM0DHv/4co99RdE84PGCHgBNA80LnvHluheRyiE9pn31QIDQ7Ndi3NRCG38t
+      7KvHxPt5gjLADFHg1fnqtUvYdrSfO370Ip+7Yj7XLq1Cu4CDQ1oG5JIw2g39B5GDbTDYhhzt
+      glwCfGFEpApK52NVLkdUr7RDINMAywAjDWYWmUtCImMvswwws2CZ9v9GBqQJZm58uYE0c3gz
+      SSxdgJTj/yxg/H/Jm/6W9vcnkgC61zaf0Mdfe0Bo6FKAx4ele143GUJ7w4y6F/Rxk+oe25C6
+      b3y5B6H7xk3qHzeaByE1ZEHwjc9pHltD9yoDOM351gKtro/xi7s2cO/v9vLMwW7uff8yIoG3
+      X0WkZdoHaqIP+lqRg0dg4Ahy9CRkRsETQBRWQbQREWuC5vciCqvsTu2EhpQYiQSBcBinzsHJ
+      sTH859sHkBKsnL1OlglWzv5fmmQTcdsXmrDNZhm2iYzsuDFzthktwzb+hCFNA4wsMhMfX5ax
+      v5dNo+UySJ1xjXFNIwtmVhnAaS6kHLqowK4u/e2e49z6r3/gW9fMo9nbj+g5AP2tWMk+ZKIP
+      vAWIUCmUNEG0HjFvvX3QB0ve1jnNa4QA3Yc41TBrvRC8XsQ5dILPZY0tw8DM5fCpTnCeICXS
+      SENqCIbbkf2HYeAQjJzgungPV4ah65kIPx4Mc+OVm/AtugFR2ogIxRCaGpjvNMoADpNI5eyD
+      3MxCehSGjyEH7HCF4XbkWBcID/hCdqhS0oyYfy0UVSMilQQ1D3WWZPPWo9y8tZ1vfGA+S8NR
+      d53hXcSk+wDpdBqv15kRTVJKUqkUwWDw7B8+RxKJBKFQKH/0zJzdyRzugP5WjL7DdA4kqc++
+      Znf4fGFkUQ0y1gLF9YjiOgiX2x20c+BA1zB/97t9XL20mlvX1qE7YIJkMpnX+2TiGHRyflXD
+      ME57f0vdCDuLnjQN+yAf64a+g8iho290Ps2sHZfPqYXietKRWrr0OhoaGxBvza1fANlslqxh
+      8r1nj/Ba1yjfumE5VXMuXFdKSSKRyOt9om6EzQDSMu00YrwHBo8i+w+NpxFPQGoYAoWIcAXE
+      mhAlTdByNSJcjnjTzSgAmUiQ6Bpz5OCfwKtr3H3NErYfG+CTP9nKf76ihauXXFi6VPF2Zo0B
+      pLQgl4JEv31wD7bh63oVKz1gZ1g8fjtXHq1HxJqhbgOiqBoKzi/+nq5B8avqSvj5J9dz7+/2
+      8tSrJ/n7699BcdB39i8qzsilZYCJDEtycDzD0gqDR2HYLvVF6IhgFGLzIVqHsfAGfBXNrsmw
+      TKRL/8+rJ7nl4S189dolrGuIqQ7yFHCfAaREmhnIxO0z+cARGDhsH+SJXkCzQ5Zo/XiG5RqY
+      U2uXDuuTz87W2BjCwfgVLs68QFctrmJ5TTFffnI3f9jfzVeuXozPowp7L4T8NICUSCsHmTEY
+      OQH9rcihY/i6X8PMDNl3DQNFduezpBHRsMk+yCOViHPMsEwXF2teoPLCAn54+zoefekoH3to
+      M/d94B0srCw6+xcVk5hRA0gzZ3c+Rzrf6HwOtyNHOuwS3YI5iEglxFoQlcvJ1b0XX0Ujwudc
+      2s3NaEJw67oGLm8s5ctP7uK6pdXctq4Bj66uBufKNBpAIow00iqw68sTffaZfPAoDB6xC7XS
+      w3ahVmGlHa6ULYQF19hn8sDbz2ZybCzvD/6ZmBeoqSzCL+7ayP1/auX2R17kmzcsp6Y4v7dT
+      vjBtBhBHn8f/5CexyhbaZbORCog1I4rroWETIlKBKIjmVWmsE8zU1Ig+j8YX3zOfHe2DfPan
+      27n98gY+tKJGpUvPwrQZQFavwHjPffhXfNgVGZZLASEEq+pKxqtLX+HZ1l7+/vplKl16BqYv
+      WPRFMOa/b9Yd/PkwNWLI7+G/37iC65ZWcdNDm9lyuG+mm5S3TL4CWAZm1wFEQTGiqAar/yBo
+      XvSSRqS0ME/uBstEK6xC5lLI1DB66XzwR7D6DqCVzkeIyZ6SRho0D1bfQUSkAi146vGylwr5
+      Mju0EIKrFlexsjbKl57YxdP7u/jyVYtmull5x6SjVaZH0EqaMLv3YfXsQ3gK0IrmAiCEZs83
+      4wvaacrRE3hqViEChciRDsyO7WCZ41NytGOe3IUw7QHZMtGPTI8g431II4NxYtf4wO6eS3a+
+      mXyhNBLgh7eto7kswk0PbeGp17pJ56Y2K8WlxKQrgAiWYHbtQiuswhrpRIRKkb2v4Wm5GiEE
+      UlpYI514mhfDWBdG27OIomqsnlftTm4uCf5CzJ596LXr0HpakWSRQqCVLcbqehkz3o1eswbj
+      2BaQJtqcedhj5y4N8iEEeiuaJrh5TT1Lq+dw7fee4SfbO9nQVMb6plKWVs855Qi02cIkA+Q6
+      tiMCQUSkGnQ/lmkgTQMj3geaFzl6EhFtwjQNLG8EfEUQH4DYAqyuVyA1hvCEsLwhQMeyLExp
+      IXQPeIKYCAQ6crQHS0q0kvkYQ0fR0BATMxCcgXyf2diyLAI+LW9nh15UEeH5v9pIUSTMno5h
+      nn6ti2899SoRv4c19SWsbyplfnkh/vO4q+z22aEnl0OP9ePJjSKEhiiuQ8Z7Ed6APYBYCDCz
+      CF8YhMBKDUE2iVZYZc8/k0uCZ7zkNJdE6gFS8WGCBQFA2FN15JLgLUAOd9i5fyODTA0himrO
+      qZ7F7fMCnS+nmxfoQjlVObSUkp7RNNuPDfDcoV6O9MWJhf2sbYixsbmMupIQ3jPcWHN7ObQa
+      D+CwAY50jbGsqeKsnz3eM8LQWAoJlM0J0T0YpyIapioWwZKSvUd6yGSzLGso42DnMBJ4R2M5
+      2w+cJODzsKS+DE1746QhpWRoLI0QcKx7mIbKYorCgUm/eS7jASxL0j6Y4KWj/Tx/qJeTwynq
+      Y2HWNsRY31hKZVEB+pt+1+0GyM9aIBdzrlmgmrJCIkEfBzsGaO0YoKw4hN9np4w1IVhUV8pL
+      rx5HjL/e1dpN/0iSZDpHUcgPAkzL4o87juL36axZNJeTA2MkUlmCAS+dfaN09I6SM03mhAN0
+      DcQpCvmZV3rmsQqaJqiPhamPhfnYqjpMS3Kod5TnDvXy9X9/mdF0jvnlhWxoKmV1fQyfy7tv
+      ygAzxPHeUfqHE6xeWM3mV47TUlPClr3Hedc75p02HNSEIFpYQCjgo+3EEPVVc4jNCRIJ+shk
+      DdJZA13TWFJfxs6DXVhSsmpBFdsPnCRaWMDASJK50cAptU+HrgkWVBSxoKKIT21sJp0z2d81
+      wrOHenl061HSmRwr6mJc0VLO8ppi13WolQEc5lyzQL1DCQI+nfbuYRbVlbKvrZfKkghHu4ap
+      Lo1w8PgAyXSO4XiGnuFh4qkMXo+OALoH4yxpKEMgKI4ECPg8eD06xZECJjJq0UK77/Xy4R7m
+      lRcxMJrC69GnXHoS8OqsqI2yojYKQFf/EK2DWZ471Mv9z7aiCcHK2ihXtJSxsLKIoC+/DzHV
+      B5jlneCp8uZtKKVkIJFh69EBthzuY3/3CNGQn3X1MTY0l1IfC+P3nLkyQPUBFK5FCEEsHOC6
+      pdVct7QaKSWdQ0m2HRvggWcPcaw/TnVxkI1NZWxotjvUU32O2lRRBnCYfLwRNlMIIaiJhqiJ
+      hrhxZS2mZXGkL85Lbf184/d76RnL0FIWYUNTKesaS4mFL/5gJmUAh8mXWqB8RNc0WsoLaSkv
+      5NZ1DWQMk/1do2w53MvfPLGLRMagpSzEFfMreGddjOKgb9rHOysDKGYMv0dneU0xy2uK+RwQ
+      z+TYdbSPzW0DPPj8EXwejZW1UTY2l7G4sojwNGSYlAEcRoVAF07Y72XVvGIubyrD4/EwmMiw
+      p2OI/73vJP/tqVeJBLysa4ixsamM5vLIWTvU54IygMOoEMg5oiE/715QwbsXVCClpHs0zda2
+      fh55oY22/jilEb9tiOYyaqNnLtk4HcoAClcghKCyqIAPrqjhgytqMC1J+0CcF9r6+c7T++ka
+      STEvGmJjcxnrGmKUF04u2TgdkwwgpcSynHkU5sQjO53Sm9DMd714KuvoNnTDOjutdy6aAqgr
+      CVFXEuKmVfMwLcnBnlG2HOnjK7/azVjaYFFVERsaYyyrilB5mnsp0zcmeHxFZhtBv3MhkNPb
+      0A375ELbqGuCRZVFLKos4q4NTSSzJge6R3n+UA+PvHCErClfv0O9bO4bJRuTB8QI4Wgt9uzU
+      c05T0zSklI7pTWjl8zacaN9UNcMBjXfWlbB8bhF/uaGejNR5uXOIZ1p7+d4zhyjw6aysjao+
+      gNOoLFB+MifoY1NLOZtaypFS0hfPsOPYgHpSvNOoLFD+I4SgLBLg2qXVygCK2Y0ygMOoEMhd
+      KAM4jAqB3IUygGJWowzgMCoEchfKAA6jQiB3oQygmNUoAziMCoHchTKAw6gQyF0oAyhmNZNq
+      gZyc6HSipDXfJ7N1Wm80kcnbyXEh/7fhxZ4cd5IBNE1zbD4Wy7Ic1QNn2zddeoUhv6PbUErp
+      mN5ENWg+b0Nd19F13VFNy7JOq6dCIMWsRhnAYVQWyF0oAziMygK5C2UAxaxGGcBhVAjkLpQB
+      HEaFQO5CGUAxq1EGcBgVArkLZQCHUSGQu1AGUMxqlAEcRoVA7kIZwGFUCOQulAEUsxpVDq3K
+      ofNKT5VDnwE36Kly6KmhyqEViouIMoDDqCyQu1AGcBiVBXIXygCKWY0ygMOoEMhdKAM4jAqB
+      3IUygGJWowzgMFnDuUeGKqYfZQCnye+nkCregjKAw/i8apO6CbW3HEaFQO5CGcBp8vxJ7IrJ
+      TKoQmqjgdIKJR947pTehme96Xo/m6Da0LGtW7ZOJAkCnNM+mp64ADuN0CCSEyEut6eJit3HS
+      FUAI4VgttmVZjuqBs+2bLj0BjmlOHAxO6Ukp3bENHdTUNO2MeuoK4DA+rz7TTVCcB8oADpNT
+      WSBXoQzgMFJlgVyFMoDDqBDIXSgDOIwKgdyFMoDDqBDIXSgDOIwKgdyFMoDDqBDIXSgDOIyl
+      QiBXoQzgMH4VArkKZQCHUSGQu1AGcBgVArkLNTmuw3oeDTU57hRQk+OeATfoWVKoyXGngJoc
+      1+WoEMhdKAM4jMoCuQtlAIdRWSB3oQzgMCoEchfKAA6jQiB3oQzgMCoEchfKAA6jQiB3oQzg
+      MCoEchfKAA6jQiB3oQzgMCoEchfKAA6jQiB3oQzgMIapQiA3oQzgMKalQiA3ocqhnS6H1oUq
+      h54CF7sc+v8DMkmtQmoQEoEAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>

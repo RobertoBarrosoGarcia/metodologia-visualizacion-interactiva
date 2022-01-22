@@ -1,0 +1,2322 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20213.21.1217.2247                               -->
+<workbook original-version='18.1' source-build='2021.3.6 (20213.21.1217.2247)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='Gasto_16424537461670' path='/workbooks' revision='1.3' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <style>
+    <_.fcp.MarkAnimation.true...style-rule element='animation'>
+      <format attr='animation-on' value='ao-off' />
+    </_.fcp.MarkAnimation.true...style-rule>
+  </style>
+  <datasources>
+    <datasource caption='total_expenditures_UE (total_expenditures_UE)' inline='true' name='federated.0ehpiok1vicoma12pwodp0i7oxxr' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='total_expenditures_UE' name='excel-direct.1fyy4gq1a130wt13p221v0komedr'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/Roberto Barroso/Documents/Universidad/Trabajo fin de Master/Scripts_ETL/Datos/UE/total_expenditures_UE.xlsx' interpretationMode='0' password='' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.1fyy4gq1a130wt13p221v0komedr' name='total_expenditures_UE' table='[total_expenditures_UE$]' type='table'>
+          <columns gridOrigin='A1:D982:no:A1:D982:0' header='yes' outcome='6'>
+            <column datatype='string' name='COUNTRY' ordinal='0' />
+            <column datatype='string' name='ISO_CODE' ordinal='1' />
+            <column datatype='date' date-parse-format='yyyy' name='YEAR' ordinal='2' />
+            <column datatype='real' name='EXPENSES_BY_GDP' ordinal='3' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.1fyy4gq1a130wt13p221v0komedr' name='total_expenditures_UE' table='[total_expenditures_UE$]' type='table'>
+          <columns gridOrigin='A1:D982:no:A1:D982:0' header='yes' outcome='6'>
+            <column datatype='string' name='COUNTRY' ordinal='0' />
+            <column datatype='string' name='ISO_CODE' ordinal='1' />
+            <column datatype='date' date-parse-format='yyyy' name='YEAR' ordinal='2' />
+            <column datatype='real' name='EXPENSES_BY_GDP' ordinal='3' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[total_expenditures_UE]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>1</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:D982:no:A1:D982:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COUNTRY</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[COUNTRY]</local-name>
+            <parent-name>[total_expenditures_UE]</parent-name>
+            <remote-alias>COUNTRY</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[total!expenditures!UE_F7DCDB0DC22A4CC894A8470A4297D9B1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ISO_CODE</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[ISO_CODE]</local-name>
+            <parent-name>[total_expenditures_UE]</parent-name>
+            <remote-alias>ISO_CODE</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[total!expenditures!UE_F7DCDB0DC22A4CC894A8470A4297D9B1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YEAR</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[YEAR]</local-name>
+            <parent-name>[total_expenditures_UE]</parent-name>
+            <remote-alias>YEAR</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[total!expenditures!UE_F7DCDB0DC22A4CC894A8470A4297D9B1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EXPENSES_BY_GDP</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[EXPENSES_BY_GDP]</local-name>
+            <parent-name>[total_expenditures_UE]</parent-name>
+            <remote-alias>EXPENSES_BY_GDP</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[total!expenditures!UE_F7DCDB0DC22A4CC894A8470A4297D9B1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Country' datatype='string' name='[COUNTRY]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Expenses By Gdp' datatype='real' name='[EXPENSES_BY_GDP]' role='measure' type='quantitative' />
+      <column caption='Iso Code' datatype='string' name='[ISO_CODE]' role='dimension' type='nominal' />
+      <column caption='Year' datatype='date' name='[YEAR]' role='dimension' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='total_expenditures_UE' datatype='table' name='[__tableau_internal_object_id__].[total!expenditures!UE_F7DCDB0DC22A4CC894A8470A4297D9B1]' role='measure' type='quantitative' />
+      <column-instance column='[EXPENSES_BY_GDP]' derivation='Avg' name='[avg:EXPENSES_BY_GDP:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[EXPENSES_BY_GDP]' derivation='Sum' name='[sum:EXPENSES_BY_GDP:qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='es_ES' class='hyper' dbname='C:/Users/Roberto Barroso/Documents/Mi Repositorio de Tableau/Fuentes de datos/total_expenditures_UE (total_expenditures_UE).hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='01/17/2022 09:08:53 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='total_expenditures_UE (total_expenditures_UE)' increment-value='%null%' refresh-type='create' rows-inserted='981' timestamp-start='2022-01-17 21:08:52.726' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>COUNTRY</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[COUNTRY]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>COUNTRY</remote-alias>
+              <ordinal>0</ordinal>
+              <family>total_expenditures_UE</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LES_RES_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ISO_CODE</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ISO_CODE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ISO_CODE</remote-alias>
+              <ordinal>1</ordinal>
+              <family>total_expenditures_UE</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LES_RES_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>YEAR</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[YEAR]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>YEAR</remote-alias>
+              <ordinal>2</ordinal>
+              <family>total_expenditures_UE</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>48</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>EXPENSES_BY_GDP</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[EXPENSES_BY_GDP]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>EXPENSES_BY_GDP</remote-alias>
+              <ordinal>3</ordinal>
+              <family>total_expenditures_UE</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>981</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0rozdh30mw5nuy1gmkurm0g5w7jj].[avg:EXPENDITURE_EDUCATION:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.17phdhb09yqwme1ahebip1ffzerw].[avg:EXPENDITURE_EDUCATION:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.15hmcqp1c8n4wc1fhnqqb04mtuyc].[avg:EXPENDITURE_HEALTH:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.0ehpiok1vicoma12pwodp0i7oxxr]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.15hmcqp1c8n4wc1fhnqqb04mtuyc].[sum:EXPENDITURE_HEALTH:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0rozdh30mw5nuy1gmkurm0g5w7jj].[sum:EXPENDITURE_EDUCATION:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1pavk6v1s0bnmu1adk4br1ja00nr].[avg:EXPENDITURE_MILITARY:qk]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.17phdhb09yqwme1ahebip1ffzerw].[sum:EXPENDITURE_EDUCATION:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0ehpiok1vicoma12pwodp0i7oxxr].[avg:EXPENSES_BY_GDP:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0ehpiok1vicoma12pwodp0i7oxxr].[sum:EXPENSES_BY_GDP:qk]&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;[federated.1pavk6v1s0bnmu1adk4br1ja00nr].[sum:EXPENDITURE_MILITARY:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;España&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <datasource-dependencies datasource='federated.15hmcqp1c8n4wc1fhnqqb04mtuyc'>
+        <column caption='Expenditure Health' datatype='real' name='[EXPENDITURE_HEALTH]' role='measure' type='quantitative' />
+        <column-instance column='[EXPENDITURE_HEALTH]' derivation='Avg' name='[avg:EXPENDITURE_HEALTH:qk]' pivot='key' type='quantitative' />
+        <column-instance column='[EXPENDITURE_HEALTH]' derivation='Sum' name='[sum:EXPENDITURE_HEALTH:qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+      <datasource-dependencies datasource='federated.17phdhb09yqwme1ahebip1ffzerw'>
+        <column caption='Expenditure Education' datatype='real' name='[EXPENDITURE_EDUCATION]' role='measure' type='quantitative' />
+        <column-instance column='[EXPENDITURE_EDUCATION]' derivation='Avg' name='[avg:EXPENDITURE_EDUCATION:qk]' pivot='key' type='quantitative' />
+        <column-instance column='[EXPENDITURE_EDUCATION]' derivation='Sum' name='[sum:EXPENDITURE_EDUCATION:qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+      <datasource-dependencies datasource='federated.1pavk6v1s0bnmu1adk4br1ja00nr'>
+        <column caption='Expenditure Military' datatype='real' name='[EXPENDITURE_MILITARY]' role='measure' type='quantitative' />
+        <column-instance column='[EXPENDITURE_MILITARY]' derivation='Avg' name='[avg:EXPENDITURE_MILITARY:qk]' pivot='key' type='quantitative' />
+        <column-instance column='[EXPENDITURE_MILITARY]' derivation='Sum' name='[sum:EXPENDITURE_MILITARY:qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='total_expenditures_UE' id='total!expenditures!UE_F7DCDB0DC22A4CC894A8470A4297D9B1'>
+            <properties context=''>
+              <relation connection='excel-direct.1fyy4gq1a130wt13p221v0komedr' name='total_expenditures_UE' table='[total_expenditures_UE$]' type='table'>
+                <columns gridOrigin='A1:D982:no:A1:D982:0' header='yes' outcome='6'>
+                  <column datatype='string' name='COUNTRY' ordinal='0' />
+                  <column datatype='string' name='ISO_CODE' ordinal='1' />
+                  <column datatype='date' date-parse-format='yyyy' name='YEAR' ordinal='2' />
+                  <column datatype='real' name='EXPENSES_BY_GDP' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='expenditure_health_UE (expenditure_health_UE)' inline='true' name='federated.15hmcqp1c8n4wc1fhnqqb04mtuyc' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='expenditure_health_UE' name='excel-direct.0tjn37w0r7evgn102z7dm1l4rhcn'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/Roberto Barroso/Documents/Universidad/Trabajo fin de Master/Scripts_ETL/Datos/UE/expenditure_health_UE.xlsx' interpretationMode='0' password='' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.0tjn37w0r7evgn102z7dm1l4rhcn' name='expenditure_health_UE' table='[expenditure_health_UE$]' type='table'>
+          <columns gridOrigin='A1:D1013:no:A1:D1013:0' header='yes' outcome='6'>
+            <column datatype='string' name='COUNTRY' ordinal='0' />
+            <column datatype='string' name='ISO_CODE' ordinal='1' />
+            <column datatype='date' date-parse-format='yyyy' name='YEAR' ordinal='2' />
+            <column datatype='real' name='EXPENDITURE_HEALTH' ordinal='3' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.0tjn37w0r7evgn102z7dm1l4rhcn' name='expenditure_health_UE' table='[expenditure_health_UE$]' type='table'>
+          <columns gridOrigin='A1:D1013:no:A1:D1013:0' header='yes' outcome='6'>
+            <column datatype='string' name='COUNTRY' ordinal='0' />
+            <column datatype='string' name='ISO_CODE' ordinal='1' />
+            <column datatype='date' date-parse-format='yyyy' name='YEAR' ordinal='2' />
+            <column datatype='real' name='EXPENDITURE_HEALTH' ordinal='3' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[expenditure_health_UE]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>2</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:D1013:no:A1:D1013:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COUNTRY</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[COUNTRY]</local-name>
+            <parent-name>[expenditure_health_UE]</parent-name>
+            <remote-alias>COUNTRY</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[expenditure!health!UE_24FD5FAB5B03446DB9748A1DF73EF152]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ISO_CODE</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[ISO_CODE]</local-name>
+            <parent-name>[expenditure_health_UE]</parent-name>
+            <remote-alias>ISO_CODE</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[expenditure!health!UE_24FD5FAB5B03446DB9748A1DF73EF152]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YEAR</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[YEAR]</local-name>
+            <parent-name>[expenditure_health_UE]</parent-name>
+            <remote-alias>YEAR</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[expenditure!health!UE_24FD5FAB5B03446DB9748A1DF73EF152]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EXPENDITURE_HEALTH</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[EXPENDITURE_HEALTH]</local-name>
+            <parent-name>[expenditure_health_UE]</parent-name>
+            <remote-alias>EXPENDITURE_HEALTH</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[expenditure!health!UE_24FD5FAB5B03446DB9748A1DF73EF152]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Country' datatype='string' name='[COUNTRY]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Expenditure Health' datatype='real' name='[EXPENDITURE_HEALTH]' role='measure' type='quantitative' />
+      <column caption='Iso Code' datatype='string' name='[ISO_CODE]' role='dimension' type='nominal' />
+      <column caption='Year' datatype='date' name='[YEAR]' role='dimension' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='expenditure_health_UE' datatype='table' name='[__tableau_internal_object_id__].[expenditure!health!UE_24FD5FAB5B03446DB9748A1DF73EF152]' role='measure' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='es_ES' class='hyper' dbname='C:/Users/Roberto Barroso/Documents/Mi Repositorio de Tableau/Fuentes de datos/expenditure_health_UE (expenditure_health_UE).hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='01/17/2022 09:08:27 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='expenditure_health_UE (expenditure_health_UE)' increment-value='%null%' refresh-type='create' rows-inserted='1012' timestamp-start='2022-01-17 21:08:26.485' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>COUNTRY</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[COUNTRY]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>COUNTRY</remote-alias>
+              <ordinal>0</ordinal>
+              <family>expenditure_health_UE</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LES_RES_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[expenditure!health!UE_24FD5FAB5B03446DB9748A1DF73EF152]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ISO_CODE</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ISO_CODE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ISO_CODE</remote-alias>
+              <ordinal>1</ordinal>
+              <family>expenditure_health_UE</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LES_RES_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[expenditure!health!UE_24FD5FAB5B03446DB9748A1DF73EF152]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>YEAR</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[YEAR]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>YEAR</remote-alias>
+              <ordinal>2</ordinal>
+              <family>expenditure_health_UE</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>55</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[expenditure!health!UE_24FD5FAB5B03446DB9748A1DF73EF152]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>EXPENDITURE_HEALTH</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[EXPENDITURE_HEALTH]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>EXPENDITURE_HEALTH</remote-alias>
+              <ordinal>3</ordinal>
+              <family>expenditure_health_UE</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1012</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[expenditure!health!UE_24FD5FAB5B03446DB9748A1DF73EF152]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;España&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='expenditure_health_UE' id='expenditure!health!UE_24FD5FAB5B03446DB9748A1DF73EF152'>
+            <properties context=''>
+              <relation connection='excel-direct.0tjn37w0r7evgn102z7dm1l4rhcn' name='expenditure_health_UE' table='[expenditure_health_UE$]' type='table'>
+                <columns gridOrigin='A1:D1013:no:A1:D1013:0' header='yes' outcome='6'>
+                  <column datatype='string' name='COUNTRY' ordinal='0' />
+                  <column datatype='string' name='ISO_CODE' ordinal='1' />
+                  <column datatype='date' date-parse-format='yyyy' name='YEAR' ordinal='2' />
+                  <column datatype='real' name='EXPENDITURE_HEALTH' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='expenditure_education_UE (expenditure_education_UE)' inline='true' name='federated.17phdhb09yqwme1ahebip1ffzerw' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='expenditure_education_UE' name='excel-direct.0n1i7l81xr8jct1brlod51maez2e'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/Roberto Barroso/Documents/Universidad/Trabajo fin de Master/Scripts_ETL/Datos/UE/expenditure_education_UE.xlsx' interpretationMode='0' password='' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.0n1i7l81xr8jct1brlod51maez2e' name='expenditure_education_UE' table='[expenditure_education_UE$]' type='table'>
+          <columns gridOrigin='A1:F2053:no:A1:F2053:0' header='yes' outcome='6'>
+            <column datatype='string' name='COUNTRY' ordinal='0' />
+            <column datatype='string' name='ISO_CODE' ordinal='1' />
+            <column datatype='date' date-parse-format='yyyy' name='YEAR' ordinal='2' />
+            <column datatype='real' name='EXPENDITURE_EDUCATION' ordinal='3' />
+            <column datatype='integer' name='Population (historical estimates)' ordinal='4' />
+            <column datatype='string' name='Continent' ordinal='5' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.0n1i7l81xr8jct1brlod51maez2e' name='expenditure_education_UE' table='[expenditure_education_UE$]' type='table'>
+          <columns gridOrigin='A1:F2053:no:A1:F2053:0' header='yes' outcome='6'>
+            <column datatype='string' name='COUNTRY' ordinal='0' />
+            <column datatype='string' name='ISO_CODE' ordinal='1' />
+            <column datatype='date' date-parse-format='yyyy' name='YEAR' ordinal='2' />
+            <column datatype='real' name='EXPENDITURE_EDUCATION' ordinal='3' />
+            <column datatype='integer' name='Population (historical estimates)' ordinal='4' />
+            <column datatype='string' name='Continent' ordinal='5' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[expenditure_education_UE]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>1</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:F2053:no:A1:F2053:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COUNTRY</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[COUNTRY]</local-name>
+            <parent-name>[expenditure_education_UE]</parent-name>
+            <remote-alias>COUNTRY</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[expenditure!education!UE_A1EF8EC4A4CF4B32ABCC2BB7F211BE9C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ISO_CODE</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[ISO_CODE]</local-name>
+            <parent-name>[expenditure_education_UE]</parent-name>
+            <remote-alias>ISO_CODE</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[expenditure!education!UE_A1EF8EC4A4CF4B32ABCC2BB7F211BE9C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YEAR</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[YEAR]</local-name>
+            <parent-name>[expenditure_education_UE]</parent-name>
+            <remote-alias>YEAR</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[expenditure!education!UE_A1EF8EC4A4CF4B32ABCC2BB7F211BE9C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EXPENDITURE_EDUCATION</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[EXPENDITURE_EDUCATION]</local-name>
+            <parent-name>[expenditure_education_UE]</parent-name>
+            <remote-alias>EXPENDITURE_EDUCATION</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[expenditure!education!UE_A1EF8EC4A4CF4B32ABCC2BB7F211BE9C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Population (historical estimates)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Population (historical estimates)]</local-name>
+            <parent-name>[expenditure_education_UE]</parent-name>
+            <remote-alias>Population (historical estimates)</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[expenditure!education!UE_A1EF8EC4A4CF4B32ABCC2BB7F211BE9C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Continent</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Continent]</local-name>
+            <parent-name>[expenditure_education_UE]</parent-name>
+            <remote-alias>Continent</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[expenditure!education!UE_A1EF8EC4A4CF4B32ABCC2BB7F211BE9C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Country' datatype='string' name='[COUNTRY]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Expenditure Education' datatype='real' name='[EXPENDITURE_EDUCATION]' role='measure' type='quantitative' />
+      <column caption='Iso Code' datatype='string' name='[ISO_CODE]' role='dimension' type='nominal' />
+      <column caption='Year' datatype='date' name='[YEAR]' role='dimension' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='expenditure_education_UE' datatype='table' name='[__tableau_internal_object_id__].[expenditure!education!UE_A1EF8EC4A4CF4B32ABCC2BB7F211BE9C]' role='measure' type='quantitative' />
+      <column-instance column='[EXPENDITURE_EDUCATION]' derivation='Avg' name='[avg:EXPENDITURE_EDUCATION:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[EXPENDITURE_EDUCATION]' derivation='Sum' name='[sum:EXPENDITURE_EDUCATION:qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='es_ES' class='hyper' dbname='C:/Users/Roberto Barroso/Documents/Mi Repositorio de Tableau/Fuentes de datos/expenditure_education_UE (expenditure_education_UE).hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='01/17/2022 09:08:13 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='expenditure_education_UE (expenditure_education_UE)' increment-value='%null%' refresh-type='create' rows-inserted='2052' timestamp-start='2022-01-17 21:08:12.128' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>COUNTRY</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[COUNTRY]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>COUNTRY</remote-alias>
+              <ordinal>0</ordinal>
+              <family>expenditure_education_UE</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LES_RES_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[expenditure!education!UE_A1EF8EC4A4CF4B32ABCC2BB7F211BE9C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ISO_CODE</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ISO_CODE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ISO_CODE</remote-alias>
+              <ordinal>1</ordinal>
+              <family>expenditure_education_UE</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LES_RES_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[expenditure!education!UE_A1EF8EC4A4CF4B32ABCC2BB7F211BE9C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>YEAR</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[YEAR]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>YEAR</remote-alias>
+              <ordinal>2</ordinal>
+              <family>expenditure_education_UE</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>76</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[expenditure!education!UE_A1EF8EC4A4CF4B32ABCC2BB7F211BE9C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>EXPENDITURE_EDUCATION</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[EXPENDITURE_EDUCATION]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>EXPENDITURE_EDUCATION</remote-alias>
+              <ordinal>3</ordinal>
+              <family>expenditure_education_UE</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1171</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[expenditure!education!UE_A1EF8EC4A4CF4B32ABCC2BB7F211BE9C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Population (historical estimates)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Population (historical estimates)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Population (historical estimates)</remote-alias>
+              <ordinal>4</ordinal>
+              <family>expenditure_education_UE</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2052</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[expenditure!education!UE_A1EF8EC4A4CF4B32ABCC2BB7F211BE9C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Continent</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Continent]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Continent</remote-alias>
+              <ordinal>5</ordinal>
+              <family>expenditure_education_UE</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LES_RES_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[expenditure!education!UE_A1EF8EC4A4CF4B32ABCC2BB7F211BE9C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.17phdhb09yqwme1ahebip1ffzerw].[avg:EXPENDITURE_EDUCATION:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.17phdhb09yqwme1ahebip1ffzerw].[sum:EXPENDITURE_EDUCATION:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.15hmcqp1c8n4wc1fhnqqb04mtuyc].[avg:EXPENDITURE_HEALTH:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.15hmcqp1c8n4wc1fhnqqb04mtuyc].[sum:EXPENDITURE_HEALTH:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;España&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <datasource-dependencies datasource='federated.15hmcqp1c8n4wc1fhnqqb04mtuyc'>
+        <column caption='Expenditure Health' datatype='real' name='[EXPENDITURE_HEALTH]' role='measure' type='quantitative' />
+        <column-instance column='[EXPENDITURE_HEALTH]' derivation='Avg' name='[avg:EXPENDITURE_HEALTH:qk]' pivot='key' type='quantitative' />
+        <column-instance column='[EXPENDITURE_HEALTH]' derivation='Sum' name='[sum:EXPENDITURE_HEALTH:qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='expenditure_education_UE' id='expenditure!education!UE_A1EF8EC4A4CF4B32ABCC2BB7F211BE9C'>
+            <properties context=''>
+              <relation connection='excel-direct.0n1i7l81xr8jct1brlod51maez2e' name='expenditure_education_UE' table='[expenditure_education_UE$]' type='table'>
+                <columns gridOrigin='A1:F2053:no:A1:F2053:0' header='yes' outcome='6'>
+                  <column datatype='string' name='COUNTRY' ordinal='0' />
+                  <column datatype='string' name='ISO_CODE' ordinal='1' />
+                  <column datatype='date' date-parse-format='yyyy' name='YEAR' ordinal='2' />
+                  <column datatype='real' name='EXPENDITURE_EDUCATION' ordinal='3' />
+                  <column datatype='integer' name='Population (historical estimates)' ordinal='4' />
+                  <column datatype='string' name='Continent' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='expenditure_military_UE (expenditure_military_UE)' inline='true' name='federated.1pavk6v1s0bnmu1adk4br1ja00nr' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='expenditure_military_UE' name='excel-direct.1axv7ez1m0ctwg18k1n870wyw99w'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/Roberto Barroso/Documents/Universidad/Trabajo fin de Master/Scripts_ETL/Datos/UE/expenditure_military_UE.xlsx' interpretationMode='0' password='' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.1axv7ez1m0ctwg18k1n870wyw99w' name='expenditure_military_UE' table='[expenditure_military_UE$]' type='table'>
+          <columns gridOrigin='A1:D1263:no:A1:D1263:0' header='yes' outcome='6'>
+            <column datatype='string' name='COUNTRY' ordinal='0' />
+            <column datatype='string' name='ISO_CODE' ordinal='1' />
+            <column datatype='date' date-parse-format='yyyy' name='YEAR' ordinal='2' />
+            <column datatype='real' name='EXPENDITURE_MILITARY' ordinal='3' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.1axv7ez1m0ctwg18k1n870wyw99w' name='expenditure_military_UE' table='[expenditure_military_UE$]' type='table'>
+          <columns gridOrigin='A1:D1263:no:A1:D1263:0' header='yes' outcome='6'>
+            <column datatype='string' name='COUNTRY' ordinal='0' />
+            <column datatype='string' name='ISO_CODE' ordinal='1' />
+            <column datatype='date' date-parse-format='yyyy' name='YEAR' ordinal='2' />
+            <column datatype='real' name='EXPENDITURE_MILITARY' ordinal='3' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[expenditure_military_UE]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>1</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:D1263:no:A1:D1263:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COUNTRY</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[COUNTRY]</local-name>
+            <parent-name>[expenditure_military_UE]</parent-name>
+            <remote-alias>COUNTRY</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[expenditure!military!UE_CF2C42740ED046E68F4DDB29915960A9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ISO_CODE</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[ISO_CODE]</local-name>
+            <parent-name>[expenditure_military_UE]</parent-name>
+            <remote-alias>ISO_CODE</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[expenditure!military!UE_CF2C42740ED046E68F4DDB29915960A9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YEAR</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[YEAR]</local-name>
+            <parent-name>[expenditure_military_UE]</parent-name>
+            <remote-alias>YEAR</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[expenditure!military!UE_CF2C42740ED046E68F4DDB29915960A9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EXPENDITURE_MILITARY</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[EXPENDITURE_MILITARY]</local-name>
+            <parent-name>[expenditure_military_UE]</parent-name>
+            <remote-alias>EXPENDITURE_MILITARY</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[expenditure!military!UE_CF2C42740ED046E68F4DDB29915960A9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Country' datatype='string' name='[COUNTRY]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Expenditure Military' datatype='real' name='[EXPENDITURE_MILITARY]' role='measure' type='quantitative' />
+      <column caption='Iso Code' datatype='string' name='[ISO_CODE]' role='dimension' type='nominal' />
+      <column caption='Year' datatype='date' name='[YEAR]' role='dimension' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='expenditure_military_UE' datatype='table' name='[__tableau_internal_object_id__].[expenditure!military!UE_CF2C42740ED046E68F4DDB29915960A9]' role='measure' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='es_ES' class='hyper' dbname='C:/Users/Roberto Barroso/Documents/Mi Repositorio de Tableau/Fuentes de datos/expenditure_military_UE (expenditure_military_UE).hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='01/17/2022 09:08:40 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='expenditure_military_UE (expenditure_military_UE)' increment-value='%null%' refresh-type='create' rows-inserted='1262' timestamp-start='2022-01-17 21:08:40.074' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>COUNTRY</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[COUNTRY]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>COUNTRY</remote-alias>
+              <ordinal>0</ordinal>
+              <family>expenditure_military_UE</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LES_RES_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[expenditure!military!UE_CF2C42740ED046E68F4DDB29915960A9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ISO_CODE</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ISO_CODE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ISO_CODE</remote-alias>
+              <ordinal>1</ordinal>
+              <family>expenditure_military_UE</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LES_RES_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[expenditure!military!UE_CF2C42740ED046E68F4DDB29915960A9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>YEAR</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[YEAR]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>YEAR</remote-alias>
+              <ordinal>2</ordinal>
+              <family>expenditure_military_UE</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>60</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[expenditure!military!UE_CF2C42740ED046E68F4DDB29915960A9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>EXPENDITURE_MILITARY</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[EXPENDITURE_MILITARY]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>EXPENDITURE_MILITARY</remote-alias>
+              <ordinal>3</ordinal>
+              <family>expenditure_military_UE</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1262</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[expenditure!military!UE_CF2C42740ED046E68F4DDB29915960A9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;España&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='expenditure_military_UE' id='expenditure!military!UE_CF2C42740ED046E68F4DDB29915960A9'>
+            <properties context=''>
+              <relation connection='excel-direct.1axv7ez1m0ctwg18k1n870wyw99w' name='expenditure_military_UE' table='[expenditure_military_UE$]' type='table'>
+                <columns gridOrigin='A1:D1263:no:A1:D1263:0' header='yes' outcome='6'>
+                  <column datatype='string' name='COUNTRY' ordinal='0' />
+                  <column datatype='string' name='ISO_CODE' ordinal='1' />
+                  <column datatype='date' date-parse-format='yyyy' name='YEAR' ordinal='2' />
+                  <column datatype='real' name='EXPENDITURE_MILITARY' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Resaltar1' name='[Action1_BB04393CF9394C24B65FCBB182A0E77D]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Distribución de gastos en la UE (% del PIB)' type='sheet' worksheet='Gasto en Educación (% del PIB)' />
+      <command command='tsc:brush'>
+        <param name='exclude' value='Gasto en Educación (% del PIB)' />
+        <param name='special-fields' value='all' />
+        <param name='target' value='Distribución de gastos en la UE (% del PIB)' />
+      </command>
+    </action>
+    <action caption='Resaltar2' name='[Action2_B7F2D15B8AE749A6B480FC4F314DD398]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Distribución de gastos en la UE (% del PIB)' type='sheet' worksheet='Gasto en Sanidad (% del PIB)' />
+      <command command='tsc:brush'>
+        <param name='exclude' value='Gasto en Sanidad (% del PIB)' />
+        <param name='special-fields' value='all' />
+        <param name='target' value='Distribución de gastos en la UE (% del PIB)' />
+      </command>
+    </action>
+    <action caption='Resaltar3' name='[Action3_E0773FD473114E5095E73EB195CD1891]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Distribución de gastos en la UE (% del PIB)' type='sheet' worksheet='Gasto Militar (% del PIB)' />
+      <command command='tsc:brush'>
+        <param name='exclude' value='Gasto Militar (% del PIB)' />
+        <param name='special-fields' value='all' />
+        <param name='target' value='Distribución de gastos en la UE (% del PIB)' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Gasto Militar (% del PIB)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#666666' fontname='Times New Roman'>&lt;</run>
+            <run fontcolor='#666666' fontname='Times New Roman'>Sheet Name</run>
+            <run fontcolor='#666666' fontname='Times New Roman'>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='total_expenditures_UE (total_expenditures_UE)' name='federated.0ehpiok1vicoma12pwodp0i7oxxr' />
+            <datasource caption='expenditure_military_UE (expenditure_military_UE)' name='federated.1pavk6v1s0bnmu1adk4br1ja00nr' />
+            <datasource caption='expenditure_health_UE (expenditure_health_UE)' name='federated.15hmcqp1c8n4wc1fhnqqb04mtuyc' />
+            <datasource caption='expenditure_education_UE (expenditure_education_UE)' name='federated.17phdhb09yqwme1ahebip1ffzerw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ehpiok1vicoma12pwodp0i7oxxr'>
+            <column caption='Year' datatype='date' name='[YEAR]' role='dimension' type='quantitative' />
+            <column-instance column='[YEAR]' derivation='None' name='[none:YEAR:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[YEAR]' derivation='Year-Trunc' name='[tyr:YEAR:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.15hmcqp1c8n4wc1fhnqqb04mtuyc'>
+            <column caption='Country' datatype='string' name='[COUNTRY]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Iso Code' datatype='string' name='[ISO_CODE]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.17phdhb09yqwme1ahebip1ffzerw'>
+            <column caption='Country' datatype='string' name='[COUNTRY]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Iso Code' datatype='string' name='[ISO_CODE]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.1pavk6v1s0bnmu1adk4br1ja00nr'>
+            <column caption='Country' datatype='string' name='[COUNTRY]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Expenditure Military' datatype='real' name='[EXPENDITURE_MILITARY]' role='measure' type='quantitative' />
+            <column caption='Iso Code' datatype='string' name='[ISO_CODE]' role='dimension' type='nominal' />
+            <column-instance column='[EXPENDITURE_MILITARY]' derivation='Avg' name='[avg:EXPENDITURE_MILITARY:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0ehpiok1vicoma12pwodp0i7oxxr].[none:YEAR:qk]' included-values='in-range'>
+            <min>#1972-01-01#</min>
+            <max>#2014-01-01#</max>
+          </filter>
+          <slices>
+            <column>[federated.0ehpiok1vicoma12pwodp0i7oxxr].[none:YEAR:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0ehpiok1vicoma12pwodp0i7oxxr].[tyr:YEAR:qk]' scope='cols' value='' />
+            <format attr='display' class='0' field='[federated.1pavk6v1s0bnmu1adk4br1ja00nr].[avg:EXPENDITURE_MILITARY:qk]' scope='rows' value='false' />
+            <encoding attr='space' class='0' field='[federated.1pavk6v1s0bnmu1adk4br1ja00nr].[avg:EXPENDITURE_MILITARY:qk]' field-type='quantitative' max='7.0' min='1.0' range-type='fixed' scale='log' scope='rows' type='space' />
+            <format attr='display' class='0' field='[federated.0ehpiok1vicoma12pwodp0i7oxxr].[tyr:YEAR:qk]' scope='cols' value='false' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1pavk6v1s0bnmu1adk4br1ja00nr].[avg:EXPENDITURE_MILITARY:qk]' value='n#,##0.00;-#,##0.00' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1pavk6v1s0bnmu1adk4br1ja00nr].[avg:EXPENDITURE_MILITARY:qk]' max='1.0' min='0.0' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-sequential'>
+                <color>#f1f1f1</color>
+                <color>#f2eada</color>
+                <color>#f3e3c3</color>
+                <color>#f5dcab</color>
+                <color>#f6d593</color>
+                <color>#f8ce7c</color>
+                <color>#f9c763</color>
+                <color>#fac04b</color>
+                <color>#fcb832</color>
+                <color>#fdb119</color>
+                <color>#ffaa00</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+            <format attr='stroke-color' id='refline0' value='#59a14f' />
+            <format attr='color' id='refline0' value='#59a14f' />
+            <format attr='font-weight' id='refline0' value='bold' />
+            <format attr='fill-above' id='refline1' value='#00000000' />
+            <format attr='fill-below' id='refline1' value='#00000000' />
+            <format attr='color' id='refline1' value='#4e79a7' />
+            <format attr='font-weight' id='refline1' value='bold' />
+            <format attr='stroke-color' id='refline1' value='#4e79a7' />
+            <format attr='line-visibility' id='refline0' value='on' />
+            <format attr='line-pattern-only' id='refline0' value='dashed' />
+            <format attr='stroke-size' id='refline0' value='1' />
+            <format attr='line-visibility' id='refline1' value='on' />
+            <format attr='line-pattern-only' id='refline1' value='dashed' />
+            <format attr='stroke-size' id='refline1' value='1' />
+            <format attr='fill-above' id='refline2' value='#00000000' />
+            <format attr='fill-below' id='refline2' value='#00000000' />
+            <format attr='line-visibility' id='refline2' value='on' />
+            <format attr='line-pattern-only' id='refline2' value='dotted' />
+            <format attr='stroke-color' id='refline2' value='#4e79a7' />
+            <format attr='font-size' id='refline2' value='14' />
+            <format attr='color' id='refline2' value='#4e79a7' />
+            <format attr='font-weight' id='refline2' value='normal' />
+            <format attr='font-family' id='refline2' value='Times New Roman' />
+            <format attr='font-size' id='refline0' value='9' />
+            <format attr='font-size' id='refline1' value='9' />
+            <format attr='color' id='refline3' value='#f28e2b' />
+            <format attr='fill-above' id='refline3' value='#00000000' />
+            <format attr='fill-below' id='refline3' value='#00000000' />
+            <format attr='stroke-size' id='refline3' value='1' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+            <format attr='text-align' id='refline3' value='auto' />
+            <format attr='line-visibility' id='refline3' value='on' />
+            <format attr='line-pattern-only' id='refline3' value='dotted' />
+            <format attr='stroke-color' id='refline3' value='#f28e2bc1' />
+            <format attr='font-size' id='refline3' value='12' />
+            <format attr='font-weight' id='refline3' value='bold' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='border-width' value='0' />
+            <format attr='border-style' value='none' />
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='legend-title'>
+            <format attr='color' value='#000000' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.1pavk6v1s0bnmu1adk4br1ja00nr].[avg:EXPENDITURE_MILITARY:qk]' value='Gasto militar' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1pavk6v1s0bnmu1adk4br1ja00nr].[avg:EXPENDITURE_MILITARY:qk]' />
+              <text column='[federated.1pavk6v1s0bnmu1adk4br1ja00nr].[avg:EXPENDITURE_MILITARY:qk]' />
+            </encodings>
+            <reference-line axis-column='[federated.1pavk6v1s0bnmu1adk4br1ja00nr].[avg:EXPENDITURE_MILITARY:qk]' enable-instant-analytics='true' formula='average' id='refline3' label='Promedio de gasto militar: 2%' label-type='custom' probability='95' scope='per-table' value-column='[federated.1pavk6v1s0bnmu1adk4br1ja00nr].[avg:EXPENDITURE_MILITARY:qk]' z-order='1' />
+            <customized-label>
+              <formatted-text>
+                <run>&lt;</run>
+                <run>[federated.1pavk6v1s0bnmu1adk4br1ja00nr].[avg:EXPENDITURE_MILITARY:qk]</run>
+                <run>&gt;%</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='color' value='#f28e2b' />
+                <format attr='font-size' value='12' />
+                <format attr='font-weight' value='normal' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-mode' value='line-ends' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1pavk6v1s0bnmu1adk4br1ja00nr].[avg:EXPENDITURE_MILITARY:qk]</rows>
+        <cols>[federated.0ehpiok1vicoma12pwodp0i7oxxr].[tyr:YEAR:qk]</cols>
+        <join-lod-include-overrides>
+          <column>[federated.15hmcqp1c8n4wc1fhnqqb04mtuyc].[COUNTRY]</column>
+          <column>[federated.15hmcqp1c8n4wc1fhnqqb04mtuyc].[ISO_CODE]</column>
+          <column>[federated.17phdhb09yqwme1ahebip1ffzerw].[COUNTRY]</column>
+          <column>[federated.17phdhb09yqwme1ahebip1ffzerw].[ISO_CODE]</column>
+          <column>[federated.1pavk6v1s0bnmu1adk4br1ja00nr].[COUNTRY]</column>
+          <column>[federated.1pavk6v1s0bnmu1adk4br1ja00nr].[ISO_CODE]</column>
+        </join-lod-include-overrides>
+      </table>
+      <simple-id uuid='{358B82C3-5C8F-4C36-B2DC-FA1FD378F96C}' />
+    </worksheet>
+    <worksheet name='Gasto en Educación (% del PIB)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#666666' fontname='Times New Roman'>&lt;</run>
+            <run fontcolor='#666666' fontname='Times New Roman'>Sheet Name</run>
+            <run fontcolor='#666666' fontname='Times New Roman'>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='total_expenditures_UE (total_expenditures_UE)' name='federated.0ehpiok1vicoma12pwodp0i7oxxr' />
+            <datasource caption='expenditure_military_UE (expenditure_military_UE)' name='federated.1pavk6v1s0bnmu1adk4br1ja00nr' />
+            <datasource caption='expenditure_health_UE (expenditure_health_UE)' name='federated.15hmcqp1c8n4wc1fhnqqb04mtuyc' />
+            <datasource caption='expenditure_education_UE (expenditure_education_UE)' name='federated.17phdhb09yqwme1ahebip1ffzerw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ehpiok1vicoma12pwodp0i7oxxr'>
+            <column caption='Year' datatype='date' name='[YEAR]' role='dimension' type='quantitative' />
+            <column-instance column='[YEAR]' derivation='None' name='[none:YEAR:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[YEAR]' derivation='Year-Trunc' name='[tyr:YEAR:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.15hmcqp1c8n4wc1fhnqqb04mtuyc'>
+            <column caption='Country' datatype='string' name='[COUNTRY]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Iso Code' datatype='string' name='[ISO_CODE]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.17phdhb09yqwme1ahebip1ffzerw'>
+            <column caption='Country' datatype='string' name='[COUNTRY]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Expenditure Education' datatype='real' name='[EXPENDITURE_EDUCATION]' role='measure' type='quantitative' />
+            <column caption='Iso Code' datatype='string' name='[ISO_CODE]' role='dimension' type='nominal' />
+            <column-instance column='[EXPENDITURE_EDUCATION]' derivation='Avg' name='[avg:EXPENDITURE_EDUCATION:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.1pavk6v1s0bnmu1adk4br1ja00nr'>
+            <column caption='Country' datatype='string' name='[COUNTRY]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Iso Code' datatype='string' name='[ISO_CODE]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0ehpiok1vicoma12pwodp0i7oxxr].[none:YEAR:qk]' included-values='in-range'>
+            <min>#1972-01-01#</min>
+            <max>#2014-01-01#</max>
+          </filter>
+          <slices>
+            <column>[federated.0ehpiok1vicoma12pwodp0i7oxxr].[none:YEAR:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0ehpiok1vicoma12pwodp0i7oxxr].[tyr:YEAR:qk]' scope='cols' value='' />
+            <encoding attr='space' class='0' domain-expand='false' field='[federated.17phdhb09yqwme1ahebip1ffzerw].[avg:EXPENDITURE_EDUCATION:qk]' field-type='quantitative' max='7.0' min='1.0' range-type='fixed' scope='rows' type='space' />
+            <format attr='display' class='0' field='[federated.17phdhb09yqwme1ahebip1ffzerw].[avg:EXPENDITURE_EDUCATION:qk]' scope='rows' value='false' />
+            <format attr='display' class='0' field='[federated.0ehpiok1vicoma12pwodp0i7oxxr].[tyr:YEAR:qk]' scope='cols' value='false' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.17phdhb09yqwme1ahebip1ffzerw].[avg:EXPENDITURE_EDUCATION:qk]' value='n#,##0.00;-#,##0.00' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.17phdhb09yqwme1ahebip1ffzerw].[avg:EXPENDITURE_EDUCATION:qk]' max='1.0' min='0.0' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-sequential'>
+                <color>#f1f1f1</color>
+                <color>#dae3eb</color>
+                <color>#c4d6e6</color>
+                <color>#b0c9e1</color>
+                <color>#9bbcdc</color>
+                <color>#88b0d7</color>
+                <color>#75a5d1</color>
+                <color>#6499cc</color>
+                <color>#528ec7</color>
+                <color>#4284c2</color>
+                <color>#337abd</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+            <format attr='stroke-color' id='refline0' value='#59a14f' />
+            <format attr='color' id='refline0' value='#59a14f' />
+            <format attr='font-weight' id='refline0' value='bold' />
+            <format attr='fill-above' id='refline1' value='#00000000' />
+            <format attr='fill-below' id='refline1' value='#00000000' />
+            <format attr='color' id='refline1' value='#4e79a7' />
+            <format attr='font-weight' id='refline1' value='bold' />
+            <format attr='line-visibility' id='refline0' value='on' />
+            <format attr='line-pattern-only' id='refline0' value='dashed' />
+            <format attr='stroke-size' id='refline0' value='1' />
+            <format attr='stroke-size' id='refline1' value='1' />
+            <format attr='fill-above' id='refline2' value='#00000000' />
+            <format attr='fill-below' id='refline2' value='#00000000' />
+            <format attr='line-visibility' id='refline2' value='on' />
+            <format attr='line-pattern-only' id='refline2' value='dotted' />
+            <format attr='stroke-color' id='refline2' value='#4e79a7' />
+            <format attr='font-size' id='refline2' value='14' />
+            <format attr='color' id='refline2' value='#4e79a7' />
+            <format attr='font-weight' id='refline2' value='normal' />
+            <format attr='font-family' id='refline2' value='Times New Roman' />
+            <format attr='font-size' id='refline0' value='9' />
+            <format attr='color' id='refline3' value='#f28e2b' />
+            <format attr='fill-above' id='refline3' value='#00000000' />
+            <format attr='fill-below' id='refline3' value='#00000000' />
+            <format attr='stroke-size' id='refline3' value='1' />
+            <format attr='stroke-color' id='refline3' value='#f28e2b' />
+            <format attr='line-visibility' id='refline3' value='on' />
+            <format attr='line-pattern-only' id='refline3' value='dashed' />
+            <format attr='text-align' id='refline3' value='right' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+            <format attr='vertical-align' id='refline1' value='bottom' />
+            <format attr='text-align' id='refline1' value='right' />
+            <format attr='line-visibility' id='refline1' value='on' />
+            <format attr='line-pattern-only' id='refline1' value='dotted' />
+            <format attr='stroke-color' id='refline1' value='#4e79a7c1' />
+            <format attr='font-size' id='refline1' value='12' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.17phdhb09yqwme1ahebip1ffzerw].[avg:EXPENDITURE_EDUCATION:qk]' />
+              <text column='[federated.17phdhb09yqwme1ahebip1ffzerw].[avg:EXPENDITURE_EDUCATION:qk]' />
+            </encodings>
+            <reference-line axis-column='[federated.17phdhb09yqwme1ahebip1ffzerw].[avg:EXPENDITURE_EDUCATION:qk]' enable-instant-analytics='true' formula='average' id='refline1' label='Promedio de gasto en Educación: 4,76%' label-type='custom' probability='95' scope='per-pane' value-column='[federated.17phdhb09yqwme1ahebip1ffzerw].[avg:EXPENDITURE_EDUCATION:qk]' z-order='1' />
+            <customized-label>
+              <formatted-text>
+                <run><![CDATA[<[federated.17phdhb09yqwme1ahebip1ffzerw].[avg:EXPENDITURE_EDUCATION:qk]>]]></run>
+                <run>%</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='color' value='#4e79a7' />
+                <format attr='font-size' value='12' />
+                <format attr='font-weight' value='normal' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-mode' value='line-ends' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.17phdhb09yqwme1ahebip1ffzerw].[avg:EXPENDITURE_EDUCATION:qk]</rows>
+        <cols>[federated.0ehpiok1vicoma12pwodp0i7oxxr].[tyr:YEAR:qk]</cols>
+        <join-lod-include-overrides>
+          <column>[federated.15hmcqp1c8n4wc1fhnqqb04mtuyc].[COUNTRY]</column>
+          <column>[federated.15hmcqp1c8n4wc1fhnqqb04mtuyc].[ISO_CODE]</column>
+          <column>[federated.17phdhb09yqwme1ahebip1ffzerw].[COUNTRY]</column>
+          <column>[federated.17phdhb09yqwme1ahebip1ffzerw].[ISO_CODE]</column>
+          <column>[federated.1pavk6v1s0bnmu1adk4br1ja00nr].[COUNTRY]</column>
+          <column>[federated.1pavk6v1s0bnmu1adk4br1ja00nr].[ISO_CODE]</column>
+        </join-lod-include-overrides>
+      </table>
+      <simple-id uuid='{AC9B7701-55AB-4905-A8E3-0E8934935985}' />
+    </worksheet>
+    <worksheet name='Gasto en Sanidad (% del PIB)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#666666' fontname='Times New Roman'>&lt;</run>
+            <run fontcolor='#666666' fontname='Times New Roman'>Sheet Name</run>
+            <run fontcolor='#666666' fontname='Times New Roman'>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='total_expenditures_UE (total_expenditures_UE)' name='federated.0ehpiok1vicoma12pwodp0i7oxxr' />
+            <datasource caption='expenditure_military_UE (expenditure_military_UE)' name='federated.1pavk6v1s0bnmu1adk4br1ja00nr' />
+            <datasource caption='expenditure_health_UE (expenditure_health_UE)' name='federated.15hmcqp1c8n4wc1fhnqqb04mtuyc' />
+            <datasource caption='expenditure_education_UE (expenditure_education_UE)' name='federated.17phdhb09yqwme1ahebip1ffzerw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ehpiok1vicoma12pwodp0i7oxxr'>
+            <column caption='Year' datatype='date' name='[YEAR]' role='dimension' type='quantitative' />
+            <column-instance column='[YEAR]' derivation='None' name='[none:YEAR:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[YEAR]' derivation='Year-Trunc' name='[tyr:YEAR:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.15hmcqp1c8n4wc1fhnqqb04mtuyc'>
+            <column caption='Country' datatype='string' name='[COUNTRY]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Expenditure Health' datatype='real' name='[EXPENDITURE_HEALTH]' role='measure' type='quantitative' />
+            <column caption='Iso Code' datatype='string' name='[ISO_CODE]' role='dimension' type='nominal' />
+            <column-instance column='[EXPENDITURE_HEALTH]' derivation='Avg' name='[avg:EXPENDITURE_HEALTH:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.17phdhb09yqwme1ahebip1ffzerw'>
+            <column caption='Country' datatype='string' name='[COUNTRY]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Iso Code' datatype='string' name='[ISO_CODE]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.1pavk6v1s0bnmu1adk4br1ja00nr'>
+            <column caption='Country' datatype='string' name='[COUNTRY]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Iso Code' datatype='string' name='[ISO_CODE]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0ehpiok1vicoma12pwodp0i7oxxr].[none:YEAR:qk]' included-values='in-range'>
+            <min>#1972-01-01#</min>
+            <max>#2014-01-01#</max>
+          </filter>
+          <filter class='quantitative' column='[federated.15hmcqp1c8n4wc1fhnqqb04mtuyc].[avg:EXPENDITURE_HEALTH:qk]' included-values='non-null' />
+          <slices>
+            <column>[federated.15hmcqp1c8n4wc1fhnqqb04mtuyc].[avg:EXPENDITURE_HEALTH:qk]</column>
+            <column>[federated.0ehpiok1vicoma12pwodp0i7oxxr].[none:YEAR:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' domain-expand='false' field='[federated.15hmcqp1c8n4wc1fhnqqb04mtuyc].[avg:EXPENDITURE_HEALTH:qk]' field-type='quantitative' max='7.0' min='1.0' range-type='fixed' scope='rows' type='space' />
+            <format attr='display' class='0' field='[federated.15hmcqp1c8n4wc1fhnqqb04mtuyc].[avg:EXPENDITURE_HEALTH:qk]' scope='rows' value='false' />
+            <format attr='title' class='0' field='[federated.0ehpiok1vicoma12pwodp0i7oxxr].[tyr:YEAR:qk]' scope='cols' value='' />
+            <format attr='display' class='0' field='[federated.0ehpiok1vicoma12pwodp0i7oxxr].[tyr:YEAR:qk]' scope='cols' value='false' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.15hmcqp1c8n4wc1fhnqqb04mtuyc].[avg:EXPENDITURE_HEALTH:qk]' value='n#,##0.00;-#,##0.00' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.15hmcqp1c8n4wc1fhnqqb04mtuyc].[avg:EXPENDITURE_HEALTH:qk]' max='1.0' min='0.0' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-sequential'>
+                <color>#f1f1f1</color>
+                <color>#d2e9d2</color>
+                <color>#b5e2b5</color>
+                <color>#99db99</color>
+                <color>#7fd47f</color>
+                <color>#66cd66</color>
+                <color>#4fc64f</color>
+                <color>#39bf39</color>
+                <color>#24b824</color>
+                <color>#11b111</color>
+                <color>#00aa00</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+            <format attr='color' id='refline0' value='#59a14f' />
+            <format attr='font-weight' id='refline0' value='bold' />
+            <format attr='fill-above' id='refline1' value='#00000000' />
+            <format attr='fill-below' id='refline1' value='#00000000' />
+            <format attr='color' id='refline1' value='#4e79a7' />
+            <format attr='font-weight' id='refline1' value='bold' />
+            <format attr='stroke-color' id='refline1' value='#4e79a7' />
+            <format attr='stroke-size' id='refline0' value='1' />
+            <format attr='line-visibility' id='refline1' value='on' />
+            <format attr='line-pattern-only' id='refline1' value='dashed' />
+            <format attr='stroke-size' id='refline1' value='1' />
+            <format attr='fill-above' id='refline2' value='#00000000' />
+            <format attr='fill-below' id='refline2' value='#e9f3f2' />
+            <format attr='font-size' id='refline2' value='14' />
+            <format attr='color' id='refline2' value='#4e79a7' />
+            <format attr='font-weight' id='refline2' value='normal' />
+            <format attr='font-family' id='refline2' value='Times New Roman' />
+            <format attr='font-size' id='refline1' value='9' />
+            <format attr='color' id='refline3' value='#f28e2b' />
+            <format attr='fill-above' id='refline3' value='#00000000' />
+            <format attr='fill-below' id='refline3' value='#00000000' />
+            <format attr='stroke-size' id='refline3' value='1' />
+            <format attr='stroke-color' id='refline3' value='#f28e2b' />
+            <format attr='line-visibility' id='refline3' value='on' />
+            <format attr='line-pattern-only' id='refline3' value='dashed' />
+            <format attr='text-align' id='refline3' value='right' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+            <format attr='line-visibility' id='refline0' value='on' />
+            <format attr='line-pattern-only' id='refline0' value='dotted' />
+            <format attr='stroke-color' id='refline0' value='#59a14fc1' />
+            <format attr='stroke-size' id='refline2' value='1' />
+            <format attr='line-visibility' id='refline2' value='on' />
+            <format attr='line-pattern-only' id='refline2' value='dashed' />
+            <format attr='stroke-color' id='refline2' value='#4e79a7e7' />
+            <format attr='font-size' id='refline0' value='12' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.15hmcqp1c8n4wc1fhnqqb04mtuyc].[avg:EXPENDITURE_HEALTH:qk]' />
+              <text column='[federated.15hmcqp1c8n4wc1fhnqqb04mtuyc].[avg:EXPENDITURE_HEALTH:qk]' />
+            </encodings>
+            <reference-line axis-column='[federated.15hmcqp1c8n4wc1fhnqqb04mtuyc].[avg:EXPENDITURE_HEALTH:qk]' enable-instant-analytics='true' formula='average' id='refline0' label='Promedio de gasto en Sanidad: 5,46%' label-type='custom' probability='95' scope='per-pane' value-column='[federated.15hmcqp1c8n4wc1fhnqqb04mtuyc].[avg:EXPENDITURE_HEALTH:qk]' z-order='1' />
+            <reference-line axis-column='[federated.0ehpiok1vicoma12pwodp0i7oxxr].[tyr:YEAR:qk]' enable-instant-analytics='true' formula='constant' id='refline2' label='1993 - Unión Europea' label-type='custom' scope='per-table' value='#1993-01-01 00:00:00#' value-column='[federated.0ehpiok1vicoma12pwodp0i7oxxr].[tyr:YEAR:qk]' z-order='2' />
+            <customized-label>
+              <formatted-text>
+                <run>&lt;</run>
+                <run>[federated.15hmcqp1c8n4wc1fhnqqb04mtuyc].[avg:EXPENDITURE_HEALTH:qk]</run>
+                <run>&gt;%</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='color' value='#59a14f' />
+                <format attr='font-size' value='12' />
+                <format attr='font-weight' value='normal' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-mode' value='line-ends' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.15hmcqp1c8n4wc1fhnqqb04mtuyc].[avg:EXPENDITURE_HEALTH:qk]</rows>
+        <cols>[federated.0ehpiok1vicoma12pwodp0i7oxxr].[tyr:YEAR:qk]</cols>
+        <join-lod-include-overrides>
+          <column>[federated.15hmcqp1c8n4wc1fhnqqb04mtuyc].[COUNTRY]</column>
+          <column>[federated.15hmcqp1c8n4wc1fhnqqb04mtuyc].[ISO_CODE]</column>
+          <column>[federated.17phdhb09yqwme1ahebip1ffzerw].[COUNTRY]</column>
+          <column>[federated.17phdhb09yqwme1ahebip1ffzerw].[ISO_CODE]</column>
+          <column>[federated.1pavk6v1s0bnmu1adk4br1ja00nr].[COUNTRY]</column>
+          <column>[federated.1pavk6v1s0bnmu1adk4br1ja00nr].[ISO_CODE]</column>
+        </join-lod-include-overrides>
+      </table>
+      <simple-id uuid='{90DD21FA-7FC5-4B1E-A4BE-4FD75515DEC7}' />
+    </worksheet>
+    <worksheet name='Gasto público (% del PIB)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#666666' fontname='Times New Roman'>&lt;</run>
+            <run fontcolor='#666666' fontname='Times New Roman'>Sheet Name</run>
+            <run fontcolor='#666666' fontname='Times New Roman'>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='total_expenditures_UE (total_expenditures_UE)' name='federated.0ehpiok1vicoma12pwodp0i7oxxr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ehpiok1vicoma12pwodp0i7oxxr'>
+            <column caption='Expenses By Gdp' datatype='real' name='[EXPENSES_BY_GDP]' role='measure' type='quantitative' />
+            <column caption='Year' datatype='date' name='[YEAR]' role='dimension' type='quantitative' />
+            <column-instance column='[EXPENSES_BY_GDP]' derivation='Avg' name='[avg:EXPENSES_BY_GDP:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[YEAR]' derivation='Year-Trunc' name='[tyr:YEAR:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0ehpiok1vicoma12pwodp0i7oxxr].[tyr:YEAR:qk]' scope='cols' value='' />
+            <encoding attr='space' class='0' domain-expand='false' field='[federated.0ehpiok1vicoma12pwodp0i7oxxr].[avg:EXPENSES_BY_GDP:qk]' field-type='quantitative' scope='rows' type='space' />
+            <format attr='display' class='0' field='[federated.0ehpiok1vicoma12pwodp0i7oxxr].[avg:EXPENSES_BY_GDP:qk]' scope='rows' value='false' />
+            <encoding attr='space' class='0' field='[federated.0ehpiok1vicoma12pwodp0i7oxxr].[tyr:YEAR:qk]' field-type='quantitative' major-origin='#1995-07-02 12:00:00#' major-spacing='1.0' major-units='years' scope='cols' type='space' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#e9f3f2' />
+            <format attr='line-visibility' id='refline0' value='on' />
+            <format attr='line-pattern-only' id='refline0' value='dotted' />
+            <format attr='stroke-color' id='refline0' value='#4e79a7' />
+            <format attr='font-family' id='refline0' value='Times New Roman' />
+            <format attr='font-size' id='refline0' value='14' />
+            <format attr='color' id='refline0' value='#4e79a7' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <text column='[federated.0ehpiok1vicoma12pwodp0i7oxxr].[avg:EXPENSES_BY_GDP:qk]' />
+            </encodings>
+            <trendline degree='2' enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='polynomial' />
+            <reference-line axis-column='[federated.0ehpiok1vicoma12pwodp0i7oxxr].[tyr:YEAR:qk]' enable-instant-analytics='true' formula='constant' id='refline0' label='1993 - Unión Europea' label-type='custom' scope='per-table' value='#1993-01-01 00:00:00#' value-column='[federated.0ehpiok1vicoma12pwodp0i7oxxr].[tyr:YEAR:qk]' z-order='1' />
+            <customized-label>
+              <formatted-text>
+                <run>&lt;</run>
+                <run>[federated.0ehpiok1vicoma12pwodp0i7oxxr].[avg:EXPENSES_BY_GDP:qk]</run>
+                <run>&gt;%</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='color' value='#4e79a7' />
+                <format attr='font-size' value='12' />
+                <format attr='font-weight' value='normal' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='line-visibility' value='on' />
+                <format attr='line-pattern-only' value='dotted' />
+                <format attr='stroke-color' value='#f28e2bce' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0ehpiok1vicoma12pwodp0i7oxxr].[avg:EXPENSES_BY_GDP:qk]</rows>
+        <cols>[federated.0ehpiok1vicoma12pwodp0i7oxxr].[tyr:YEAR:qk]</cols>
+      </table>
+      <simple-id uuid='{FCB81BEE-183A-4BE4-B954-9BC9349319A8}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Distribución de gastos en la UE (% del PIB)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontname='Times New Roman' fontsize='28' italic='true'>&lt;Sheet Name&gt;</run>
+            <run fontalignment='1'>Æ&#10;</run>
+            <run bold='true' fontalignment='1' fontcolor='#666666' fontname='Times New Roman' italic='true'>1972 - 2014</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='11' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98690' id='74' param='horz' type-v2='layout-flow' w='99304' x='348' y='655'>
+            <zone h='98690' id='14' param='vert' type-v2='layout-flow' w='99304' x='348' y='655'>
+              <zone h='7944' id='15' type-v2='title' w='99304' x='348' y='655'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='83222' id='3' name='Gasto en Sanidad (% del PIB)' show-title='false' w='97813' x='2063' y='12000' />
+        <zone h='83333' id='5' name='Gasto en Educación (% del PIB)' show-title='false' w='97813' x='2063' y='11889' />
+        <zone h='83444' id='6' name='Gasto Militar (% del PIB)' show-title='false' w='97750' x='2063' y='11778' />
+        <zone h='8518' id='75' type-v2='text' w='8794' x='68481' y='49877'>
+          <formatted-text>
+            <run bold='true' fontcolor='#59a14f' fontname='Times New Roman' fontsize='12'>Gasto en Sanidad</run>
+            <run>Æ&#10;</run>
+            <run bold='true' fontcolor='#4e79a7' fontname='Times New Roman' fontsize='12'>Gasto en Educación</run>
+            <run>Æ&#10;</run>
+            <run bold='true' fontcolor='#f28e2b' fontname='Times New Roman' fontsize='12'>Gasto Militar</run>
+          </formatted-text>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontname='Times New Roman' fontsize='28' italic='true'>&lt;Sheet Name&gt;</run>
+                <run fontalignment='1'>Æ&#10;</run>
+                <run bold='true' fontalignment='1' fontcolor='#666666' fontname='Times New Roman' italic='true'>1972 - 2014</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='1000' minheight='1000' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='105' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98690' id='104' param='vert' type-v2='layout-flow' w='99304' x='348' y='655'>
+                <zone h='7944' id='15' type-v2='title' w='99304' x='348' y='655'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='83444' id='6' is-fixed='true' name='Gasto Militar (% del PIB)' show-title='false' w='97750' x='2063' y='11778'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='83333' id='5' is-fixed='true' name='Gasto en Educación (% del PIB)' show-title='false' w='97813' x='2063' y='11889'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='83222' id='3' is-fixed='true' name='Gasto en Sanidad (% del PIB)' show-title='false' w='97813' x='2063' y='12000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8518' id='75' type-v2='text' w='8794' x='68481' y='49877'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#59a14f' fontname='Times New Roman' fontsize='12'>Gasto en Sanidad</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontcolor='#4e79a7' fontname='Times New Roman' fontsize='12'>Gasto en Educación</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontcolor='#f28e2b' fontname='Times New Roman' fontsize='12'>Gasto Militar</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{762A88B2-6668-48FC-BC93-FA90134915DA}' />
+    </dashboard>
+    <dashboard name='Total del gasto público en la UE (% del PIB)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontname='Times New Roman' fontsize='28' italic='true'>&lt;</run>
+            <run bold='true' fontalignment='1' fontname='Times New Roman' fontsize='28' italic='true'>Sheet Name</run>
+            <run bold='true' fontalignment='1' fontname='Times New Roman' fontsize='28' italic='true'>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98690' id='14' param='vert' type-v2='layout-flow' w='99304' x='348' y='655'>
+            <zone h='4996' id='15' type-v2='title' w='99304' x='348' y='655'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='93694' id='11' param='horz' type-v2='layout-flow' w='99304' x='348' y='5651'>
+              <zone h='93694' id='6' type-v2='layout-basic' w='99304' x='348' y='5651'>
+                <zone h='93694' id='3' name='Gasto público (% del PIB)' show-title='false' w='99304' x='348' y='5651'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontname='Times New Roman' fontsize='28' italic='true'>&lt;</run>
+                <run bold='true' fontalignment='1' fontname='Times New Roman' fontsize='28' italic='true'>Sheet Name</run>
+                <run bold='true' fontalignment='1' fontname='Times New Roman' fontsize='28' italic='true'>&gt;</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='106' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98690' id='105' param='vert' type-v2='layout-flow' w='99304' x='348' y='655'>
+                <zone h='4996' id='15' type-v2='title' w='99304' x='348' y='655'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='93694' id='3' is-fixed='true' name='Gasto público (% del PIB)' show-title='false' w='99304' x='348' y='5651'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{02EEFDEA-9D74-41F8-BB2C-B58C668AEAD6}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='115'>
+    <window class='dashboard' name='Total del gasto público en la UE (% del PIB)'>
+      <viewpoints>
+        <viewpoint name='Gasto público (% del PIB)'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='3' />
+      <simple-id uuid='{86801034-1093-49D6-B98F-621A62F20796}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Distribución de gastos en la UE (% del PIB)'>
+      <viewpoints>
+        <viewpoint name='Gasto Militar (% del PIB)'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Gasto en Educación (% del PIB)'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Gasto en Sanidad (% del PIB)'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='6' />
+      <simple-id uuid='{3837D874-B3D1-443E-AF0C-7B5157C8047E}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Gasto Militar (% del PIB)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='172'>
+            <card pane-specification-id='1' param='[federated.1pavk6v1s0bnmu1adk4br1ja00nr].[avg:EXPENDITURE_MILITARY:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0ehpiok1vicoma12pwodp0i7oxxr].[none:YEAR:qk]</field>
+            <field>[federated.0ehpiok1vicoma12pwodp0i7oxxr].[tyr:YEAR:qk]</field>
+            <field>[federated.1pavk6v1s0bnmu1adk4br1ja00nr].[avg:EXPENDITURE_MILITARY:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{45DD265B-5CF8-44C5-969B-952DCA4E0E0F}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Gasto en Educación (% del PIB)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='173'>
+            <card pane-specification-id='1' param='[federated.17phdhb09yqwme1ahebip1ffzerw].[avg:EXPENDITURE_EDUCATION:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0ehpiok1vicoma12pwodp0i7oxxr].[none:YEAR:qk]</field>
+            <field>[federated.0ehpiok1vicoma12pwodp0i7oxxr].[tyr:YEAR:qk]</field>
+            <field>[federated.17phdhb09yqwme1ahebip1ffzerw].[avg:EXPENDITURE_EDUCATION:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{F1F5EB63-C2FF-4ACA-B9C1-2A0C5D35828F}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Gasto en Sanidad (% del PIB)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='172'>
+            <card pane-specification-id='1' param='[federated.15hmcqp1c8n4wc1fhnqqb04mtuyc].[avg:EXPENDITURE_HEALTH:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0ehpiok1vicoma12pwodp0i7oxxr].[none:YEAR:qk]</field>
+            <field>[federated.0ehpiok1vicoma12pwodp0i7oxxr].[tyr:YEAR:qk]</field>
+            <field>[federated.15hmcqp1c8n4wc1fhnqqb04mtuyc].[avg:EXPENDITURE_HEALTH:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{E5476C2C-706A-487C-B912-C6160BF3F4EC}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Gasto público (% del PIB)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0ehpiok1vicoma12pwodp0i7oxxr].[none:COUNTRY:nk]</field>
+            <field>[federated.0ehpiok1vicoma12pwodp0i7oxxr].[none:YEAR:qk]</field>
+            <field>[federated.0ehpiok1vicoma12pwodp0i7oxxr].[tyr:YEAR:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{025ACB2F-7C7B-415B-A873-019B872472C5}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Distribución de gastos en la UE (% del PIB)' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAAgAElEQVR4nO3deZicVYHv8e/7vrVX73un13Q6hOwJIUCQNRhQlrAPozi4XXV0xnFc5joq
+      3NEZHEBRGQbxXkavOlcQZBOEhIRdCAkhZF97Se/7VlVd67ud+0eFCCEJ3aH393yep58+6VR1
+      ner3/N7lnPOeUoQQAklyKHWyKyBJk0kGQHI0GQDJ0WQAJEdzTXYFJGmsNTccpD8UBUDVXJRV
+      VFGUn4OiKOkHCMErG54is3IJiuwFkmYay0jyd7dcx/Y2g4f/8BBP/fJH7OvX+OEPbqM4NwhG
+      hBuuWkvpWVfLAEgzj5UMcePatbirzuGhB35EtOsQV13/KVZe+Rnu/t5XQEB3ezPe7CJ5DSDN
+      PC0HdtA+GOfsc89FUyA7Jx+/z8Oet7YSTyb51X/8kE/c/Bn2tw3JAEgzzxuvv46NxjnnrAQg
+      lUpgmiYoCprbjx4LoeVWsnzuLBkAaWYRtsGmN94ks2QOS+aUAtB0aB+RhMWSM8/Ca8d4ffN2
+      zj7vAoIeVQZAmllCnfXsbeph8YqzyPCoCGHxxONPkFVczde+dAtth3ZwuCfCR1atoruzQwZA
+      mjmEEGx6+QUSpmDlmSsRwmb9I79kZ6fFf973n1QUZLB18xuYrgxS0X42Pf+07AWSZo6mQ3t4
+      ffNbpEybwtIKinMzcAVyWLZ4AS4tPQbQfHAnm3c3cdXaK+lo3CcDIDmbPAWSHE0GQHI0GQDJ
+      0WQAJEeTAZAcTQZAcjQZAMnRZAAkR5MBkBxNBkByNBkAydFkACRHkwGQHE0GQHI0GQDJ0WQA
+      JEeTAZAcTQZAcjQZAMnRZAAkR5MBkBxtVMuj28LGsOzxqoskTbhRBcCwbMLJxHjVRZImnDwF
+      khxNBkByNBkAydFkACRHkwGQHE0GQHI0GQDJ0WQAJEeTAZAcTQZAcjQZAMnRZAAkR5MBkBxN
+      BkByNBkAydFkACRHkwGQHE0GQHI0GQDJ0WQAJEeTAZAcTQZAcjQZAMnRZAAkR5MBkBxNBkBy
+      NBkAydFkACRHkwGQHE0GQHI0GQDJ0WQAJEeTAZAcTQZAcjQZAMnRZAAkR5MBkBxNBkByNBkA
+      ydFkACRHkwGQHE0GQHI0GQDJ0WQAJEeTAZAcTQZAcjQZAMnRZAAkR5MBkBxNBkByNBkAydFk
+      ACRHkwGQHE0GQHI0GQDJ0WQAJEdzjebBCuDRtHGqivQOw7IQk10JhxhVAADcYxAAy7YQwsal
+      uY/7/0IIdEvH6/J+6Ncaa7qp49bcKIpyzM9TuDXP+35+KizbxhIyAhNh1KdAKTPJr7bcx6M7
+      /x8Dsf5TetGOcBt7unawp3PnCR+z8eCfRv17B+P9tIdaR/Wc1qFmntj1e16qew5xgkZ3oHsP
+      hmUA8GrDRpJm4n2P2XDwT4h37bfXH3iKp/c8+p767GjfyjN7HyeaGubxXQ/ycv0G9nXt4vFd
+      DxHXY+zqePuEdZDGx6iPALYQFGeUUpZTweGBel6qf47agnm0h1pImUkurF3D84eexbItcgP5
+      5PpzURSVjlAr586+kN2dOxiM97OgZDED8T4a+g6xq/NtSjJL+UjNxdT1HmBP53YSRoL93bvZ
+      172bBcWLWVi6lK0tm+gItzEruxy36qZxoJ6zKs/lrdbNZPmy8Ghe6voO8vH5a9naugmX6uaK
+      BdcSTQ3zQt06sv25FAaLaAu1oKkaly+4llBiCJfmYvGs5XSEW9nWtoXSzDJiRox4Kkp+sBBb
+      2ESSIV6se47+WC9LylbwwqF1eFxeFpYsZXPTq4STYTrCbQTcQfKDBfRHe8kL5JPpzQIgmhom
+      nAhhC5sd7W8BCh7NS2+0h+LMUnZ2bGMg1kdpVhlZvvyx3s7SCZzSRXB7uAXLtphfvIhMbya1
+      BfMIuIOcUX42hwfqmZVdTnXeHC6ccwlxPUbrUBOnFy+iM9KOQPCRmosBGE6Gqe87yBULrqUv
+      2gtAfd8Brlx0PZm+bOp6D7CgeDGRZAghBF2RDtbMu4LhZJiUmaQ8u5KuSAcFGYWEEkNU5Fax
+      snIV0dQwi0qXkxvIJ5wM0TTYSHFmKQoqcSPOeTWrMW0TgHlFC/jI7IvYePAZhuKD1OTPpTPS
+      gWVbXHr6lQzG+4mmhmkaaGBFxVnMyZ9LJBlmVnY5Q/EBDvTs4bL5aynKKKYsu4L8YAFCCG5c
+      9ilWVJzD221bAHij6VX6oj0c6ttP0kxwZsUqBmJ9zC9ehGHpCCGozJ3N/u49Y7FdpREadQA0
+      VWNV9YWcWbkKt+ahMnc2Gd4MNE1jf/du5hcvpjCjmIKMQlyam+KsWSwoWULTYANFGSX43X72
+      d+8ix5/HrOxylpefyYaDT1NTMBeAhaVL2XjwGbL9OSwvX0lD/yGyfNkoikJFThUvHFqHLWx0
+      SyecDJHjz0U3U+QFCijOnEXLYCO5gXwa++swLJ1cfx6nFc4nnAzhUjXyg4V4NA+zssoBaA+1
+      sOnwK9QWzMOtuekItVKUWUJxZgmKolKaVUZJVilzC09nb9euo9cmHeE28oOFLC5dzsv1G/C5
+      /XSG246eFm5pfo03W15nWdmZvFT3HGvmXcGNy/+Gi2sv5fya1ezt2kG2P4fizFJKs8pZWbmK
+      tlALcwtPH8PNK30QRYzipFM3TQzbGs/6nNTO9m00DzZyTvX5lGTNmrR6jIZu6QwnI+QHC0b8
+      nKRhyIvgCTKqAESSUbqH+/BoHnQzhaIouN9VdmluDFM/pqziUl0Y1onLqqqiKhqmZRxT1lAV
+      9aRlTdVQFAXTMtFUDVCwbBNNTV/enLSsuUAILNvCpbmwhcC2LVyaG1vYIyhb2LaNW3Nj2Ra2
+      sHFrHkzbRJys7PJgWgZCiPeUPS4vhqVj2BZu1ZM+NULg0XwYVgqBwOvykTJTcNxyElDwurzv
+      KysouDUvuvVO2YNupY4pq7g1d7qsqLjVv5RdqhvDSqEqKto72+09ZQ1N1Y5fVjQMO11WFRXT
+      NtAUDeVo2ZXehraBprpQOFEZTNvEpboQR7ahS3UjEMcvC4El3inbWMLCpR7ZhiL9Nx5VAFKm
+      STj5/h4QSZqu5Eiw5GgyAJKjyQBIjiYDIDmaDIDkaDIAkqPJAEiONurJcJKz2cLGEAYpK0nC
+      ThDSh+jX+wkZQ6iKSoYrk6AWJOjKIMuVhUf14FLcuBQNl+rGpbjQlKlzT4kMgPQ+trD588Ar
+      HBo+wKAxyKDez7A5TNSMErNieFQPXtWLT/WR58kn31NArjsXG5thM0LMjBOzokSMMIYwMGwd
+      Q5hYwkK3U7gUNz7NS7mvkvPzL2Rl7tkUeArH5F6K0ZIjwdJ7hIwhbjvwHQJagIsKVqcbuDv/
+      6B49oAU/dEM1bIOUnaIxVs+mgdd4O/wWcTPG/MyFXFBwMcuzV5Dtzh6jd3RyMgASkL4Lb1to
+      K7cf+j5fm/MNVheumdDXj5pRdoV38Gr/y+wd3o1X9bIs+wzOz7+Q+ZkL8Wv+cXldGQAJwzZ4
+      oPl+tgy9wY8X/gclvpLJrhIDej/bhrby2sArHIwepMBTyBUlV3FZ0eV4VM+YvY4MgMN1J7v4
+      9r6vsyLnLL4y+6u41OPfpz2ZhBC0Jlr4ffvv2BHexnWlf8VVJVcTcAU/9O+WAXAoIWz+PPAq
+      P234EbfO+z4rc8+e7CqNSMSI8EjHQzzb/RSXFV/OzeW3kHUK1wu6rfPm0GYZACdKWAnurPs3
+      BvUBfjD/DvI8eZNdpVGLmlEe63iYp7uf5KKC1dxc8RnyPSe/l1oIQa/ewxOdj/JC7waWZC+T
+      AXASIQRN8cN8d/+3WFt6HZ8ouxlFmd5joSkrxYbedTzU/t/Mz1zI5yq/SEWg8j2PMW2TrUOb
+      eaTjIXpTvVw76wY+Xnwlma5MGYCpIGyEeLFvI3Mz5lHhryLLlYU6xg3TFjaPdT7CI+0P8m/z
+      72RB1qIx/f2TzbRNXujbwG9af8WcYC3/o+pvyXRl8kzPU6zrfoaaYA2fLL+FRVlL3vO3lQGY
+      ZC3xJr6+5+/5aOFldCbbaUu0krASlPhmUR2YzaKsxSzKXEKeJx+f5vvA32cJk7gZZ9gapi/V
+      S3uijZ5UN9uGtpLnyed7874/bl2KU4ElLLYMvsF/t/1fwkaYK0rWclXJ1eS4c4/7eBmASfTW
+      0Jv8sO4H/HD+XSzMWnz057qt053soiFWz4HhveyN7GHIGMKluKgOzGZ+5gIq/FX06330pLrp
+      TnbRp/cSNkKk7BQBLUiGK4MiTzElvlLKfOXUZsxlfubCSXy3U5MMwCQQQvBU9xM83P4gP1t8
+      H6W+ka1wETZCNMUP0xCtpyXRRKGniBJfKSXeUgq8heS4csaka9BJZAAmmCUs7jt8D42xBv59
+      wY/JcGVMdpUcbXp3AUwzSSvJt/d9nZSd5GeL75ONfwqQAZgg/ak+vrDzFs7IWck/1X53Sk0J
+      djIZgAlQFz3E3+76HF+q/ns+Wf43kzLtdzQSusUvNrYwGNUnuyrjTgZgnG0aeI3v7v8Wdyz4
+      CeflXzDZ1flAli34xcZWAl6N/1zfgmXP7CUa5UXwOBFC8HDHg6zr/hP3LPk5+Z6Rrw06WYQQ
+      PLalG9MW/PW5pTz+ZjeWLbjp3OmxDuupkEeAcZCwEtxVfzvbQ9v4r+W/mTaN/426EI09cf5q
+      VSmKonDtWSXUdcXY3z482dUbN/IIMAbemWS1dXALG/ueoyfZxceKr+TTlZ+bNhe7zX1xHnih
+      je9dV0vQ+5c69w/r/OipRm69fi5Z/pl3B+2oAhCOJ2kbCOFxaeiGhaKA+wRll0vDMKz0StEu
+      NV1WFVyagmHYqKqCpioY5snLqqpgHlvWFFQlXdY0Jb2y8DtlFEzLRtPSBzfruGWBZQlcmppe
+      TdgSuFxqejXhI2XbFtj2ictCNTk4fJAXep6nKVlHUM1iVe75LMyZT4WvGlVouN0apmUjbJEu
+      m3Z6FWi3hmFaCMFJy7ppgQCPJ/13Pbbs9Wik9PRy9cctK+B1/6XscWvo75SPbCsUiOs2965r
+      4ktrKinO9r1vezb0xHlp7wBfuKQCVVVwaaPbnsfdhu8qn3gbKoBygm2YLp9sG45ke8ojwAgJ
+      IRgyBtk6tIWX+l7gcLyRKn8VHy26jLNzV5H3AVNxpyrdtLnzj41cd3YJiyoyj/sYIQT//WoH
+      BVkerjijaIJrOL5kAD6AaZs83f0kf+r+IwkrwUfyzueigtWcnrkA9xS8e2o0bCH4P8+3Ul3o
+      5+PLT96wddPmXx+r5/OrK5hdFJigGo4/GYATsIXNpsHX+N9N97E8+wxuqfwchZ6iKd+HP1JC
+      CJ7d0UfHQIIvfrRyRO+rYzDJfc81c9v1cwl4p8e1zQeRATiGEIK66EHua7oHj+Lh72u+zuxg
+      zWRXa8ztaonw9LYevnPNHFzayDsD/3xgkD2tEb5yadWM2BnMvMv6D6Ev1ct9h++hKd7IP875
+      J5Znr5gRG/lYnUNJHnytg1uvqx1V4wc47/Rc9rQO89qBQS5YMD2ve95NjgMACSvOfYfv4Ys7
+      P8N5+Rfw6zMe4oycM2dk448lTe5d18xXP1ZNVmD01zCqovDZi8pZt6OP7lByHGo4sRwdANM2
+      ebTj93xi2/XkunN5+MwnWFP0sWnTdz9ali24Z10zV68spqLg1O8KC3g1vnBJBfdvaEU37TGs
+      4cRz5DWALWxeH/gzDzTfz7LsM/hc1RembTfmSAkhePD1TvwejevPHpuFr57d3ktfROczF5WP
+      ye+bDI4LgGEb/HvdDwgZIb5a83VqgnMmu0oT4pV9A+xsifAPH69GHaNTO9sW/OSZJlYvymdF
+      zcSs5TnWHHUKZNgG3z/4PYJakJ8sutcxjX9gWOe5nX18eU3VmDV+AFVV+OJHK3jkjc5pO3Xa
+      MQEwbZO7G+4kx53LN2q/PebLjkxVQgj+sLmLm84txese+/ecHXBzy4Xl/HxDC8Y0vB5wRCuw
+      hMXdDXfiVtx800GNH6BtIElfRGf57PE7RVlYnsFZtTnc/kQDnUPTq2doxrcEW9j8R+PdqCh8
+      o/Z/OqrxCyH43WsdfPK88Z3PrygKly0t5NMXlfPz51p4fncf9jS5kWZGtwZb2NzTeDcJK8k3
+      5/6zoxo/wIGOGAGPRm3JxCyVUlMU4Nbra2kbSPLTZ5sIxYwJed1TJYSYuQGwhc3PGn9M2Ajx
+      z6fdOmP79k/EFoIHX+/gE+O89z+W36Px2YvKWbO4gDuebGRrQ4hRdDROqD8fGJyZUyFsYXPv
+      4Z/Sl+rl9vl3fejG3x/R8XtUgr7p8+faUheipihAcbZ3wl9bURSWVmdRXeTn1y+3s6slwqfO
+      L8PvmTo7oZ5QivU7+mbeEcAWNvc33Ut7opXb59+FSz31RjsY1fnNK+3cs66Jnz7bNG1uEDcs
+      m6e29fBXq0ontR7ZATdfu7yamqIA//pYPXVdsUmtzztMy+a/XmzlsxeXz6yBMCEEDzTfT130
+      IHcs/Mkpf5TOcMLkj2/1sLd1mLUrizhnbi4Pvd5JcY6HS5cUjnGtx9667b0kDHvMRnzHQnco
+      xS9fbOX0sgyuXlmMe5ST8MbSk1vTN/vfcE7p+AXAMC2e39rEZWfXoGkq/aE4vUMxUrpFeXEW
+      g+EE7b0RqkpziMRSnF6VT1d/lDnlx1/F17YFScNGN23iKYto0iQcNwknTKIJk/J8H/uUdeyO
+      b+GOBXefUuNP6hYv7R3gjbohLllcwHnzcnG70hsqaVh8/w/1fPOqGgqzxu4zqsZaQre47ZE6
+      fvjXp+F1T51TDjhyZHqrh71tw3zhkkrK8j54teuxVt8V4/ebOvnOtXNwa+N0S6QQgr2NfVi2
+      YNGcwvR9m0IQSxrsP9zHWQvLCEdT9AxGSRkWfo+L4bgOCsyZlUtDb5KtjSEicRPDEiR0C8sW
+      eN0qXpdKwKsR9LrIDqS/gj6N3x5YR3wwn/m5s1lWlceKmmyKsj0jGvlMGTav7BvgpX0DnHd6
+      LpcuKTzuoNHetmHW7+jjm1fNHtMR1bEihODhN7ooyfFy8cKpO7epsSfGr19uZ0F5BmuWFFCY
+      NTHXKfGUxe1P1PPVj1VTmpsO37gEIKmb7KzrIRxNsqS2iNKCTAbDCZq7QiydW4yqKuw41M3S
+      ucXEUyaN7YMIwdEjQ35uJsNJkwyfC69LxetW8biU901PFkLQk+rmkY4HaYof5q4FPyMSgx1N
+      EXa2RAjFTOaXBVlRk82c4uD7GrVlC96sD/HM9l6WVmVyxRlFZHzAhe4vNrawrDqLVacd/0g1
+      mQajBnf+sYE7Pnk6mjr1AvpuummztSHE87v7yQ26WbOkgPllGajjVG8hBA+80Mrc0iCrF/1l
+      mZpxvQbo6BumODfI7sZeMv0eTNvG49KoKs2mo3eYqtJshBC09UQozs/gUMsAVSXZZGecfI+Q
+      tBJsGnyNP3Y9wZA+yNWl13FN6XW4jzntiacs6rtjbKkL0TaQICfo5uzaHBZWZNDUm+DpbT3U
+      lgRZe2YR2SOcGz+cMLn98Qa+e92cET9nIogj9/eeNTeHM8Zx1Hes2ULQ1Jvgmbd7GIoZnD8/
+      j/Pm5Y35tI0360NsrhviHy5/72TAcb8INk2blGES9H+482ZbWDTEGniy8zG2hbayPPsMbii7
+      idrgaSMa4LJsQcdgkp3NEXY2RyjI9HDDOSUUnUI34Za6IbY3RfjypSO7l3YitA8k+NVLbfzL
+      jadNdlVOWShmsGFXHzubIyyqyGTNkoJT2j7HGhjWuftPh/nONbVkBd57hB/XAMT0KAF38Ggj
+      SRoJPC4vQghCiUHcmoeAJ0jKSBDwZGBYOh7Xe99wxIjwXO+zPNv9NF7Vy03lN3Nu3nmT+jE/
+      QqSnAV+2tIDFlVmTVo93u+PJBm48p5Ta0un/ARkp02ZbY4iNu/rJzXDz0cUFLCjPOKXrLssW
+      /ORPh7l8eRGLKt+/7Mu4BWA4GWFT04t8dN5VuFQX0dQwb7e9wcrK8wglBtBNnfxgIR3hVizb
+      pCSrjLgeoyJ3NqZtsjO8nYc7HqQ13szqwjVcN+tGirzFI3/n4+ydvcr/umHupA/wHOyIsn5H
+      H1+/cvak1mOsCSFo7kuwfmcf3UMpFldmMm9WkMoCP9kB14iOvuu29zIQ1fnU+WXHffy4BMAW
+      Nvu6duDWPNQWzj86GHWoZw8VuTWEEgNEkmE8mhfdSmHaBrqpo6oqs7Iq2BjawK7wTm6uuIVF
+      mUs+1GDWeNq4q4/ucIq/OcEfdyIIIbjtkTq++rFqinMmftR3okTiBvs7otR3xWkbSBBLWRRk
+      ephd5Oe00nQoju3AaOlL8F8vtnLb9XNPeE0xLgHQzRSN/QfpinSwsGQZ2f5cfG7/0QCAwOvy
+      s6vjLZaWnUlj/yFURSXDm0VUH6a24PSRVmlS2bbg9ica+NT5ZdQUT85iUVvqhtjbFuXzq8un
+      zPXIRDBMm75hnbrOGPVdMbpCKQxLUJLjZW5JgNlFAX77ajtfuKSSqsITny6P6zVAODGE3xPk
+      YM9uqvJq6Qy14HF5Kc4so2e4g7xAITn+PEKJQbL9ubQONjIrpwqPNnUHmo7VMZjkFxtb+Jcb
+      5h4dNBst0xKEYgZ5Ge5RdQOaluB7Dx/i1utqyZyBC9eOVlK36A6nqO+Kc6gzyrLqLM47Pe+k
+      zxn3XiBbpBeE1dSpNSo5lh5/sxtNgWvOGt3UAyEE+9qjPPR6Jz63SkK3qCkKsLgqk4XlmR/Y
+      qNfv6CWWsrjhnMmd8zOdjftuQ1VUmOFH5rUrivjXx+pZWZsz4uH91v4Ev3utg6BX4x+vqKYo
+      y0vKsGkdSPBWQ4j1O/pwqQpzS9MDedWF/vccYZK6xYt7B7j9punb7TkVzKjJcJOpvivGHzZ3
+      8c/XzDnpKOzAsM7jb3bTF9G5cVUpc0sCJzx3D8cNDrRH2dEcoaU/QWGWhyWVmSypzOKlfQMU
+      Z3veM6opjZ4MwAcRFr6Oh1D1AZIl12D7K+EEA2+/frmdygIflyx+f6OMpyw27u7j7cNhrlhe
+      xMranFFNVzAtQW8kxc7mCLtbhjEsm+9eWzvlpzxMdTIAJyMEgaZ7UcwwifJbCDbchWLFidX+
+      T6zMhe97uGHZ/Pjpw9y0qpQ5R25D7IvoPP5mF0nd5uPLC6kpCpzyxbI09mQATsLT+xy+zkeJ
+      LPkFqB4QAtfwXgKNP8Z25xGf8430EeFdOgeT3L+xhX9aW8PGXf3saI5w7VnFrKjJnpIzSMeV
+      ECBMEAaKfeS7MOFI2fYUgmtyR65lAE5Ai+wl88C3CS//HcJzzMxPYeHpfwV/888xcs4iUf23
+      CHfO0f9+6q0eXtzbzxVnFHHJovxRr8A8rQiBFqvH3/wLNL3nSOO20g1dmKBoCNUDiguhukFx
+      pcsoaKlubHc2Rs7ZGPkXYAZPA21i7xGQATgORR8ge+dnGV54D9bJPhvANvD2PI2/5QFSJdeS
+      qPgMaD6EEBiWwDPDT3UUvZ9A0324hvcTm/sdrEA1KG6Eoh1t6JzsqCcs1GQ37tBWPAOvosWb
+      sD0FGLnnoOdfgBWogXH+FB4ZgGPZKbJ2fo5k5efRC1aP7DlmDH/H7/H0PkOy7FOkSq6BKTp9
+      Y0xYSXydj+DrfIRE1ZdJFV8OY7HqhrBQk524B9/AM/g6WqIVy1uMkbcKI+98rMDssXmdd5EB
+      eDdhEzx0G1ZgNsmKz59873Ucij5AoPk+3KHtpIovR7iysF2ZCFcmQgsiXFkIzZ/eS2pehOoF
+      1TvmG3XcCBv34GsEGn+GkX8h8eovgTaOU0BsAy3RgntwE57B11BTfaSKPkaqeC22v2xMXkIG
+      4F18rb/CNXyA6IIfnbCrcyTUZBfuoc0oVgzFHD7yFU1/txIoQkexU2DrKFYifZ6suEB1p78r
+      blBdCNWXDo4WQGjvlIOg+bBd2Qh3Lra36Ei4MhBa4EPV+4SEQIs3EKy/E+EKEqv9LrZv4m+4
+      V4wQ3t71eLufQmhBUsVXkSq69EOFUAbgCPfgJgLNPye89Jfju1c7nqM9JMaRsokiTBQriWJF
+      wUqg2EkUM4ZiRVHsFIoRRtUHUPX+9M/MGIqdQCjuowGxPQUIdx62twjbW4jlrzrys5wRH3UU
+      feDIef5eYnO/h5m9bJz/GCMgBFq8EW/Xk3gGX8fMOI1k2c2YWYtHfTSVAQC0+GEy936NyNJf
+      YXun8efgChvsZPooY0ZR9b4jX4OoqR60RDOKPoRqDCE0P7Y7B9tXhhWoxvJXYvsrsN356YDY
+      Or7OR/F1/p5E1ZdIFV85NU/VbB13aBversdxRQ+mT5FKrsH2V4zo6Y4PgGJEyNr5aWLzfoCZ
+      tWSyqzMxhEgfNYwwWrIdLd6MmmhBS7ShGoMoZhQQ6PkXEa/+8sQfEU+RYoTx9L+Er/NhhOLB
+      zFmBGZiDHajG8pYg3Lnv65xwdgBsnaw9f0eq+EpSJVdPdm2mDmGl+/DVaXqDjRCoyU5ckZ1o
+      iVa0eCNqqg/VCCFUD7Y7FztQhRWocXAAhCDQ+CNQXMRrvjHqHh9pGhJ2umPCGEKLN6HFm5wb
+      AG/Xk3j6nmd48b3pARvJkZy35YXAPbQZX8eDRJb9RjZ+hxu/rW/EUZJhREZJ+vTCNlGiPQhf
+      Lrj96bI3EzQ36FHw5YKZAPf4XXCpyS4CTfeiJtoZXngPwpUxbq8lTQ/jcwokbJS+g+DyouhR
+      7JKlEB9AsXTU7l3pf1sGav9BhC8bbAuRUwV6FFEwL90XPoZTCRQzhq/9t3h71xOv/gp64aVT
+      s0tPmnDjM1tLURG51ahDTdhZR/pj/bkooRZQtfRRwYinGz/po4Patx8l0oESasHX/luydnwa
+      b+ejYH6INeWFiad3Pdnb/xoUN6EzH0Mv+rhs/NJR43YE0Bo2YM1eDZoH9BhggzuI2vwKIqM0
+      HZKCeekJUN270tMBfFkoyTB2yTLUZBu+rifx9L+EGawlWfbJ9CjkSBrvO/P2G+7C9lcQm/Mt
+      xAz/JHjp1IxPAGwLtWt7ulFnlKAMNmAXL0ENNaX3/paOEh9AaB5E0UKI9UKgEHOXrIgAAADB
+      SURBVKX/ACKvFt69PKKt4wrvwNf5CK5YPanCNaRKrj/hZCg12ZW+c8sYIDb3VqyMeSN9e5ID
+      jX83qLDTX2NwTq+Yw3h61+Pr/iNC0UjOugk9/+L0XUVmjEDz/XgGXiY251sY+ReNz8QwaUaZ
+      nuMAQqDFm/B2PY5n4GXMjHm4hg+QLPskyVk3gTZNRzClCTc9A/Buto5r+ABWoBrhnj7r4ktT
+      w/QPgCR9CPIkWXI0GQDJ0WQAJEeTAZAcTQZAcrT/D8lkcjsdN6TgAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Total del gasto público en la UE (% del PIB)' width='192'>
+      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
+      2kj3kyUmYAAAAABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>

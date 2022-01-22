@@ -1,0 +1,1913 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20213.21.1217.2247                               -->
+<workbook original-version='18.1' source-build='2021.3.6 (20213.21.1217.2247)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='Corrupcion_16424558197990' path='/workbooks' revision='1.3' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <style>
+    <_.fcp.MarkAnimation.true...style-rule element='animation'>
+      <format attr='animation-on' value='ao-off' />
+    </_.fcp.MarkAnimation.true...style-rule>
+  </style>
+  <datasources>
+    <datasource caption='corruption_perception_UE (corruption_perception_UE)' inline='true' name='federated.0gi6sj0182w2hl1e9pwa90pcylru' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='corruption_perception_UE' name='excel-direct.12x2rud0uqm0ww178xiyx0v46bh8'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/Roberto Barroso/Documents/Universidad/Trabajo fin de Master/Scripts_ETL/Datos/UE/corruption_perception_UE.xlsx' interpretationMode='0' password='' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.12x2rud0uqm0ww178xiyx0v46bh8' name='corruption_perception_UE' table='[corruption_perception_UE$]' type='table'>
+          <columns gridOrigin='A1:E2053:no:A1:E2053:0' header='yes' outcome='6'>
+            <column datatype='string' name='COUNTRY' ordinal='0' />
+            <column datatype='string' name='ISO_CODE' ordinal='1' />
+            <column datatype='date' date-parse-format='yyyy' name='YEAR' ordinal='2' />
+            <column datatype='real' name='HUMAN_DEVELOPMENT_INDEX' ordinal='3' />
+            <column datatype='integer' name='CORRUPTION_PERCEPTION' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.12x2rud0uqm0ww178xiyx0v46bh8' name='corruption_perception_UE' table='[corruption_perception_UE$]' type='table'>
+          <columns gridOrigin='A1:E2053:no:A1:E2053:0' header='yes' outcome='6'>
+            <column datatype='string' name='COUNTRY' ordinal='0' />
+            <column datatype='string' name='ISO_CODE' ordinal='1' />
+            <column datatype='date' date-parse-format='yyyy' name='YEAR' ordinal='2' />
+            <column datatype='real' name='HUMAN_DEVELOPMENT_INDEX' ordinal='3' />
+            <column datatype='integer' name='CORRUPTION_PERCEPTION' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[corruption_perception_UE]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>2</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:E2053:no:A1:E2053:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COUNTRY</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[COUNTRY]</local-name>
+            <parent-name>[corruption_perception_UE]</parent-name>
+            <remote-alias>COUNTRY</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[corruption!perception!UE_5C9BE2D785D440D68FD9EAF3DEF6133C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ISO_CODE</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[ISO_CODE]</local-name>
+            <parent-name>[corruption_perception_UE]</parent-name>
+            <remote-alias>ISO_CODE</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[corruption!perception!UE_5C9BE2D785D440D68FD9EAF3DEF6133C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YEAR</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[YEAR]</local-name>
+            <parent-name>[corruption_perception_UE]</parent-name>
+            <remote-alias>YEAR</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[corruption!perception!UE_5C9BE2D785D440D68FD9EAF3DEF6133C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HUMAN_DEVELOPMENT_INDEX</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[HUMAN_DEVELOPMENT_INDEX]</local-name>
+            <parent-name>[corruption_perception_UE]</parent-name>
+            <remote-alias>HUMAN_DEVELOPMENT_INDEX</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[corruption!perception!UE_5C9BE2D785D440D68FD9EAF3DEF6133C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CORRUPTION_PERCEPTION</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CORRUPTION_PERCEPTION]</local-name>
+            <parent-name>[corruption_perception_UE]</parent-name>
+            <remote-alias>CORRUPTION_PERCEPTION</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[corruption!perception!UE_5C9BE2D785D440D68FD9EAF3DEF6133C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Corruption Perception' datatype='integer' name='[CORRUPTION_PERCEPTION]' role='measure' type='quantitative' />
+      <column caption='Country' datatype='string' name='[COUNTRY]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Human Development Index' datatype='real' name='[HUMAN_DEVELOPMENT_INDEX]' role='measure' type='quantitative' />
+      <column caption='Iso Code' datatype='string' name='[ISO_CODE]' role='dimension' type='nominal' />
+      <column caption='Year' datatype='date' name='[YEAR]' role='dimension' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='corruption_perception_UE' datatype='table' name='[__tableau_internal_object_id__].[corruption!perception!UE_5C9BE2D785D440D68FD9EAF3DEF6133C]' role='measure' type='quantitative' />
+      <group caption='Acción (Country)' hidden='true' name='[Action (Country)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[COUNTRY]' />
+        </groupfilter>
+      </group>
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='es_ES' class='hyper' dbname='C:/Users/Roberto Barroso/Documents/Mi Repositorio de Tableau/Fuentes de datos/corruption_perception_UE (corruption_perception_UE).hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='01/17/2022 09:43:01 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='corruption_perception_UE (corruption_perception_UE)' increment-value='%null%' refresh-type='create' rows-inserted='2052' timestamp-start='2022-01-17 21:43:00.334' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>COUNTRY</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[COUNTRY]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>COUNTRY</remote-alias>
+              <ordinal>0</ordinal>
+              <family>corruption_perception_UE</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LES_RES_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[corruption!perception!UE_5C9BE2D785D440D68FD9EAF3DEF6133C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ISO_CODE</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ISO_CODE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ISO_CODE</remote-alias>
+              <ordinal>1</ordinal>
+              <family>corruption_perception_UE</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LES_RES_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[corruption!perception!UE_5C9BE2D785D440D68FD9EAF3DEF6133C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>YEAR</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[YEAR]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>YEAR</remote-alias>
+              <ordinal>2</ordinal>
+              <family>corruption_perception_UE</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>76</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[corruption!perception!UE_5C9BE2D785D440D68FD9EAF3DEF6133C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>HUMAN_DEVELOPMENT_INDEX</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[HUMAN_DEVELOPMENT_INDEX]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>HUMAN_DEVELOPMENT_INDEX</remote-alias>
+              <ordinal>3</ordinal>
+              <family>corruption_perception_UE</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>246</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[corruption!perception!UE_5C9BE2D785D440D68FD9EAF3DEF6133C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CORRUPTION_PERCEPTION</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[CORRUPTION_PERCEPTION]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CORRUPTION_PERCEPTION</remote-alias>
+              <ordinal>4</ordinal>
+              <family>corruption_perception_UE</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>51</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[corruption!perception!UE_5C9BE2D785D440D68FD9EAF3DEF6133C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;España&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='corruption_perception_UE' id='corruption!perception!UE_5C9BE2D785D440D68FD9EAF3DEF6133C'>
+            <properties context=''>
+              <relation connection='excel-direct.12x2rud0uqm0ww178xiyx0v46bh8' name='corruption_perception_UE' table='[corruption_perception_UE$]' type='table'>
+                <columns gridOrigin='A1:E2053:no:A1:E2053:0' header='yes' outcome='6'>
+                  <column datatype='string' name='COUNTRY' ordinal='0' />
+                  <column datatype='string' name='ISO_CODE' ordinal='1' />
+                  <column datatype='date' date-parse-format='yyyy' name='YEAR' ordinal='2' />
+                  <column datatype='real' name='HUMAN_DEVELOPMENT_INDEX' ordinal='3' />
+                  <column datatype='integer' name='CORRUPTION_PERCEPTION' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='corruption_by_institution_UE (corruption_by_institution_UE)' inline='true' name='federated.0soo8zi00ytcak16isqh51a3fhr5' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='corruption_by_institution_UE' name='excel-direct.185wsc40vxm0nr1f854pl0n1ibkx'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/Roberto Barroso/Documents/Universidad/Trabajo fin de Master/Scripts_ETL/Datos/UE/corruption_by_institution_UE.xlsx' interpretationMode='0' password='' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.185wsc40vxm0nr1f854pl0n1ibkx' name='corruption_by_institution_UE' table='[corruption_by_institution_UE$]' type='table'>
+          <columns gridOrigin='A1:M22:no:A1:M22:0' header='yes' outcome='6'>
+            <column datatype='string' name='COUNTRY' ordinal='0' />
+            <column datatype='string' name='ISO_CODE' ordinal='1' />
+            <column datatype='integer' name='YEAR' ordinal='2' />
+            <column datatype='integer' name='Police' ordinal='3' />
+            <column datatype='integer' name='Legislature' ordinal='4' />
+            <column datatype='integer' name='Government officials' ordinal='5' />
+            <column datatype='string' name='Local government councillors' ordinal='6' />
+            <column datatype='string' name='Prime Minister / President' ordinal='7' />
+            <column datatype='string' name='Tax officials' ordinal='8' />
+            <column datatype='integer' name='Business executives' ordinal='9' />
+            <column datatype='integer' name='Judges and magistrates' ordinal='10' />
+            <column datatype='integer' name='Religious leaders' ordinal='11' />
+            <column datatype='string' name='Traditional leaders' ordinal='12' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.185wsc40vxm0nr1f854pl0n1ibkx' name='corruption_by_institution_UE' table='[corruption_by_institution_UE$]' type='table'>
+          <columns gridOrigin='A1:M22:no:A1:M22:0' header='yes' outcome='6'>
+            <column datatype='string' name='COUNTRY' ordinal='0' />
+            <column datatype='string' name='ISO_CODE' ordinal='1' />
+            <column datatype='integer' name='YEAR' ordinal='2' />
+            <column datatype='integer' name='Police' ordinal='3' />
+            <column datatype='integer' name='Legislature' ordinal='4' />
+            <column datatype='integer' name='Government officials' ordinal='5' />
+            <column datatype='string' name='Local government councillors' ordinal='6' />
+            <column datatype='string' name='Prime Minister / President' ordinal='7' />
+            <column datatype='string' name='Tax officials' ordinal='8' />
+            <column datatype='integer' name='Business executives' ordinal='9' />
+            <column datatype='integer' name='Judges and magistrates' ordinal='10' />
+            <column datatype='integer' name='Religious leaders' ordinal='11' />
+            <column datatype='string' name='Traditional leaders' ordinal='12' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[corruption_by_institution_UE]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:M22:no:A1:M22:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COUNTRY</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[COUNTRY]</local-name>
+            <parent-name>[corruption_by_institution_UE]</parent-name>
+            <remote-alias>COUNTRY</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[corruption!by!institution!UE_70931B4D0D6145A087739CBAF84E1D5E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ISO_CODE</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[ISO_CODE]</local-name>
+            <parent-name>[corruption_by_institution_UE]</parent-name>
+            <remote-alias>ISO_CODE</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[corruption!by!institution!UE_70931B4D0D6145A087739CBAF84E1D5E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YEAR</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[YEAR]</local-name>
+            <parent-name>[corruption_by_institution_UE]</parent-name>
+            <remote-alias>YEAR</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[corruption!by!institution!UE_70931B4D0D6145A087739CBAF84E1D5E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Police</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Police]</local-name>
+            <parent-name>[corruption_by_institution_UE]</parent-name>
+            <remote-alias>Police</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[corruption!by!institution!UE_70931B4D0D6145A087739CBAF84E1D5E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Legislature</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Legislature]</local-name>
+            <parent-name>[corruption_by_institution_UE]</parent-name>
+            <remote-alias>Legislature</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[corruption!by!institution!UE_70931B4D0D6145A087739CBAF84E1D5E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Government officials</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Government officials]</local-name>
+            <parent-name>[corruption_by_institution_UE]</parent-name>
+            <remote-alias>Government officials</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[corruption!by!institution!UE_70931B4D0D6145A087739CBAF84E1D5E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Local government councillors</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Local government councillors]</local-name>
+            <parent-name>[corruption_by_institution_UE]</parent-name>
+            <remote-alias>Local government councillors</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[corruption!by!institution!UE_70931B4D0D6145A087739CBAF84E1D5E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Prime Minister / President</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Prime Minister / President]</local-name>
+            <parent-name>[corruption_by_institution_UE]</parent-name>
+            <remote-alias>Prime Minister / President</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[corruption!by!institution!UE_70931B4D0D6145A087739CBAF84E1D5E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tax officials</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Tax officials]</local-name>
+            <parent-name>[corruption_by_institution_UE]</parent-name>
+            <remote-alias>Tax officials</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[corruption!by!institution!UE_70931B4D0D6145A087739CBAF84E1D5E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Business executives</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Business executives]</local-name>
+            <parent-name>[corruption_by_institution_UE]</parent-name>
+            <remote-alias>Business executives</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[corruption!by!institution!UE_70931B4D0D6145A087739CBAF84E1D5E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Judges and magistrates</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Judges and magistrates]</local-name>
+            <parent-name>[corruption_by_institution_UE]</parent-name>
+            <remote-alias>Judges and magistrates</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[corruption!by!institution!UE_70931B4D0D6145A087739CBAF84E1D5E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Religious leaders</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Religious leaders]</local-name>
+            <parent-name>[corruption_by_institution_UE]</parent-name>
+            <remote-alias>Religious leaders</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[corruption!by!institution!UE_70931B4D0D6145A087739CBAF84E1D5E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Traditional leaders</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Traditional leaders]</local-name>
+            <parent-name>[corruption_by_institution_UE]</parent-name>
+            <remote-alias>Traditional leaders</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[corruption!by!institution!UE_70931B4D0D6145A087739CBAF84E1D5E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[:Measure Names]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;[federated.0soo8zi00ytcak16isqh51a3fhr5].[avg:Business executives:qk]&quot;' value='Empresarios' />
+          <alias key='&quot;[federated.0soo8zi00ytcak16isqh51a3fhr5].[avg:Government officials:qk]&quot;' value='Gobierno' />
+          <alias key='&quot;[federated.0soo8zi00ytcak16isqh51a3fhr5].[avg:Judges and magistrates:qk]&quot;' value='Jueces y magistrados' />
+          <alias key='&quot;[federated.0soo8zi00ytcak16isqh51a3fhr5].[avg:Legislature:qk]&quot;' value='Legislativo' />
+          <alias key='&quot;[federated.0soo8zi00ytcak16isqh51a3fhr5].[avg:Police:qk]&quot;' value='Policía' />
+          <alias key='&quot;[federated.0soo8zi00ytcak16isqh51a3fhr5].[avg:Religious leaders:qk]&quot;' value='Líderes religiosos' />
+        </aliases>
+      </column>
+      <column datatype='integer' name='[Business executives]' role='measure' type='quantitative' />
+      <column caption='Country' datatype='string' name='[COUNTRY]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column datatype='integer' name='[Government officials]' role='measure' type='quantitative' />
+      <column caption='Iso Code' datatype='string' name='[ISO_CODE]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Judges and magistrates]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Legislature]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Police]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Religious leaders]' role='measure' type='quantitative' />
+      <column caption='Year' datatype='integer' name='[YEAR]' role='dimension' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='corruption_by_institution_UE' datatype='table' name='[__tableau_internal_object_id__].[corruption!by!institution!UE_70931B4D0D6145A087739CBAF84E1D5E]' role='measure' type='quantitative' />
+      <column-instance column='[Business executives]' derivation='Avg' name='[avg:Business executives:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Government officials]' derivation='Avg' name='[avg:Government officials:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Judges and magistrates]' derivation='Avg' name='[avg:Judges and magistrates:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Legislature]' derivation='Avg' name='[avg:Legislature:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Police]' derivation='Avg' name='[avg:Police:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Religious leaders]' derivation='Avg' name='[avg:Religious leaders:qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='es_ES' class='hyper' dbname='C:/Users/Roberto Barroso/Documents/Mi Repositorio de Tableau/Fuentes de datos/corruption_by_institution_UE (corruption_by_institution_UE).hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='01/17/2022 09:43:17 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='corruption_by_institution_UE (corruption_by_institution_UE)' increment-value='%null%' refresh-type='create' rows-inserted='21' timestamp-start='2022-01-17 21:43:16.304' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>COUNTRY</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[COUNTRY]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>COUNTRY</remote-alias>
+              <ordinal>0</ordinal>
+              <family>corruption_by_institution_UE</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>21</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LES_RES_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[corruption!by!institution!UE_70931B4D0D6145A087739CBAF84E1D5E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ISO_CODE</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ISO_CODE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ISO_CODE</remote-alias>
+              <ordinal>1</ordinal>
+              <family>corruption_by_institution_UE</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>21</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LES_RES_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[corruption!by!institution!UE_70931B4D0D6145A087739CBAF84E1D5E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>YEAR</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[YEAR]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>YEAR</remote-alias>
+              <ordinal>2</ordinal>
+              <family>corruption_by_institution_UE</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[corruption!by!institution!UE_70931B4D0D6145A087739CBAF84E1D5E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Police</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Police]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Police</remote-alias>
+              <ordinal>3</ordinal>
+              <family>corruption_by_institution_UE</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[corruption!by!institution!UE_70931B4D0D6145A087739CBAF84E1D5E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Legislature</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Legislature]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Legislature</remote-alias>
+              <ordinal>4</ordinal>
+              <family>corruption_by_institution_UE</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[corruption!by!institution!UE_70931B4D0D6145A087739CBAF84E1D5E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Government officials</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Government officials]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Government officials</remote-alias>
+              <ordinal>5</ordinal>
+              <family>corruption_by_institution_UE</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[corruption!by!institution!UE_70931B4D0D6145A087739CBAF84E1D5E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Local government councillors</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Local government councillors]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Local government councillors</remote-alias>
+              <ordinal>6</ordinal>
+              <family>corruption_by_institution_UE</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LES_RES_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[corruption!by!institution!UE_70931B4D0D6145A087739CBAF84E1D5E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Prime Minister / President</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Prime Minister / President]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Prime Minister / President</remote-alias>
+              <ordinal>7</ordinal>
+              <family>corruption_by_institution_UE</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LES_RES_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[corruption!by!institution!UE_70931B4D0D6145A087739CBAF84E1D5E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Tax officials</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Tax officials]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Tax officials</remote-alias>
+              <ordinal>8</ordinal>
+              <family>corruption_by_institution_UE</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LES_RES_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[corruption!by!institution!UE_70931B4D0D6145A087739CBAF84E1D5E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Business executives</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Business executives]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Business executives</remote-alias>
+              <ordinal>9</ordinal>
+              <family>corruption_by_institution_UE</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>16</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[corruption!by!institution!UE_70931B4D0D6145A087739CBAF84E1D5E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Judges and magistrates</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Judges and magistrates]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Judges and magistrates</remote-alias>
+              <ordinal>10</ordinal>
+              <family>corruption_by_institution_UE</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>20</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[corruption!by!institution!UE_70931B4D0D6145A087739CBAF84E1D5E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Religious leaders</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Religious leaders]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Religious leaders</remote-alias>
+              <ordinal>11</ordinal>
+              <family>corruption_by_institution_UE</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>16</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[corruption!by!institution!UE_70931B4D0D6145A087739CBAF84E1D5E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Traditional leaders</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Traditional leaders]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Traditional leaders</remote-alias>
+              <ordinal>12</ordinal>
+              <family>corruption_by_institution_UE</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LES_RES_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[corruption!by!institution!UE_70931B4D0D6145A087739CBAF84E1D5E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;España&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='corruption_by_institution_UE' id='corruption!by!institution!UE_70931B4D0D6145A087739CBAF84E1D5E'>
+            <properties context=''>
+              <relation connection='excel-direct.185wsc40vxm0nr1f854pl0n1ibkx' name='corruption_by_institution_UE' table='[corruption_by_institution_UE$]' type='table'>
+                <columns gridOrigin='A1:M22:no:A1:M22:0' header='yes' outcome='6'>
+                  <column datatype='string' name='COUNTRY' ordinal='0' />
+                  <column datatype='string' name='ISO_CODE' ordinal='1' />
+                  <column datatype='integer' name='YEAR' ordinal='2' />
+                  <column datatype='integer' name='Police' ordinal='3' />
+                  <column datatype='integer' name='Legislature' ordinal='4' />
+                  <column datatype='integer' name='Government officials' ordinal='5' />
+                  <column datatype='string' name='Local government councillors' ordinal='6' />
+                  <column datatype='string' name='Prime Minister / President' ordinal='7' />
+                  <column datatype='string' name='Tax officials' ordinal='8' />
+                  <column datatype='integer' name='Business executives' ordinal='9' />
+                  <column datatype='integer' name='Judges and magistrates' ordinal='10' />
+                  <column datatype='integer' name='Religious leaders' ordinal='11' />
+                  <column datatype='string' name='Traditional leaders' ordinal='12' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='Sheet1 (corrupcion)' inline='true' name='federated.1lfj9481j9snv71012nyn089tb4b' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='corrupcion' name='excel-direct.0qcygvi0k8oidx14xce7b184vcek'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/Roberto Barroso/Documents/Universidad/Trabajo fin de Master/Scripts_ETL/Datos/UE/corrupcion.xlsx' interpretationMode='0' password='' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.0qcygvi0k8oidx14xce7b184vcek' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:B27:no:A1:B27:0' header='yes' outcome='2'>
+            <column datatype='date' date-parse-format='yyyy' name='FECHA' ordinal='0' />
+            <column datatype='integer' name='INDICE_CORRUPCION' ordinal='1' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.0qcygvi0k8oidx14xce7b184vcek' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:B27:no:A1:B27:0' header='yes' outcome='2'>
+            <column datatype='date' date-parse-format='yyyy' name='FECHA' ordinal='0' />
+            <column datatype='integer' name='INDICE_CORRUPCION' ordinal='1' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>2</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:B27:no:A1:B27:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FECHA</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[FECHA]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>FECHA</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_5A7A01E39A7F47E5A092F6F3F608FD8D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>INDICE_CORRUPCION</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[INDICE_CORRUPCION]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>INDICE_CORRUPCION</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_5A7A01E39A7F47E5A092F6F3F608FD8D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='indice 2' datatype='integer' name='[Calculation_922112082289733632]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='100 -[INDICE_CORRUPCION]' />
+      </column>
+      <column caption='Year' datatype='date' name='[FECHA]' role='dimension' type='quantitative' />
+      <column caption='Indice Corrupcion' datatype='integer' name='[INDICE_CORRUPCION]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_5A7A01E39A7F47E5A092F6F3F608FD8D]' role='measure' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='es_ES' class='hyper' dbname='C:/Users/Roberto Barroso/Documents/Mi Repositorio de Tableau/Fuentes de datos/Sheet1 (corrupcion).hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='01/17/2022 09:42:49 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='Sheet1 (corrupcion)' increment-value='%null%' refresh-type='create' rows-inserted='26' timestamp-start='2022-01-17 21:42:48.778' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>FECHA</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[FECHA]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>FECHA</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Sheet1</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>26</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_5A7A01E39A7F47E5A092F6F3F608FD8D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>INDICE_CORRUPCION</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[INDICE_CORRUPCION]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>INDICE_CORRUPCION</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>15</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_5A7A01E39A7F47E5A092F6F3F608FD8D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;España&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Sheet1' id='Sheet1_5A7A01E39A7F47E5A092F6F3F608FD8D'>
+            <properties context=''>
+              <relation connection='excel-direct.0qcygvi0k8oidx14xce7b184vcek' name='Sheet1' table='[Sheet1$]' type='table'>
+                <columns gridOrigin='A1:B27:no:A1:B27:0' header='yes' outcome='2'>
+                  <column datatype='date' date-parse-format='yyyy' name='FECHA' ordinal='0' />
+                  <column datatype='integer' name='INDICE_CORRUPCION' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <actions>
+    <action caption='Resaltar1' name='[Action1_968C7BB637BF47FBACD13B1D31A33DDE]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Percepción de la corrupción en la Unión Europea' type='sheet' worksheet='Situación 2018' />
+      <command command='tsc:brush'>
+        <param name='exclude' value='Situación 2018' />
+        <param name='special-fields' value='all' />
+        <param name='target' value='Percepción de la corrupción en la Unión Europea' />
+      </command>
+    </action>
+    <action caption='Resaltar2' name='[Action2_F90461DE004442E1AB775F014905529C]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Percepción de la corrupción en la Unión Europea' type='sheet' worksheet='Variación' />
+      <command command='tsc:brush'>
+        <param name='exclude' value='Variación' />
+        <param name='special-fields' value='all' />
+        <param name='target' value='Percepción de la corrupción en la Unión Europea' />
+      </command>
+    </action>
+    <action caption='Filtrar1' name='[Action3_974F046ACD9542FFBB6ED77BA4200182]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Percepción de la corrupción en la Unión Europea' type='sheet' worksheet='Variación' />
+      <link caption='Filtrar1' delimiter=',' escape='\' expression='tsl:Percepci%C3%B3n%20de%20la%20corrupci%C3%B3n%20en%20la%20Uni%C3%B3n%20Europea?%5Bfederated.0gi6sj0182w2hl1e9pwa90pcylru%5D.%5BCOUNTRY%5D~s0=&lt;[federated.0gi6sj0182w2hl1e9pwa90pcylru].[COUNTRY]~na&gt;' include-null='true' multi-select='true' url-escape='true' />
+      <command command='tsc:tsl-filter'>
+        <param name='exclude' value='Variación' />
+        <param name='target' value='Percepción de la corrupción en la Unión Europea' />
+      </command>
+    </action>
+    <datasources>
+      <datasource caption='corruption_perception_UE (corruption_perception_UE)' name='federated.0gi6sj0182w2hl1e9pwa90pcylru' />
+    </datasources>
+    <datasource-dependencies datasource='federated.0gi6sj0182w2hl1e9pwa90pcylru'>
+      <column caption='Country' datatype='string' name='[COUNTRY]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+    </datasource-dependencies>
+  </actions>
+  <worksheets>
+    <worksheet name='Situación 2018'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontname='Times New Roman'>&lt;</run>
+            <run fontalignment='1' fontname='Times New Roman'>Sheet Name</run>
+            <run fontalignment='1' fontname='Times New Roman'>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='corruption_perception_UE (corruption_perception_UE)' name='federated.0gi6sj0182w2hl1e9pwa90pcylru' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0gi6sj0182w2hl1e9pwa90pcylru'>
+            <column caption='Corruption Perception' datatype='integer' name='[CORRUPTION_PERCEPTION]' role='measure' type='quantitative' />
+            <column caption='Country' datatype='string' name='[COUNTRY]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Year' datatype='date' name='[YEAR]' role='dimension' type='quantitative' />
+            <column-instance column='[CORRUPTION_PERCEPTION]' derivation='Avg' name='[avg:CORRUPTION_PERCEPTION:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[COUNTRY]' derivation='None' name='[none:COUNTRY:nk]' pivot='key' type='nominal' />
+            <column-instance column='[YEAR]' derivation='Year' name='[yr:YEAR:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0gi6sj0182w2hl1e9pwa90pcylru].[Action (Country)]'>
+            <groupfilter function='level-members' level='[COUNTRY]' user:ui-action-filter='[Action3_974F046ACD9542FFBB6ED77BA4200182]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0gi6sj0182w2hl1e9pwa90pcylru].[yr:YEAR:ok]'>
+            <groupfilter function='member' level='[yr:YEAR:ok]' member='2018' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0gi6sj0182w2hl1e9pwa90pcylru].[yr:YEAR:ok]</column>
+            <column>[federated.0gi6sj0182w2hl1e9pwa90pcylru].[Action (Country)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0gi6sj0182w2hl1e9pwa90pcylru].[avg:CORRUPTION_PERCEPTION:qk]' palette='brown_10_0' reverse='true' type='interpolated' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.0gi6sj0182w2hl1e9pwa90pcylru].[avg:CORRUPTION_PERCEPTION:qk]' value='Percepción de la corrupción'>
+              <formatted-text>
+                <run fontalignment='1' fontname='Times New Roman' fontsize='12'>Percepción de la corrupción</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='background' value='false' />
+            <format attr='enabled' id='barrier_line-land-polygon' value='false' />
+            <format attr='enabled' id='barrier_line-land-line' value='false' />
+            <format attr='enabled' id='national_park' value='false' />
+            <format attr='enabled' id='pitch' value='false' />
+            <format attr='enabled' id='industrial' value='false' />
+            <format attr='enabled' id='built-up-area' value='false' />
+            <format attr='enabled' id='water' value='false' />
+            <format attr='enabled' id='waterway-river-canal' value='false' />
+            <format attr='enabled' id='aeroway-polygon' value='false' />
+            <format attr='enabled' id='aeroway-runway' value='false' />
+            <format attr='enabled' id='aeroway-taxiway' value='false' />
+            <format attr='enabled' id='parks' value='false' />
+            <format attr='enabled' id='landcover_wood' value='false' />
+            <format attr='enabled' id='landcover_scrub' value='false' />
+            <format attr='enabled' id='landcover_grass' value='false' />
+            <format attr='enabled' id='landcover_crop' value='false' />
+            <format attr='enabled' id='admin-0-boundaries-bg' value='false' />
+            <format attr='enabled' id='admin-0-boundaries' value='false' />
+            <format attr='enabled' id='admin-0-boundaries-dispute' value='false' />
+            <format attr='enabled' id='admin-0-label-5th-tier' value='false' />
+            <format attr='enabled' id='admin-0-label-4th-tier' value='false' />
+            <format attr='enabled' id='admin-0-label-3rd-tier' value='false' />
+            <format attr='enabled' id='admin-0-label-2nd-tier' value='false' />
+            <format attr='enabled' id='admin-0-label-1st-tier' value='false' />
+            <format attr='enabled' id='admin-0-boundaries-bg-sub' value='false' />
+            <format attr='enabled' id='admin-1-boundaries-supress-bg' value='false' />
+            <format attr='enabled' id='admin-1-boundaries-sm-parents-bg' value='false' />
+            <format attr='enabled' id='admin-1-boundaries-md-parents-bg' value='false' />
+            <format attr='enabled' id='admin-1-boundaries-lg-parents-bg' value='false' />
+            <format attr='enabled' id='admin-0-boundaries-dispute-sub' value='false' />
+            <format attr='enabled' id='admin-0-boundaries-sub' value='false' />
+            <format attr='enabled' id='admin-1-boundaries-supress' value='false' />
+            <format attr='enabled' id='admin-1-boundaries-sm-parents' value='false' />
+            <format attr='enabled' id='admin-1-boundaries-md-parents' value='false' />
+            <format attr='enabled' id='admin-1-boundaries-lg-parents' value='false' />
+            <format attr='enabled' id='admin1-water-lines-usa-tableau' value='false' />
+            <format attr='enabled' id='9-dash-line-casing' value='false' />
+            <format attr='enabled' id='9-dash-line' value='false' />
+            <format attr='enabled' id='admin-1-label-9th-tier' value='false' />
+            <format attr='enabled' id='admin-1-label-8th-tier' value='false' />
+            <format attr='enabled' id='admin-1-label-7th-tier' value='false' />
+            <format attr='enabled' id='admin-1-label-6th-tier' value='false' />
+            <format attr='enabled' id='admin-1-label-5th-tier' value='false' />
+            <format attr='enabled' id='admin-1-label-4th-tier' value='false' />
+            <format attr='enabled' id='admin-1-label-3rd-tier' value='false' />
+            <format attr='enabled' id='admin-1-label-2nd-tier' value='false' />
+            <format attr='enabled' id='admin-1-label-1st-tier' value='false' />
+            <format attr='enabled' id='us-admin-1-label-abbr-3rd-tier' value='false' />
+            <format attr='enabled' id='us-admin-1-label-abbr-2nd-tier' value='false' />
+            <format attr='enabled' id='us-admin-1-label-abbr-1st-tier' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0gi6sj0182w2hl1e9pwa90pcylru].[avg:CORRUPTION_PERCEPTION:qk]' />
+              <text column='[federated.0gi6sj0182w2hl1e9pwa90pcylru].[none:COUNTRY:nk]' />
+              <text column='[federated.0gi6sj0182w2hl1e9pwa90pcylru].[avg:CORRUPTION_PERCEPTION:qk]' />
+              <lod column='[federated.0gi6sj0182w2hl1e9pwa90pcylru].[none:COUNTRY:nk]' />
+              <geometry column='[federated.0gi6sj0182w2hl1e9pwa90pcylru].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='color' value='#000000' />
+                <format attr='font-size' value='12' />
+                <format attr='font-weight' value='normal' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-mode' value='highlight' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0gi6sj0182w2hl1e9pwa90pcylru].[Latitude (generated)]</rows>
+        <cols>[federated.0gi6sj0182w2hl1e9pwa90pcylru].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{9B06E15E-773E-4A0E-87CA-4BA52939EB2C}' />
+    </worksheet>
+    <worksheet name='Variación'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontname='Times New Roman'>&lt;</run>
+            <run fontalignment='1' fontname='Times New Roman'>Sheet Name</run>
+            <run fontalignment='1' fontname='Times New Roman'>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='corruption_perception_UE (corruption_perception_UE)' name='federated.0gi6sj0182w2hl1e9pwa90pcylru' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0gi6sj0182w2hl1e9pwa90pcylru'>
+            <column caption='Corruption Perception' datatype='integer' name='[CORRUPTION_PERCEPTION]' role='measure' type='quantitative' />
+            <column caption='Country' datatype='string' name='[COUNTRY]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Year' datatype='date' name='[YEAR]' role='dimension' type='quantitative' />
+            <column-instance column='[CORRUPTION_PERCEPTION]' derivation='Avg' name='[avg:CORRUPTION_PERCEPTION:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[CORRUPTION_PERCEPTION]' derivation='Avg' name='[diff:avg:CORRUPTION_PERCEPTION:qk:5]' pivot='key' type='quantitative'>
+              <table-calc diff-options='Relative' ordering-field='[federated.0gi6sj0182w2hl1e9pwa90pcylru].[tyr:YEAR:ok]' ordering-type='Field' type='Difference'>
+                <address>
+                  <value>-2</value>
+                </address>
+              </table-calc>
+            </column-instance>
+            <column-instance column='[COUNTRY]' derivation='None' name='[none:COUNTRY:nk]' pivot='key' type='nominal' />
+            <column-instance column='[YEAR]' derivation='None' name='[none:YEAR:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[YEAR]' derivation='Year-Trunc' name='[tyr:YEAR:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.0gi6sj0182w2hl1e9pwa90pcylru].[none:COUNTRY:nk]' direction='DESC' using='[federated.0gi6sj0182w2hl1e9pwa90pcylru].[avg:CORRUPTION_PERCEPTION:qk]' />
+          <filter class='quantitative' column='[federated.0gi6sj0182w2hl1e9pwa90pcylru].[none:YEAR:qk]' included-values='in-range'>
+            <min>#2012-01-01#</min>
+            <max>#2018-01-01#</max>
+          </filter>
+          <slices>
+            <column>[federated.0gi6sj0182w2hl1e9pwa90pcylru].[none:YEAR:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.0gi6sj0182w2hl1e9pwa90pcylru].[diff:avg:CORRUPTION_PERCEPTION:qk:5]' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='font-size' data-class='subtotal' field='[federated.0gi6sj0182w2hl1e9pwa90pcylru].[none:COUNTRY:nk]' value='12' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-family' field='[federated.0gi6sj0182w2hl1e9pwa90pcylru].[none:COUNTRY:nk]' value='Times New Roman' />
+            <format attr='font-size' field='[federated.0gi6sj0182w2hl1e9pwa90pcylru].[none:COUNTRY:nk]' value='12' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0gi6sj0182w2hl1e9pwa90pcylru].[avg:CORRUPTION_PERCEPTION:qk]' palette='brown_10_0' reverse='true' type='interpolated' />
+            <encoding attr='color' field='[federated.0gi6sj0182w2hl1e9pwa90pcylru].[diff:avg:CORRUPTION_PERCEPTION:qk:5]' palette='brown_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0gi6sj0182w2hl1e9pwa90pcylru].[avg:CORRUPTION_PERCEPTION:qk]' />
+              <text column='[federated.0gi6sj0182w2hl1e9pwa90pcylru].[diff:avg:CORRUPTION_PERCEPTION:qk:5]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-size' value='12' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0gi6sj0182w2hl1e9pwa90pcylru].[none:COUNTRY:nk]</rows>
+        <cols>[federated.0gi6sj0182w2hl1e9pwa90pcylru].[diff:avg:CORRUPTION_PERCEPTION:qk:5]</cols>
+        <pages>
+          <column>[federated.0gi6sj0182w2hl1e9pwa90pcylru].[tyr:YEAR:ok]</column>
+        </pages>
+      </table>
+      <simple-id uuid='{5014A319-CFA1-49FB-A799-7B2B7708E374}' />
+    </worksheet>
+    <worksheet name='Índice de corrupción en España (0 - 100)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontname='Times New Roman' fontsize='24' italic='true'>&lt;</run>
+            <run bold='true' fontalignment='1' fontname='Times New Roman' fontsize='24' italic='true'>Sheet Name</run>
+            <run bold='true' fontalignment='1' fontname='Times New Roman' fontsize='24' italic='true'>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (corrupcion)' name='federated.1lfj9481j9snv71012nyn089tb4b' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1lfj9481j9snv71012nyn089tb4b'>
+            <column caption='indice 2' datatype='integer' name='[Calculation_922112082289733632]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='100 -[INDICE_CORRUPCION]' />
+            </column>
+            <column caption='Year' datatype='date' name='[FECHA]' role='dimension' type='quantitative' />
+            <column caption='Indice Corrupcion' datatype='integer' name='[INDICE_CORRUPCION]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_922112082289733632]' derivation='Avg' name='[avg:Calculation_922112082289733632:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[FECHA]' derivation='Year-Trunc' name='[tyr:FECHA:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1lfj9481j9snv71012nyn089tb4b].[tyr:FECHA:qk]' scope='cols' value='' />
+            <format attr='tick-color' field='[federated.1lfj9481j9snv71012nyn089tb4b].[tyr:FECHA:qk]' value='#000000' />
+            <encoding attr='space' class='0' field='[federated.1lfj9481j9snv71012nyn089tb4b].[tyr:FECHA:qk]' field-type='quantitative' minor-origin='#2007-07-02 12:00:00#' minor-show='false' minor-spacing='1.0' minor-units='months' scope='cols' type='space' />
+            <encoding attr='space' class='0' domain-expand='false' field='[federated.1lfj9481j9snv71012nyn089tb4b].[avg:Calculation_922112082289733632:qk]' field-type='quantitative' scope='rows' type='space' />
+            <format attr='display' class='0' field='[federated.1lfj9481j9snv71012nyn089tb4b].[avg:Calculation_922112082289733632:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='font-family' field='[federated.1lfj9481j9snv71012nyn089tb4b].[tyr:FECHA:qk]' value='Times New Roman' />
+            <format attr='font-size' field='[federated.1lfj9481j9snv71012nyn089tb4b].[tyr:FECHA:qk]' value='10' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-family' field='[federated.1lfj9481j9snv71012nyn089tb4b].[tyr:FECHA:qk]' value='Times New Roman' />
+            <format attr='font-size' field='[federated.1lfj9481j9snv71012nyn089tb4b].[tyr:FECHA:qk]' value='12' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+            <format attr='stroke-color' scope='cols' value='#e6e6e6' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='5' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1lfj9481j9snv71012nyn089tb4b].[avg:Calculation_922112082289733632:qk]' />
+            </encodings>
+            <trendline degree='4' enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='polynomial' />
+            <customized-label>
+              <formatted-text>
+                <run>Æ&#10;</run>
+                <run><![CDATA[<[federated.1lfj9481j9snv71012nyn089tb4b].[avg:Calculation_922112082289733632:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='color' value='#4e79a7' />
+                <format attr='font-size' value='12' />
+                <format attr='font-weight' value='normal' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='1' />
+                <format attr='stroke-color' value='#f28e2bbc' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1lfj9481j9snv71012nyn089tb4b].[avg:Calculation_922112082289733632:qk]</rows>
+        <cols>[federated.1lfj9481j9snv71012nyn089tb4b].[tyr:FECHA:qk]</cols>
+      </table>
+      <simple-id uuid='{81765551-8693-4A0F-BAAB-D61938759029}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Percepción de la corrupción en la Unión Europea'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontname='Times New Roman' fontsize='28' italic='true'>&lt;Sheet Name&gt;</run>
+            <run fontalignment='1'>Æ&#10;</run>
+            <run bold='true' fontalignment='1' fontcolor='#666666' fontname='Times New Roman' italic='true'>2012 - 2018</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98690' id='58' param='horz' type-v2='layout-flow' w='99304' x='348' y='655'>
+            <zone h='98690' id='46' type-v2='layout-basic' w='99304' x='348' y='655'>
+              <zone h='98690' id='11' param='vert' type-v2='layout-flow' w='99304' x='348' y='655'>
+                <zone h='7944' id='12' type-v2='title' w='99304' x='348' y='655'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='90746' id='7' param='horz' type-v2='layout-flow' w='99304' x='348' y='8599'>
+                  <zone h='90746' id='5' type-v2='layout-basic' w='99304' x='348' y='8599'>
+                    <zone h='90746' id='3' name='Situación 2018' w='45407' x='348' y='8599'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='90746' id='30' name='Variación' w='53897' x='45755' y='8599'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='7889' id='8' name='Situación 2018' pane-specification-id='0' param='[federated.0gi6sj0182w2hl1e9pwa90pcylru].[avg:CORRUPTION_PERCEPTION:qk]' type-v2='color' w='17938' x='4188' y='20000' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontname='Times New Roman' fontsize='28' italic='true'>&lt;Sheet Name&gt;</run>
+                <run fontalignment='1'>Æ&#10;</run>
+                <run bold='true' fontalignment='1' fontcolor='#666666' fontname='Times New Roman' italic='true'>2012 - 2018</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='750' minheight='750' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='108' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98690' id='107' param='vert' type-v2='layout-flow' w='99304' x='348' y='655'>
+                <zone h='7944' id='12' type-v2='title' w='99304' x='348' y='655'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='90746' id='3' is-fixed='true' name='Situación 2018' w='45407' x='348' y='8599'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7889' id='8' name='Situación 2018' pane-specification-id='0' param='[federated.0gi6sj0182w2hl1e9pwa90pcylru].[avg:CORRUPTION_PERCEPTION:qk]' type-v2='color' w='17938' x='4188' y='20000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='90746' id='30' is-fixed='true' name='Variación' w='53897' x='45755' y='8599'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{F28D1F36-E7E0-459E-A64C-22D81C49CA0E}' />
+    </dashboard>
+    <dashboard name='corrupcion_esp'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98690' id='3' name='Índice de corrupción en España (0 - 100)' w='99304' x='348' y='655'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='42' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98690' id='41' param='vert' type-v2='layout-flow' w='99304' x='348' y='655'>
+                <zone fixed-size='280' h='98690' id='3' is-fixed='true' name='Índice de corrupción en España (0 - 100)' w='99304' x='348' y='655'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{8952C37E-3500-49BE-9DD2-3D918BF9C9C5}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='89'>
+    <window class='dashboard' name='Percepción de la corrupción en la Unión Europea'>
+      <viewpoints>
+        <viewpoint name='Situación 2018'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Variación'>
+          <current-page>
+            <multibucket>
+              <bucket>#2018-01-01 00:00:00#</bucket>
+            </multibucket>
+          </current-page>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='3' />
+      <simple-id uuid='{60125A69-CD3B-4009-82FA-D289C544F200}' />
+    </window>
+    <window class='dashboard' maximized='true' name='corrupcion_esp'>
+      <viewpoints>
+        <viewpoint name='Índice de corrupción en España (0 - 100)'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='3' />
+      <simple-id uuid='{C86E97B0-AD78-4807-BD2A-CEC93F8A73B5}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Situación 2018'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='172'>
+            <card pane-specification-id='0' param='[federated.0gi6sj0182w2hl1e9pwa90pcylru].[avg:CORRUPTION_PERCEPTION:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0gi6sj0182w2hl1e9pwa90pcylru].[avg:CORRUPTION_PERCEPTION:qk]</field>
+            <field>[federated.0gi6sj0182w2hl1e9pwa90pcylru].[none:COUNTRY:nk]</field>
+            <field>[federated.0gi6sj0182w2hl1e9pwa90pcylru].[none:YEAR:qk]</field>
+            <field>[federated.0gi6sj0182w2hl1e9pwa90pcylru].[yr:YEAR:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{11CDA7F7-46CF-4999-BDD7-AE9B030DC9E7}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Variación'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='172'>
+            <card type='currpage' />
+            <card pane-specification-id='0' param='[federated.0gi6sj0182w2hl1e9pwa90pcylru].[avg:CORRUPTION_PERCEPTION:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <current-page>
+          <multibucket>
+            <bucket>#2018-01-01 00:00:00#</bucket>
+          </multibucket>
+        </current-page>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0gi6sj0182w2hl1e9pwa90pcylru].[avg:CORRUPTION_PERCEPTION:qk]</field>
+            <field>[federated.0gi6sj0182w2hl1e9pwa90pcylru].[diff:avg:CORRUPTION_PERCEPTION:qk:5]</field>
+            <field>[federated.0gi6sj0182w2hl1e9pwa90pcylru].[none:COUNTRY:nk]</field>
+            <field>[federated.0gi6sj0182w2hl1e9pwa90pcylru].[none:YEAR:qk]</field>
+            <field>[federated.0gi6sj0182w2hl1e9pwa90pcylru].[tyr:YEAR:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{D164B66E-2C09-45DB-BA3D-830795B76A1F}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Índice de corrupción en España (0 - 100)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1lfj9481j9snv71012nyn089tb4b].[tyr:FECHA:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{22FB40AA-D178-4ADC-8BBD-204078D1B423}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Percepción de la corrupción en la Unión Europea' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='corrupcion_esp' width='192'>
+      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
+      mMUjAAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
