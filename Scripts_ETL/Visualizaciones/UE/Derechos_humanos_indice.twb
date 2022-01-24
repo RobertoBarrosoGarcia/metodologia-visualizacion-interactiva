@@ -4,7 +4,6 @@
 <workbook original-version='18.1' source-build='2021.3.6 (20213.21.1217.2247)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
   <document-format-change-manifest>
     <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
-    <AutoCreateAndUpdateDSDPhoneLayouts />
     <CustomReferenceLineTooltips />
     <DashboardGridOverlay />
     <DashboardGridSize />
@@ -20,7 +19,7 @@
     <WindowsPersistSimpleIdentifiers />
     <WorksheetBackgroundTransparency />
   </document-format-change-manifest>
-  <repository-location id='Derechos_humanos_indice' path='/workbooks' revision='1.8' />
+  <repository-location id='Derechos_humanos_indice' path='/workbooks' revision='2.1' />
   <preferences>
     <preference name='ui.encoding.shelf.height' value='24' />
     <preference name='ui.shelf.height' value='26' />
@@ -457,6 +456,15 @@
               <lod column='[federated.1984ad41els6c31agopyz1sjvwa3].[none:COUNTRY:nk]' />
               <geometry column='[federated.1984ad41els6c31agopyz1sjvwa3].[Geometry (generated)]' />
             </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>País: </run>
+                <run bold='true'><![CDATA[<[federated.1984ad41els6c31agopyz1sjvwa3].[none:COUNTRY:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Índice de derechos humanos: </run>
+                <run bold='true'><![CDATA[<[federated.1984ad41els6c31agopyz1sjvwa3].[avg:HR_SCORE:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
             <customized-label>
               <formatted-text>
                 <run fontsize='12'><![CDATA[<[federated.1984ad41els6c31agopyz1sjvwa3].[none:COUNTRY:nk]>]]></run>
@@ -575,6 +583,15 @@
               <lod column='[federated.1984ad41els6c31agopyz1sjvwa3].[none:COUNTRY:nk]' />
               <geometry column='[federated.1984ad41els6c31agopyz1sjvwa3].[Geometry (generated)]' />
             </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>País: </run>
+                <run bold='true'><![CDATA[<[federated.1984ad41els6c31agopyz1sjvwa3].[none:COUNTRY:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Índice de derechos humanos: </run>
+                <run bold='true'><![CDATA[<[federated.1984ad41els6c31agopyz1sjvwa3].[avg:HR_SCORE:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
             <customized-label>
               <formatted-text>
                 <run fontsize='12'><![CDATA[<[federated.1984ad41els6c31agopyz1sjvwa3].[none:COUNTRY:nk]>]]></run>
@@ -1441,7 +1458,6 @@
         </view>
         <style>
           <style-rule element='axis'>
-            <encoding attr='space' class='0' field='[federated.1984ad41els6c31agopyz1sjvwa3].[tyr:YEAR:qk]' field-type='quantitative' major-origin='#1946-01-01 00:00:00#' major-spacing='1.0' major-units='years' max='#2018-01-01 00:00:00#' min='#1945-01-01 00:00:00#' range-type='fixed' scope='cols' type='space' />
             <format attr='title' class='0' field='[federated.1984ad41els6c31agopyz1sjvwa3].[tyr:YEAR:qk]' scope='cols' value='' />
             <format attr='display' class='0' field='[federated.1984ad41els6c31agopyz1sjvwa3].[avg:HR_SCORE:qk]' scope='rows' value='false' />
             <format attr='tick-color' field='[federated.1984ad41els6c31agopyz1sjvwa3].[tyr:YEAR:qk]' value='#000000' />
@@ -1495,10 +1511,7 @@
             <format attr='stroke-size' id='refline0' value='1' />
             <format attr='font-family' id='refline0' value='Times New Roman' />
             <format attr='font-size' id='refline0' value='12' />
-            <format attr='text-align' id='refline0' value='left' />
-            <format attr='vertical-align' id='refline0' value='top' />
             <format attr='color' id='refline0' value='#606b76' />
-            <format attr='font-weight' id='refline0' value='bold' />
             <format attr='stroke-color' id='refline0' value='#606b76' />
             <format attr='fill-above' id='refline1' value='#00000000' />
             <format attr='fill-below' id='refline1' value='#00000000' />
@@ -1507,9 +1520,7 @@
             <format attr='stroke-size' id='refline1' value='1' />
             <format attr='font-family' id='refline1' value='Times New Roman' />
             <format attr='font-size' id='refline1' value='12' />
-            <format attr='font-weight' id='refline1' value='bold' />
             <format attr='color' id='refline1' value='#4e79a7' />
-            <format attr='vertical-align' id='refline1' value='top' />
             <format attr='stroke-color' id='refline1' value='#4e79a7' />
             <format attr='fill-above' id='refline2' value='#00000000' />
             <format attr='fill-below' id='refline2' value='#00000000' />
@@ -1522,6 +1533,13 @@
             <format attr='font-style' id='refline2' value='normal' />
             <format attr='stroke-color' id='refline2' value='#4e79a7' />
             <format attr='color' id='refline2' value='#4e79a7' />
+            <format attr='font-weight' id='refline0' value='normal' />
+            <format attr='wrap' id='refline0' value='auto' />
+            <format attr='text-align' id='refline0' value='left' />
+            <format attr='vertical-align' id='refline0' value='top' />
+            <format attr='font-weight' id='refline1' value='normal' />
+            <format attr='wrap' id='refline1' value='auto' />
+            <format attr='vertical-align' id='refline1' value='auto' />
           </style-rule>
           <style-rule element='gridline'>
             <format attr='line-visibility' scope='cols' value='on' />
@@ -1543,6 +1561,15 @@
             <reference-line axis-column='[federated.1984ad41els6c31agopyz1sjvwa3].[tyr:YEAR:qk]' enable-instant-analytics='true' formula='constant' id='refline0' label='Inclusión de España en la CEE' label-type='custom' scope='per-table' tooltip-type='none' value='#1985-01-01 00:00:00#' value-column='[federated.1984ad41els6c31agopyz1sjvwa3].[tyr:YEAR:qk]' z-order='1' />
             <reference-line axis-column='[federated.1984ad41els6c31agopyz1sjvwa3].[tyr:YEAR:qk]' enable-instant-analytics='true' formula='constant' id='refline1' label='Creación de la Unión Europea' label-type='custom' scope='per-table' value='#1993-01-01 00:00:00#' value-column='[federated.1984ad41els6c31agopyz1sjvwa3].[tyr:YEAR:qk]' z-order='2' />
             <reference-line axis-column='[federated.1984ad41els6c31agopyz1sjvwa3].[avg:HR_SCORE:qk]' enable-instant-analytics='true' formula='constant' id='refline2' label='0 pts' label-type='custom' scope='per-table' value='0.0' value-column='[federated.1984ad41els6c31agopyz1sjvwa3].[avg:HR_SCORE:qk]' z-order='3' />
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Fecha: </run>
+                <run bold='true'><![CDATA[<[federated.1984ad41els6c31agopyz1sjvwa3].[tyr:YEAR:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Índice de derechos humanos: </run>
+                <run bold='true'><![CDATA[<[federated.1984ad41els6c31agopyz1sjvwa3].[avg:HR_SCORE:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
             <customized-label>
               <formatted-text>
                 <run>&lt;</run>
@@ -3988,7 +4015,6 @@
         <style>
           <style-rule element='axis'>
             <format attr='display' class='0' field='[federated.1984ad41els6c31agopyz1sjvwa3].[avg:HR_SCORE:qk]' scope='rows' value='false' />
-            <encoding attr='space' class='0' field='[federated.1984ad41els6c31agopyz1sjvwa3].[tyr:YEAR:qk]' field-type='quantitative' major-origin='#1945-07-02 12:00:00#' major-spacing='9.0' major-units='years' scope='cols' type='space' />
             <format attr='title' class='0' field='[federated.1984ad41els6c31agopyz1sjvwa3].[tyr:YEAR:qk]' scope='cols' value='' />
             <format attr='title' class='0' field='[federated.1984ad41els6c31agopyz1sjvwa3].[avg:HR_SCORE:qk]' scope='rows' value='' />
             <encoding attr='space' class='0' field='[federated.1984ad41els6c31agopyz1sjvwa3].[avg:HR_SCORE:qk]' field-type='quantitative' max='2.5' min='-0.69999999999999996' minor-origin='0.0' minor-spacing='0.10000000000000001' range-type='fixed' scope='rows' type='space' />
@@ -4029,7 +4055,12 @@
             <format attr='line-visibility' id='refline0' value='on' />
             <format attr='line-pattern-only' id='refline0' value='dashed' />
             <format attr='color' id='refline0' value='#4e79a7' />
-            <format attr='font-weight' id='refline0' value='bold' />
+            <format attr='font-family' id='refline0' value='Times New Roman' />
+            <format attr='font-size' id='refline0' value='12' />
+            <format attr='font-weight' id='refline0' value='normal' />
+            <format attr='wrap' id='refline0' value='auto' />
+            <format attr='text-align' id='refline0' value='left' />
+            <format attr='vertical-align' id='refline0' value='top' />
           </style-rule>
         </style>
         <panes>
@@ -4040,10 +4071,29 @@
             <mark class='Automatic' />
             <encodings>
               <color column='[federated.1984ad41els6c31agopyz1sjvwa3].[avg:HR_SCORE:qk]' />
+              <text column='[federated.1984ad41els6c31agopyz1sjvwa3].[avg:HR_SCORE:qk]' />
             </encodings>
             <trendline degree='4' enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='polynomial' />
             <reference-line axis-column='[federated.1984ad41els6c31agopyz1sjvwa3].[tyr:YEAR:qk]' enable-instant-analytics='true' formula='constant' id='refline0' label='1993 - Unión Europea' label-type='custom' scope='per-table' value='#1993-01-01 00:00:00#' value-column='[federated.1984ad41els6c31agopyz1sjvwa3].[tyr:YEAR:qk]' z-order='1' />
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Fecha: </run>
+                <run bold='true'><![CDATA[<[federated.1984ad41els6c31agopyz1sjvwa3].[tyr:YEAR:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Índice de derechos humanos: </run>
+                <run bold='true'><![CDATA[<[federated.1984ad41els6c31agopyz1sjvwa3].[avg:HR_SCORE:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
             <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-size' value='12' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-mode' value='line-ends' />
+              </style-rule>
               <style-rule element='trendline'>
                 <format attr='line-visibility' value='on' />
                 <format attr='line-pattern-only' value='dashed' />
@@ -4187,6 +4237,21 @@
               <color column='[federated.1984ad41els6c31agopyz1sjvwa3].[avg:HR_SCORE:qk]' />
               <text column='[federated.1984ad41els6c31agopyz1sjvwa3].[diff:avg:HR_SCORE:qk:5]' />
             </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>País: </run>
+                <run bold='true'><![CDATA[<[federated.1984ad41els6c31agopyz1sjvwa3].[none:COUNTRY:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Fecha: </run>
+                <run bold='true'><![CDATA[<[federated.1984ad41els6c31agopyz1sjvwa3].[tyr:YEAR:ok]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Índice de derechos humanos: </run>
+                <run bold='true'><![CDATA[<[federated.1984ad41els6c31agopyz1sjvwa3].[avg:HR_SCORE:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Diferencia en el índice: </run>
+                <run bold='true'><![CDATA[<[federated.1984ad41els6c31agopyz1sjvwa3].[diff:avg:HR_SCORE:qk:5]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
             <style>
               <style-rule element='datalabel'>
                 <format attr='color-mode' value='auto' />
@@ -4342,6 +4407,21 @@
               <color column='[federated.1984ad41els6c31agopyz1sjvwa3].[avg:HR_SCORE:qk]' />
               <text column='[federated.1984ad41els6c31agopyz1sjvwa3].[diff:avg:HR_SCORE:qk:5]' />
             </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>País: </run>
+                <run bold='true'><![CDATA[<[federated.1984ad41els6c31agopyz1sjvwa3].[none:COUNTRY:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Fecha: </run>
+                <run bold='true'><![CDATA[<[federated.1984ad41els6c31agopyz1sjvwa3].[tyr:YEAR:ok]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Índice de derechos humanos: </run>
+                <run bold='true'><![CDATA[<[federated.1984ad41els6c31agopyz1sjvwa3].[avg:HR_SCORE:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Diferencia en el índice: </run>
+                <run bold='true'><![CDATA[<[federated.1984ad41els6c31agopyz1sjvwa3].[diff:avg:HR_SCORE:qk:5]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
             <style>
               <style-rule element='datalabel'>
                 <format attr='color-mode' value='auto' />
@@ -4497,6 +4577,21 @@
               <color column='[federated.1984ad41els6c31agopyz1sjvwa3].[avg:HR_SCORE:qk]' />
               <text column='[federated.1984ad41els6c31agopyz1sjvwa3].[diff:avg:HR_SCORE:qk:5]' />
             </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>País: </run>
+                <run bold='true'><![CDATA[<[federated.1984ad41els6c31agopyz1sjvwa3].[none:COUNTRY:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Fecha: </run>
+                <run bold='true'><![CDATA[<[federated.1984ad41els6c31agopyz1sjvwa3].[tyr:YEAR:ok]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Índice de derechos humanos: </run>
+                <run bold='true'><![CDATA[<[federated.1984ad41els6c31agopyz1sjvwa3].[avg:HR_SCORE:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Diferencia de derechos humanos: </run>
+                <run bold='true'><![CDATA[<[federated.1984ad41els6c31agopyz1sjvwa3].[diff:avg:HR_SCORE:qk:5]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
             <customized-label>
               <formatted-text>
                 <run fontsize='12'>&lt;</run>
@@ -4552,8 +4647,8 @@
       <size sizing-mode='automatic' />
       <zones>
         <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
-          <zone h='98690' id='513' param='vert' type-v2='layout-flow' w='99304' x='348' y='655'>
-            <zone h='4996' id='514' type-v2='title' w='99304' x='348' y='655'>
+          <zone h='98628' id='513' param='vert' type-v2='layout-flow' w='99294' x='353' y='686'>
+            <zone h='5228' id='514' type-v2='title' w='99294' x='353' y='686'>
               <zone-style>
                 <format attr='border-color' value='#000000' />
                 <format attr='border-style' value='none' />
@@ -4561,14 +4656,14 @@
                 <format attr='margin' value='4' />
               </zone-style>
             </zone>
-            <zone h='93694' id='509' param='horz' type-v2='layout-flow' w='99304' x='348' y='5651'>
-              <zone h='93694' id='504' type-v2='layout-basic' w='99304' x='348' y='5651'>
-                <zone h='93694' id='502' param='vert' type-v2='layout-flow' w='33100' x='348' y='5651'>
-                  <zone h='93694' id='500' param='horz' type-v2='layout-flow' w='33100' x='348' y='5651'>
-                    <zone h='93694' id='301' type-v2='layout-basic' w='33100' x='348' y='5651'>
-                      <zone h='93694' id='23' param='horz' type-v2='layout-flow' w='33100' x='348' y='5651'>
-                        <zone h='93694' id='13' param='vert' type-v2='layout-flow' w='33100' x='348' y='5651'>
-                          <zone h='93694' id='498' name='1993' w='33100' x='348' y='5651'>
+            <zone h='93400' id='509' param='horz' type-v2='layout-flow' w='99294' x='353' y='5914'>
+              <zone h='93400' id='504' type-v2='layout-basic' w='99294' x='353' y='5914'>
+                <zone h='93400' id='502' param='vert' type-v2='layout-flow' w='33096' x='353' y='5914'>
+                  <zone h='93400' id='500' param='horz' type-v2='layout-flow' w='33096' x='353' y='5914'>
+                    <zone h='93400' id='301' type-v2='layout-basic' w='33096' x='353' y='5914'>
+                      <zone h='93400' id='23' param='horz' type-v2='layout-flow' w='33096' x='353' y='5914'>
+                        <zone h='93400' id='13' param='vert' type-v2='layout-flow' w='33096' x='353' y='5914'>
+                          <zone h='93400' id='498' name='1993' w='33096' x='353' y='5914'>
                             <layout-cache minheight='261' minwidth='202' type-h='scalable' type-w='scalable' />
                             <zone-style>
                               <format attr='border-color' value='#000000' />
@@ -4582,7 +4677,7 @@
                     </zone>
                   </zone>
                 </zone>
-                <zone h='93694' id='503' name='2017' w='33104' x='66548' y='5651'>
+                <zone h='93400' id='503' name='2017' w='33101' x='66546' y='5914'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -4590,7 +4685,7 @@
                     <format attr='margin' value='4' />
                   </zone-style>
                 </zone>
-                <zone h='93694' id='507' name='Variación total entre 1993 y 2017' w='33100' x='33448' y='5651'>
+                <zone h='93400' id='507' name='Variación total entre 1993 y 2017' w='33097' x='33449' y='5914'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -4610,7 +4705,7 @@
         </zone>
       </zones>
       <devicelayouts>
-        <devicelayout auto-generated='true' name='Phone'>
+        <devicelayout name='Phone'>
           <layout-options>
             <title>
               <formatted-text>
@@ -4620,46 +4715,47 @@
               </formatted-text>
             </title>
           </layout-options>
-          <size maxheight='950' minheight='950' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='564' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98690' id='563' param='vert' type-v2='layout-flow' w='99304' x='348' y='655'>
-                <zone h='4996' id='514' type-v2='title' w='99304' x='348' y='655'>
+            <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97054' id='513' param='vert' type-v2='layout-flow' w='95734' x='2133' y='1473'>
+                <zone h='31491' id='514' type-v2='title' w='95734' x='2133' y='1473'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
                     <format attr='border-width' value='0' />
                     <format attr='margin' value='4' />
-                    <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='280' h='93694' id='498' is-fixed='true' name='1993' w='33100' x='348' y='5651'>
-                  <layout-cache minheight='261' minwidth='202' type-h='scalable' type-w='scalable' />
-                  <zone-style>
-                    <format attr='border-color' value='#000000' />
-                    <format attr='border-style' value='none' />
-                    <format attr='border-width' value='0' />
-                    <format attr='margin' value='4' />
-                    <format attr='padding' value='0' />
-                  </zone-style>
-                </zone>
-                <zone fixed-size='280' h='93694' id='507' is-fixed='true' name='Variación total entre 1993 y 2017' w='33100' x='33448' y='5651'>
-                  <zone-style>
-                    <format attr='border-color' value='#000000' />
-                    <format attr='border-style' value='none' />
-                    <format attr='border-width' value='0' />
-                    <format attr='margin' value='4' />
-                    <format attr='padding' value='0' />
-                  </zone-style>
-                </zone>
-                <zone fixed-size='280' h='93694' id='503' is-fixed='true' name='2017' w='33104' x='66548' y='5651'>
-                  <zone-style>
-                    <format attr='border-color' value='#000000' />
-                    <format attr='border-style' value='none' />
-                    <format attr='border-width' value='0' />
-                    <format attr='margin' value='4' />
-                    <format attr='padding' value='0' />
-                  </zone-style>
+                <zone h='65563' id='509' param='horz' type-v2='layout-flow' w='95734' x='2133' y='32964'>
+                  <zone h='65563' id='504' type-v2='layout-basic' w='95734' x='2133' y='32964'>
+                    <zone h='65563' id='502' param='vert' type-v2='layout-flow' w='48267' x='2133' y='32964'>
+                      <zone h='65563' id='500' param='horz' type-v2='layout-flow' w='48267' x='2133' y='32964'>
+                        <zone h='65563' id='301' type-v2='layout-basic' w='48267' x='2133' y='32964'>
+                          <zone h='65563' id='23' param='horz' type-v2='layout-flow' w='48267' x='2133' y='32964'>
+                            <zone h='65563' id='13' param='vert' type-v2='layout-flow' w='48267' x='2133' y='32964'>
+                              <zone h='65563' id='498' name='1993' w='48267' x='2133' y='32964'>
+                                <layout-cache minheight='261' minwidth='202' type-h='scalable' type-w='scalable' />
+                                <zone-style>
+                                  <format attr='border-color' value='#000000' />
+                                  <format attr='border-style' value='none' />
+                                  <format attr='border-width' value='0' />
+                                  <format attr='margin' value='4' />
+                                </zone-style>
+                              </zone>
+                            </zone>
+                          </zone>
+                        </zone>
+                      </zone>
+                    </zone>
+                    <zone h='65563' id='503' name='2017' w='47467' x='50400' y='32964'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                  </zone>
                 </zone>
               </zone>
               <zone-style>
@@ -4744,7 +4840,7 @@
         </zone>
       </zones>
       <devicelayouts>
-        <devicelayout auto-generated='true' name='Phone'>
+        <devicelayout name='Phone'>
           <layout-options>
             <title>
               <formatted-text>
@@ -4756,18 +4852,9 @@
           </layout-options>
           <size maxheight='900' minheight='900' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='483' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98690' id='482' param='vert' type-v2='layout-flow' w='99304' x='348' y='655'>
-                <zone fixed-size='80' h='7207' id='9' type-v2='title' w='99304' x='348' y='655'>
-                  <zone-style>
-                    <format attr='border-color' value='#000000' />
-                    <format attr='border-style' value='none' />
-                    <format attr='border-width' value='0' />
-                    <format attr='margin' value='4' />
-                    <format attr='padding' value='0' />
-                  </zone-style>
-                </zone>
-                <zone fixed-size='220' h='27444' id='91' is-fixed='true' name='Tendencia general' show-title='false' w='34938' x='31438' y='9000'>
+            <zone h='100000' id='487' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98222' id='486' param='vert' type-v2='layout-flow' w='95734' x='2133' y='889'>
+                <zone fixed-size='179' h='20778' id='91' is-fixed='true' name='Tendencia general' show-title='false' w='95734' x='2133' y='889'>
                   <layout-cache minheight='130' minwidth='135' type-h='scalable' type-w='scalable' />
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -4777,7 +4864,8 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='280' h='62290' id='407' is-fixed='true' name='Variación entre 1946 y 1992' w='46266' x='348' y='37055'>
+                <zone fixed-size='158' h='18445' id='407' is-fixed='true' name='Variación entre 1946 y 1992' w='95734' x='2133' y='21667'>
+                  <layout-cache type-h='cell' type-w='fixed' />
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -4786,7 +4874,8 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='280' h='62290' id='401' is-fixed='true' name='Variación entre 1993 y 2017' w='53038' x='46614' y='37055'>
+                <zone fixed-size='491' h='55445' id='401' is-fixed='true' name='Variación entre 1993 y 2017' w='95734' x='2133' y='40112'>
+                  <layout-cache type-h='cell' type-w='fixed' />
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -4852,7 +4941,7 @@
               </zone>
               <zone h='88862' id='49' param='vert' type-v2='layout-flow' w='99304' x='348' y='10483'>
                 <zone h='88862' id='19' type-v2='layout-basic' w='99304' x='348' y='10483'>
-                  <zone h='24515' id='3' name='Austria' w='14293' x='348' y='10483'>
+                  <zone h='24513' id='3' name='Austria' w='14290' x='348' y='10483'>
                     <zone-style>
                       <format attr='border-color' value='#000000' />
                       <format attr='border-style' value='none' />
@@ -4860,7 +4949,7 @@
                       <format attr='margin' value='4' />
                     </zone-style>
                   </zone>
-                  <zone h='24515' id='53' name='Belgium' w='14043' x='14641' y='10483'>
+                  <zone h='24513' id='53' name='Belgium' w='14041' x='14638' y='10483'>
                     <zone-style>
                       <format attr='border-color' value='#000000' />
                       <format attr='border-style' value='none' />
@@ -4868,7 +4957,7 @@
                       <format attr='margin' value='4' />
                     </zone-style>
                   </zone>
-                  <zone h='24515' id='54' name='Bulgaria' w='14921' x='28684' y='10483'>
+                  <zone h='24513' id='54' name='Bulgaria' w='14921' x='28679' y='10483'>
                     <zone-style>
                       <format attr='border-color' value='#000000' />
                       <format attr='border-style' value='none' />
@@ -4876,7 +4965,7 @@
                       <format attr='margin' value='4' />
                     </zone-style>
                   </zone>
-                  <zone h='24515' id='55' name='Croatia' w='15171' x='43605' y='10483'>
+                  <zone h='24513' id='55' name='Croatia' w='15171' x='43600' y='10483'>
                     <zone-style>
                       <format attr='border-color' value='#000000' />
                       <format attr='border-style' value='none' />
@@ -4884,7 +4973,7 @@
                       <format attr='margin' value='4' />
                     </zone-style>
                   </zone>
-                  <zone h='24515' id='86' name='Cyprus' w='14733' x='58776' y='10483'>
+                  <zone h='24513' id='86' name='Cyprus' w='14734' x='58771' y='10483'>
                     <zone-style>
                       <format attr='border-color' value='#000000' />
                       <format attr='border-style' value='none' />
@@ -4892,7 +4981,7 @@
                       <format attr='margin' value='4' />
                     </zone-style>
                   </zone>
-                  <zone h='24515' id='87' name='Czechia' w='13855' x='73509' y='10483'>
+                  <zone h='24513' id='87' name='Czechia' w='13856' x='73505' y='10483'>
                     <zone-style>
                       <format attr='border-color' value='#000000' />
                       <format attr='border-style' value='none' />
@@ -4900,7 +4989,7 @@
                       <format attr='margin' value='4' />
                     </zone-style>
                   </zone>
-                  <zone h='24515' id='88' name='Denmark' w='12288' x='87364' y='10483'>
+                  <zone h='24513' id='88' name='Denmark' w='12291' x='87361' y='10483'>
                     <zone-style>
                       <format attr='border-color' value='#000000' />
                       <format attr='border-style' value='none' />
@@ -4908,7 +4997,7 @@
                       <format attr='margin' value='4' />
                     </zone-style>
                   </zone>
-                  <zone h='22832' id='89' name='Estonia' w='14293' x='348' y='34998'>
+                  <zone h='22832' id='89' name='Estonia' w='14290' x='348' y='34996'>
                     <zone-style>
                       <format attr='border-color' value='#000000' />
                       <format attr='border-style' value='none' />
@@ -4916,7 +5005,7 @@
                       <format attr='margin' value='4' />
                     </zone-style>
                   </zone>
-                  <zone h='19347' id='90' name='Finland' w='14043' x='14641' y='57830'>
+                  <zone h='19347' id='90' name='Finland' w='14041' x='14638' y='57828'>
                     <zone-style>
                       <format attr='border-color' value='#000000' />
                       <format attr='border-style' value='none' />
@@ -4924,7 +5013,7 @@
                       <format attr='margin' value='4' />
                     </zone-style>
                   </zone>
-                  <zone h='22832' id='91' name='France' w='14921' x='28684' y='34998'>
+                  <zone h='22832' id='91' name='France' w='14921' x='28679' y='34996'>
                     <zone-style>
                       <format attr='border-color' value='#000000' />
                       <format attr='border-style' value='none' />
@@ -4932,7 +5021,7 @@
                       <format attr='margin' value='4' />
                     </zone-style>
                   </zone>
-                  <zone h='22832' id='92' name='Germany' w='15171' x='43605' y='34998'>
+                  <zone h='22832' id='92' name='Germany' w='15171' x='43600' y='34996'>
                     <zone-style>
                       <format attr='border-color' value='#000000' />
                       <format attr='border-style' value='none' />
@@ -4940,7 +5029,7 @@
                       <format attr='margin' value='4' />
                     </zone-style>
                   </zone>
-                  <zone h='22832' id='93' name='Greece' w='14733' x='58776' y='34998'>
+                  <zone h='22832' id='93' name='Greece' w='14734' x='58771' y='34996'>
                     <zone-style>
                       <format attr='border-color' value='#000000' />
                       <format attr='border-style' value='none' />
@@ -4948,7 +5037,7 @@
                       <format attr='margin' value='4' />
                     </zone-style>
                   </zone>
-                  <zone h='22832' id='94' name='Hungary' w='13855' x='73509' y='34998'>
+                  <zone h='22832' id='94' name='Hungary' w='13856' x='73505' y='34996'>
                     <zone-style>
                       <format attr='border-color' value='#000000' />
                       <format attr='border-style' value='none' />
@@ -4956,7 +5045,7 @@
                       <format attr='margin' value='4' />
                     </zone-style>
                   </zone>
-                  <zone h='22832' id='95' name='Ireland' w='12288' x='87364' y='34998'>
+                  <zone h='22832' id='95' name='Ireland' w='12291' x='87361' y='34996'>
                     <zone-style>
                       <format attr='border-color' value='#000000' />
                       <format attr='border-style' value='none' />
@@ -4964,7 +5053,7 @@
                       <format attr='margin' value='4' />
                     </zone-style>
                   </zone>
-                  <zone h='19347' id='96' name='Italy' w='14293' x='348' y='57830'>
+                  <zone h='19347' id='96' name='Italy' w='14290' x='348' y='57828'>
                     <zone-style>
                       <format attr='border-color' value='#000000' />
                       <format attr='border-style' value='none' />
@@ -4972,7 +5061,7 @@
                       <format attr='margin' value='4' />
                     </zone-style>
                   </zone>
-                  <zone h='22832' id='97' name='Latvia' w='14043' x='14641' y='34998'>
+                  <zone h='22832' id='97' name='Latvia' w='14041' x='14638' y='34996'>
                     <zone-style>
                       <format attr='border-color' value='#000000' />
                       <format attr='border-style' value='none' />
@@ -4980,7 +5069,7 @@
                       <format attr='margin' value='4' />
                     </zone-style>
                   </zone>
-                  <zone h='19347' id='98' name='Lithuania' w='14921' x='28684' y='57830'>
+                  <zone h='19347' id='98' name='Lithuania' w='14921' x='28679' y='57828'>
                     <zone-style>
                       <format attr='border-color' value='#000000' />
                       <format attr='border-style' value='none' />
@@ -4988,7 +5077,7 @@
                       <format attr='margin' value='4' />
                     </zone-style>
                   </zone>
-                  <zone h='19347' id='99' name='Luxembourg' w='15171' x='43605' y='57830'>
+                  <zone h='19347' id='99' name='Luxembourg' w='15171' x='43600' y='57828'>
                     <zone-style>
                       <format attr='border-color' value='#000000' />
                       <format attr='border-style' value='none' />
@@ -4996,7 +5085,7 @@
                       <format attr='margin' value='4' />
                     </zone-style>
                   </zone>
-                  <zone h='19347' id='100' name='Malta' w='14733' x='58776' y='57830'>
+                  <zone h='19347' id='100' name='Malta' w='14734' x='58771' y='57828'>
                     <zone-style>
                       <format attr='border-color' value='#000000' />
                       <format attr='border-style' value='none' />
@@ -5004,7 +5093,7 @@
                       <format attr='margin' value='4' />
                     </zone-style>
                   </zone>
-                  <zone h='19347' id='101' name='Netherlands' w='13855' x='73509' y='57830'>
+                  <zone h='19347' id='101' name='Netherlands' w='13856' x='73505' y='57828'>
                     <zone-style>
                       <format attr='border-color' value='#000000' />
                       <format attr='border-style' value='none' />
@@ -5012,7 +5101,7 @@
                       <format attr='margin' value='4' />
                     </zone-style>
                   </zone>
-                  <zone h='19347' id='102' name='Poland' w='12288' x='87364' y='57830'>
+                  <zone h='19347' id='102' name='Poland' w='12291' x='87361' y='57828'>
                     <zone-style>
                       <format attr='border-color' value='#000000' />
                       <format attr='border-style' value='none' />
@@ -5020,7 +5109,7 @@
                       <format attr='margin' value='4' />
                     </zone-style>
                   </zone>
-                  <zone h='22168' id='103' name='Portugal' w='14293' x='348' y='77177'>
+                  <zone h='22170' id='103' name='Portugal' w='14290' x='348' y='77175'>
                     <zone-style>
                       <format attr='border-color' value='#000000' />
                       <format attr='border-style' value='none' />
@@ -5028,7 +5117,7 @@
                       <format attr='margin' value='4' />
                     </zone-style>
                   </zone>
-                  <zone h='22168' id='104' name='Romania' w='14043' x='14641' y='77177'>
+                  <zone h='22170' id='104' name='Romania' w='14041' x='14638' y='77175'>
                     <zone-style>
                       <format attr='border-color' value='#000000' />
                       <format attr='border-style' value='none' />
@@ -5036,7 +5125,7 @@
                       <format attr='margin' value='4' />
                     </zone-style>
                   </zone>
-                  <zone h='22168' id='105' name='Slovakia' w='14921' x='28684' y='77177'>
+                  <zone h='22170' id='105' name='Slovakia' w='14921' x='28679' y='77175'>
                     <zone-style>
                       <format attr='border-color' value='#000000' />
                       <format attr='border-style' value='none' />
@@ -5044,7 +5133,7 @@
                       <format attr='margin' value='4' />
                     </zone-style>
                   </zone>
-                  <zone h='22168' id='106' name='Slovenia' w='15171' x='43605' y='77177'>
+                  <zone h='22170' id='106' name='Slovenia' w='15171' x='43600' y='77175'>
                     <zone-style>
                       <format attr='border-color' value='#000000' />
                       <format attr='border-style' value='none' />
@@ -5052,7 +5141,7 @@
                       <format attr='margin' value='4' />
                     </zone-style>
                   </zone>
-                  <zone h='22168' id='107' name='Spain' w='14733' x='58776' y='77177'>
+                  <zone h='22170' id='107' name='Spain' w='14734' x='58771' y='77175'>
                     <zone-style>
                       <format attr='border-color' value='#000000' />
                       <format attr='border-style' value='none' />
@@ -5060,7 +5149,7 @@
                       <format attr='margin' value='4' />
                     </zone-style>
                   </zone>
-                  <zone h='22168' id='108' name='Sweden' w='13855' x='73509' y='77177'>
+                  <zone h='22170' id='108' name='Sweden' w='13856' x='73505' y='77175'>
                     <zone-style>
                       <format attr='border-color' value='#000000' />
                       <format attr='border-style' value='none' />
@@ -5068,7 +5157,7 @@
                       <format attr='margin' value='4' />
                     </zone-style>
                   </zone>
-                  <zone h='22168' id='109' name='Europe Union' w='12288' x='87364' y='77177'>
+                  <zone h='22170' id='109' name='Europe Union' w='12291' x='87361' y='77175'>
                     <zone-style>
                       <format attr='border-color' value='#000000' />
                       <format attr='border-style' value='none' />
@@ -5112,36 +5201,13 @@
         </zone>
       </zones>
       <devicelayouts>
-        <devicelayout auto-generated='true' name='Phone'>
-          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
-          <zones>
-            <zone h='100000' id='128' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98690' id='127' param='vert' type-v2='layout-flow' w='99304' x='348' y='655'>
-                <zone fixed-size='280' h='98690' id='3' is-fixed='true' name='Derechos humanos en España' w='99304' x='348' y='655'>
-                  <zone-style>
-                    <format attr='border-color' value='#000000' />
-                    <format attr='border-style' value='none' />
-                    <format attr='border-width' value='0' />
-                    <format attr='margin' value='4' />
-                    <format attr='padding' value='0' />
-                  </zone-style>
-                </zone>
-              </zone>
-              <zone-style>
-                <format attr='border-color' value='#000000' />
-                <format attr='border-style' value='none' />
-                <format attr='border-width' value='0' />
-                <format attr='margin' value='8' />
-              </zone-style>
-            </zone>
-          </zones>
-        </devicelayout>
+        <devicelayout name='Phone' />
       </devicelayouts>
       <simple-id uuid='{4F8F3A39-0679-42B3-AD7A-06D3326EE75C}' />
     </dashboard>
   </dashboards>
   <windows saved-dpi-scale-factor='1.25' source-height='37'>
-    <window class='dashboard' name='Derechos humanos en la Unión Europea'>
+    <window class='dashboard' maximized='true' name='Derechos humanos en la Unión Europea'>
       <viewpoints>
         <viewpoint name='1993'>
           <zoom type='entire-view' />
@@ -5256,7 +5322,7 @@
           <zoom type='entire-view' />
         </viewpoint>
       </viewpoints>
-      <active id='-1' />
+      <active id='106' />
       <grid grid-size='94' />
       <simple-id uuid='{1A65836D-D496-4365-9753-2583A9688A74}' />
     </window>
@@ -5286,7 +5352,7 @@
       <active id='-1' />
       <simple-id uuid='{832608F1-FCFC-4AFF-AC54-C98A8F0CA021}' />
     </window>
-    <window class='dashboard' maximized='true' name='derechos_esp'>
+    <window class='dashboard' name='derechos_esp'>
       <viewpoints>
         <viewpoint name='Derechos humanos en España'>
           <zoom type='entire-view' />
@@ -5606,7 +5672,7 @@
           </strip>
         </edge>
         <edge name='right'>
-          <strip size='174'>
+          <strip size='173'>
             <card pane-specification-id='0' param='[federated.1984ad41els6c31agopyz1sjvwa3].[avg:HR_SCORE:qk]' type='color' />
           </strip>
         </edge>
@@ -6319,28 +6385,6 @@
             <bucket>#1992-01-01 00:00:00#</bucket>
           </multibucket>
         </current-page>
-        <selection-collection>
-          <node-selection select-tuples='false'>
-            <oriented-node-reference orientation='vertical'>
-              <node-reference>
-                <fields>
-                  <field>[federated.1984ad41els6c31agopyz1sjvwa3].[none:COUNTRY:nk]</field>
-                </fields>
-                <multibucket>
-                  <bucket>&quot;Czechia&quot;</bucket>
-                </multibucket>
-              </node-reference>
-              <page-reference>
-                <fields>
-                  <field>[federated.1984ad41els6c31agopyz1sjvwa3].[tyr:YEAR:ok]</field>
-                </fields>
-                <multibucket>
-                  <bucket>#1992-01-01 00:00:00#</bucket>
-                </multibucket>
-              </page-reference>
-            </oriented-node-reference>
-          </node-selection>
-        </selection-collection>
         <highlight>
           <color-one-way>
             <field>[federated.1984ad41els6c31agopyz1sjvwa3].[avg:HR_SCORE:qk]</field>
@@ -6383,28 +6427,6 @@
             <bucket>#2017-01-01 00:00:00#</bucket>
           </multibucket>
         </current-page>
-        <selection-collection>
-          <node-selection select-tuples='false'>
-            <oriented-node-reference orientation='vertical'>
-              <node-reference>
-                <fields>
-                  <field>[federated.1984ad41els6c31agopyz1sjvwa3].[none:COUNTRY:nk]</field>
-                </fields>
-                <multibucket>
-                  <bucket>&quot;France&quot;</bucket>
-                </multibucket>
-              </node-reference>
-              <page-reference>
-                <fields>
-                  <field>[federated.1984ad41els6c31agopyz1sjvwa3].[tyr:YEAR:ok]</field>
-                </fields>
-                <multibucket>
-                  <bucket>#2017-01-01 00:00:00#</bucket>
-                </multibucket>
-              </page-reference>
-            </oriented-node-reference>
-          </node-selection>
-        </selection-collection>
         <highlight>
           <color-one-way>
             <field>[federated.1984ad41els6c31agopyz1sjvwa3].[avg:HR_SCORE:qk]</field>
@@ -6646,85 +6668,86 @@
     </thumbnail>
     <thumbnail height='192' name='Histórico de la Unión Europea' width='192'>
       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
-      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
+      AAAQq0lEQVR4nO3da3BU93nH8e/u2Su7uqwkxEoCo4iLcYhsbhZgmthQh0zbJDNOO510Mm06
+      03bazvRF28n0Rdq+6UxfuJm2mWk6TSfNPU58iy8xxLGQCUJBNhghIQToCtrVdVervd/37Dl9
+      gSHGEHPT7sKe5/MGEGfPeZY9P/6X8z9nTbqu6whhUOZKFyBEJUkAhKFJAIShSQCEoUkAhKFJ
+      AIShSQCEoUkAhKFJAIShSQCEoUkAhKFJAIShSQCEoUkAhKFJAIShSQCEoUkAhKFJAIShSQCE
+      oUkAhKFJAIShSQCEoUkAhKFJAIShSQCEoUkAhKFZKl2AECtJVdU72l4CIKqKyWRCUZTb3l66
+      QMLQJADC0CQAwtAkAMLQJADC0CQAwtAkAMLQJADC0CQAwtAkAMLQZCmEqCqapnEn3/wrARBV
+      xWw2y1ogIW6XBEAYmgRAGJoEQBiaBEAYmgRAGJoEQBiaBEAYmgRAGJoEQBiaLIUQVUXWAglD
+      k7VAQtwBCYAwNAmAMDQJgDA0CYAwNAmAMDQJgDA0CYAwNAmAMDQJgDA0WQohqoqsBRKGJmuB
+      hLgDEgBhaBIAYWgSAGFoEgBhaBIAYWgSAGFoEgBhaBIAYWhyJVhUFV3XZSmEMC5d19E07ba3
+      lwCIqiJrgYS4AxIAYWgSAGFoEgBhaBIAYWgSAGFoEgBhaBIAYWgSAGFoJv1OFk4IcZ/LZrNo
+      mobZbL62Luijfi8BEFWlWCzKUgghbpcEQBiaBEAYmgRAGJrcDyCq0uTkJJOTkzz22GO0tLQA
+      EI/H6evrY//+/fT39+NwOKQFENXp3LlzHDx4kJMnTwJX7hTr6+ujUChw6tQptm3bRjqdlgCI
+      6jI7O8vZs2dRFAWTyYTZfOUUP3PmDKFQiNHRUdra2nj33XeZmpqS6wCiuly9DnD8+HGSySRe
+      r5dcLkdXVxeKonDkyBH27dvHyZMnSafTEgBRXT58IUzXdYaGhti+fftNt5cAiKpyp1eCZRZI
+      VJXb+Yqky2++xMKpXmx1DdICiOpyqxZA13WKBZVMOEz4sk8CIKrL1QDouo6u6aj5AsW8SjaR
+      wWK1UFSLWBxWrA4bNqddAiCqS2wxjFlRyKey2N1O9KKGo24VFpsFk/nGWX8JgKgqMggWhqbr
+      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
+      ARCG9v9+/u1M+3VhaQAAAABJRU5ErkJggg==
     </thumbnail>
     <thumbnail height='192' name='Tendencias en derechos humanos' width='192'>
       iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
@@ -6892,29 +6915,40 @@
     </thumbnail>
     <thumbnail height='192' name='derechos_esp' width='192'>
       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
-      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
+      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
+      rkJggg==
     </thumbnail>
   </thumbnails>
 </workbook>

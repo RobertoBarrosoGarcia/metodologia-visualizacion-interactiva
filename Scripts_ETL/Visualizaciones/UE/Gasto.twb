@@ -4,7 +4,6 @@
 <workbook original-version='18.1' source-build='2021.3.6 (20213.21.1217.2247)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
   <document-format-change-manifest>
     <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
-    <AutoCreateAndUpdateDSDPhoneLayouts />
     <_.fcp.MarkAnimation.true...MarkAnimation />
     <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
     <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
@@ -15,7 +14,7 @@
     <WindowsPersistSimpleIdentifiers />
     <WorksheetBackgroundTransparency />
   </document-format-change-manifest>
-  <repository-location id='Gasto_16424537461670' path='/workbooks' revision='1.3' />
+  <repository-location id='Gasto_16424537461670' path='/workbooks' revision='1.5' />
   <preferences>
     <preference name='ui.encoding.shelf.height' value='24' />
     <preference name='ui.shelf.height' value='26' />
@@ -247,7 +246,6 @@
       <datasource-dependencies datasource='federated.15hmcqp1c8n4wc1fhnqqb04mtuyc'>
         <column caption='Expenditure Health' datatype='real' name='[EXPENDITURE_HEALTH]' role='measure' type='quantitative' />
         <column-instance column='[EXPENDITURE_HEALTH]' derivation='Avg' name='[avg:EXPENDITURE_HEALTH:qk]' pivot='key' type='quantitative' />
-        <column-instance column='[EXPENDITURE_HEALTH]' derivation='Sum' name='[sum:EXPENDITURE_HEALTH:qk]' pivot='key' type='quantitative' />
       </datasource-dependencies>
       <datasource-dependencies datasource='federated.17phdhb09yqwme1ahebip1ffzerw'>
         <column caption='Expenditure Education' datatype='real' name='[EXPENDITURE_EDUCATION]' role='measure' type='quantitative' />
@@ -257,7 +255,6 @@
       <datasource-dependencies datasource='federated.1pavk6v1s0bnmu1adk4br1ja00nr'>
         <column caption='Expenditure Military' datatype='real' name='[EXPENDITURE_MILITARY]' role='measure' type='quantitative' />
         <column-instance column='[EXPENDITURE_MILITARY]' derivation='Avg' name='[avg:EXPENDITURE_MILITARY:qk]' pivot='key' type='quantitative' />
-        <column-instance column='[EXPENDITURE_MILITARY]' derivation='Sum' name='[sum:EXPENDITURE_MILITARY:qk]' pivot='key' type='quantitative' />
       </datasource-dependencies>
       <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
         <objects>
@@ -748,7 +745,6 @@
       <datasource-dependencies datasource='federated.15hmcqp1c8n4wc1fhnqqb04mtuyc'>
         <column caption='Expenditure Health' datatype='real' name='[EXPENDITURE_HEALTH]' role='measure' type='quantitative' />
         <column-instance column='[EXPENDITURE_HEALTH]' derivation='Avg' name='[avg:EXPENDITURE_HEALTH:qk]' pivot='key' type='quantitative' />
-        <column-instance column='[EXPENDITURE_HEALTH]' derivation='Sum' name='[sum:EXPENDITURE_HEALTH:qk]' pivot='key' type='quantitative' />
       </datasource-dependencies>
       <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
         <objects>
@@ -1173,6 +1169,15 @@
               <text column='[federated.1pavk6v1s0bnmu1adk4br1ja00nr].[avg:EXPENDITURE_MILITARY:qk]' />
             </encodings>
             <reference-line axis-column='[federated.1pavk6v1s0bnmu1adk4br1ja00nr].[avg:EXPENDITURE_MILITARY:qk]' enable-instant-analytics='true' formula='average' id='refline3' label='Promedio de gasto militar: 2%' label-type='custom' probability='95' scope='per-table' value-column='[federated.1pavk6v1s0bnmu1adk4br1ja00nr].[avg:EXPENDITURE_MILITARY:qk]' z-order='1' />
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Fecha: </run>
+                <run bold='true'><![CDATA[<[federated.0ehpiok1vicoma12pwodp0i7oxxr].[tyr:YEAR:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Gasto militar: </run>
+                <run bold='true'><![CDATA[<[federated.1pavk6v1s0bnmu1adk4br1ja00nr].[avg:EXPENDITURE_MILITARY:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
             <customized-label>
               <formatted-text>
                 <run>&lt;</run>
@@ -1366,6 +1371,15 @@
               <text column='[federated.17phdhb09yqwme1ahebip1ffzerw].[avg:EXPENDITURE_EDUCATION:qk]' />
             </encodings>
             <reference-line axis-column='[federated.17phdhb09yqwme1ahebip1ffzerw].[avg:EXPENDITURE_EDUCATION:qk]' enable-instant-analytics='true' formula='average' id='refline1' label='Promedio de gasto en Educación: 4,76%' label-type='custom' probability='95' scope='per-pane' value-column='[federated.17phdhb09yqwme1ahebip1ffzerw].[avg:EXPENDITURE_EDUCATION:qk]' z-order='1' />
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Fecha: </run>
+                <run bold='true'><![CDATA[<[federated.0ehpiok1vicoma12pwodp0i7oxxr].[tyr:YEAR:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Gasto en educación: </run>
+                <run bold='true'><![CDATA[<[federated.17phdhb09yqwme1ahebip1ffzerw].[avg:EXPENDITURE_EDUCATION:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
             <customized-label>
               <formatted-text>
                 <run><![CDATA[<[federated.17phdhb09yqwme1ahebip1ffzerw].[avg:EXPENDITURE_EDUCATION:qk]>]]></run>
@@ -1560,6 +1574,15 @@
             </encodings>
             <reference-line axis-column='[federated.15hmcqp1c8n4wc1fhnqqb04mtuyc].[avg:EXPENDITURE_HEALTH:qk]' enable-instant-analytics='true' formula='average' id='refline0' label='Promedio de gasto en Sanidad: 5,46%' label-type='custom' probability='95' scope='per-pane' value-column='[federated.15hmcqp1c8n4wc1fhnqqb04mtuyc].[avg:EXPENDITURE_HEALTH:qk]' z-order='1' />
             <reference-line axis-column='[federated.0ehpiok1vicoma12pwodp0i7oxxr].[tyr:YEAR:qk]' enable-instant-analytics='true' formula='constant' id='refline2' label='1993 - Unión Europea' label-type='custom' scope='per-table' value='#1993-01-01 00:00:00#' value-column='[federated.0ehpiok1vicoma12pwodp0i7oxxr].[tyr:YEAR:qk]' z-order='2' />
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Fecha: </run>
+                <run bold='true'><![CDATA[<[federated.0ehpiok1vicoma12pwodp0i7oxxr].[tyr:YEAR:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Gasto en salud: </run>
+                <run bold='true'><![CDATA[<[federated.15hmcqp1c8n4wc1fhnqqb04mtuyc].[avg:EXPENDITURE_HEALTH:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
             <customized-label>
               <formatted-text>
                 <run>&lt;</run>
@@ -1623,7 +1646,6 @@
             <format attr='title' class='0' field='[federated.0ehpiok1vicoma12pwodp0i7oxxr].[tyr:YEAR:qk]' scope='cols' value='' />
             <encoding attr='space' class='0' domain-expand='false' field='[federated.0ehpiok1vicoma12pwodp0i7oxxr].[avg:EXPENSES_BY_GDP:qk]' field-type='quantitative' scope='rows' type='space' />
             <format attr='display' class='0' field='[federated.0ehpiok1vicoma12pwodp0i7oxxr].[avg:EXPENSES_BY_GDP:qk]' scope='rows' value='false' />
-            <encoding attr='space' class='0' field='[federated.0ehpiok1vicoma12pwodp0i7oxxr].[tyr:YEAR:qk]' field-type='quantitative' major-origin='#1995-07-02 12:00:00#' major-spacing='1.0' major-units='years' scope='cols' type='space' />
           </style-rule>
           <style-rule element='refline'>
             <format attr='fill-above' id='refline0' value='#00000000' />
@@ -1647,6 +1669,15 @@
             </encodings>
             <trendline degree='2' enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='polynomial' />
             <reference-line axis-column='[federated.0ehpiok1vicoma12pwodp0i7oxxr].[tyr:YEAR:qk]' enable-instant-analytics='true' formula='constant' id='refline0' label='1993 - Unión Europea' label-type='custom' scope='per-table' value='#1993-01-01 00:00:00#' value-column='[federated.0ehpiok1vicoma12pwodp0i7oxxr].[tyr:YEAR:qk]' z-order='1' />
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Fecha: </run>
+                <run bold='true'><![CDATA[<[federated.0ehpiok1vicoma12pwodp0i7oxxr].[tyr:YEAR:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Gasto público (% del PIB): </run>
+                <run bold='true'><![CDATA[<[federated.0ehpiok1vicoma12pwodp0i7oxxr].[avg:EXPENSES_BY_GDP:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
             <customized-label>
               <formatted-text>
                 <run>&lt;</run>
@@ -1717,7 +1748,7 @@
         <zone h='83222' id='3' name='Gasto en Sanidad (% del PIB)' show-title='false' w='97813' x='2063' y='12000' />
         <zone h='83333' id='5' name='Gasto en Educación (% del PIB)' show-title='false' w='97813' x='2063' y='11889' />
         <zone h='83444' id='6' name='Gasto Militar (% del PIB)' show-title='false' w='97750' x='2063' y='11778' />
-        <zone h='8518' id='75' type-v2='text' w='8794' x='68481' y='49877'>
+        <zone h='11466' id='75' type-v2='text' w='22899' x='68481' y='49877'>
           <formatted-text>
             <run bold='true' fontcolor='#59a14f' fontname='Times New Roman' fontsize='12'>Gasto en Sanidad</run>
             <run>Æ&#10;</run>
@@ -1728,7 +1759,7 @@
         </zone>
       </zones>
       <devicelayouts>
-        <devicelayout auto-generated='true' name='Phone'>
+        <devicelayout name='Phone'>
           <layout-options>
             <title>
               <formatted-text>
@@ -1740,9 +1771,9 @@
           </layout-options>
           <size maxheight='1000' minheight='1000' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='105' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98690' id='104' param='vert' type-v2='layout-flow' w='99304' x='348' y='655'>
-                <zone h='7944' id='15' type-v2='title' w='99304' x='348' y='655'>
+            <zone h='100000' id='77' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98400' id='76' param='vert' type-v2='layout-flow' w='95734' x='2133' y='800'>
+                <zone fixed-size='167' h='17500' id='15' is-fixed='true' type-v2='title' w='95734' x='2133' y='800'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -1751,7 +1782,8 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='280' h='83444' id='6' is-fixed='true' name='Gasto Militar (% del PIB)' show-title='false' w='97750' x='2063' y='11778'>
+                <zone fixed-size='280' h='25900' id='6' is-fixed='true' name='Gasto Militar (% del PIB)' show-title='false' w='95734' x='2133' y='18300'>
+                  <layout-cache minheight='100' type-h='scalable' type-w='fixed' />
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -1760,7 +1792,8 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='280' h='83333' id='5' is-fixed='true' name='Gasto en Educación (% del PIB)' show-title='false' w='97813' x='2063' y='11889'>
+                <zone fixed-size='280' h='25900' id='5' is-fixed='true' name='Gasto en Educación (% del PIB)' show-title='false' w='95734' x='2133' y='44200'>
+                  <layout-cache minheight='100' type-h='scalable' type-w='fixed' />
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -1769,7 +1802,8 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='280' h='83222' id='3' is-fixed='true' name='Gasto en Sanidad (% del PIB)' show-title='false' w='97813' x='2063' y='12000'>
+                <zone fixed-size='280' h='25900' id='3' is-fixed='true' name='Gasto en Sanidad (% del PIB)' show-title='false' w='95734' x='2133' y='70100'>
+                  <layout-cache minheight='100' type-h='scalable' type-w='fixed' />
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -1778,7 +1812,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone h='8518' id='75' type-v2='text' w='8794' x='68481' y='49877'>
+                <zone h='3200' id='75' type-v2='text' w='95734' x='2133' y='96000'>
                   <formatted-text>
                     <run bold='true' fontcolor='#59a14f' fontname='Times New Roman' fontsize='12'>Gasto en Sanidad</run>
                     <run>Æ&#10;</run>
@@ -1852,54 +1886,13 @@
         </zone>
       </zones>
       <devicelayouts>
-        <devicelayout auto-generated='true' name='Phone'>
-          <layout-options>
-            <title>
-              <formatted-text>
-                <run bold='true' fontalignment='1' fontname='Times New Roman' fontsize='28' italic='true'>&lt;</run>
-                <run bold='true' fontalignment='1' fontname='Times New Roman' fontsize='28' italic='true'>Sheet Name</run>
-                <run bold='true' fontalignment='1' fontname='Times New Roman' fontsize='28' italic='true'>&gt;</run>
-              </formatted-text>
-            </title>
-          </layout-options>
-          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
-          <zones>
-            <zone h='100000' id='106' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98690' id='105' param='vert' type-v2='layout-flow' w='99304' x='348' y='655'>
-                <zone h='4996' id='15' type-v2='title' w='99304' x='348' y='655'>
-                  <zone-style>
-                    <format attr='border-color' value='#000000' />
-                    <format attr='border-style' value='none' />
-                    <format attr='border-width' value='0' />
-                    <format attr='margin' value='4' />
-                    <format attr='padding' value='0' />
-                  </zone-style>
-                </zone>
-                <zone fixed-size='280' h='93694' id='3' is-fixed='true' name='Gasto público (% del PIB)' show-title='false' w='99304' x='348' y='5651'>
-                  <zone-style>
-                    <format attr='border-color' value='#000000' />
-                    <format attr='border-style' value='none' />
-                    <format attr='border-width' value='0' />
-                    <format attr='margin' value='4' />
-                    <format attr='padding' value='0' />
-                  </zone-style>
-                </zone>
-              </zone>
-              <zone-style>
-                <format attr='border-color' value='#000000' />
-                <format attr='border-style' value='none' />
-                <format attr='border-width' value='0' />
-                <format attr='margin' value='8' />
-              </zone-style>
-            </zone>
-          </zones>
-        </devicelayout>
+        <devicelayout name='Phone' />
       </devicelayouts>
       <simple-id uuid='{02EEFDEA-9D74-41F8-BB2C-B58C668AEAD6}' />
     </dashboard>
   </dashboards>
   <windows saved-dpi-scale-factor='1.25' source-height='115'>
-    <window class='dashboard' name='Total del gasto público en la UE (% del PIB)'>
+    <window class='dashboard' maximized='true' name='Total del gasto público en la UE (% del PIB)'>
       <viewpoints>
         <viewpoint name='Gasto público (% del PIB)'>
           <zoom type='entire-view' />
@@ -1908,7 +1901,7 @@
       <active id='3' />
       <simple-id uuid='{86801034-1093-49D6-B98F-621A62F20796}' />
     </window>
-    <window class='dashboard' maximized='true' name='Distribución de gastos en la UE (% del PIB)'>
+    <window class='dashboard' name='Distribución de gastos en la UE (% del PIB)'>
       <viewpoints>
         <viewpoint name='Gasto Militar (% del PIB)'>
           <zoom type='entire-view' />
@@ -1981,7 +1974,7 @@
           </strip>
         </edge>
         <edge name='right'>
-          <strip size='173'>
+          <strip size='172'>
             <card pane-specification-id='1' param='[federated.17phdhb09yqwme1ahebip1ffzerw].[avg:EXPENDITURE_EDUCATION:qk]' type='color' />
           </strip>
         </edge>

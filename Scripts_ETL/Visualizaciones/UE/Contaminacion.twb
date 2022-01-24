@@ -4,7 +4,6 @@
 <workbook original-version='18.1' source-build='2021.3.6 (20213.21.1217.2247)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
   <document-format-change-manifest>
     <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
-    <AutoCreateAndUpdateDSDPhoneLayouts />
     <MapboxVectorStylesAndLayers />
     <_.fcp.MarkAnimation.true...MarkAnimation />
     <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
@@ -17,7 +16,7 @@
     <WindowsPersistSimpleIdentifiers />
     <WorksheetBackgroundTransparency />
   </document-format-change-manifest>
-  <repository-location id='Contaminacion_16424567297020' path='/workbooks' revision='1.1' />
+  <repository-location id='Contaminacion_16424567297020' path='/workbooks' revision='1.2' />
   <preferences>
     <preference name='ui.encoding.shelf.height' value='24' />
     <preference name='ui.shelf.height' value='26' />
@@ -698,6 +697,15 @@
               <color column='[federated.137l2q404598f610elxhp0i7aobi].[sum:CO2_EMISSIONS_TONNES:qk]' />
               <text column='[federated.137l2q404598f610elxhp0i7aobi].[sum:CO2_EMISSIONS_TONNES:qk]' />
             </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>País: </run>
+                <run bold='true'><![CDATA[<[federated.137l2q404598f610elxhp0i7aobi].[none:COUNTRY:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Emisiones de CO2: </run>
+                <run bold='true'><![CDATA[<[federated.137l2q404598f610elxhp0i7aobi].[sum:CO2_EMISSIONS_TONNES:qk]> t]]></run>
+              </formatted-text>
+            </customized-tooltip>
             <style>
               <style-rule element='datalabel'>
                 <format attr='color-mode' value='auto' />
@@ -831,6 +839,21 @@
               <text column='[federated.137l2q404598f610elxhp0i7aobi].[avg:CO2_EMISSIONS_TONNES_PER_CAPITA:qk]' />
               <lod column='[federated.137l2q404598f610elxhp0i7aobi].[tyr:YEAR:qk]' />
             </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>País: </run>
+                <run bold='true'><![CDATA[<[federated.137l2q404598f610elxhp0i7aobi].[none:COUNTRY:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Fecha: </run>
+                <run bold='true'><![CDATA[<[federated.137l2q404598f610elxhp0i7aobi].[tyr:YEAR:ok]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Fecha: </run>
+                <run bold='true'><![CDATA[<[federated.137l2q404598f610elxhp0i7aobi].[tyr:YEAR:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Emisiones de CO2 per cápita: </run>
+                <run bold='true'><![CDATA[<[federated.137l2q404598f610elxhp0i7aobi].[avg:CO2_EMISSIONS_TONNES_PER_CAPITA:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
             <style>
               <style-rule element='datalabel'>
                 <format attr='color-mode' value='auto' />
@@ -919,6 +942,15 @@
               <color column='[federated.137l2q404598f610elxhp0i7aobi].[sum:CO2_EMISSIONS_TONNES_PER_CAPITA:qk]' />
               <text column='[federated.137l2q404598f610elxhp0i7aobi].[sum:CO2_EMISSIONS_TONNES_PER_CAPITA:qk]' />
             </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>País: </run>
+                <run bold='true'><![CDATA[<[federated.137l2q404598f610elxhp0i7aobi].[none:COUNTRY:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Emisiones de CO2 per cápita: </run>
+                <run bold='true'><![CDATA[<[federated.137l2q404598f610elxhp0i7aobi].[sum:CO2_EMISSIONS_TONNES_PER_CAPITA:qk]>t]]></run>
+              </formatted-text>
+            </customized-tooltip>
             <style>
               <style-rule element='datalabel'>
                 <format attr='color-mode' value='auto' />
@@ -998,6 +1030,10 @@
           <aggregation value='true' />
         </view>
         <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.137l2q404598f610elxhp0i7aobi].[Longitude (generated)]' field-type='quantitative' max='5390134.923686102' min='-5838460.638319701' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.137l2q404598f610elxhp0i7aobi].[Latitude (generated)]' field-type='quantitative' max='11868438.089452684' min='2917643.2726139063' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
           <style-rule element='mark'>
             <encoding attr='color' field='[federated.137l2q404598f610elxhp0i7aobi].[diff:sum:CO2_EMISSIONS_TONNES_PER_CAPITA:qk:12]' palette='orange_blue_diverging_10_0' reverse='true' type='interpolated' />
           </style-rule>
@@ -1080,6 +1116,24 @@
               <lod column='[federated.137l2q404598f610elxhp0i7aobi].[tyr:YEAR:qk]' />
               <geometry column='[federated.137l2q404598f610elxhp0i7aobi].[Geometry (generated)]' />
             </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>País: </run>
+                <run bold='true'><![CDATA[<[federated.137l2q404598f610elxhp0i7aobi].[none:COUNTRY:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Fecha: </run>
+                <run bold='true'><![CDATA[<[federated.137l2q404598f610elxhp0i7aobi].[tyr:YEAR:ok]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Fecha: </run>
+                <run bold='true'><![CDATA[<[federated.137l2q404598f610elxhp0i7aobi].[tyr:YEAR:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Diferencia en emisiones de CO2 desde &apos;1993&apos;: </run>
+                <run bold='true'><![CDATA[<[federated.137l2q404598f610elxhp0i7aobi].[diff:sum:CO2_EMISSIONS_TONNES_PER_CAPITA:qk:12]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Diferencia en emisiones de CO2 desde &apos;1993&apos;: </run>
+                <run bold='true'><![CDATA[<[federated.137l2q404598f610elxhp0i7aobi].[diff:sum:CO2_EMISSIONS_TONNES_PER_CAPITA:qk:16]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
             <style>
               <style-rule element='datalabel'>
                 <format attr='color-mode' value='auto' />
@@ -1121,10 +1175,10 @@
             <zone h='98690' id='87' type-v2='layout-basic' w='99304' x='348' y='655'>
               <zone h='86698' id='24' param='horz' type-v2='layout-flow' w='99304' x='348' y='12647'>
                 <zone h='86698' id='22' type-v2='layout-basic' w='99304' x='348' y='12647'>
-                  <zone h='86698' id='14' param='vert' type-v2='layout-flow' w='43632' x='348' y='12647'>
-                    <zone h='86698' id='12' param='horz' type-v2='layout-flow' w='43632' x='348' y='12647'>
-                      <zone h='86698' id='5' type-v2='layout-basic' w='43632' x='348' y='12647'>
-                        <zone h='86698' id='9' name='Emisiones de CO2 per cápita' w='18995' x='348' y='12647'>
+                  <zone h='86698' id='14' param='vert' type-v2='layout-flow' w='43631' x='348' y='12647'>
+                    <zone h='86698' id='12' param='horz' type-v2='layout-flow' w='43631' x='348' y='12647'>
+                      <zone h='86698' id='5' type-v2='layout-basic' w='43631' x='348' y='12647'>
+                        <zone h='86698' id='9' name='Emisiones de CO2 per cápita' w='18994' x='348' y='12647'>
                           <zone-style>
                             <format attr='border-color' value='#000000' />
                             <format attr='border-style' value='none' />
@@ -1132,7 +1186,7 @@
                             <format attr='margin' value='4' />
                           </zone-style>
                         </zone>
-                        <zone h='86698' id='10' name='Emisiones de CO2 Total' w='24637' x='19343' y='12647'>
+                        <zone h='86698' id='10' name='Emisiones de CO2 Total' w='24637' x='19342' y='12647'>
                           <zone-style>
                             <format attr='border-color' value='#000000' />
                             <format attr='border-style' value='none' />
@@ -1143,7 +1197,7 @@
                       </zone>
                     </zone>
                   </zone>
-                  <zone h='86698' id='3' name='Varianza de emisiones de CO2 per cápita' show-title='false' w='32914' x='43980' y='12647'>
+                  <zone h='86698' id='3' name='Varianza de emisiones de CO2 per cápita' show-title='false' w='32914' x='43979' y='12647'>
                     <zone-style>
                       <format attr='border-color' value='#000000' />
                       <format attr='border-style' value='none' />
@@ -1151,7 +1205,7 @@
                       <format attr='margin' value='4' />
                     </zone-style>
                   </zone>
-                  <zone h='86698' id='86' name='Emisiones de CO2 en 1993' w='22758' x='76894' y='12647'>
+                  <zone h='86698' id='86' name='Emisiones de CO2 en 1993' w='22759' x='76893' y='12647'>
                     <zone-style>
                       <format attr='border-color' value='#000000' />
                       <format attr='border-style' value='none' />
@@ -1181,7 +1235,7 @@
         <zone h='6556' id='8' name='Varianza de emisiones de CO2 per cápita' pane-specification-id='0' param='[federated.137l2q404598f610elxhp0i7aobi].[diff:sum:CO2_EMISSIONS_TONNES_PER_CAPITA:qk:12]' type-v2='color' w='28250' x='44750' y='18556' />
       </zones>
       <devicelayouts>
-        <devicelayout auto-generated='true' name='Phone'>
+        <devicelayout name='Phone'>
           <layout-options>
             <title>
               <formatted-text>
@@ -1193,9 +1247,9 @@
           </layout-options>
           <size maxheight='1300' minheight='1300' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='121' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98690' id='120' param='vert' type-v2='layout-flow' w='99304' x='348' y='655'>
-                <zone h='11992' id='15' type-v2='title' w='99304' x='348' y='655'>
+            <zone h='100000' id='123' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98770' id='122' param='vert' type-v2='layout-flow' w='95734' x='2133' y='615'>
+                <zone fixed-size='204' h='16307' id='15' is-fixed='true' type-v2='title' w='95734' x='2133' y='615'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -1204,7 +1258,8 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='280' h='86698' id='9' is-fixed='true' name='Emisiones de CO2 per cápita' w='18995' x='348' y='12647'>
+                <zone fixed-size='280' h='20000' id='9' is-fixed='true' name='Emisiones de CO2 per cápita' w='95734' x='2133' y='16922'>
+                  <layout-cache type-h='cell' type-w='fixed' />
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -1213,7 +1268,8 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='280' h='86698' id='10' is-fixed='true' name='Emisiones de CO2 Total' w='24637' x='19343' y='12647'>
+                <zone fixed-size='280' h='20000' id='10' is-fixed='true' name='Emisiones de CO2 Total' w='95734' x='2133' y='36922'>
+                  <layout-cache type-h='cell' type-w='fixed' />
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -1222,7 +1278,8 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='280' h='86698' id='3' is-fixed='true' name='Varianza de emisiones de CO2 per cápita' show-title='false' w='32914' x='43980' y='12647'>
+                <zone fixed-size='280' h='20000' id='3' is-fixed='true' name='Varianza de emisiones de CO2 per cápita' show-title='false' w='95734' x='2133' y='56922'>
+                  <layout-cache minheight='201' type-h='scalable' type-w='fixed' />
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -1231,7 +1288,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone h='6556' id='8' name='Varianza de emisiones de CO2 per cápita' pane-specification-id='0' param='[federated.137l2q404598f610elxhp0i7aobi].[diff:sum:CO2_EMISSIONS_TONNES_PER_CAPITA:qk:12]' type-v2='color' w='28250' x='44750' y='18556'>
+                <zone h='2463' id='8' name='Varianza de emisiones de CO2 per cápita' pane-specification-id='0' param='[federated.137l2q404598f610elxhp0i7aobi].[diff:sum:CO2_EMISSIONS_TONNES_PER_CAPITA:qk:12]' type-v2='color' w='95734' x='2133' y='76922'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -1240,7 +1297,8 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='280' h='86698' id='86' is-fixed='true' name='Emisiones de CO2 en 1993' w='22758' x='76894' y='12647'>
+                <zone fixed-size='280' h='20000' id='86' is-fixed='true' name='Emisiones de CO2 en 1993' w='95734' x='2133' y='79385'>
+                  <layout-cache type-h='cell' type-w='fixed' />
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -1290,7 +1348,7 @@
           <default-map-tool-selection tool='1' />
         </viewpoint>
       </viewpoints>
-      <active id='3' />
+      <active id='-1' />
       <simple-id uuid='{ECB02F02-6DE2-457C-BA0E-36175E0A96FA}' />
     </window>
     <window class='worksheet' hidden='true' name='Emisiones de CO2 Total'>

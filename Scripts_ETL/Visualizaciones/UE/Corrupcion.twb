@@ -4,7 +4,6 @@
 <workbook original-version='18.1' source-build='2021.3.6 (20213.21.1217.2247)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
   <document-format-change-manifest>
     <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
-    <AutoCreateAndUpdateDSDPhoneLayouts />
     <MapboxVectorStylesAndLayers />
     <_.fcp.MarkAnimation.true...MarkAnimation />
     <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
@@ -17,7 +16,7 @@
     <WindowsPersistSimpleIdentifiers />
     <WorksheetBackgroundTransparency />
   </document-format-change-manifest>
-  <repository-location id='Corrupcion_16424558197990' path='/workbooks' revision='1.3' />
+  <repository-location id='Corrupcion_16424558197990' path='/workbooks' revision='1.5' />
   <preferences>
     <preference name='ui.encoding.shelf.height' value='24' />
     <preference name='ui.shelf.height' value='26' />
@@ -179,7 +178,6 @@
               <approx-count>27</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LES_RES_S2' />
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[corruption!perception!UE_5C9BE2D785D440D68FD9EAF3DEF6133C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>ISO_CODE</remote-name>
@@ -194,7 +192,6 @@
               <approx-count>27</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LES_RES_S2' />
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[corruption!perception!UE_5C9BE2D785D440D68FD9EAF3DEF6133C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>YEAR</remote-name>
@@ -208,7 +205,6 @@
               <aggregation>Year</aggregation>
               <approx-count>76</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[corruption!perception!UE_5C9BE2D785D440D68FD9EAF3DEF6133C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>HUMAN_DEVELOPMENT_INDEX</remote-name>
@@ -222,7 +218,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>246</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[corruption!perception!UE_5C9BE2D785D440D68FD9EAF3DEF6133C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>CORRUPTION_PERCEPTION</remote-name>
@@ -236,7 +231,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>51</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[corruption!perception!UE_5C9BE2D785D440D68FD9EAF3DEF6133C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
           </metadata-records>
         </connection>
@@ -1078,6 +1072,15 @@
               <lod column='[federated.0gi6sj0182w2hl1e9pwa90pcylru].[none:COUNTRY:nk]' />
               <geometry column='[federated.0gi6sj0182w2hl1e9pwa90pcylru].[Geometry (generated)]' />
             </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>País: </run>
+                <run bold='true'><![CDATA[<[federated.0gi6sj0182w2hl1e9pwa90pcylru].[none:COUNTRY:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Percepción de la corrupción: </run>
+                <run bold='true'><![CDATA[<[federated.0gi6sj0182w2hl1e9pwa90pcylru].[avg:CORRUPTION_PERCEPTION:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
             <style>
               <style-rule element='datalabel'>
                 <format attr='color-mode' value='user' />
@@ -1168,6 +1171,21 @@
               <color column='[federated.0gi6sj0182w2hl1e9pwa90pcylru].[avg:CORRUPTION_PERCEPTION:qk]' />
               <text column='[federated.0gi6sj0182w2hl1e9pwa90pcylru].[diff:avg:CORRUPTION_PERCEPTION:qk:5]' />
             </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>País: </run>
+                <run bold='true'><![CDATA[<[federated.0gi6sj0182w2hl1e9pwa90pcylru].[none:COUNTRY:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Fecha: </run>
+                <run bold='true'><![CDATA[<[federated.0gi6sj0182w2hl1e9pwa90pcylru].[tyr:YEAR:ok]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Percepción de la corrupción: </run>
+                <run bold='true'><![CDATA[<[federated.0gi6sj0182w2hl1e9pwa90pcylru].[avg:CORRUPTION_PERCEPTION:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Diferencia en percepción de la corrupción: </run>
+                <run bold='true'><![CDATA[<[federated.0gi6sj0182w2hl1e9pwa90pcylru].[diff:avg:CORRUPTION_PERCEPTION:qk:5]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
             <style>
               <style-rule element='datalabel'>
                 <format attr='color-mode' value='auto' />
@@ -1217,10 +1235,9 @@
         <style>
           <style-rule element='axis'>
             <format attr='title' class='0' field='[federated.1lfj9481j9snv71012nyn089tb4b].[tyr:FECHA:qk]' scope='cols' value='' />
-            <format attr='tick-color' field='[federated.1lfj9481j9snv71012nyn089tb4b].[tyr:FECHA:qk]' value='#000000' />
-            <encoding attr='space' class='0' field='[federated.1lfj9481j9snv71012nyn089tb4b].[tyr:FECHA:qk]' field-type='quantitative' minor-origin='#2007-07-02 12:00:00#' minor-show='false' minor-spacing='1.0' minor-units='months' scope='cols' type='space' />
             <encoding attr='space' class='0' domain-expand='false' field='[federated.1lfj9481j9snv71012nyn089tb4b].[avg:Calculation_922112082289733632:qk]' field-type='quantitative' scope='rows' type='space' />
             <format attr='display' class='0' field='[federated.1lfj9481j9snv71012nyn089tb4b].[avg:Calculation_922112082289733632:qk]' scope='rows' value='false' />
+            <format attr='tick-color' field='[federated.1lfj9481j9snv71012nyn089tb4b].[tyr:FECHA:qk]' value='#000000' />
           </style-rule>
           <style-rule element='cell'>
             <format attr='font-family' field='[federated.1lfj9481j9snv71012nyn089tb4b].[tyr:FECHA:qk]' value='Times New Roman' />
@@ -1246,6 +1263,15 @@
               <text column='[federated.1lfj9481j9snv71012nyn089tb4b].[avg:Calculation_922112082289733632:qk]' />
             </encodings>
             <trendline degree='4' enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='polynomial' />
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Fecha: </run>
+                <run bold='true'><![CDATA[<[federated.1lfj9481j9snv71012nyn089tb4b].[tyr:FECHA:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Índice de corrupción: </run>
+                <run bold='true'><![CDATA[<[federated.1lfj9481j9snv71012nyn089tb4b].[avg:Calculation_922112082289733632:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
             <customized-label>
               <formatted-text>
                 <run>Æ&#10;</run>
@@ -1335,7 +1361,7 @@
         <zone h='7889' id='8' name='Situación 2018' pane-specification-id='0' param='[federated.0gi6sj0182w2hl1e9pwa90pcylru].[avg:CORRUPTION_PERCEPTION:qk]' type-v2='color' w='17938' x='4188' y='20000' />
       </zones>
       <devicelayouts>
-        <devicelayout auto-generated='true' name='Phone'>
+        <devicelayout name='Phone'>
           <layout-options>
             <title>
               <formatted-text>
@@ -1347,9 +1373,10 @@
           </layout-options>
           <size maxheight='750' minheight='750' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='108' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98690' id='107' param='vert' type-v2='layout-flow' w='99304' x='348' y='655'>
-                <zone h='7944' id='12' type-v2='title' w='99304' x='348' y='655'>
+            <zone h='100000' id='112' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97866' id='111' param='vert' type-v2='layout-flow' w='95734' x='2133' y='1067'>
+                <zone fixed-size='217' h='30000' id='3' is-fixed='true' name='Situación 2018' w='95734' x='2133' y='1067'>
+                  <layout-cache minheight='244' type-h='scalable' type-w='fixed' />
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -1358,25 +1385,8 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='280' h='90746' id='3' is-fixed='true' name='Situación 2018' w='45407' x='348' y='8599'>
-                  <zone-style>
-                    <format attr='border-color' value='#000000' />
-                    <format attr='border-style' value='none' />
-                    <format attr='border-width' value='0' />
-                    <format attr='margin' value='4' />
-                    <format attr='padding' value='0' />
-                  </zone-style>
-                </zone>
-                <zone h='7889' id='8' name='Situación 2018' pane-specification-id='0' param='[federated.0gi6sj0182w2hl1e9pwa90pcylru].[avg:CORRUPTION_PERCEPTION:qk]' type-v2='color' w='17938' x='4188' y='20000'>
-                  <zone-style>
-                    <format attr='border-color' value='#000000' />
-                    <format attr='border-style' value='none' />
-                    <format attr='border-width' value='0' />
-                    <format attr='margin' value='4' />
-                    <format attr='padding' value='0' />
-                  </zone-style>
-                </zone>
-                <zone fixed-size='280' h='90746' id='30' is-fixed='true' name='Variación' w='53897' x='45755' y='8599'>
+                <zone fixed-size='540' h='67866' id='30' is-fixed='true' name='Variación' w='95734' x='2133' y='31067'>
+                  <layout-cache type-h='cell' type-w='fixed' />
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -1420,36 +1430,13 @@
         </zone>
       </zones>
       <devicelayouts>
-        <devicelayout auto-generated='true' name='Phone'>
-          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
-          <zones>
-            <zone h='100000' id='42' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98690' id='41' param='vert' type-v2='layout-flow' w='99304' x='348' y='655'>
-                <zone fixed-size='280' h='98690' id='3' is-fixed='true' name='Índice de corrupción en España (0 - 100)' w='99304' x='348' y='655'>
-                  <zone-style>
-                    <format attr='border-color' value='#000000' />
-                    <format attr='border-style' value='none' />
-                    <format attr='border-width' value='0' />
-                    <format attr='margin' value='4' />
-                    <format attr='padding' value='0' />
-                  </zone-style>
-                </zone>
-              </zone>
-              <zone-style>
-                <format attr='border-color' value='#000000' />
-                <format attr='border-style' value='none' />
-                <format attr='border-width' value='0' />
-                <format attr='margin' value='8' />
-              </zone-style>
-            </zone>
-          </zones>
-        </devicelayout>
+        <devicelayout name='Phone' />
       </devicelayouts>
       <simple-id uuid='{8952C37E-3500-49BE-9DD2-3D918BF9C9C5}' />
     </dashboard>
   </dashboards>
   <windows saved-dpi-scale-factor='1.25' source-height='89'>
-    <window class='dashboard' name='Percepción de la corrupción en la Unión Europea'>
+    <window class='dashboard' maximized='true' name='Percepción de la corrupción en la Unión Europea'>
       <viewpoints>
         <viewpoint name='Situación 2018'>
           <zoom type='entire-view' />
@@ -1463,16 +1450,16 @@
           <zoom type='entire-view' />
         </viewpoint>
       </viewpoints>
-      <active id='3' />
+      <active id='-1' />
       <simple-id uuid='{60125A69-CD3B-4009-82FA-D289C544F200}' />
     </window>
-    <window class='dashboard' maximized='true' name='corrupcion_esp'>
+    <window class='dashboard' name='corrupcion_esp'>
       <viewpoints>
         <viewpoint name='Índice de corrupción en España (0 - 100)'>
           <zoom type='entire-view' />
         </viewpoint>
       </viewpoints>
-      <active id='3' />
+      <active id='-1' />
       <simple-id uuid='{C86E97B0-AD78-4807-BD2A-CEC93F8A73B5}' />
     </window>
     <window class='worksheet' hidden='true' name='Situación 2018'>
