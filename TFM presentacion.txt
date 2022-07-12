@@ -1,0 +1,31 @@
+
+
+motivación, estado del arte, solución propuesta al problema, resultados y conclusiones y trabajo futuro
+
+- Estar 1h antes preparado
+
+- 20min nosotros exponiendo el trabajo
+
+- 10/20min de preguntas del tribunal
+
+- El tribunal se va durante 10min para deliberar la calificación, despues vuelve y te la dicen
+
+- Estructura (no es 100% fija, se puede alterar un poco):
+
+- Relacionar las secciones entre ellas
+
+------------------------------------------------------------------------------------------------------------------------------------------
+(~3min)INTRODUCCIÓN:
+	Sobre que trata el trabajo, que se ha hecho, que lo ha motivado, cuales son los objetivos (enumerados y tal cual son)
+
+(~2min)ESTADO DEL ARTE:
+	Estado del arte no es muy importante, una pasada y listo. Se ha estudiado el estado del arte y se ha visto esto, esto y esto....(relacionar un poco con los objetivos), solución propuesta al problema y enganchar con siguiente sección.
+
+(~8min)DESARROLLO:
+	Que se ha hecho (TODO DETALLADO), explicar lo que hemos hecho nosotros en el trabajo, relacionar con asignaturas del master.
+
+(~3min)RESULTADOS:
+	Pequeña simulación/muestra y resultados de nuestra metodología, ¿ha funcionado? ¿Tiene sentido?. Cuestionario... etc
+
+(~4min)Conclusiones:
+	Relacionar directamente con los objetivos mencionados al principio (obj1 con conclusión x) y acabar con lineas futuras. (NO bibliografías ni referencias)
